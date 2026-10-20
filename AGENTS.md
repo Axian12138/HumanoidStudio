@@ -69,8 +69,11 @@ and new requirements in
 [`examples/humanoid-real2sim/cases/feedback/`](examples/humanoid-real2sim/cases/feedback/README.md).
 Search by natural-language task, action, and symptom before solving; read the
 matching example's successful motion, failure mechanism, code, and evidence.
-Record a new correction immediately, then update the same case and its action
-example with the fix and validation. Use `repository` as the stage for work outside
+Record feedback immediately and classify it as an error, new requirement, or
+new problem. Fix errors in the actual result; give new requirements observable
+acceptance criteria. For each case, decide with reasons whether the main skill,
+shared tools, and an action example need changes. Update the same case with
+the cause, implementation, and validation. Use `repository` as the stage for work outside
 the humanoid pipeline. For humanoid reconstruction, retarget, tracking,
 object interaction, or related visualization, use
 [`codex_skills/rss-scaletrack-real2sim/SKILL.md`](codex_skills/rss-scaletrack-real2sim/SKILL.md)

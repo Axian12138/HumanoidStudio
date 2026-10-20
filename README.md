@@ -23,6 +23,8 @@ based on the video at [Your Video Path].
 
 The [humanoid-real2sim tool library](robosimstudio/humanoid_real2sim/README.md) contains retarget motion handling, RSS tracker execution, and the reusable Viser review player. [Task scripts and launchers](scripts/humanoid-real2sim/README.md) call those tools. [Examples and curated feedback](examples/humanoid-real2sim/README.md) hold descriptions, configurations, motions, assets, and review results; binary example files use Git LFS. Routine candidates and logs go under the ignored `outputs/humanoid-real2sim/`. The [RSS × ScaleTrack skill](codex_skills/rss-scaletrack-real2sim/SKILL.md) routes the stages to these tools and examples.
 
+The harness has two instruction layers: [AGENTS.md](AGENTS.md) applies throughout this repository and points the agent to the humanoid pipeline; the task [SKILL.md](codex_skills/rss-scaletrack-real2sim/SKILL.md) chooses stages and acceptance checks. The [feedback routing reference](codex_skills/rss-scaletrack-real2sim/references/feedback-routing.md) decides whether a correction belongs in the skill, reusable code, an action example, or a take's stage ledger. Executable behavior lives in the package and scripts, while the examples preserve observed evidence and accepted results.
+
 ## Acknowledgements
 
 RoboSimStudio is built on [Newton](https://github.com/newton-physics/newton),

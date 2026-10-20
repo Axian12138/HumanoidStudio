@@ -32,4 +32,4 @@ description: 从视频/图像、人体动作和任务描述建立 RSS 场景，�
 
 ## 样本检索与反馈吸收
 
-开始任务或修复失败前，按任务、动作和症状检索 [样本库](../../examples/humanoid-real2sim/cases/README.md) 与 [反馈库](../../examples/humanoid-real2sim/cases/feedback/README.md)，阅读匹配样本的语言叙述、代码、motion 和验证证据。用户反馈先入库；修复后更新对应样本，必要时新增样本，并记录可迁移条件与局限。动作、对象和页面的具体规则留在样本及对应子任务资料；主 skill 只维护阶段路由和这套检索/更新机制。主动判断反馈是否针对 harness 的路由、复用、验证或交付流程；若是，直接修订主 skill，不等用户另行提醒。单次 take 的版本和批准状态以 stage ledger 为准。
+开始任务或修复失败前，按任务、动作和症状检索 [样本库](../../examples/humanoid-real2sim/cases/README.md) 与 [反馈库](../../examples/humanoid-real2sim/cases/feedback/README.md)，阅读匹配样本的语言叙述、代码、motion 和验证证据。收到反馈后区分错误、遗漏、新要求或尚待调查的问题；错误要修复实际产物，新要求要明确可观察的验收条件。按 [反馈处理与知识落点](references/feedback-routing.md) 分别判断是否改主 skill、共享工具和动作 example，并记下每项理由；三者可以同时更新。动作、对象的具体规则留在样本及阶段引用；主 skill 只维护 harness 机制。修复后补原因、方案、结果和迁移边界。单次 take 的版本和批准状态以 stage ledger 为准。

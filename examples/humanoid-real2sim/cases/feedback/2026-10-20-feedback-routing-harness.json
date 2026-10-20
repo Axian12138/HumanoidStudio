@@ -1,0 +1,39 @@
+{
+  "id": "2026-10-20-feedback-routing-harness",
+  "kind": "new_requirement",
+  "stage": "repository",
+  "category": "tooling",
+  "impact": "high",
+  "task": "humanoid-real2sim-harness",
+  "title": "反馈按错误、新要求、新问题分类并决定知识落点",
+  "narrative": "用户要求在大整理后持续维护 harness：收到错误必须修复实际结果；收到新要求或新问题要判断主 skill、共享工具与动作 example 各自是否需要更新，并说明原因。",
+  "expected": "每次反馈形成可检索记录、明确路由决定及修复验证。",
+  "observed": "已有反馈库能搜索和记录修复，但没有反馈类型和三处落点的显式决定。",
+  "source": "2026-10-20 本仓库用户反馈",
+  "example_id": "",
+  "actions": [
+    "反馈分类",
+    "错误修复",
+    "知识归档"
+  ],
+  "date": "2026-10-20",
+  "status": "verified",
+  "recurrences": 1,
+  "cause": "旧反馈命令只有 stage/category 和修复描述，缺少反馈类型与 skill/tool/example 的逐项决策；主 skill 只笼统说入库，无法保证新要求和未知问题得到正确落点。",
+  "routing": {
+    "skill": {
+      "decision": "update",
+      "reason": "加入反馈分类和知识落点路由"
+    },
+    "tool": {
+      "decision": "update",
+      "reason": "扩展反馈 CLI 的类型与路由字段"
+    },
+    "example": {
+      "decision": "none",
+      "reason": "本次是 harness 机制反馈，不是动作案例"
+    }
+  },
+  "fix": "主 skill 与 AGENTS.md 加入分类和落点规则，详细决策放 feedback-routing.md；反馈 CLI 增加 kind、cause、三项带理由路由及 verified 门槛，README 给出使用命令，新增独立 roundtrip 测试。",
+  "validation": "测试反馈 CLI 新记录需有类型、错误原因、修复、验证和三项路由才能 verified；旧记录保持可读。2 项新增测试通过，Ruff lint/format 全通过，skill quick_validate 通过。"
+}

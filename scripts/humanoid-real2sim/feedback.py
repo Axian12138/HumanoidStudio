@@ -14,6 +14,9 @@ CASES = EXAMPLES / "feedback"
 STAGES = ("scene", "retarget", "track", "visualization", "archive", "cross-stage", "repository")
 CATEGORIES = ("input", "geometry", "interaction", "motion", "physics", "tooling", "delivery", "data", "code", "test")
 STATUSES = ("open", "fixed", "verified")
+KINDS = ("error", "new_requirement", "new_problem")
+ROUTE_TARGETS = ("skill", "tool", "example")
+ROUTE_DECISIONS = ("update", "none", "defer")
 
 
 def load_cases() -> list[dict]:
@@ -33,6 +36,37 @@ def save_case(case: dict) -> Path:
 
 def valid_id(value: str) -> bool:
     return re.fullmatch(r"[a-z0-9][a-z0-9-]*", value) is not None
+
+
+def parse_routes(values: list[str]) -> dict[str, dict[str, str]]:
+    """Parse target=decision: reason, preserving explicit triage rationale."""
+    routes = {}
+    for value in values:
+        target, separator, choice = value.partition("=")
+        decision, reason_separator, reason = choice.partition(":")
+        if (
+            not separator
+            or not reason_separator
+            or target not in ROUTE_TARGETS
+            or decision not in ROUTE_DECISIONS
+            or not reason.strip()
+        ):
+            raise ValueError(f"route must be target=update|none|defer: reason: {value}")
+        if target in routes:
+            raise ValueError(f"duplicate route target: {target}")
+        routes[target] = {"decision": decision, "reason": reason.strip()}
+    return routes
+
+
+def ready_to_verify(case: dict) -> bool:
+    """Legacy records remain readable; new records need complete triage."""
+    if not case.get("validation") or not case.get("fix"):
+        return False
+    if case.get("kind") == "error" and not case.get("cause"):
+        return False
+    if "routing" not in case:
+        return True
+    return all(case["routing"].get(target, {}).get("decision") in ROUTE_DECISIONS for target in ROUTE_TARGETS)
 
 
 def tokens(value: str) -> set[str]:
@@ -59,13 +93,18 @@ def main() -> None:
     add.add_argument("--stage", choices=STAGES, required=True)
     add.add_argument("--category", choices=CATEGORIES, required=True)
     add.add_argument("--impact", choices=("high", "medium", "low"), required=True)
+    add.add_argument("--kind", choices=KINDS, required=True)
     for field in ("task", "actions", "title", "narrative", "expected", "observed", "source"):
         add.add_argument(f"--{field}", required=True)
     add.add_argument("--example-id", default="")
+    add.add_argument("--cause", default="")
+    add.add_argument("--route", action="append", default=[], help="target=update|none|defer: reason")
     update = sub.add_parser("update", help="add a fix, validation, or linked example")
     update.add_argument("id")
-    for field in ("fix", "validation", "source", "narrative", "example_id"):
+    for field in ("fix", "validation", "source", "narrative", "example_id", "cause"):
         update.add_argument(f"--{field}")
+    update.add_argument("--kind", choices=KINDS)
+    update.add_argument("--route", action="append", default=[], help="target=update|none|defer: reason")
     update.add_argument("--status", choices=STATUSES)
     update.add_argument("--recurrences", type=int)
     search = sub.add_parser("search", help="rank language-rich examples and feedback together")
@@ -91,6 +130,7 @@ def main() -> None:
             key: getattr(args, key)
             for key in (
                 "id",
+                "kind",
                 "stage",
                 "category",
                 "impact",
@@ -106,7 +146,19 @@ def main() -> None:
         case["actions"] = [part.strip() for part in args.actions.split(",") if part.strip()]
         if not case["actions"]:
             parser.error("actions must contain at least one action")
-        case.update(date=date.today().isoformat(), status="open", recurrences=1, fix="", validation="")
+        try:
+            routes = parse_routes(args.route)
+        except ValueError as exc:
+            parser.error(str(exc))
+        case.update(
+            date=date.today().isoformat(),
+            status="open",
+            recurrences=1,
+            cause=args.cause,
+            routing=routes,
+            fix="",
+            validation="",
+        )
         print(save_case(case))
     elif args.command == "update":
         if not valid_id(args.id):
@@ -115,12 +167,30 @@ def main() -> None:
         if not path.exists():
             parser.error(f"unknown case: {args.id}")
         case = json.loads(path.read_text())
-        for field in ("fix", "validation", "source", "narrative", "example_id", "status", "recurrences"):
+        for field in (
+            "fix",
+            "validation",
+            "source",
+            "narrative",
+            "example_id",
+            "cause",
+            "kind",
+            "status",
+            "recurrences",
+        ):
             value = getattr(args, field)
             if value is not None:
                 case[field] = value
+        try:
+            routes = parse_routes(args.route)
+        except ValueError as exc:
+            parser.error(str(exc))
+        if routes:
+            case.setdefault("routing", {}).update(routes)
         if case["recurrences"] < 1:
             parser.error("recurrences must be positive")
+        if case["status"] == "verified" and not ready_to_verify(case):
+            parser.error("verified requires a fix, validation, error cause, and skill/tool/example routing decisions")
         print(save_case(case))
     elif args.command == "show":
         for item in load_examples():
