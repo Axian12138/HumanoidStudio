@@ -15,20 +15,30 @@ class BFMTracker:
         self.metadata = json.loads(Path(metadata).read_text())
         self.process = subprocess.Popen(
             [
-                str(python), str(Path(__file__).with_name("worker.py")),
-                "--scalebridge", str(scalebridge),
-                "--checkpoint", str(checkpoint),
-                "--metadata", str(metadata),
+                str(python),
+                str(Path(__file__).with_name("worker.py")),
+                "--scalebridge",
+                str(scalebridge),
+                "--checkpoint",
+                str(checkpoint),
+                "--metadata",
+                str(metadata),
             ],
-            stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=None,
-            text=True, bufsize=1,
+            stdin=subprocess.PIPE,
+            stdout=subprocess.PIPE,
+            stderr=None,
+            text=True,
+            bufsize=1,
         )
         try:
             line = self._response()
             if not line.startswith("@ready "):
                 raise RuntimeError(f"tracker worker did not become ready: {line}")
             declared = json.loads(line.removeprefix("@ready "))
-            if declared["joint_names"] != self.metadata["joint_names"] or declared["body_names"] != self.metadata["selected_body_names"]:
+            if (
+                declared["joint_names"] != self.metadata["joint_names"]
+                or declared["body_names"] != self.metadata["selected_body_names"]
+            ):
                 raise RuntimeError("worker body or joint order differs from metadata")
         except BaseException:
             self.close()
@@ -48,7 +58,11 @@ class BFMTracker:
         if self.process.poll() is not None:
             raise RuntimeError(f"tracker worker exited with code {self.process.returncode}")
         assert self.process.stdin is not None
-        payload = {"command": "infer", "mode": int(mode), "observation": {key: np.asarray(value).tolist() for key, value in observation.items()}}
+        payload = {
+            "command": "infer",
+            "mode": int(mode),
+            "observation": {key: np.asarray(value).tolist() for key, value in observation.items()},
+        }
         self.process.stdin.write(json.dumps(payload, separators=(",", ":")) + "\n")
         self.process.stdin.flush()
         response = self._response()
@@ -58,7 +72,11 @@ class BFMTracker:
         target = np.asarray(answer["target"], dtype=np.float32)
         action = np.asarray(answer["action"], dtype=np.float32)
         count = len(self.metadata["action_names"])
-        if target.shape != (count,) or action.shape != (count,) or not (np.isfinite(target).all() and np.isfinite(action).all()):
+        if (
+            target.shape != (count,)
+            or action.shape != (count,)
+            or not (np.isfinite(target).all() and np.isfinite(action).all())
+        ):
             raise RuntimeError("tracker returned an invalid action")
         return target, action
 

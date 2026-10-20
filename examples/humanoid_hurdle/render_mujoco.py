@@ -12,12 +12,16 @@ import mujoco
 from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[3]
-SOURCE = Path(
-    os.environ.get(
-        "G1_MJCF_PATH",
-        ROOT / "ScaleTrack/source/scaletrack/scaletrack/assets/robots/g1_29dof/g1_29dof.xml",
+SOURCE = (
+    Path(
+        os.environ.get(
+            "G1_MJCF_PATH",
+            ROOT / "ScaleTrack/source/scaletrack/scaletrack/assets/robots/g1_29dof/g1_29dof.xml",
+        )
     )
-).expanduser().resolve()
+    .expanduser()
+    .resolve()
+)
 OUTPUT = Path(__file__).with_name("hurdle_full_visual.png")
 
 

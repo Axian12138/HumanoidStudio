@@ -17,8 +17,16 @@ from robosimstudio_studio import StudioConfig, StudioSession
 
 class RepairStudio(StudioSession):
     def __init__(
-        self, sim, runtime, *, out: Path, port: int, stop_frame: int | None = None,
-        show_reference: bool = True, reference_video: Path | None = None, review_only: bool = False,
+        self,
+        sim,
+        runtime,
+        *,
+        out: Path,
+        port: int,
+        stop_frame: int | None = None,
+        show_reference: bool = True,
+        reference_video: Path | None = None,
+        review_only: bool = False,
     ):
         self.runtime = runtime
         self._stop_frame = stop_frame
@@ -29,7 +37,8 @@ class RepairStudio(StudioSession):
         self._out = out
         self._port = port
         self._marks: list[int] = [
-            index for index, record in enumerate(runtime.records)
+            index
+            for index, record in enumerate(runtime.records)
             if record.phase == "takeover" and (index == 0 or runtime.records[index - 1].phase != "takeover")
         ]
         self._last_click: dict[str, float] = {}
@@ -214,10 +223,14 @@ class RepairStudio(StudioSession):
             "recovery_frame": self._recovery_frame,
             "recovery_duration_frames": self._recovery_duration_frames,
             "recovery_origin_slot": self._recovery_origin_slot,
-            "recovery_progress": self.runtime.timeline._recovery_step if self.runtime.timeline.phase == "recovery" else 0,
+            "recovery_progress": self.runtime.timeline._recovery_step
+            if self.runtime.timeline.phase == "recovery"
+            else 0,
             "recovery_elapsed_frames": max(0, self.runtime.cursor - self._recovery_origin_slot),
-            "recovery_total_frames": self._recovery_duration_frames + (
-                self.runtime.motion.frames - 1 - self._recovery_frame if self._recovery_duration_frames
+            "recovery_total_frames": self._recovery_duration_frames
+            + (
+                self.runtime.motion.frames - 1 - self._recovery_frame
+                if self._recovery_duration_frames
                 else self.runtime.motion.frames - self._recovery_frame
             ),
             "marks": self._marks,
@@ -362,15 +375,21 @@ class RepairStudio(StudioSession):
                 vertices = np.asarray(model.mesh_vert[va : va + vn], dtype=np.float32)
                 faces = np.asarray(model.mesh_face[fa : fa + fn], dtype=np.int32)
                 if len(faces) > 3000:
-                    simplified = trimesh.Trimesh(vertices=vertices, faces=faces, process=False).simplify_quadric_decimation(
-                        face_count=3000
-                    )
+                    simplified = trimesh.Trimesh(
+                        vertices=vertices, faces=faces, process=False
+                    ).simplify_quadric_decimation(face_count=3000)
                     vertices = np.asarray(simplified.vertices, dtype=np.float32)
                     faces = np.asarray(simplified.faces, dtype=np.int32)
                 handle = scene.add_mesh_simple(
-                    f"/reference_robot/geom_{geom:03d}", vertices, faces.astype(np.uint32),
-                    color=(80, 224, 235), opacity=0.28, side="double", cast_shadow=False,
-                    receive_shadow=False, visible=False,
+                    f"/reference_robot/geom_{geom:03d}",
+                    vertices,
+                    faces.astype(np.uint32),
+                    color=(80, 224, 235),
+                    opacity=0.28,
+                    side="double",
+                    cast_shadow=False,
+                    receive_shadow=False,
+                    visible=False,
                 )
                 self._ghost_meshes.append((geom, handle))
         self._ghost = []
@@ -436,12 +455,18 @@ class RepairStudio(StudioSession):
                     mesh = int(model.geom_dataid[geom])
                     va, vn = int(model.mesh_vertadr[mesh]), int(model.mesh_vertnum[mesh])
                     fa, fn = int(model.mesh_faceadr[mesh]), int(model.mesh_facenum[mesh])
-                    vertices = np.asarray(model.mesh_vert[va:va + vn], dtype=np.float32)
-                    faces = np.asarray(model.mesh_face[fa:fa + fn], dtype=np.uint32)
+                    vertices = np.asarray(model.mesh_vert[va : va + vn], dtype=np.float32)
+                    faces = np.asarray(model.mesh_face[fa : fa + fn], dtype=np.uint32)
                     handle = scene.add_mesh_simple(
-                        f"/repair/{name}/goal_geom_{geom}", vertices, faces,
-                        color=(255, 178, 75), opacity=.32, side="double",
-                        cast_shadow=False, receive_shadow=False, visible=False,
+                        f"/repair/{name}/goal_geom_{geom}",
+                        vertices,
+                        faces,
+                        color=(255, 178, 75),
+                        opacity=0.32,
+                        side="double",
+                        cast_shadow=False,
+                        receive_shadow=False,
+                        visible=False,
                     )
                     self._target_meshes[name].append((geom, handle))
 
@@ -453,7 +478,11 @@ class RepairStudio(StudioSession):
 
     def _update_ghost(self) -> None:
         visible = (self._recovery_mode and not self._recovery_started) or self._show_reference
-        frame = self._recovery_frame if self._recovery_mode and not self._recovery_started else self.runtime.timeline.source_frame
+        frame = (
+            self._recovery_frame
+            if self._recovery_mode and not self._recovery_started
+            else self.runtime.timeline.source_frame
+        )
         frame = max(0, min(self.runtime.motion.frames - 1, frame))
         for i, node in enumerate(self._ghost):
             node.visible = visible
@@ -518,8 +547,8 @@ class RepairStudio(StudioSession):
         snapshot = self.runtime.sim.pipeline.snapshot
         q = snapshot.joint_q
         root = self.runtime.root_coord
-        data.qpos[:3] = q[root:root + 3]
-        data.qpos[3:7] = q[root + 3:root + 7][[3, 0, 1, 2]]
+        data.qpos[:3] = q[root : root + 3]
+        data.qpos[3:7] = q[root + 3 : root + 7][[3, 0, 1, 2]]
         labels = list(self.runtime.sim.model.joint_label)
         starts = self.runtime.sim.model.joint_q_start.numpy()
         from robosimstudio.scene.entity import label_index
@@ -571,8 +600,11 @@ class RepairStudio(StudioSession):
         for name, mode in changes.items():
             if mode == "move":
                 self.runtime.timeline.set_goal(
-                    name, self._goal_pos[name], self._goal_quat[name],
-                    self._speed[name], self._angular_speed[name],
+                    name,
+                    self._goal_pos[name],
+                    self._goal_quat[name],
+                    self._speed[name],
+                    self._angular_speed[name],
                 )
             else:
                 self.runtime.timeline.hold_pose(name, self._body_pos(name), self._body_quat(name))
@@ -585,7 +617,7 @@ class RepairStudio(StudioSession):
             self.set_paused(True)
             return
         if self._stop_frame is not None and self.runtime.timeline.source_frame >= self._stop_frame:
-            raise RuntimeError(f"片段已到源帧 {self._stop_frame}；回退缓存或重置后再播放")
+            raise RuntimeError(f"片段已到源帧 {self._stop_frame}; 回退缓存或重置后再播放")
         if self._recovery_mode and not self._recovery_started:
             if self.runtime.timeline.phase != "takeover":
                 raise RuntimeError("recovery requires an active repair")
@@ -608,7 +640,9 @@ class RepairStudio(StudioSession):
             self._recovery_origin_slot = self.runtime.cursor
             self._recovery_original_records = self.runtime.records.copy()
             timeline = self.runtime.timeline
-            self._recovery_frame = min(timeline._takeover_frame + timeline.takeover_steps, self.runtime.motion.frames - 1)
+            self._recovery_frame = min(
+                timeline._takeover_frame + timeline.takeover_steps, self.runtime.motion.frames - 1
+            )
             self._recovery_duration_frames = 50
             self._repair_gizmos = {name: self._gizmos[name].visible for name in FIVE_POINTS}
             for name in FIVE_POINTS:
@@ -760,7 +794,7 @@ class RepairStudio(StudioSession):
                     self.status = "恢复播放完成, 可保存候选供检查"
             if self._stop_frame is not None and self.runtime.timeline.source_frame >= self._stop_frame:
                 self.set_paused(True)
-                self.status = f"已到达源帧 {self._stop_frame}，片段播放暂停"
+                self.status = f"已到达源帧 {self._stop_frame}, 片段播放暂停"
         if stepped or cached or self._dirty:
             self._refresh_scene()
             self._dirty = False

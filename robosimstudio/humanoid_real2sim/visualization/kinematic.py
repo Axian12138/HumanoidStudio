@@ -23,9 +23,20 @@ from robosimstudio_studio import StudioConfig, StudioSession
 class KinematicStudio(StudioSession):
     """The same RSS/Viser scene as repair, with a source-frame scrubber."""
 
-    def __init__(self, sim, motion: ReferenceMotion, *, start: int, stop: int, port: int,
-                 human_motion: Path, object_track: Path | None = None, object_name: str | None = None,
-                 source_offset_s: float = 0.0, segments: list[dict] | None = None):
+    def __init__(
+        self,
+        sim,
+        motion: ReferenceMotion,
+        *,
+        start: int,
+        stop: int,
+        port: int,
+        human_motion: Path,
+        object_track: Path | None = None,
+        object_name: str | None = None,
+        source_offset_s: float = 0.0,
+        segments: list[dict] | None = None,
+    ):
         if not 0 <= start < stop <= motion.frames:
             raise ValueError(f"frame window must satisfy 0 <= start < stop <= {motion.frames}")
         self.motion, self.start, self.stop = motion, start, stop
@@ -45,7 +56,12 @@ class KinematicStudio(StudioSession):
             human_fps = float(source["fps"])
         if human_positions.shape != (motion.frames, len(human_names), 3):
             raise ValueError("human motion must have one aligned 3D skeleton per retarget frame")
-        if human_edges.ndim != 2 or human_edges.shape[1] != 2 or np.any(human_edges < 0) or np.any(human_edges >= len(human_names)):
+        if (
+            human_edges.ndim != 2
+            or human_edges.shape[1] != 2
+            or np.any(human_edges < 0)
+            or np.any(human_edges >= len(human_names))
+        ):
             raise ValueError("human motion edges must index its named joints")
         if not np.isclose(human_fps, motion.fps) or not np.isfinite(human_positions).all():
             raise ValueError("human motion FPS or positions do not match the retarget motion")
@@ -72,8 +88,11 @@ class KinematicStudio(StudioSession):
         human_scene = self.server.scene
         self._human_joints = [
             human_scene.add_icosphere(
-                f"/human_motion/{name}", radius=0.022 if name != "pelvis" else 0.035,
-                color=(70, 229, 226), opacity=0.32, cast_shadow=False,
+                f"/human_motion/{name}",
+                radius=0.022 if name != "pelvis" else 0.035,
+                color=(70, 229, 226),
+                opacity=0.32,
+                cast_shadow=False,
                 position=tuple(human_positions[start, index]),
             )
             for index, name in enumerate(human_names)
@@ -81,7 +100,8 @@ class KinematicStudio(StudioSession):
         self._human_lines = human_scene.add_line_segments(
             "/human_motion/skeleton",
             points=human_positions[start, human_edges],
-            colors=(70, 229, 226), thickness=0.009,
+            colors=(70, 229, 226),
+            thickness=0.009,
         )
         labels = list(sim.model.joint_label)
         starts = sim.model.joint_q_start.numpy()
@@ -119,13 +139,13 @@ class KinematicStudio(StudioSession):
             raise ValueError("frame outside review window")
         q = self._base_q.copy()
         root = self._root
-        q[root:root + 3] = self.motion.body_pos_w[frame, 0]
-        q[root + 3:root + 7] = self.motion.body_quat_w[frame, 0, [1, 2, 3, 0]]
+        q[root : root + 3] = self.motion.body_pos_w[frame, 0]
+        q[root + 3 : root + 7] = self.motion.body_quat_w[frame, 0, [1, 2, 3, 0]]
         q[self._joint_coords] = self.motion.all_joint_pos[frame]
         if self._track is not None:
             coord = self._object_coord
-            q[coord:coord + 3] = self._track[0][frame]
-            q[coord + 3:coord + 7] = self._track[1][frame]
+            q[coord : coord + 3] = self._track[0][frame]
+            q[coord + 3 : coord + 7] = self._track[1][frame]
         pipeline = self.env.pipeline
         for state in (pipeline.state_0, pipeline.state_1):
             state.joint_q.assign(q)
@@ -139,12 +159,18 @@ class KinematicStudio(StudioSession):
         self._drawn_step = None
 
     def _public_state(self) -> dict:
-        return {"cursor": self.cursor, "start": self.start, "stop": self.stop,
-                "fps": self.motion.fps, "playing": self.playing,
-                "source_offset_s": self._source_offset_s, "segments": self._segments,
-                "human_motion": True,
-                "object_track": self._object_name if self._track is not None else None,
-                "sim_steps": self.env.pipeline.step_count}
+        return {
+            "cursor": self.cursor,
+            "start": self.start,
+            "stop": self.stop,
+            "fps": self.motion.fps,
+            "playing": self.playing,
+            "source_offset_s": self._source_offset_s,
+            "segments": self._segments,
+            "human_motion": True,
+            "object_track": self._object_name if self._track is not None else None,
+            "sim_steps": self.env.pipeline.step_count,
+        }
 
     def _start_web(self) -> None:
         studio = self

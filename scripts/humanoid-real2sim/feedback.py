@@ -8,7 +8,6 @@ import re
 from datetime import date
 from pathlib import Path
 
-
 REPOSITORY = Path(__file__).resolve().parents[2]
 EXAMPLES = REPOSITORY / "examples/humanoid-real2sim/cases"
 CASES = EXAMPLES / "feedback"
@@ -39,7 +38,7 @@ def valid_id(value: str) -> bool:
 def tokens(value: str) -> set[str]:
     english = re.findall(r"[a-z0-9_]+", value.casefold())
     chinese = re.findall(r"[\u3400-\u9fff]+", value)
-    return set(english + [part[i:i + 2] for part in chinese for i in range(len(part) - 1)])
+    return set(english + [part[i : i + 2] for part in chinese for i in range(len(part) - 1)])
 
 
 def score(query: str, text: str) -> int:
@@ -88,15 +87,26 @@ def main() -> None:
         examples = {item["id"] for item in load_examples()}
         if args.example_id and args.example_id not in examples:
             parser.error(f"unknown example: {args.example_id}")
-        case = {key: getattr(args, key) for key in (
-            "id", "stage", "category", "impact", "task", "title", "narrative",
-            "expected", "observed", "source", "example_id",
-        )}
+        case = {
+            key: getattr(args, key)
+            for key in (
+                "id",
+                "stage",
+                "category",
+                "impact",
+                "task",
+                "title",
+                "narrative",
+                "expected",
+                "observed",
+                "source",
+                "example_id",
+            )
+        }
         case["actions"] = [part.strip() for part in args.actions.split(",") if part.strip()]
         if not case["actions"]:
             parser.error("actions must contain at least one action")
-        case.update(date=date.today().isoformat(), status="open", recurrences=1,
-                    fix="", validation="")
+        case.update(date=date.today().isoformat(), status="open", recurrences=1, fix="", validation="")
         print(save_case(case))
     elif args.command == "update":
         if not valid_id(args.id):
@@ -130,11 +140,17 @@ def main() -> None:
                 if args.action and not score(args.action, " ".join(item["actions"] + item["keywords"])):
                     continue
                 narrative = (EXAMPLES / item["file"]).read_text()
-                rank = score(args.query, " ".join((item["title"], item["summary"],
-                    " ".join(item["keywords"]), narrative)))
+                rank = score(
+                    args.query, " ".join((item["title"], item["summary"], " ".join(item["keywords"]), narrative))
+                )
                 if rank:
-                    results.append((rank, f"example {item['id']} [{item['task']}/{item['status']}] "
-                                          f"{item['title']} — {item['summary']} ({EXAMPLES / item['file']})"))
+                    results.append(
+                        (
+                            rank,
+                            f"example {item['id']} [{item['task']}/{item['status']}] "
+                            f"{item['title']} — {item['summary']} ({EXAMPLES / item['file']})",
+                        )
+                    )
         if args.kind in ("all", "feedback"):
             for item in load_cases():
                 if args.stage and item["stage"] != args.stage:
@@ -147,8 +163,13 @@ def main() -> None:
                     continue
                 rank = score(args.query, json.dumps(item, ensure_ascii=False))
                 if rank:
-                    results.append((rank, f"feedback {item['id']} [{item['stage']}/{item['status']}] "
-                                          f"{item['title']} ({CASES / (item['id'] + '.json')})"))
+                    results.append(
+                        (
+                            rank,
+                            f"feedback {item['id']} [{item['stage']}/{item['status']}] "
+                            f"{item['title']} ({CASES / (item['id'] + '.json')})",
+                        )
+                    )
         for _, line in sorted(results, key=lambda result: (-result[0], result[1])):
             print(line)
 

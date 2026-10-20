@@ -5,7 +5,6 @@ from __future__ import annotations
 import unittest
 
 import numpy as np
-from scipy.spatial.transform import Rotation
 
 from robosimstudio.humanoid_real2sim.track.timeline import FIVE_POINTS, ReferenceMotion, RepairTimeline
 
@@ -79,23 +78,25 @@ class TestTakeoverFutureTargets(unittest.TestCase):
         np.testing.assert_allclose(position[:, body, 0], [0.00, 0.01, 0.02, 0.03, 0.03, 0.03])
 
     def test_six_d_goal_uses_achieved_pose_and_stops_at_goal(self):
+        from scipy.spatial.transform import Rotation
+
         name = "right_wrist_yaw_link"
         body = self.motion.body_names.index(name)
         goal_quat = Rotation.from_euler("z", 0.4).as_quat()[[3, 0, 1, 2]]
         self.timeline.set_goal(name, np.array([0.04, 0, 0]), goal_quat, 0.5, 2.0)
         pos, quat = self.timeline.targets((0, 1, 2, 3, 4, 32), self.achieved, self.achieved_quat)
-        np.testing.assert_allclose(pos[:, body, 0], [0, .01, .02, .03, .04, .04])
+        np.testing.assert_allclose(pos[:, body, 0], [0, 0.01, 0.02, 0.03, 0.04, 0.04])
         yaw = Rotation.from_quat(quat[:, body][:, [1, 2, 3, 0]]).as_euler("xyz")[:, 2]
-        np.testing.assert_allclose(yaw, [0, .04, .08, .12, .16, .4], atol=1e-6)
+        np.testing.assert_allclose(yaw, [0, 0.04, 0.08, 0.12, 0.16, 0.4], atol=1e-6)
         self.timeline.advance()
         # The physical link can lag completely for one step. The commanded
         # target must still progress instead of resetting to the observation.
         lagged_pos, lagged_quat = self.timeline.targets((0, 1, 2), self.achieved, self.achieved_quat)
-        np.testing.assert_allclose(lagged_pos[:, body, 0], [.01, .02, .03])
+        np.testing.assert_allclose(lagged_pos[:, body, 0], [0.01, 0.02, 0.03])
         lagged_yaw = Rotation.from_quat(lagged_quat[:, body][:, [1, 2, 3, 0]]).as_euler("xyz")[:, 2]
-        np.testing.assert_allclose(lagged_yaw, [.04, .08, .12], atol=1e-6)
+        np.testing.assert_allclose(lagged_yaw, [0.04, 0.08, 0.12], atol=1e-6)
         at_goal = self.achieved.copy()
-        at_goal[body, 0] = .04
+        at_goal[body, 0] = 0.04
         at_goal_quat = self.achieved_quat.copy()
         at_goal_quat[body] = goal_quat
         stopped_pos, stopped_quat = self.timeline.targets((0, 1, 32), at_goal, at_goal_quat)

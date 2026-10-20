@@ -12,7 +12,6 @@ from dataclasses import dataclass
 from pathlib import Path
 
 import numpy as np
-from scipy.spatial.transform import Rotation
 
 FIVE_POINTS = (
     "pelvis",
@@ -174,8 +173,9 @@ class RepairTimeline:
         self.goal_controlled.clear()
         self.ever_repaired.clear()
 
-    def set_goal(self, point: str, position: np.ndarray, quat_wxyz: np.ndarray,
-                 speed_mps: float, angular_speed_rps: float) -> None:
+    def set_goal(
+        self, point: str, position: np.ndarray, quat_wxyz: np.ndarray, speed_mps: float, angular_speed_rps: float
+    ) -> None:
         """Set a fixed world-frame 6D goal; each observation supplies its direction."""
         if self.phase != "takeover" or point not in FIVE_POINTS:
             raise RuntimeError("6D goal requires five-point takeover")
@@ -300,9 +300,14 @@ class RepairTimeline:
             index / self.recovery_frames,
         )
 
-    def targets(self, offsets: tuple[int, ...] = FUTURE_OFFSETS,
-                achieved_pos: np.ndarray | None = None,
-                achieved_quat_wxyz: np.ndarray | None = None) -> tuple[np.ndarray, np.ndarray]:
+    def targets(
+        self,
+        offsets: tuple[int, ...] = FUTURE_OFFSETS,
+        achieved_pos: np.ndarray | None = None,
+        achieved_quat_wxyz: np.ndarray | None = None,
+    ) -> tuple[np.ndarray, np.ndarray]:
+        from scipy.spatial.transform import Rotation
+
         offset_array = np.asarray(offsets)
         index = np.clip(self.source_frame + offset_array, 0, self.motion.frames - 1)
         pos = self.motion.body_pos_w[index].copy()
@@ -319,8 +324,8 @@ class RepairTimeline:
                     goal = self._goal_pos[j]
                     delta = goal - current
                     distance = float(np.linalg.norm(delta))
-                    if distance <= .005 or self.link_speeds[name] == 0:
-                        pos[:, j] = goal if distance <= .005 else self._target_pos[j]
+                    if distance <= 0.005 or self.link_speeds[name] == 0:
+                        pos[:, j] = goal if distance <= 0.005 else self._target_pos[j]
                         self._goal_next_pos[name] = pos[0, j].copy()
                     else:
                         # Keep the commanded setpoint advancing even when the
@@ -335,7 +340,9 @@ class RepairTimeline:
                         pos[:, j] = future
                         step = min(self.link_speeds[name] / self.motion.fps, max(remaining, 0.0))
                         self._goal_next_pos[name] = command + step * direction
-                    current_q = self._target_quat[j] if achieved_quat_wxyz is None else np.asarray(achieved_quat_wxyz[j])
+                    current_q = (
+                        self._target_quat[j] if achieved_quat_wxyz is None else np.asarray(achieved_quat_wxyz[j])
+                    )
                     goal_q = self._goal_quat[j]
                     current_r = Rotation.from_quat(current_q[[1, 2, 3, 0]])
                     goal_r = Rotation.from_quat(goal_q[[1, 2, 3, 0]])
@@ -348,11 +355,18 @@ class RepairTimeline:
                         command_r = Rotation.from_quat(self._target_quat[j][[1, 2, 3, 0]])
                         command_delta = (goal_r * command_r.inv()).as_rotvec()
                         command_angle = float(np.linalg.norm(command_delta))
-                        travel = np.minimum(command_angle, offset_array * self.link_angular_speeds[name] / self.motion.fps)
-                        rotations = Rotation.from_rotvec(travel[:, None] * command_delta[None] / max(command_angle, 1e-9)) * command_r
+                        travel = np.minimum(
+                            command_angle, offset_array * self.link_angular_speeds[name] / self.motion.fps
+                        )
+                        rotations = (
+                            Rotation.from_rotvec(travel[:, None] * command_delta[None] / max(command_angle, 1e-9))
+                            * command_r
+                        )
                         quat[:, j] = rotations.as_quat()[:, [3, 0, 1, 2]]
                         one_step = min(command_angle, self.link_angular_speeds[name] / self.motion.fps)
-                        next_rotation = Rotation.from_rotvec(one_step * command_delta / max(command_angle, 1e-9)) * command_r
+                        next_rotation = (
+                            Rotation.from_rotvec(one_step * command_delta / max(command_angle, 1e-9)) * command_r
+                        )
                         self._goal_next_quat[name] = next_rotation.as_quat()[[3, 0, 1, 2]]
                     continue
                 if self.link_modes[name] == "move":

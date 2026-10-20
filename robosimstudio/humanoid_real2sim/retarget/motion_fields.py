@@ -4,9 +4,9 @@ from __future__ import annotations
 
 import hashlib
 import json
+from collections.abc import Sequence
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Sequence
 
 import numpy as np
 
@@ -32,8 +32,13 @@ class MotionFields:
         body_names = tuple(order["robot_body_names"])
         with np.load(path, allow_pickle=False) as data:
             required = {
-                "joint_pos", "joint_vel", "body_pos_w", "body_quat_w",
-                "body_lin_vel_w", "body_ang_vel_w", "fps",
+                "joint_pos",
+                "joint_vel",
+                "body_pos_w",
+                "body_quat_w",
+                "body_lin_vel_w",
+                "body_ang_vel_w",
+                "fps",
             }
             if set(data.files) != required:
                 raise ValueError(f"expected the seven-field motion contract, got {data.files}")
@@ -129,8 +134,11 @@ def refresh_fk(motion: MotionFields, model_path: str | Path) -> MotionFields:
         angular_velocity[frame] = (rotations[frame + 1] * rotations[frame].inv()).as_rotvec() / dt
     angular_velocity[-1] = angular_velocity[-2]
     return replace(
-        motion, joint_vel=joint_velocity, body_pos_w=position,
-        body_quat_w=quaternion, body_lin_vel_w=linear_velocity,
+        motion,
+        joint_vel=joint_velocity,
+        body_pos_w=position,
+        body_quat_w=quaternion,
+        body_lin_vel_w=linear_velocity,
         body_ang_vel_w=angular_velocity,
     )
 

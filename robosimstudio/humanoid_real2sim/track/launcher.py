@@ -20,9 +20,8 @@ import numpy as np
 
 os.environ.setdefault("WARP_CACHE_PATH", "/tmp/robosimstudio_humanoid_real2sim_warp")
 
-from robosimstudio.humanoid_real2sim.track.repair_studio import RepairStudio
-
 import robosimstudio as rss
+from robosimstudio.humanoid_real2sim.track.repair_studio import RepairStudio
 from robosimstudio.humanoid_real2sim.track.runtime import RepairRuntime
 from robosimstudio.humanoid_real2sim.track.timeline import ReferenceMotion
 from robosimstudio.humanoid_real2sim.track.tracker import BFMTracker
@@ -42,7 +41,11 @@ DEFAULT_FK_MODEL = DEFAULT_ROBOT
 
 
 def _position_asset(
-    source: Path, metadata: dict, *, hand_kp: float = 2.0, hand_kv: float = 0.1,
+    source: Path,
+    metadata: dict,
+    *,
+    hand_kp: float = 2.0,
+    hand_kv: float = 0.1,
 ) -> tuple[tempfile.TemporaryDirectory, Path]:
     if not (np.isfinite(hand_kp) and hand_kp > 0 and np.isfinite(hand_kv) and hand_kv >= 0):
         raise ValueError("hand position gains must be finite and nonnegative")
@@ -208,7 +211,9 @@ def main() -> None:
     parser.add_argument("--hand-kp", type=float, default=2.0)
     parser.add_argument("--hand-kv", type=float, default=0.1)
     parser.add_argument(
-        "--reference-pid-wrists", choices=("none", "left", "right", "both"), default="none",
+        "--reference-pid-wrists",
+        choices=("none", "left", "right", "both"),
+        default="none",
         help="send selected wrist roll/pitch/yaw refmotion positions directly to RSS position actuators",
     )
     parser.add_argument("--start-frame", type=int, default=0, help="initial source frame for physical playback")
@@ -221,12 +226,20 @@ def main() -> None:
     parser.add_argument("--resume-hand-left", type=float, help="restore the left-hand manual closure amount")
     parser.add_argument("--resume-hand-right", type=float, help="restore the right-hand manual closure amount")
     reference_group = parser.add_mutually_exclusive_group()
-    reference_group.add_argument("--show-reference", dest="show_reference", action="store_true", default=True,
-                                 help="show the retarget reference robot ghost (Stage 4 default)")
-    reference_group.add_argument("--hide-reference", dest="show_reference", action="store_false",
-                                 help="hide the retarget reference robot ghost")
+    reference_group.add_argument(
+        "--show-reference",
+        dest="show_reference",
+        action="store_true",
+        default=True,
+        help="show the retarget reference robot ghost (Stage 4 default)",
+    )
+    reference_group.add_argument(
+        "--hide-reference", dest="show_reference", action="store_false", help="hide the retarget reference robot ghost"
+    )
     parser.add_argument("--reference-video", type=Path, help="source human video synchronized to the motion clock")
-    parser.add_argument("--review-only", action="store_true", help="show cached physics and source motion without repair controls")
+    parser.add_argument(
+        "--review-only", action="store_true", help="show cached physics and source motion without repair controls"
+    )
     args = parser.parse_args()
     if args.reference_video is not None and not args.reference_video.is_file():
         parser.error(f"reference video does not exist: {args.reference_video}")
@@ -269,9 +282,9 @@ def main() -> None:
             hand_close_frame=args.hand_close_frame,
             original_model=args.fk_model,
             motion_order=args.motion_order,
-            reference_pid_wrists=("left", "right") if args.reference_pid_wrists == "both" else (
-                () if args.reference_pid_wrists == "none" else (args.reference_pid_wrists,)
-            ),
+            reference_pid_wrists=("left", "right")
+            if args.reference_pid_wrists == "both"
+            else (() if args.reference_pid_wrists == "none" else (args.reference_pid_wrists,)),
         )
         if args.start_frame and args.resume_rollout is None:
             runtime.seek_reference(args.start_frame)
@@ -284,8 +297,13 @@ def main() -> None:
                     runtime.set_hand_amount(side, amount)
                     runtime.records[-1].hand_override_after[side] = amount
         RepairStudio(
-            sim, runtime, out=args.out, port=args.port, stop_frame=args.stop_frame,
-            show_reference=args.show_reference, reference_video=args.reference_video,
+            sim,
+            runtime,
+            out=args.out,
+            port=args.port,
+            stop_frame=args.stop_frame,
+            show_reference=args.show_reference,
+            reference_video=args.reference_video,
             review_only=args.review_only,
         ).run()
     finally:

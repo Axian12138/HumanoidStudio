@@ -6,7 +6,6 @@ motions, meshes and review artifacts live under ``examples/humanoid-real2sim``.
 
 from pathlib import Path
 
-
 REPOSITORY = Path(__file__).resolve().parents[2]
 EXAMPLES = REPOSITORY / "examples" / "humanoid-real2sim"
 SCRIPTS = REPOSITORY / "scripts" / "humanoid-real2sim"

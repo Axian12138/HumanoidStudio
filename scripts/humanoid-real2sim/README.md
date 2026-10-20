@@ -5,6 +5,8 @@ Shared runtime code belongs in [`robosimstudio/humanoid_real2sim/`](../../robosi
 
 Run commands from the repository root. `paths.example_dir(__file__)` maps a script under `tasks/<task>/` to its corresponding example data directory, including nested tasks. Scene scripts stay beside their task commands so existing `--scene-file` and local `from scene import ...` usage continue to work.
 
+The task programs reproduce versioned, reviewed examples and are excluded from the repository-wide Ruff lint and format gate to avoid rewriting their recorded implementations. Shared package code and current CLI entry points remain checked; new reusable behavior belongs there.
+
 ```bash
 .venv/bin/python scripts/humanoid-real2sim/kinematic_viewer.py --help
 .venv/bin/python scripts/humanoid-real2sim/run.py --help

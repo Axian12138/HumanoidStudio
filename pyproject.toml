@@ -208,6 +208,9 @@ registries = ["../open-robot-skills"]
 cache-dir = ".cache/ruff"
 line-length = 120
 indent-width = 4
+# These versioned task programs reproduce reviewed takes. Keep their source
+# stable; reusable code and current entry points remain under the lint gate.
+extend-exclude = ["scripts/humanoid-real2sim/tasks"]
 
 [tool.ruff.lint]
 select = [

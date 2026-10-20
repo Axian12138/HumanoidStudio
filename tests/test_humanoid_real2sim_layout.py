@@ -16,6 +16,7 @@ class HumanoidReal2SimLayoutTests(unittest.TestCase):
         from robosimstudio.humanoid_real2sim.track.runtime import RepairRuntime
         from robosimstudio.humanoid_real2sim.track.timeline import ReferenceMotion
         from robosimstudio.humanoid_real2sim.track.tracker import BFMTracker
+
         self.assertTrue(all((MotionFields, RepairRuntime, ReferenceMotion, BFMTracker)))
         self.assertFalse((ROOT / "robosimstudio/humanoid_repair").exists())
         self.assertFalse((ROOT / "robosimstudio/real2sim").exists())

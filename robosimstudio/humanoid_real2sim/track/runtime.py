@@ -105,18 +105,21 @@ class RepairRuntime:
             for axis in ("roll", "pitch", "yaw")
         )
         if reference_pid_right_arm:
-            self.reference_pid_joint_names += tuple(
-                f"right_shoulder_{axis}_joint" for axis in ("pitch", "roll", "yaw")
-            ) + ("right_elbow_joint",)
+            self.reference_pid_joint_names += (
+                *(f"right_shoulder_{axis}_joint" for axis in ("pitch", "roll", "yaw")),
+                "right_elbow_joint",
+            )
         missing = set(self.reference_pid_joint_names) - set(motion.joint_names)
         if missing:
             raise ValueError(f"reference PID wrist joints missing from motion: {sorted(missing)}")
         self.reference_pid_joint_indices = np.array(
             [motion.joint_names.index(name) for name in self.reference_pid_joint_names], dtype=np.int32
         )
-        self.reference_pid_recovery_indices = np.array(
-            [motion.all_joint_names.index(name) for name in self.reference_pid_joint_names], dtype=np.int32
-        ) if self.reference_pid_joint_names else np.empty(0, dtype=np.int32)
+        self.reference_pid_recovery_indices = (
+            np.array([motion.all_joint_names.index(name) for name in self.reference_pid_joint_names], dtype=np.int32)
+            if self.reference_pid_joint_names
+            else np.empty(0, dtype=np.int32)
+        )
         body_labels = list(sim.model.body_label)
         self.body_indices = np.array([label_index(body_labels, name) for name in motion.body_names], dtype=np.int32)
         self.root_body = int(self.body_indices[0])
@@ -159,11 +162,11 @@ class RepairRuntime:
                     if "thumb_0" in name:
                         closed = 0.35 if side == "right" else -0.35
                     elif "thumb_1" in name:
-                        closed = lo + .05 * (hi - lo)
+                        closed = lo + 0.05 * (hi - lo)
                     elif abs(lo) < abs(hi):
-                        closed = hi - .05 * (hi - lo)
+                        closed = hi - 0.05 * (hi - lo)
                     else:
-                        closed = lo + .05 * (hi - lo)
+                        closed = lo + 0.05 * (hi - lo)
                     self.hand_profiles[side]["close"][name] = float(np.clip(closed, lo, hi))
         else:
             # Dex3's source clip can hold a fixed grasp for every frame. In
@@ -469,7 +472,9 @@ class RepairRuntime:
             body_pos_path[0] = state["body_pos"]
             body_quat_path[0] = state["body_quat"]
         self.timeline.begin_recovery(
-            state["body_pos"], state["body_quat"], reference_frame,
+            state["body_pos"],
+            state["body_quat"],
+            reference_frame,
             body_pos_path=body_pos_path,
             body_quat_path=body_quat_path,
             joint_pos_path=joint_path,
@@ -499,16 +504,20 @@ class RepairRuntime:
             target = previous + np.clip(target - previous, -max_step, max_step)
         current_targets[self.joint_coords] = target
         if self.reference_pid_joint_indices.size:
-            reference = recovery_pose[0][self.reference_pid_recovery_indices] if recovery_pose is not None else (
-                self.motion.joint_pos[source, self.reference_pid_joint_indices]
+            reference = (
+                recovery_pose[0][self.reference_pid_recovery_indices]
+                if recovery_pose is not None
+                else (self.motion.joint_pos[source, self.reference_pid_joint_indices])
             )
             for index, name, value in zip(
                 self.reference_pid_joint_indices, self.reference_pid_joint_names, reference, strict=True
             ):
                 side = name.split("_", 1)[0]
                 wrist_link = f"{side}_wrist_yaw_link"
-                if phase == "takeover" and wrist_link in self.timeline.link_modes and (
-                    self.timeline.link_modes[wrist_link] != "reference"
+                if (
+                    phase == "takeover"
+                    and wrist_link in self.timeline.link_modes
+                    and (self.timeline.link_modes[wrist_link] != "reference")
                 ):
                     # A repaired wrist's orientation must remain under VR-5.
                     continue
@@ -590,7 +599,9 @@ class RepairRuntime:
         if repaired_link is not None and repaired_link not in FIVE_POINTS:
             raise ValueError(f"unknown repaired link {repaired_link!r}")
         with np.load(path, allow_pickle=False) as saved:
-            saved_pid_joints = tuple(saved["reference_pid_joint_names"].tolist()) if "reference_pid_joint_names" in saved else ()
+            saved_pid_joints = (
+                tuple(saved["reference_pid_joint_names"].tolist()) if "reference_pid_joint_names" in saved else ()
+            )
             if saved_pid_joints != self.reference_pid_joint_names:
                 raise ValueError("saved rollout uses a different wrist reference PID configuration")
             count = len(saved["source_frame"])
@@ -669,19 +680,23 @@ class RepairRuntime:
             achieved_body_qd=np.stack([r.body_qd for r in self.records]),
             achieved_particle_q=np.stack([r.particle_q for r in self.records]),
             achieved_particle_qd=np.stack([r.particle_qd for r in self.records]),
-            recovery_joint_pos=np.stack([
-                np.full(len(self.motion.all_joint_names), np.nan) if r.recovery_joint_pos is None else r.recovery_joint_pos
-                for r in self.records
-            ]),
-            recovery_root_pos=np.stack([
-                np.full(3, np.nan) if r.recovery_root_pos is None else r.recovery_root_pos for r in self.records
-            ]),
-            recovery_root_quat=np.stack([
-                np.full(4, np.nan) if r.recovery_root_quat is None else r.recovery_root_quat for r in self.records
-            ]),
-            recovery_alpha=np.asarray([
-                np.nan if r.recovery_alpha is None else r.recovery_alpha for r in self.records
-            ], dtype=np.float32),
+            recovery_joint_pos=np.stack(
+                [
+                    np.full(len(self.motion.all_joint_names), np.nan)
+                    if r.recovery_joint_pos is None
+                    else r.recovery_joint_pos
+                    for r in self.records
+                ]
+            ),
+            recovery_root_pos=np.stack(
+                [np.full(3, np.nan) if r.recovery_root_pos is None else r.recovery_root_pos for r in self.records]
+            ),
+            recovery_root_quat=np.stack(
+                [np.full(4, np.nan) if r.recovery_root_quat is None else r.recovery_root_quat for r in self.records]
+            ),
+            recovery_alpha=np.asarray(
+                [np.nan if r.recovery_alpha is None else r.recovery_alpha for r in self.records], dtype=np.float32
+            ),
         )
         candidate_status = "not_exported"
         candidate_error = "requires original MJCF, 43-joint motion, and completed recovery"
@@ -711,9 +726,12 @@ class RepairRuntime:
             if record.phase == "takeover":
                 seen_takeover = True
             kind = (
-                "reference_before" if record.phase == "reference" and not seen_takeover
-                else "reference_after" if record.phase == "reference"
-                else "repair_live" if record.phase == "takeover"
+                "reference_before"
+                if record.phase == "reference" and not seen_takeover
+                else "reference_after"
+                if record.phase == "reference"
+                else "repair_live"
+                if record.phase == "takeover"
                 else "recovery_interpolation"
             )
             if segments and segments[-1]["kind"] == kind:
@@ -731,8 +749,12 @@ class RepairRuntime:
                     "anchor_source_frame": self.anchor_source_frame,
                     "output_frames": len(self.records),
                     "segments": segments,
-                    "recovery_endpoint_source_frame": self.timeline._recovery_anchor if self.timeline._recovery_root_pos is not None else None,
-                    "recovery_duration_frames": self.timeline.recovery_frames if self.timeline._recovery_root_pos is not None else None,
+                    "recovery_endpoint_source_frame": self.timeline._recovery_anchor
+                    if self.timeline._recovery_root_pos is not None
+                    else None,
+                    "recovery_duration_frames": self.timeline.recovery_frames
+                    if self.timeline._recovery_root_pos is not None
+                    else None,
                     "joint_names": self.motion.joint_names,
                     "selected_body_names": self.motion.body_names,
                     "reference_pid_joint_names": self.reference_pid_joint_names,

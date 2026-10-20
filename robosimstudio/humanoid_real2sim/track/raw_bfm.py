@@ -18,7 +18,11 @@ class RawScaleTrackBFM:
 
         if Path(metadata["checkpoint"]).resolve() != Path(checkpoint).resolve():
             raise ValueError("raw ScaleTrack metadata identifies a different checkpoint")
-        if len(metadata["joint_names"]) != 29 or len(metadata["default_joint_pos"]) != 29 or len(metadata["action_scale"]) != 29:
+        if (
+            len(metadata["joint_names"]) != 29
+            or len(metadata["default_joint_pos"]) != 29
+            or len(metadata["action_scale"]) != 29
+        ):
             raise ValueError("raw ScaleTrack BFM requires 29 ordered body joints, defaults, and action scales")
         scaletrack = Path(checkpoint).resolve().parents[4]
         sys.path.insert(0, str(scaletrack / "source/my_rsl_rl"))
@@ -34,8 +38,17 @@ class RawScaleTrackBFM:
         self.actor = HumanoidTransformer(64, 29, 29, embed_dim=384, num_heads=6, ff_dim=384, num_layers=6).to(device)
         self.embedder = TaskEmbedder(267, 384).to(device)
         state = torch.load(checkpoint, map_location="cpu", weights_only=False)["model_state_dict"]
-        self.actor.load_state_dict({k.removeprefix("actor."): v for k, v in state.items() if k.startswith("actor.")}, strict=True)
-        self.embedder.load_state_dict({k.removeprefix("actor_task_embedder."): v for k, v in state.items() if k.startswith("actor_task_embedder.")}, strict=True)
+        self.actor.load_state_dict(
+            {k.removeprefix("actor."): v for k, v in state.items() if k.startswith("actor.")}, strict=True
+        )
+        self.embedder.load_state_dict(
+            {
+                k.removeprefix("actor_task_embedder."): v
+                for k, v in state.items()
+                if k.startswith("actor_task_embedder.")
+            },
+            strict=True,
+        )
         self.actor.eval()
         self.embedder.eval()
         self.default = torch.tensor(metadata["default_joint_pos"], dtype=torch.float32, device=device)

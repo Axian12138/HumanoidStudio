@@ -31,7 +31,9 @@ def main() -> None:
         from raw_bfm import RawScaleTrackBFM
 
         device = "cuda" if torch.cuda.is_available() else "cpu"
-        agent = RawScaleTrackBFM(checkpoint=args.checkpoint, metadata=metadata, scalebridge=args.scalebridge, device=device)
+        agent = RawScaleTrackBFM(
+            checkpoint=args.checkpoint, metadata=metadata, scalebridge=args.scalebridge, device=device
+        )
     else:
         if not torch.cuda.is_available():
             raise RuntimeError("BFM Torch-TensorRT requires CUDA")
@@ -48,7 +50,10 @@ def main() -> None:
             ),
             device=device,
         )
-    print("@ready " + json.dumps({"joint_names": metadata["joint_names"], "body_names": metadata["selected_body_names"]}), flush=True)
+    print(
+        "@ready " + json.dumps({"joint_names": metadata["joint_names"], "body_names": metadata["selected_body_names"]}),
+        flush=True,
+    )
     for line in sys.stdin:
         try:
             request = json.loads(line)
@@ -72,7 +77,16 @@ def main() -> None:
             }
             with torch.inference_mode():
                 target, raw = agent.get_action(observation, mode) if raw_scaletrack else agent.get_action(observation)
-            print("@result " + json.dumps({"target": target.detach().cpu().numpy().reshape(-1).tolist(), "action": raw.detach().cpu().numpy().reshape(-1).tolist()}), flush=True)
+            print(
+                "@result "
+                + json.dumps(
+                    {
+                        "target": target.detach().cpu().numpy().reshape(-1).tolist(),
+                        "action": raw.detach().cpu().numpy().reshape(-1).tolist(),
+                    }
+                ),
+                flush=True,
+            )
         except Exception as exc:
             print("@error " + json.dumps({"type": type(exc).__name__, "message": str(exc)}), flush=True)
 

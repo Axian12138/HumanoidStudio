@@ -13,13 +13,11 @@ import xml.etree.ElementTree as ET
 from pathlib import Path
 
 import numpy as np
+
 import robosimstudio as rss
 
 HERE = Path(__file__).resolve().parent
-DEFAULT_G1 = (
-    HERE.parents[2]
-    / "ScaleTrack/source/scaletrack/scaletrack/assets/robots/g1_29dof/g1_29dof.xml"
-)
+DEFAULT_G1 = HERE.parents[2] / "ScaleTrack/source/scaletrack/scaletrack/assets/robots/g1_29dof/g1_29dof.xml"
 G1_MJCF = Path(os.environ.get("G1_MJCF_PATH", DEFAULT_G1)).expanduser().resolve()
 if not G1_MJCF.is_file():
     raise FileNotFoundError(f"Set G1_MJCF_PATH to a G1 MJCF with its meshes: {G1_MJCF}")
@@ -77,23 +75,67 @@ G1 = rss.EmbodimentSpec(
         rss.ArmSpec(
             name="whole_body",
             joint_names=(
-                "left_hip_pitch_joint", "left_hip_roll_joint", "left_hip_yaw_joint",
-                "left_knee_joint", "left_ankle_pitch_joint", "left_ankle_roll_joint",
-                "right_hip_pitch_joint", "right_hip_roll_joint", "right_hip_yaw_joint",
-                "right_knee_joint", "right_ankle_pitch_joint", "right_ankle_roll_joint",
-                "waist_yaw_joint", "waist_roll_joint", "waist_pitch_joint",
-                "left_shoulder_pitch_joint", "left_shoulder_roll_joint", "left_shoulder_yaw_joint",
-                "left_elbow_joint", "left_wrist_roll_joint", "left_wrist_pitch_joint", "left_wrist_yaw_joint",
-                "right_shoulder_pitch_joint", "right_shoulder_roll_joint", "right_shoulder_yaw_joint",
-                "right_elbow_joint", "right_wrist_roll_joint", "right_wrist_pitch_joint", "right_wrist_yaw_joint",
+                "left_hip_pitch_joint",
+                "left_hip_roll_joint",
+                "left_hip_yaw_joint",
+                "left_knee_joint",
+                "left_ankle_pitch_joint",
+                "left_ankle_roll_joint",
+                "right_hip_pitch_joint",
+                "right_hip_roll_joint",
+                "right_hip_yaw_joint",
+                "right_knee_joint",
+                "right_ankle_pitch_joint",
+                "right_ankle_roll_joint",
+                "waist_yaw_joint",
+                "waist_roll_joint",
+                "waist_pitch_joint",
+                "left_shoulder_pitch_joint",
+                "left_shoulder_roll_joint",
+                "left_shoulder_yaw_joint",
+                "left_elbow_joint",
+                "left_wrist_roll_joint",
+                "left_wrist_pitch_joint",
+                "left_wrist_yaw_joint",
+                "right_shoulder_pitch_joint",
+                "right_shoulder_roll_joint",
+                "right_shoulder_yaw_joint",
+                "right_elbow_joint",
+                "right_wrist_roll_joint",
+                "right_wrist_pitch_joint",
+                "right_wrist_yaw_joint",
             ),
             ee_body_name="right_wrist_yaw_link",
             home_q=(
-                -0.312, 0, 0, 0.669, -0.363, 0,
-                -0.312, 0, 0, 0.669, -0.363, 0,
-                0, 0, 0,
-                0.2, 0.2, 0, 0.6, 0, 0, 0,
-                0.2, -0.2, 0, 0.6, 0, 0, 0,
+                -0.312,
+                0,
+                0,
+                0.669,
+                -0.363,
+                0,
+                -0.312,
+                0,
+                0,
+                0.669,
+                -0.363,
+                0,
+                0,
+                0,
+                0,
+                0.2,
+                0.2,
+                0,
+                0.6,
+                0,
+                0,
+                0,
+                0.2,
+                -0.2,
+                0,
+                0.6,
+                0,
+                0,
+                0,
             ),
         ),
     ),

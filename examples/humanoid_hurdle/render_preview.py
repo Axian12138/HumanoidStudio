@@ -8,7 +8,7 @@ from PIL import Image
 
 os.environ.setdefault("ROBOSIMSTUDIO_RENDERER", "tiled")
 
-from scene import sim  # noqa: E402 -- select the renderer before the scene builds
+from scene import sim  # select the renderer before the scene builds
 
 output = Path(__file__).with_name("hurdle_preview.png")
 Image.fromarray(sim.render("reference_view")["rgb"]).save(output)

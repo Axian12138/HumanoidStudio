@@ -18,9 +18,14 @@ if TYPE_CHECKING:
 
 
 def export_candidate(
-    records: list[RecordedStep], motion: ReferenceMotion, *,
-    model_path: str | Path, order_path: str | Path,
-    joint_coord_by_name: dict[str, int], root_body: int, out: str | Path,
+    records: list[RecordedStep],
+    motion: ReferenceMotion,
+    *,
+    model_path: str | Path,
+    order_path: str | Path,
+    joint_coord_by_name: dict[str, int],
+    root_body: int,
+    out: str | Path,
 ) -> Path:
     import mujoco
     from scipy.spatial.transform import Rotation
@@ -49,9 +54,7 @@ def export_candidate(
     joint = motion.all_joint_pos[source].copy()
     root_pos = motion.body_pos_w[source, 0].copy()
     root_quat = motion.body_quat_w[source, 0].copy()
-    live_joint = np.stack([
-        np.asarray([r.joint_q[joint_coord_by_name[name]] for name in names]) for r in records
-    ])
+    live_joint = np.stack([np.asarray([r.joint_q[joint_coord_by_name[name]] for name in names]) for r in records])
     live_root_pos = np.stack([r.body_q[root_body, :3] for r in records])
     live_root_quat = np.stack([r.body_q[root_body, [6, 3, 4, 5]] for r in records])
     takeover = phases == "takeover"
@@ -70,10 +73,9 @@ def export_candidate(
     # the achieved fingers, not the full-body interpolation's old source hand.
     for side in ("left", "right"):
         columns = [i for i, name in enumerate(names) if name.startswith(f"{side}_hand_")]
-        held = np.asarray([
-            record.phase == "recovery" or record.hand_override_after[side] is not None
-            for record in records
-        ])
+        held = np.asarray(
+            [record.phase == "recovery" or record.hand_override_after[side] is not None for record in records]
+        )
         rows = np.flatnonzero(held)
         joint[np.ix_(rows, columns)] = live_joint[np.ix_(rows, columns)]
     for index in range(1, len(root_quat)):
@@ -108,16 +110,21 @@ def export_candidate(
     output = Path(out)
     output.parent.mkdir(parents=True, exist_ok=True)
     np.savez_compressed(
-        output, joint_pos=joint.astype(np.float32), joint_vel=joint_vel.astype(np.float32),
-        body_pos_w=pos, body_quat_w=quat, body_lin_vel_w=linear_vel.astype(np.float32),
-        body_ang_vel_w=angular_vel.astype(np.float32), fps=np.asarray(motion.fps, dtype=np.int64),
+        output,
+        joint_pos=joint.astype(np.float32),
+        joint_vel=joint_vel.astype(np.float32),
+        body_pos_w=pos,
+        body_quat_w=quat,
+        body_lin_vel_w=linear_vel.astype(np.float32),
+        body_ang_vel_w=angular_vel.astype(np.float32),
+        fps=np.asarray(motion.fps, dtype=np.int64),
     )
     np.savez_compressed(
         output.with_name("candidate_mapping.npz"),
         source_frame=source,
         phase=phases,
-        recovery_alpha=np.asarray([
-            np.nan if r.recovery_alpha is None else r.recovery_alpha for r in records
-        ], dtype=np.float32),
+        recovery_alpha=np.asarray(
+            [np.nan if r.recovery_alpha is None else r.recovery_alpha for r in records], dtype=np.float32
+        ),
     )
     return output
