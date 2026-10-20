@@ -1,0 +1,218 @@
+{
+  "recording_id": "1-2026-10-19-16-31-26",
+  "coordinate_frame": "IKEA_1012_world, metres, +Z up",
+  "observed_events": [
+    {
+      "event": "post_bin_stand",
+      "source_time_s": [
+        9.5,
+        10.6
+      ],
+      "site": "body",
+      "evidence": "head video",
+      "boundary_uncertainty_s": 0.25,
+      "source_start": {
+        "motion_frame_global_50hz": 475,
+        "motion_frame_local_8s": 75,
+        "motive_frame": 657147,
+        "head_video_frame": 285
+      },
+      "source_stop": {
+        "motion_frame_global_50hz": 530,
+        "motion_frame_local_8s": 130,
+        "motive_frame": 657279,
+        "head_video_frame": 318
+      }
+    },
+    {
+      "event": "brush_approach",
+      "source_time_s": [
+        10.6,
+        11.9
+      ],
+      "site": "right hand",
+      "evidence": "head and right-wrist video",
+      "boundary_uncertainty_s": 0.2,
+      "source_start": {
+        "motion_frame_global_50hz": 530,
+        "motion_frame_local_8s": 130,
+        "motive_frame": 657279,
+        "head_video_frame": 318
+      },
+      "source_stop": {
+        "motion_frame_global_50hz": 595,
+        "motion_frame_local_8s": 195,
+        "motive_frame": 657435,
+        "head_video_frame": 357
+      }
+    },
+    {
+      "event": "brush_first_surface_contact",
+      "source_time_s": [
+        11.9,
+        12.3
+      ],
+      "site": "right thumb/index around exposed green grip",
+      "evidence": "right-wrist video",
+      "boundary_uncertainty_s": 0.25,
+      "source_start": {
+        "motion_frame_global_50hz": 595,
+        "motion_frame_local_8s": 195,
+        "motive_frame": 657435,
+        "head_video_frame": 357
+      },
+      "source_stop": {
+        "motion_frame_global_50hz": 615,
+        "motion_frame_local_8s": 215,
+        "motive_frame": 657483,
+        "head_video_frame": 369
+      }
+    },
+    {
+      "event": "brush_lift",
+      "source_time_s": [
+        12.8,
+        14.2
+      ],
+      "site": "right hand",
+      "evidence": "head and right-wrist video",
+      "boundary_uncertainty_s": 0.3,
+      "source_start": {
+        "motion_frame_global_50hz": 640,
+        "motion_frame_local_8s": 240,
+        "motive_frame": 657543,
+        "head_video_frame": 384
+      },
+      "source_stop": {
+        "motion_frame_global_50hz": 710,
+        "motion_frame_local_8s": 310,
+        "motive_frame": 657711,
+        "head_video_frame": 426
+      }
+    },
+    {
+      "event": "table_sweep_first_pass",
+      "source_time_s": [
+        16.0,
+        18.5
+      ],
+      "site": "brush bristles on tabletop",
+      "evidence": "head and right-wrist video",
+      "boundary_uncertainty_s": 0.3,
+      "source_start": {
+        "motion_frame_global_50hz": 800,
+        "motion_frame_local_8s": 400,
+        "motive_frame": 657927,
+        "head_video_frame": 480
+      },
+      "source_stop": {
+        "motion_frame_global_50hz": 925,
+        "motion_frame_local_8s": 525,
+        "motive_frame": 658227,
+        "head_video_frame": 555
+      }
+    },
+    {
+      "event": "table_sweep_second_pass",
+      "source_time_s": [
+        19.5,
+        20.9
+      ],
+      "site": "brush bristles on tabletop",
+      "evidence": "head and right-wrist video",
+      "boundary_uncertainty_s": 0.3,
+      "source_start": {
+        "motion_frame_global_50hz": 975,
+        "motion_frame_local_8s": 575,
+        "motive_frame": 658347,
+        "head_video_frame": 585
+      },
+      "source_stop": {
+        "motion_frame_global_50hz": 1045,
+        "motion_frame_local_8s": 645,
+        "motive_frame": 658515,
+        "head_video_frame": 627
+      }
+    },
+    {
+      "event": "return_to_basket",
+      "source_time_s": [
+        24.2,
+        25.5
+      ],
+      "site": "right hand holding brush",
+      "evidence": "head and right-wrist video",
+      "boundary_uncertainty_s": 0.3,
+      "source_start": {
+        "motion_frame_global_50hz": 1210,
+        "motion_frame_local_8s": 810,
+        "motive_frame": 658911,
+        "head_video_frame": 726
+      },
+      "source_stop": {
+        "motion_frame_global_50hz": 1275,
+        "motion_frame_local_8s": 875,
+        "motive_frame": 659067,
+        "head_video_frame": 765
+      }
+    },
+    {
+      "event": "brush_set_down",
+      "source_time_s": [
+        25.3,
+        26.1
+      ],
+      "site": "white storage box",
+      "evidence": "head and right-wrist video",
+      "boundary_uncertainty_s": 0.25,
+      "source_start": {
+        "motion_frame_global_50hz": 1265,
+        "motion_frame_local_8s": 865,
+        "motive_frame": 659043,
+        "head_video_frame": 759
+      },
+      "source_stop": {
+        "motion_frame_global_50hz": 1305,
+        "motion_frame_local_8s": 905,
+        "motive_frame": 659139,
+        "head_video_frame": 783
+      }
+    },
+    {
+      "event": "hand_withdrawal",
+      "source_time_s": [
+        26.0,
+        27.0
+      ],
+      "site": "right hand",
+      "evidence": "head and right-wrist video",
+      "boundary_uncertainty_s": 0.25,
+      "source_start": {
+        "motion_frame_global_50hz": 1300,
+        "motion_frame_local_8s": 900,
+        "motive_frame": 659127,
+        "head_video_frame": 780
+      },
+      "source_stop": {
+        "motion_frame_global_50hz": 1350,
+        "motion_frame_local_8s": 950,
+        "motive_frame": 659247,
+        "head_video_frame": 810
+      }
+    }
+  ],
+  "designed_dex3_commands_s": {
+    "right_open_start": 10.5,
+    "right_open_complete": 11.6,
+    "right_close_start": 11.9,
+    "right_close_complete": 12.8,
+    "right_release_start": 25.55,
+    "right_release_complete": 26.55
+  },
+  "estimated_object_attachment_interval_s": [
+    12.8,
+    26.55
+  ],
+  "attachment_note": "Kinematic review sidecar only. Physical grip, sweep contact, release and slip remain unverified.",
+  "left_hand_policy": "inherited body prior; no brush grasp command"
+}

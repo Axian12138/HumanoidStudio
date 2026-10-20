@@ -1,0 +1,217 @@
+{
+  "status": "baseline_retained_or_unverified",
+  "evaluation_mode": "dynamic",
+  "tracker_mode": 7,
+  "theta": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "search_cost": 49.032361691990985,
+  "verification_total": 48.95270044699059,
+  "verification_task": {
+    "total": 48.95270044699059,
+    "terms": [
+      {
+        "name": "brush_lift",
+        "type": "object_position",
+        "raw": 0.048314407212162194,
+        "weight": 1000.0,
+        "weighted": 48.314407212162195
+      },
+      {
+        "name": "right_wrist_tracking",
+        "type": "tracking_position",
+        "raw": 0.00855956820798631,
+        "weight": 30.0,
+        "weighted": 0.2567870462395893
+      },
+      {
+        "name": "left_foot_stance",
+        "type": "foot_slip",
+        "raw": 0.0012716872952960312,
+        "weight": 300.0,
+        "weighted": 0.38150618858880936
+      },
+      {
+        "name": "pelvis_height",
+        "type": "body_height_min",
+        "raw": 0.0,
+        "weight": 10000.0,
+        "weighted": 0.0
+      }
+    ]
+  },
+  "baseline_costs": [
+    49.803775338892976,
+    48.260948045088995
+  ],
+  "measured_noise_floor": 1.542827293803981,
+  "evaluations_in_budget": 10,
+  "final_verification_is_extra_evaluation": true,
+  "history": [
+    {
+      "label": "baseline_0",
+      "theta": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cost": 49.803775338892976
+    },
+    {
+      "label": "baseline_1",
+      "theta": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cost": 48.260948045088995
+    },
+    {
+      "label": "step_0.5_d0_p",
+      "theta": [
+        0.5,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cost": 49.664991646555585
+    },
+    {
+      "label": "step_0.5_d0_m",
+      "theta": [
+        -0.5,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cost": 47.44831503811219
+    },
+    {
+      "label": "step_0.5_d1_p",
+      "theta": [
+        0.0,
+        0.5,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cost": 51.32510851432423
+    },
+    {
+      "label": "step_0.5_d1_m",
+      "theta": [
+        0.0,
+        -0.5,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cost": 47.35646798927393
+    },
+    {
+      "label": "step_0.5_d2_p",
+      "theta": [
+        0.0,
+        0.0,
+        0.5,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cost": 50.85996365725707
+    },
+    {
+      "label": "step_0.5_d2_m",
+      "theta": [
+        0.0,
+        0.0,
+        -0.5,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cost": 53.474543233813016
+    },
+    {
+      "label": "step_0.5_d3_p",
+      "theta": [
+        0.0,
+        0.0,
+        0.0,
+        0.5,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cost": 51.19454408774795
+    },
+    {
+      "label": "step_0.5_d3_m",
+      "theta": [
+        0.0,
+        0.0,
+        0.0,
+        -0.5,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cost": 47.587285505636004
+    }
+  ],
+  "inputs": {
+    "motion": "/home/galbot/workspace/robosimstudio/examples/humanoid-real2sim/brush_pick_1012/retarget/kinematic_motion.npz",
+    "motion_sha256": "763c5941f1de81ad851216bcb97778998ab2be8c74afdda65ba1234de51ffc77",
+    "config": "/home/galbot/workspace/robosimstudio/examples/humanoid-real2sim/brush_pick_1012/dynamic_config.json",
+    "config_sha256": "dae3be741352f9212ea8a12522975ffaeb1b7c246a806262dbd59bae6da8944b",
+    "scene_file": "/home/galbot/workspace/robosimstudio/examples/humanoid-real2sim/brush_pick_1012/scene.py",
+    "scene_sha256": "a5e4869d7036fe3adef57b430ec2b99523bb0b1c1bff72995740182f825f6783",
+    "checkpoint": "/home/galbot/workspace/ScaleBridge/scalebridge/data/model/bfm_transformer_dataset_L_8192_64_64/model_22200_tensorrt.pt",
+    "checkpoint_sha256": "c09fbe41cc70bc73d3f6b24f7c695791da8dd791b6f50e14277ce8aa2394c5ef",
+    "fk_model": "/home/galbot/workspace/ScaleTrack/retarget3/assets/robot/robot.xml",
+    "fk_model_sha256": "7c3edae05ef00938e7505541b7c7ab28a0f4db851f1c0a74921697dbe298ae1e",
+    "cost_target_files": [
+      {
+        "path": "/home/galbot/workspace/ScaleTrack/data/1012test/1012-1/stage8-bin-brush-natural/sidecars/objects_estimated.npz",
+        "sha256": "893c03a5bd99bb48411978d844ba119fe543a8cac9ba2744b841004e5b42f655"
+      }
+    ]
+  }
+}

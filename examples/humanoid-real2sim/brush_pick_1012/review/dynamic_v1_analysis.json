@@ -1,0 +1,43 @@
+{
+  "rollout": "/home/galbot/workspace/robosimstudio/examples/humanoid-real2sim/brush_pick_1012/retarget/dynamic_v1/final_verification/rollout.npz",
+  "sample_count": 601,
+  "actual_brush_position_m": {
+    "500": [
+      0.8731229305267334,
+      -0.5865075588226318,
+      0.4378223717212677
+    ],
+    "525": [
+      0.8823980093002319,
+      -0.5974087715148926,
+      0.4405559301376343
+    ],
+    "550": [
+      0.8744639754295349,
+      -0.5791877508163452,
+      0.4363687336444855
+    ],
+    "575": [
+      0.8746938109397888,
+      -0.5801029205322266,
+      0.4362238943576813
+    ],
+    "599": [
+      0.8768469095230103,
+      -0.5860310196876526,
+      0.4356330633163452
+    ]
+  },
+  "brush_lift_at_12s_m": -0.0021893084049224854,
+  "max_lift_after_10p9s_m": 0.009636253118515015,
+  "sustained_5cm_lift_for_0p4s": false,
+  "brush_displacement_10p5_to_12s_m": 0.013583172056595698,
+  "finger_link_origin_min_distance_to_grip_10to11s_m": {
+    "right_hand_thumb_2_link": 0.1527746994184392,
+    "right_hand_middle_1_link": 0.03337006332810283,
+    "right_hand_index_1_link": 0.07498361877622788
+  },
+  "contact_force_available": false,
+  "finger_joint_state_available": false,
+  "grasp_verified": false
+}

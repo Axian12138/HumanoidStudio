@@ -1,0 +1,25 @@
+{
+  "id": "2026-10-20-repository-harness-layout",
+  "stage": "repository",
+  "category": "tooling",
+  "impact": "high",
+  "task": "real2sim_harness",
+  "actions": [
+    "样本检索",
+    "retarget",
+    "track",
+    "可视化",
+    "候选归档"
+  ],
+  "title": "把整个仓库当作 harness，而非把样本和工具挤在 skill 目录",
+  "narrative": "用户指出当前检索库虽按动作建了内容，却全部位于 codex_skills/rss-scaletrack-real2sim 下，使 skill 像数据仓库。真正执行 retarget、track、可视化的代码散在 ScaleTrack、robosimstudio/humanoid_repair 和 examples/humanoid_motion_repair，入口与实现的边界不清。普通无人反馈、与已有 case 重复的候选也不应占据 curated examples。原因是先前只优化 skill 局部目录，没有把整个 RoboSimStudio 仓库视为 agent harness，并且工具地图只列入口。",
+  "expected": "重要、可迁移且经反馈审查的样本在 examples 内带语言、代码和结果；普通候选进 outputs；可复用工具按 retarget、track、visualization 分层在核心包中独立于会多次修改的 skill，并保留既有入口与 pipeline。",
+  "observed": "动作样本、反馈 JSON 和检索代码在 skill 内；RSS tracker 实现与运动学播放器实现缺少统一层级和明确所有权。",
+  "source": "本仓库 2026-10-20 用户反馈；codex_skills/rss-scaletrack-real2sim、examples/humanoid-real2sim、robosimstudio/humanoid_real2sim",
+  "example_id": "",
+  "date": "2026-10-20",
+  "status": "verified",
+  "recurrences": 1,
+  "fix": "curated 动作样本与反馈搬至 examples/real2sim，检索实现搬至 scripts/real2sim，通用 RSS motion 字段、tracker 和 Viser 播放器实现分层至 robosimstudio/real2sim/{retarget,track,visualization}；旧 CLI/导入保持兼容。主 skill 仅保留任务路由和库位置，普通新候选路由到 outputs/real2sim。ScaleTrack retarget3 作为外部算法库保留单一源，不复制代码。",
+  "validation": "新旧反馈 CLI 均能查询下跪样本；新旧 tracker/motion 字段导入指向同一对象；原 kinematic_viewer.py --help 可用；迁移后用原命令启动 http://localhost:8441/，HTTP 200、human_motion=true、刷子轨迹、seek 到帧 1000、sim_steps=0 均通过；旧 8431 关闭。迁移专项与 timeline 共 7 个测试通过，静态 JSON/Markdown 链接与编译检查通过。仓库 fast gate 的 1683 个测试中仅 2 个因当前 .venv 缺少 PyYAML 报错，与本次改动无关。"
+}

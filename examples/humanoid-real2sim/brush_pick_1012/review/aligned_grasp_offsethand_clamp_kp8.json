@@ -1,0 +1,1239 @@
+{
+  "hand_kp": 8.0,
+  "hand_kv": 0.1,
+  "brush_shape_count": 9,
+  "finger_shape_counts": {
+    "right_hand_thumb_0_link": 1,
+    "right_hand_thumb_1_link": 2,
+    "right_hand_thumb_2_link": 2,
+    "right_hand_middle_0_link": 2,
+    "right_hand_middle_1_link": 2,
+    "right_hand_index_0_link": 2,
+    "right_hand_index_1_link": 2
+  },
+  "samples": [
+    {
+      "step": 0,
+      "brush_position": [
+        0.8715869188308716,
+        -0.5872037410736084,
+        0.43872159719467163
+      ],
+      "wrist_position": [
+        0.8220118880271912,
+        -0.6463571190834045,
+        0.6173155903816223
+      ],
+      "pelvis_position": [
+        0.4349638819694519,
+        -0.5070788264274597,
+        0.7778145670890808
+      ],
+      "finger_forces_N": {
+        "right_hand_thumb_0_link": 0.0,
+        "right_hand_thumb_1_link": 0.0,
+        "right_hand_thumb_2_link": 0.0,
+        "right_hand_middle_0_link": 0.0,
+        "right_hand_middle_1_link": 0.0,
+        "right_hand_index_0_link": 0.0,
+        "right_hand_index_1_link": 0.0
+      },
+      "brush_contacts": [
+        {
+          "other_body": "green_hand_brush",
+          "impulse_Ns": 0.0
+        },
+        {
+          "other_body": "white_storage_box",
+          "impulse_Ns": 0.0
+        },
+        {
+          "other_body": "white_storage_box",
+          "impulse_Ns": 0.0019122550412312542
+        },
+        {
+          "other_body": "white_storage_box",
+          "impulse_Ns": 0.0009241576133237477
+        },
+        {
+          "other_body": "white_storage_box",
+          "impulse_Ns": 0.0004246964047079379
+        }
+      ],
+      "finger_targets_rad": {
+        "right_hand_thumb_0_joint": 0.24576754868030548,
+        "right_hand_middle_0_joint": 0.0,
+        "right_hand_index_0_joint": 0.0,
+        "right_hand_thumb_1_joint": 0.0,
+        "right_hand_middle_1_joint": 0.0,
+        "right_hand_index_1_joint": 0.0,
+        "right_hand_thumb_2_joint": 0.0
+      },
+      "finger_actual_rad": {
+        "right_hand_thumb_0_joint": 0.24254271388053894,
+        "right_hand_middle_0_joint": 3.221189217583742e-06,
+        "right_hand_index_0_joint": 0.004021461121737957,
+        "right_hand_thumb_1_joint": -0.00043932575499638915,
+        "right_hand_middle_1_joint": 1.8871837710321415e-06,
+        "right_hand_index_1_joint": 0.0006938996957615018,
+        "right_hand_thumb_2_joint": -7.583419210277498e-05
+      }
+    },
+    {
+      "step": 5,
+      "brush_position": [
+        0.8716259598731995,
+        -0.5872032046318054,
+        0.43869343400001526
+      ],
+      "wrist_position": [
+        0.8214930295944214,
+        -0.6458781361579895,
+        0.615452766418457
+      ],
+      "pelvis_position": [
+        0.43485987186431885,
+        -0.5071013569831848,
+        0.7777241468429565
+      ],
+      "finger_forces_N": {
+        "right_hand_thumb_0_link": 0.0,
+        "right_hand_thumb_1_link": 0.0,
+        "right_hand_thumb_2_link": 0.0,
+        "right_hand_middle_0_link": 0.0,
+        "right_hand_middle_1_link": 0.0,
+        "right_hand_index_0_link": 0.0,
+        "right_hand_index_1_link": 0.0
+      },
+      "brush_contacts": [
+        {
+          "other_body": "green_hand_brush",
+          "impulse_Ns": 0.0
+        },
+        {
+          "other_body": "white_storage_box",
+          "impulse_Ns": 0.0
+        },
+        {
+          "other_body": "white_storage_box",
+          "impulse_Ns": 0.002511790985800956
+        },
+        {
+          "other_body": "white_storage_box",
+          "impulse_Ns": 0.0
+        }
+      ],
+      "finger_targets_rad": {
+        "right_hand_thumb_0_joint": 0.24576754868030548,
+        "right_hand_middle_0_joint": 0.0,
+        "right_hand_index_0_joint": 0.0,
+        "right_hand_thumb_1_joint": 0.0,
+        "right_hand_middle_1_joint": 0.0,
+        "right_hand_index_1_joint": 0.0,
+        "right_hand_thumb_2_joint": 0.0
+      },
+      "finger_actual_rad": {
+        "right_hand_thumb_0_joint": 0.18717315793037415,
+        "right_hand_middle_0_joint": 3.885956175508909e-06,
+        "right_hand_index_0_joint": 0.09634511917829514,
+        "right_hand_thumb_1_joint": -0.009454052895307541,
+        "right_hand_middle_1_joint": 1.767228923199582e-06,
+        "right_hand_index_1_joint": 0.02009628340601921,
+        "right_hand_thumb_2_joint": -0.0006106144282966852
+      }
+    },
+    {
+      "step": 10,
+      "brush_position": [
+        0.8716773986816406,
+        -0.5871993899345398,
+        0.43866243958473206
+      ],
+      "wrist_position": [
+        0.8220142722129822,
+        -0.6445598006248474,
+        0.6128904819488525
+      ],
+      "pelvis_position": [
+        0.4346824288368225,
+        -0.5071157813072205,
+        0.7776125073432922
+      ],
+      "finger_forces_N": {
+        "right_hand_thumb_0_link": 0.0,
+        "right_hand_thumb_1_link": 0.0,
+        "right_hand_thumb_2_link": 0.0,
+        "right_hand_middle_0_link": 0.0,
+        "right_hand_middle_1_link": 0.0,
+        "right_hand_index_0_link": 0.0,
+        "right_hand_index_1_link": 0.0
+      },
+      "brush_contacts": [
+        {
+          "other_body": "green_hand_brush",
+          "impulse_Ns": 0.0
+        },
+        {
+          "other_body": "white_storage_box",
+          "impulse_Ns": 0.0
+        },
+        {
+          "other_body": "white_storage_box",
+          "impulse_Ns": 0.0025086160384656725
+        },
+        {
+          "other_body": "white_storage_box",
+          "impulse_Ns": 0.0
+        }
+      ],
+      "finger_targets_rad": {
+        "right_hand_thumb_0_joint": 0.24576754868030548,
+        "right_hand_middle_0_joint": 0.0,
+        "right_hand_index_0_joint": 0.0,
+        "right_hand_thumb_1_joint": 0.0,
+        "right_hand_middle_1_joint": 0.0,
+        "right_hand_index_1_joint": 0.0,
+        "right_hand_thumb_2_joint": 0.0
+      },
+      "finger_actual_rad": {
+        "right_hand_thumb_0_joint": 0.17933064699172974,
+        "right_hand_middle_0_joint": -9.478895663050935e-06,
+        "right_hand_index_0_joint": 0.15022391080856323,
+        "right_hand_thumb_1_joint": -0.010098569095134735,
+        "right_hand_middle_1_joint": -1.240616143149964e-06,
+        "right_hand_index_1_joint": 0.0539817214012146,
+        "right_hand_thumb_2_joint": -0.0007810977404005826
+      }
+    },
+    {
+      "step": 15,
+      "brush_position": [
+        0.8717304468154907,
+        -0.5871965289115906,
+        0.43863406777381897
+      ],
+      "wrist_position": [
+        0.8217113614082336,
+        -0.6448807716369629,
+        0.6135424971580505
+      ],
+      "pelvis_position": [
+        0.4347338378429413,
+        -0.5071142911911011,
+        0.7776380181312561
+      ],
+      "finger_forces_N": {
+        "right_hand_thumb_0_link": 0.0,
+        "right_hand_thumb_1_link": 0.0,
+        "right_hand_thumb_2_link": 0.0,
+        "right_hand_middle_0_link": 0.0,
+        "right_hand_middle_1_link": 0.0,
+        "right_hand_index_0_link": 0.0,
+        "right_hand_index_1_link": 0.0
+      },
+      "brush_contacts": [
+        {
+          "other_body": "green_hand_brush",
+          "impulse_Ns": 0.0
+        },
+        {
+          "other_body": "white_storage_box",
+          "impulse_Ns": 0.0
+        },
+        {
+          "other_body": "white_storage_box",
+          "impulse_Ns": 0.0019146136183981974
+        },
+        {
+          "other_body": "white_storage_box",
+          "impulse_Ns": 0.0006612239929552671
+        },
+        {
+          "other_body": "white_storage_box",
+          "impulse_Ns": 0.0006584212060151345
+        }
+      ],
+      "finger_targets_rad": {
+        "right_hand_thumb_0_joint": 0.24543283879756927,
+        "right_hand_middle_0_joint": 0.028666548430919647,
+        "right_hand_index_0_joint": 0.027003295719623566,
+        "right_hand_thumb_1_joint": -0.011431592516601086,
+        "right_hand_middle_1_joint": 0.03766755014657974,
+        "right_hand_index_1_joint": 0.03589558228850365,
+        "right_hand_thumb_2_joint": -0.03053443878889084
+      },
+      "finger_actual_rad": {
+        "right_hand_thumb_0_joint": 0.20283065736293793,
+        "right_hand_middle_0_joint": 0.0024194796569645405,
+        "right_hand_index_0_joint": 0.12598258256912231,
+        "right_hand_thumb_1_joint": -0.008779924362897873,
+        "right_hand_middle_1_joint": 0.005070986691862345,
+        "right_hand_index_1_joint": 0.07498517632484436,
+        "right_hand_thumb_2_joint": -0.005568180698901415
+      }
+    },
+    {
+      "step": 20,
+      "brush_position": [
+        0.8717802166938782,
+        -0.5871919989585876,
+        0.43860098719596863
+      ],
+      "wrist_position": [
+        0.8223771452903748,
+        -0.6444610953330994,
+        0.6125210523605347
+      ],
+      "pelvis_position": [
+        0.4346463084220886,
+        -0.5071157813072205,
+        0.777599036693573
+      ],
+      "finger_forces_N": {
+        "right_hand_thumb_0_link": 0.0,
+        "right_hand_thumb_1_link": 0.0,
+        "right_hand_thumb_2_link": 0.0,
+        "right_hand_middle_0_link": 0.0,
+        "right_hand_middle_1_link": 0.0,
+        "right_hand_index_0_link": 0.0,
+        "right_hand_index_1_link": 0.0
+      },
+      "brush_contacts": [
+        {
+          "other_body": "green_hand_brush",
+          "impulse_Ns": 0.0
+        },
+        {
+          "other_body": "white_storage_box",
+          "impulse_Ns": 0.0
+        },
+        {
+          "other_body": "white_storage_box",
+          "impulse_Ns": 0.002510888633474256
+        },
+        {
+          "other_body": "white_storage_box",
+          "impulse_Ns": 0.0
+        }
+      ],
+      "finger_targets_rad": {
+        "right_hand_thumb_0_joint": 0.24316363036632538,
+        "right_hand_middle_0_joint": 0.22301602363586426,
+        "right_hand_index_0_joint": 0.2100764960050583,
+        "right_hand_thumb_1_joint": -0.08893391489982605,
+        "right_hand_middle_1_joint": 0.29304078221321106,
+        "right_hand_index_1_joint": 0.2792554795742035,
+        "right_hand_thumb_2_joint": -0.2375475913286209
+      },
+      "finger_actual_rad": {
+        "right_hand_thumb_0_joint": 0.2014576643705368,
+        "right_hand_middle_0_joint": 0.09909286350011826,
+        "right_hand_index_0_joint": 0.14445196092128754,
+        "right_hand_thumb_1_joint": -0.04355984181165695,
+        "right_hand_middle_1_joint": 0.1391601264476776,
+        "right_hand_index_1_joint": 0.16412290930747986,
+        "right_hand_thumb_2_joint": -0.11509827524423599
+      }
+    },
+    {
+      "step": 25,
+      "brush_position": [
+        0.8718435168266296,
+        -0.5871880054473877,
+        0.4385666251182556
+      ],
+      "wrist_position": [
+        0.8223455548286438,
+        -0.6443853974342346,
+        0.612483561038971
+      ],
+      "pelvis_position": [
+        0.43464577198028564,
+        -0.5071192979812622,
+        0.7776004076004028
+      ],
+      "finger_forces_N": {
+        "right_hand_thumb_0_link": 0.0,
+        "right_hand_thumb_1_link": 0.0,
+        "right_hand_thumb_2_link": 0.0,
+        "right_hand_middle_0_link": 0.0,
+        "right_hand_middle_1_link": 0.0,
+        "right_hand_index_0_link": 0.0,
+        "right_hand_index_1_link": 0.0
+      },
+      "brush_contacts": [
+        {
+          "other_body": "green_hand_brush",
+          "impulse_Ns": 0.0
+        },
+        {
+          "other_body": "white_storage_box",
+          "impulse_Ns": 0.0
+        },
+        {
+          "other_body": "white_storage_box",
+          "impulse_Ns": 0.0019309040292739327
+        },
+        {
+          "other_body": "white_storage_box",
+          "impulse_Ns": 0.0006331813776318453
+        },
+        {
+          "other_body": "white_storage_box",
+          "impulse_Ns": 0.0006327699566160248
+        }
+      ],
+      "finger_targets_rad": {
+        "right_hand_thumb_0_joint": 0.239669069647789,
+        "right_hand_middle_0_joint": 0.522314190864563,
+        "right_hand_index_0_joint": 0.4920092225074768,
+        "right_hand_thumb_1_joint": -0.20828749239444733,
+        "right_hand_middle_1_joint": 0.6863155364990234,
+        "right_hand_index_1_joint": 0.6540297269821167,
+        "right_hand_thumb_2_joint": -0.5563478469848633
+      },
+      "finger_actual_rad": {
+        "right_hand_thumb_0_joint": 0.19426268339157104,
+        "right_hand_middle_0_joint": 0.39391785860061646,
+        "right_hand_index_0_joint": 0.31280553340911865,
+        "right_hand_thumb_1_joint": -0.15614981949329376,
+        "right_hand_middle_1_joint": 0.5212068557739258,
+        "right_hand_index_1_joint": 0.4614729881286621,
+        "right_hand_thumb_2_joint": -0.4268229305744171
+      }
+    },
+    {
+      "step": 30,
+      "brush_position": [
+        0.8719031810760498,
+        -0.5871820449829102,
+        0.4385260045528412
+      ],
+      "wrist_position": [
+        0.8224350214004517,
+        -0.6442745327949524,
+        0.6124820113182068
+      ],
+      "pelvis_position": [
+        0.43464216589927673,
+        -0.5071214437484741,
+        0.7776015400886536
+      ],
+      "finger_forces_N": {
+        "right_hand_thumb_0_link": 0.0,
+        "right_hand_thumb_1_link": 0.0,
+        "right_hand_thumb_2_link": 0.0,
+        "right_hand_middle_0_link": 0.0,
+        "right_hand_middle_1_link": 0.0,
+        "right_hand_index_0_link": 0.0,
+        "right_hand_index_1_link": 0.0
+      },
+      "brush_contacts": [
+        {
+          "other_body": "green_hand_brush",
+          "impulse_Ns": 0.0
+        },
+        {
+          "other_body": "white_storage_box",
+          "impulse_Ns": 0.0
+        },
+        {
+          "other_body": "white_storage_box",
+          "impulse_Ns": 0.0024976916679217355
+        },
+        {
+          "other_body": "white_storage_box",
+          "impulse_Ns": 0.0
+        }
+      ],
+      "finger_targets_rad": {
+        "right_hand_thumb_0_joint": 0.23646239936351776,
+        "right_hand_middle_0_joint": 0.796954333782196,
+        "right_hand_index_0_joint": 0.7507145404815674,
+        "right_hand_thumb_1_joint": -0.31780797243118286,
+        "right_hand_middle_1_joint": 1.0471898317337036,
+        "right_hand_index_1_joint": 0.9979276657104492,
+        "right_hand_thumb_2_joint": -0.8488832712173462
+      },
+      "finger_actual_rad": {
+        "right_hand_thumb_0_joint": 0.19427825510501862,
+        "right_hand_middle_0_joint": 0.7468631863594055,
+        "right_hand_index_0_joint": 0.6817828416824341,
+        "right_hand_thumb_1_joint": -0.2959645986557007,
+        "right_hand_middle_1_joint": 0.9784457087516785,
+        "right_hand_index_1_joint": 0.9144997000694275,
+        "right_hand_thumb_2_joint": -0.7927568554878235
+      }
+    },
+    {
+      "step": 35,
+      "brush_position": [
+        0.8719788789749146,
+        -0.5871753096580505,
+        0.438443660736084
+      ],
+      "wrist_position": [
+        0.8225552439689636,
+        -0.6442625522613525,
+        0.6125136613845825
+      ],
+      "pelvis_position": [
+        0.4346379339694977,
+        -0.5071201324462891,
+        0.7776008248329163
+      ],
+      "finger_forces_N": {
+        "right_hand_thumb_0_link": 0.0,
+        "right_hand_thumb_1_link": 0.0,
+        "right_hand_thumb_2_link": 0.0,
+        "right_hand_middle_0_link": 0.0,
+        "right_hand_middle_1_link": 0.0,
+        "right_hand_index_0_link": 0.0,
+        "right_hand_index_1_link": 0.0
+      },
+      "brush_contacts": [
+        {
+          "other_body": "green_hand_brush",
+          "impulse_Ns": 0.0
+        },
+        {
+          "other_body": "g1_dex3/worldbody/pelvis/waist_yaw_link/waist_roll_link/torso_link/right_shoulder_pitch_link/right_shoulder_roll_link/right_shoulder_yaw_link/right_elbow_link/right_wrist_roll_link/right_wrist_pitch_link/right_wrist_yaw_link/right_hand_thumb_0_link/right_hand_thumb_1_link/right_hand_thumb_2_link",
+          "impulse_Ns": 0.0
+        },
+        {
+          "other_body": "white_storage_box",
+          "impulse_Ns": 0.0
+        },
+        {
+          "other_body": "white_storage_box",
+          "impulse_Ns": 0.00014084701959057457
+        },
+        {
+          "other_body": "white_storage_box",
+          "impulse_Ns": 0.0
+        }
+      ],
+      "finger_targets_rad": {
+        "right_hand_thumb_0_joint": 0.2338811755180359,
+        "right_hand_middle_0_joint": 1.0180268287658691,
+        "right_hand_index_0_joint": 0.9589602947235107,
+        "right_hand_thumb_1_joint": -0.4059668481349945,
+        "right_hand_middle_1_joint": 1.3376768827438354,
+        "right_hand_index_1_joint": 1.274749517440796,
+        "right_hand_thumb_2_joint": -1.0843607187271118
+      },
+      "finger_actual_rad": {
+        "right_hand_thumb_0_joint": 0.19486524164676666,
+        "right_hand_middle_0_joint": 0.9935794472694397,
+        "right_hand_index_0_joint": 0.9625937342643738,
+        "right_hand_thumb_1_joint": -0.3942948877811432,
+        "right_hand_middle_1_joint": 1.3014650344848633,
+        "right_hand_index_1_joint": 1.257214903831482,
+        "right_hand_thumb_2_joint": -1.0514085292816162
+      }
+    },
+    {
+      "step": 40,
+      "brush_position": [
+        0.8744814395904541,
+        -0.5817241072654724,
+        0.43898555636405945
+      ],
+      "wrist_position": [
+        0.8221596479415894,
+        -0.6442148089408875,
+        0.6125320196151733
+      ],
+      "pelvis_position": [
+        0.4346613585948944,
+        -0.5071241855621338,
+        0.7776131629943848
+      ],
+      "finger_forces_N": {
+        "right_hand_thumb_0_link": 0.0,
+        "right_hand_thumb_1_link": 0.0,
+        "right_hand_thumb_2_link": 0.0,
+        "right_hand_middle_0_link": 0.0,
+        "right_hand_middle_1_link": 0.0,
+        "right_hand_index_0_link": 0.0,
+        "right_hand_index_1_link": 0.0
+      },
+      "brush_contacts": [
+        {
+          "other_body": "green_hand_brush",
+          "impulse_Ns": 0.0
+        },
+        {
+          "other_body": "g1_dex3/worldbody/pelvis/waist_yaw_link/waist_roll_link/torso_link/right_shoulder_pitch_link/right_shoulder_roll_link/right_shoulder_yaw_link/right_elbow_link/right_wrist_roll_link/right_wrist_pitch_link/right_wrist_yaw_link",
+          "impulse_Ns": 0.0
+        },
+        {
+          "other_body": "g1_dex3/worldbody/pelvis/waist_yaw_link/waist_roll_link/torso_link/right_shoulder_pitch_link/right_shoulder_roll_link/right_shoulder_yaw_link/right_elbow_link/right_wrist_roll_link/right_wrist_pitch_link/right_wrist_yaw_link/right_hand_thumb_0_link/right_hand_thumb_1_link/right_hand_thumb_2_link",
+          "impulse_Ns": 0.0
+        },
+        {
+          "other_body": "white_storage_box",
+          "impulse_Ns": 0.0
+        },
+        {
+          "other_body": "white_storage_box",
+          "impulse_Ns": 0.0
+        },
+        {
+          "other_body": "g1_dex3/worldbody/pelvis/waist_yaw_link/waist_roll_link/torso_link/right_shoulder_pitch_link/right_shoulder_roll_link/right_shoulder_yaw_link/right_elbow_link/right_wrist_roll_link/right_wrist_pitch_link/right_wrist_yaw_link/right_hand_index_0_link/right_hand_index_1_link",
+          "impulse_Ns": 0.0
+        },
+        {
+          "other_body": "white_storage_box",
+          "impulse_Ns": 0.0
+        },
+        {
+          "other_body": "white_storage_box",
+          "impulse_Ns": 0.0
+        },
+        {
+          "other_body": "white_storage_box",
+          "impulse_Ns": 0.0
+        }
+      ],
+      "finger_targets_rad": {
+        "right_hand_thumb_0_joint": 0.23263311386108398,
+        "right_hand_middle_0_joint": 1.124919056892395,
+        "right_hand_index_0_joint": 1.0596505403518677,
+        "right_hand_thumb_1_joint": -0.4485931396484375,
+        "right_hand_middle_1_joint": 1.4781321287155151,
+        "right_hand_index_1_joint": 1.408597469329834,
+        "right_hand_thumb_2_joint": -1.1982179880142212
+      },
+      "finger_actual_rad": {
+        "right_hand_thumb_0_joint": 0.20184990763664246,
+        "right_hand_middle_0_joint": 1.104317545890808,
+        "right_hand_index_0_joint": 1.0396151542663574,
+        "right_hand_thumb_1_joint": -0.42468151450157166,
+        "right_hand_middle_1_joint": 1.4475452899932861,
+        "right_hand_index_1_joint": 1.3834936618804932,
+        "right_hand_thumb_2_joint": -1.1669358015060425
+      }
+    },
+    {
+      "step": 45,
+      "brush_position": [
+        0.8754881620407104,
+        -0.583148181438446,
+        0.4384600818157196
+      ],
+      "wrist_position": [
+        0.8218646049499512,
+        -0.6446657180786133,
+        0.6126706600189209
+      ],
+      "pelvis_position": [
+        0.4346788823604584,
+        -0.5071272850036621,
+        0.7776229381561279
+      ],
+      "finger_forces_N": {
+        "right_hand_thumb_0_link": 0.0,
+        "right_hand_thumb_1_link": 0.0,
+        "right_hand_thumb_2_link": 0.0,
+        "right_hand_middle_0_link": 0.0,
+        "right_hand_middle_1_link": 0.0,
+        "right_hand_index_0_link": 0.0,
+        "right_hand_index_1_link": 0.0
+      },
+      "brush_contacts": [
+        {
+          "other_body": "green_hand_brush",
+          "impulse_Ns": 0.0
+        },
+        {
+          "other_body": "g1_dex3/worldbody/pelvis/waist_yaw_link/waist_roll_link/torso_link/right_shoulder_pitch_link/right_shoulder_roll_link/right_shoulder_yaw_link/right_elbow_link/right_wrist_roll_link/right_wrist_pitch_link/right_wrist_yaw_link/right_hand_thumb_0_link/right_hand_thumb_1_link/right_hand_thumb_2_link",
+          "impulse_Ns": 0.0
+        },
+        {
+          "other_body": "g1_dex3/worldbody/pelvis/waist_yaw_link/waist_roll_link/torso_link/right_shoulder_pitch_link/right_shoulder_roll_link/right_shoulder_yaw_link/right_elbow_link/right_wrist_roll_link/right_wrist_pitch_link/right_wrist_yaw_link",
+          "impulse_Ns": 0.0
+        },
+        {
+          "other_body": "white_storage_box",
+          "impulse_Ns": 0.0
+        },
+        {
+          "other_body": "white_storage_box",
+          "impulse_Ns": 0.0
+        },
+        {
+          "other_body": "white_storage_box",
+          "impulse_Ns": 0.0
+        },
+        {
+          "other_body": "white_storage_box",
+          "impulse_Ns": 0.00047945853116451
+        }
+      ],
+      "finger_targets_rad": {
+        "right_hand_thumb_0_joint": 0.23263311386108398,
+        "right_hand_middle_0_joint": 1.124919056892395,
+        "right_hand_index_0_joint": 1.0596505403518677,
+        "right_hand_thumb_1_joint": -0.4485931396484375,
+        "right_hand_middle_1_joint": 1.4781321287155151,
+        "right_hand_index_1_joint": 1.408597469329834,
+        "right_hand_thumb_2_joint": -1.1982179880142212
+      },
+      "finger_actual_rad": {
+        "right_hand_thumb_0_joint": 0.20906613767147064,
+        "right_hand_middle_0_joint": 1.0863425731658936,
+        "right_hand_index_0_joint": 1.001908302307129,
+        "right_hand_thumb_1_joint": -0.40683892369270325,
+        "right_hand_middle_1_joint": 1.4218826293945312,
+        "right_hand_index_1_joint": 1.3439381122589111,
+        "right_hand_thumb_2_joint": -1.1421267986297607
+      }
+    },
+    {
+      "step": 50,
+      "brush_position": [
+        0.8756517767906189,
+        -0.5834906101226807,
+        0.4379761517047882
+      ],
+      "wrist_position": [
+        0.8221865892410278,
+        -0.6437942385673523,
+        0.612391471862793
+      ],
+      "pelvis_position": [
+        0.4346557855606079,
+        -0.507125198841095,
+        0.7776094079017639
+      ],
+      "finger_forces_N": {
+        "right_hand_thumb_0_link": 0.0,
+        "right_hand_thumb_1_link": 0.0,
+        "right_hand_thumb_2_link": 0.0,
+        "right_hand_middle_0_link": 0.0,
+        "right_hand_middle_1_link": 0.0,
+        "right_hand_index_0_link": 0.0,
+        "right_hand_index_1_link": 0.0
+      },
+      "brush_contacts": [
+        {
+          "other_body": "green_hand_brush",
+          "impulse_Ns": 0.0
+        },
+        {
+          "other_body": "g1_dex3/worldbody/pelvis/waist_yaw_link/waist_roll_link/torso_link/right_shoulder_pitch_link/right_shoulder_roll_link/right_shoulder_yaw_link/right_elbow_link/right_wrist_roll_link/right_wrist_pitch_link/right_wrist_yaw_link/right_hand_thumb_0_link/right_hand_thumb_1_link/right_hand_thumb_2_link",
+          "impulse_Ns": 0.0
+        },
+        {
+          "other_body": "white_storage_box",
+          "impulse_Ns": 0.0
+        },
+        {
+          "other_body": "white_storage_box",
+          "impulse_Ns": 0.0
+        },
+        {
+          "other_body": "white_storage_box",
+          "impulse_Ns": 0.0
+        },
+        {
+          "other_body": "white_storage_box",
+          "impulse_Ns": 0.0
+        },
+        {
+          "other_body": "white_storage_box",
+          "impulse_Ns": 0.0
+        }
+      ],
+      "finger_targets_rad": {
+        "right_hand_thumb_0_joint": 0.23263311386108398,
+        "right_hand_middle_0_joint": 1.124919056892395,
+        "right_hand_index_0_joint": 1.0596505403518677,
+        "right_hand_thumb_1_joint": -0.4485931396484375,
+        "right_hand_middle_1_joint": 1.4781321287155151,
+        "right_hand_index_1_joint": 1.408597469329834,
+        "right_hand_thumb_2_joint": -1.1982179880142212
+      },
+      "finger_actual_rad": {
+        "right_hand_thumb_0_joint": 0.21445231139659882,
+        "right_hand_middle_0_joint": 1.0445103645324707,
+        "right_hand_index_0_joint": 0.9767293334007263,
+        "right_hand_thumb_1_joint": -0.3862510025501251,
+        "right_hand_middle_1_joint": 1.365843653678894,
+        "right_hand_index_1_joint": 1.2979919910430908,
+        "right_hand_thumb_2_joint": -1.0950061082839966
+      }
+    },
+    {
+      "step": 55,
+      "brush_position": [
+        0.8752429485321045,
+        -0.5892640948295593,
+        0.4380863606929779
+      ],
+      "wrist_position": [
+        0.8225760459899902,
+        -0.6442665457725525,
+        0.6125151515007019
+      ],
+      "pelvis_position": [
+        0.43463656306266785,
+        -0.5071196556091309,
+        0.7776004672050476
+      ],
+      "finger_forces_N": {
+        "right_hand_thumb_0_link": 0.0,
+        "right_hand_thumb_1_link": 0.0,
+        "right_hand_thumb_2_link": 0.0,
+        "right_hand_middle_0_link": 0.0,
+        "right_hand_middle_1_link": 0.0,
+        "right_hand_index_0_link": 0.0,
+        "right_hand_index_1_link": 0.0
+      },
+      "brush_contacts": [
+        {
+          "other_body": "green_hand_brush",
+          "impulse_Ns": 0.0
+        },
+        {
+          "other_body": "g1_dex3/worldbody/pelvis/waist_yaw_link/waist_roll_link/torso_link/right_shoulder_pitch_link/right_shoulder_roll_link/right_shoulder_yaw_link/right_elbow_link/right_wrist_roll_link/right_wrist_pitch_link/right_wrist_yaw_link",
+          "impulse_Ns": 0.0
+        },
+        {
+          "other_body": "g1_dex3/worldbody/pelvis/waist_yaw_link/waist_roll_link/torso_link/right_shoulder_pitch_link/right_shoulder_roll_link/right_shoulder_yaw_link/right_elbow_link/right_wrist_roll_link/right_wrist_pitch_link/right_wrist_yaw_link/right_hand_thumb_0_link/right_hand_thumb_1_link/right_hand_thumb_2_link",
+          "impulse_Ns": 0.0
+        },
+        {
+          "other_body": "white_storage_box",
+          "impulse_Ns": 0.0005701502490004195
+        },
+        {
+          "other_body": "white_storage_box",
+          "impulse_Ns": 0.004322125736963929
+        },
+        {
+          "other_body": "white_storage_box",
+          "impulse_Ns": 0.0
+        },
+        {
+          "other_body": "g1_dex3/worldbody/pelvis/waist_yaw_link/waist_roll_link/torso_link/right_shoulder_pitch_link/right_shoulder_roll_link/right_shoulder_yaw_link/right_elbow_link/right_wrist_roll_link/right_wrist_pitch_link/right_wrist_yaw_link/right_hand_index_0_link/right_hand_index_1_link",
+          "impulse_Ns": 0.0
+        },
+        {
+          "other_body": "white_storage_box",
+          "impulse_Ns": 0.0015061040334942842
+        }
+      ],
+      "finger_targets_rad": {
+        "right_hand_thumb_0_joint": 0.23263311386108398,
+        "right_hand_middle_0_joint": 1.124919056892395,
+        "right_hand_index_0_joint": 1.0596505403518677,
+        "right_hand_thumb_1_joint": -0.4485931396484375,
+        "right_hand_middle_1_joint": 1.4781321287155151,
+        "right_hand_index_1_joint": 1.408597469329834,
+        "right_hand_thumb_2_joint": -1.1982179880142212
+      },
+      "finger_actual_rad": {
+        "right_hand_thumb_0_joint": 0.19662728905677795,
+        "right_hand_middle_0_joint": 1.0533881187438965,
+        "right_hand_index_0_joint": 0.9910370707511902,
+        "right_hand_thumb_1_joint": -0.4171989858150482,
+        "right_hand_middle_1_joint": 1.3797223567962646,
+        "right_hand_index_1_joint": 1.3165720701217651,
+        "right_hand_thumb_2_joint": -1.11687171459198
+      }
+    },
+    {
+      "step": 60,
+      "brush_position": [
+        0.8750208020210266,
+        -0.587959349155426,
+        0.4380199909210205
+      ],
+      "wrist_position": [
+        0.8225787281990051,
+        -0.6442694067955017,
+        0.6125169992446899
+      ],
+      "pelvis_position": [
+        0.43463659286499023,
+        -0.507119357585907,
+        0.7776002883911133
+      ],
+      "finger_forces_N": {
+        "right_hand_thumb_0_link": 0.0,
+        "right_hand_thumb_1_link": 0.0,
+        "right_hand_thumb_2_link": 0.0,
+        "right_hand_middle_0_link": 0.0,
+        "right_hand_middle_1_link": 0.0,
+        "right_hand_index_0_link": 0.0,
+        "right_hand_index_1_link": 0.0
+      },
+      "brush_contacts": [
+        {
+          "other_body": "green_hand_brush",
+          "impulse_Ns": 0.0
+        },
+        {
+          "other_body": "g1_dex3/worldbody/pelvis/waist_yaw_link/waist_roll_link/torso_link/right_shoulder_pitch_link/right_shoulder_roll_link/right_shoulder_yaw_link/right_elbow_link/right_wrist_roll_link/right_wrist_pitch_link/right_wrist_yaw_link/right_hand_thumb_0_link/right_hand_thumb_1_link/right_hand_thumb_2_link",
+          "impulse_Ns": 0.0
+        },
+        {
+          "other_body": "g1_dex3/worldbody/pelvis/waist_yaw_link/waist_roll_link/torso_link/right_shoulder_pitch_link/right_shoulder_roll_link/right_shoulder_yaw_link/right_elbow_link/right_wrist_roll_link/right_wrist_pitch_link/right_wrist_yaw_link",
+          "impulse_Ns": 0.0
+        },
+        {
+          "other_body": "white_storage_box",
+          "impulse_Ns": 0.0
+        },
+        {
+          "other_body": "white_storage_box",
+          "impulse_Ns": 0.0018402536759966838
+        },
+        {
+          "other_body": "white_storage_box",
+          "impulse_Ns": 0.0
+        },
+        {
+          "other_body": "g1_dex3/worldbody/pelvis/waist_yaw_link/waist_roll_link/torso_link/right_shoulder_pitch_link/right_shoulder_roll_link/right_shoulder_yaw_link/right_elbow_link/right_wrist_roll_link/right_wrist_pitch_link/right_wrist_yaw_link/right_hand_index_0_link/right_hand_index_1_link",
+          "impulse_Ns": 0.0
+        },
+        {
+          "other_body": "white_storage_box",
+          "impulse_Ns": 0.0011667037245077275
+        }
+      ],
+      "finger_targets_rad": {
+        "right_hand_thumb_0_joint": 0.23263311386108398,
+        "right_hand_middle_0_joint": 1.124919056892395,
+        "right_hand_index_0_joint": 1.0596505403518677,
+        "right_hand_thumb_1_joint": -0.4485931396484375,
+        "right_hand_middle_1_joint": 1.4781321287155151,
+        "right_hand_index_1_joint": 1.408597469329834,
+        "right_hand_thumb_2_joint": -1.1982179880142212
+      },
+      "finger_actual_rad": {
+        "right_hand_thumb_0_joint": 0.18866263329982758,
+        "right_hand_middle_0_joint": 1.067962646484375,
+        "right_hand_index_0_joint": 0.999627947807312,
+        "right_hand_thumb_1_joint": -0.43778496980667114,
+        "right_hand_middle_1_joint": 1.401145339012146,
+        "right_hand_index_1_joint": 1.3333905935287476,
+        "right_hand_thumb_2_joint": -1.1405110359191895
+      }
+    },
+    {
+      "step": 65,
+      "brush_position": [
+        0.8767775297164917,
+        -0.5726141929626465,
+        0.439151793718338
+      ],
+      "wrist_position": [
+        0.8222106695175171,
+        -0.6445378661155701,
+        0.6125434041023254
+      ],
+      "pelvis_position": [
+        0.4346509277820587,
+        -0.5071225762367249,
+        0.7776070833206177
+      ],
+      "finger_forces_N": {
+        "right_hand_thumb_0_link": 0.0,
+        "right_hand_thumb_1_link": 0.0,
+        "right_hand_thumb_2_link": 0.0,
+        "right_hand_middle_0_link": 0.0,
+        "right_hand_middle_1_link": 0.0,
+        "right_hand_index_0_link": 0.0,
+        "right_hand_index_1_link": 0.0
+      },
+      "brush_contacts": [
+        {
+          "other_body": "green_hand_brush",
+          "impulse_Ns": 0.0
+        },
+        {
+          "other_body": "g1_dex3/worldbody/pelvis/waist_yaw_link/waist_roll_link/torso_link/right_shoulder_pitch_link/right_shoulder_roll_link/right_shoulder_yaw_link/right_elbow_link/right_wrist_roll_link/right_wrist_pitch_link/right_wrist_yaw_link/right_hand_thumb_0_link/right_hand_thumb_1_link/right_hand_thumb_2_link",
+          "impulse_Ns": 0.0
+        },
+        {
+          "other_body": "white_storage_box",
+          "impulse_Ns": 0.0
+        },
+        {
+          "other_body": "g1_dex3/worldbody/pelvis/waist_yaw_link/waist_roll_link/torso_link/right_shoulder_pitch_link/right_shoulder_roll_link/right_shoulder_yaw_link/right_elbow_link/right_wrist_roll_link/right_wrist_pitch_link/right_wrist_yaw_link/right_hand_index_0_link/right_hand_index_1_link",
+          "impulse_Ns": 0.0
+        },
+        {
+          "other_body": "white_storage_box",
+          "impulse_Ns": 0.024495486525267413
+        },
+        {
+          "other_body": "white_storage_box",
+          "impulse_Ns": 0.044072691937948535
+        },
+        {
+          "other_body": "white_storage_box",
+          "impulse_Ns": 0.019687015091301455
+        }
+      ],
+      "finger_targets_rad": {
+        "right_hand_thumb_0_joint": 0.23263311386108398,
+        "right_hand_middle_0_joint": 1.124919056892395,
+        "right_hand_index_0_joint": 1.0596505403518677,
+        "right_hand_thumb_1_joint": -0.4485931396484375,
+        "right_hand_middle_1_joint": 1.4781321287155151,
+        "right_hand_index_1_joint": 1.408597469329834,
+        "right_hand_thumb_2_joint": -1.1982179880142212
+      },
+      "finger_actual_rad": {
+        "right_hand_thumb_0_joint": 0.20955084264278412,
+        "right_hand_middle_0_joint": 1.06618070602417,
+        "right_hand_index_0_joint": 0.9974743127822876,
+        "right_hand_thumb_1_joint": -0.4005778431892395,
+        "right_hand_middle_1_joint": 1.3975666761398315,
+        "right_hand_index_1_joint": 1.3290265798568726,
+        "right_hand_thumb_2_joint": -1.1252847909927368
+      }
+    },
+    {
+      "step": 70,
+      "brush_position": [
+        0.8758915066719055,
+        -0.5767436623573303,
+        0.4380654990673065
+      ],
+      "wrist_position": [
+        0.8225829005241394,
+        -0.644264817237854,
+        0.6125170588493347
+      ],
+      "pelvis_position": [
+        0.43463626503944397,
+        -0.5071195960044861,
+        0.7776004076004028
+      ],
+      "finger_forces_N": {
+        "right_hand_thumb_0_link": 0.0,
+        "right_hand_thumb_1_link": 0.0,
+        "right_hand_thumb_2_link": 0.0,
+        "right_hand_middle_0_link": 0.0,
+        "right_hand_middle_1_link": 0.0,
+        "right_hand_index_0_link": 0.0,
+        "right_hand_index_1_link": 0.0
+      },
+      "brush_contacts": [
+        {
+          "other_body": "green_hand_brush",
+          "impulse_Ns": 0.0
+        },
+        {
+          "other_body": "g1_dex3/worldbody/pelvis/waist_yaw_link/waist_roll_link/torso_link/right_shoulder_pitch_link/right_shoulder_roll_link/right_shoulder_yaw_link/right_elbow_link/right_wrist_roll_link/right_wrist_pitch_link/right_wrist_yaw_link",
+          "impulse_Ns": 0.0
+        },
+        {
+          "other_body": "g1_dex3/worldbody/pelvis/waist_yaw_link/waist_roll_link/torso_link/right_shoulder_pitch_link/right_shoulder_roll_link/right_shoulder_yaw_link/right_elbow_link/right_wrist_roll_link/right_wrist_pitch_link/right_wrist_yaw_link/right_hand_thumb_0_link/right_hand_thumb_1_link/right_hand_thumb_2_link",
+          "impulse_Ns": 0.0
+        },
+        {
+          "other_body": "white_storage_box",
+          "impulse_Ns": 0.0
+        },
+        {
+          "other_body": "g1_dex3/worldbody/pelvis/waist_yaw_link/waist_roll_link/torso_link/right_shoulder_pitch_link/right_shoulder_roll_link/right_shoulder_yaw_link/right_elbow_link/right_wrist_roll_link/right_wrist_pitch_link/right_wrist_yaw_link/right_hand_index_0_link/right_hand_index_1_link",
+          "impulse_Ns": 0.0
+        },
+        {
+          "other_body": "white_storage_box",
+          "impulse_Ns": 0.0003379954462485589
+        },
+        {
+          "other_body": "white_storage_box",
+          "impulse_Ns": 0.001976857053911362
+        },
+        {
+          "other_body": "white_storage_box",
+          "impulse_Ns": 0.001163977201822157
+        }
+      ],
+      "finger_targets_rad": {
+        "right_hand_thumb_0_joint": 0.23263311386108398,
+        "right_hand_middle_0_joint": 1.124919056892395,
+        "right_hand_index_0_joint": 1.0596505403518677,
+        "right_hand_thumb_1_joint": -0.4485931396484375,
+        "right_hand_middle_1_joint": 1.4781321287155151,
+        "right_hand_index_1_joint": 1.408597469329834,
+        "right_hand_thumb_2_joint": -1.1982179880142212
+      },
+      "finger_actual_rad": {
+        "right_hand_thumb_0_joint": 0.20269383490085602,
+        "right_hand_middle_0_joint": 1.0640418529510498,
+        "right_hand_index_0_joint": 0.9960830211639404,
+        "right_hand_thumb_1_joint": -0.4044138491153717,
+        "right_hand_middle_1_joint": 1.3924225568771362,
+        "right_hand_index_1_joint": 1.325248122215271,
+        "right_hand_thumb_2_joint": -1.1201252937316895
+      }
+    },
+    {
+      "step": 75,
+      "brush_position": [
+        0.875889003276825,
+        -0.5767558813095093,
+        0.4380619525909424
+      ],
+      "wrist_position": [
+        0.8225775361061096,
+        -0.6442679762840271,
+        0.6125158667564392
+      ],
+      "pelvis_position": [
+        0.4346364438533783,
+        -0.5071194171905518,
+        0.7776003479957581
+      ],
+      "finger_forces_N": {
+        "right_hand_thumb_0_link": 0.0,
+        "right_hand_thumb_1_link": 0.0,
+        "right_hand_thumb_2_link": 0.0,
+        "right_hand_middle_0_link": 0.0,
+        "right_hand_middle_1_link": 0.0,
+        "right_hand_index_0_link": 0.0,
+        "right_hand_index_1_link": 0.0
+      },
+      "brush_contacts": [
+        {
+          "other_body": "green_hand_brush",
+          "impulse_Ns": 0.0
+        },
+        {
+          "other_body": "g1_dex3/worldbody/pelvis/waist_yaw_link/waist_roll_link/torso_link/right_shoulder_pitch_link/right_shoulder_roll_link/right_shoulder_yaw_link/right_elbow_link/right_wrist_roll_link/right_wrist_pitch_link/right_wrist_yaw_link",
+          "impulse_Ns": 0.0
+        },
+        {
+          "other_body": "g1_dex3/worldbody/pelvis/waist_yaw_link/waist_roll_link/torso_link/right_shoulder_pitch_link/right_shoulder_roll_link/right_shoulder_yaw_link/right_elbow_link/right_wrist_roll_link/right_wrist_pitch_link/right_wrist_yaw_link/right_hand_thumb_0_link/right_hand_thumb_1_link/right_hand_thumb_2_link",
+          "impulse_Ns": 0.0
+        },
+        {
+          "other_body": "white_storage_box",
+          "impulse_Ns": 0.0005131691212213815
+        },
+        {
+          "other_body": "white_storage_box",
+          "impulse_Ns": 0.001995720936638564
+        },
+        {
+          "other_body": "white_storage_box",
+          "impulse_Ns": 0.0
+        },
+        {
+          "other_body": "g1_dex3/worldbody/pelvis/waist_yaw_link/waist_roll_link/torso_link/right_shoulder_pitch_link/right_shoulder_roll_link/right_shoulder_yaw_link/right_elbow_link/right_wrist_roll_link/right_wrist_pitch_link/right_wrist_yaw_link/right_hand_index_0_link/right_hand_index_1_link",
+          "impulse_Ns": 0.0
+        },
+        {
+          "other_body": "white_storage_box",
+          "impulse_Ns": 0.001227125162695335
+        }
+      ],
+      "finger_targets_rad": {
+        "right_hand_thumb_0_joint": 0.23263311386108398,
+        "right_hand_middle_0_joint": 1.124919056892395,
+        "right_hand_index_0_joint": 1.0596505403518677,
+        "right_hand_thumb_1_joint": -0.4485931396484375,
+        "right_hand_middle_1_joint": 1.4781321287155151,
+        "right_hand_index_1_joint": 1.408597469329834,
+        "right_hand_thumb_2_joint": -1.1982179880142212
+      },
+      "finger_actual_rad": {
+        "right_hand_thumb_0_joint": 0.18989449739456177,
+        "right_hand_middle_0_joint": 1.0636361837387085,
+        "right_hand_index_0_joint": 0.9961689710617065,
+        "right_hand_thumb_1_joint": -0.43191567063331604,
+        "right_hand_middle_1_joint": 1.3923166990280151,
+        "right_hand_index_1_joint": 1.3252365589141846,
+        "right_hand_thumb_2_joint": -1.125933051109314
+      }
+    },
+    {
+      "step": 79,
+      "brush_position": [
+        0.8758866190910339,
+        -0.5767582654953003,
+        0.43806079030036926
+      ],
+      "wrist_position": [
+        0.8225769996643066,
+        -0.6442680358886719,
+        0.6125160455703735
+      ],
+      "pelvis_position": [
+        0.4346364736557007,
+        -0.507119357585907,
+        0.7776004076004028
+      ],
+      "finger_forces_N": {
+        "right_hand_thumb_0_link": 0.0,
+        "right_hand_thumb_1_link": 0.0,
+        "right_hand_thumb_2_link": 0.0,
+        "right_hand_middle_0_link": 0.0,
+        "right_hand_middle_1_link": 0.0,
+        "right_hand_index_0_link": 0.0,
+        "right_hand_index_1_link": 0.0
+      },
+      "brush_contacts": [
+        {
+          "other_body": "green_hand_brush",
+          "impulse_Ns": 0.0
+        },
+        {
+          "other_body": "g1_dex3/worldbody/pelvis/waist_yaw_link/waist_roll_link/torso_link/right_shoulder_pitch_link/right_shoulder_roll_link/right_shoulder_yaw_link/right_elbow_link/right_wrist_roll_link/right_wrist_pitch_link/right_wrist_yaw_link",
+          "impulse_Ns": 0.0
+        },
+        {
+          "other_body": "g1_dex3/worldbody/pelvis/waist_yaw_link/waist_roll_link/torso_link/right_shoulder_pitch_link/right_shoulder_roll_link/right_shoulder_yaw_link/right_elbow_link/right_wrist_roll_link/right_wrist_pitch_link/right_wrist_yaw_link/right_hand_thumb_0_link/right_hand_thumb_1_link/right_hand_thumb_2_link",
+          "impulse_Ns": 0.0
+        },
+        {
+          "other_body": "white_storage_box",
+          "impulse_Ns": 0.0
+        },
+        {
+          "other_body": "g1_dex3/worldbody/pelvis/waist_yaw_link/waist_roll_link/torso_link/right_shoulder_pitch_link/right_shoulder_roll_link/right_shoulder_yaw_link/right_elbow_link/right_wrist_roll_link/right_wrist_pitch_link/right_wrist_yaw_link/right_hand_index_0_link/right_hand_index_1_link",
+          "impulse_Ns": 0.0
+        },
+        {
+          "other_body": "white_storage_box",
+          "impulse_Ns": 0.0006463509504144372
+        },
+        {
+          "other_body": "white_storage_box",
+          "impulse_Ns": 0.0020293074693479747
+        },
+        {
+          "other_body": "white_storage_box",
+          "impulse_Ns": 0.0012100801570144027
+        }
+      ],
+      "finger_targets_rad": {
+        "right_hand_thumb_0_joint": 0.23263311386108398,
+        "right_hand_middle_0_joint": 1.124919056892395,
+        "right_hand_index_0_joint": 1.0596505403518677,
+        "right_hand_thumb_1_joint": -0.4485931396484375,
+        "right_hand_middle_1_joint": 1.4781321287155151,
+        "right_hand_index_1_joint": 1.408597469329834,
+        "right_hand_thumb_2_joint": -1.1982179880142212
+      },
+      "finger_actual_rad": {
+        "right_hand_thumb_0_joint": 0.19149047136306763,
+        "right_hand_middle_0_joint": 1.0635439157485962,
+        "right_hand_index_0_joint": 0.9962992668151855,
+        "right_hand_thumb_1_joint": -0.4319888949394226,
+        "right_hand_middle_1_joint": 1.3923259973526,
+        "right_hand_index_1_joint": 1.3252551555633545,
+        "right_hand_thumb_2_joint": -1.127262830734253
+      }
+    }
+  ]
+}

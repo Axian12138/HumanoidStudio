@@ -1,0 +1,165 @@
+{
+  "motion": "/home/galbot/workspace/robosimstudio/examples/humanoid-real2sim/push_bin_1019/retarget/hoi_candidate_scene.npz",
+  "evaluated_frames": 474,
+  "push_window_frames": [
+    300,
+    425
+  ],
+  "metric": "world-frame body-position Euclidean error in cm",
+  "future_offsets_frames": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    32
+  ],
+  "reference_coordinates": "body_pos_w in scene/world frame; policy converts both target-to-live-root and target-to-live-body features",
+  "trials": {
+    "stage5_coffee_mu_0p15": {
+      "checkpoint": "/home/galbot/workspace/ScaleBridge/scalebridge/data/model/bfm_transformer_dataset_L_8192_64_64/model_22200_tensorrt.pt",
+      "checkpoint_sha256": "c09fbe41cc70bc73d3f6b24f7c695791da8dd791b6f50e14277ce8aa2394c5ef",
+      "metadata": null,
+      "body_error": {
+        "pelvis": {
+          "mean_all_cm": 6.52,
+          "mean_push_cm": 10.85,
+          "frame_375_cm": 12.72,
+          "max_cm": 12.72
+        },
+        "left_wrist_yaw_link": {
+          "mean_all_cm": 7.16,
+          "mean_push_cm": 13.65,
+          "frame_375_cm": 14.84,
+          "max_cm": 17.31
+        },
+        "right_wrist_yaw_link": {
+          "mean_all_cm": 7.65,
+          "mean_push_cm": 13.04,
+          "frame_375_cm": 14.68,
+          "max_cm": 14.71
+        },
+        "left_ankle_roll_link": {
+          "mean_all_cm": 10.46,
+          "mean_push_cm": 20.78,
+          "frame_375_cm": 16.52,
+          "max_cm": 25.7
+        },
+        "right_ankle_roll_link": {
+          "mean_all_cm": 5.13,
+          "mean_push_cm": 9.78,
+          "frame_375_cm": 9.63,
+          "max_cm": 12.28
+        }
+      }
+    },
+    "stage5_raw_scaletrack_mu_0p15": {
+      "checkpoint": "/home/galbot/workspace/ScaleTrack/logs/rsl_rl/g1_bfm_tracking_exp/bfm_transformer_dataset_L_8192_32_48/model_22200.pt",
+      "checkpoint_sha256": "8a7be5191de8bbcd3f7359615b935ea605ee47d8703135dc4202fa9eeefc1b2f",
+      "metadata": "examples/humanoid-real2sim/kick_basket/tracker_metadata.json",
+      "body_error": {
+        "pelvis": {
+          "mean_all_cm": 5.95,
+          "mean_push_cm": 6.33,
+          "frame_375_cm": 7.54,
+          "max_cm": 10.88
+        },
+        "left_wrist_yaw_link": {
+          "mean_all_cm": 7.6,
+          "mean_push_cm": 9.17,
+          "frame_375_cm": 9.6,
+          "max_cm": 13.92
+        },
+        "right_wrist_yaw_link": {
+          "mean_all_cm": 6.95,
+          "mean_push_cm": 7.11,
+          "frame_375_cm": 8.54,
+          "max_cm": 12.0
+        },
+        "left_ankle_roll_link": {
+          "mean_all_cm": 8.05,
+          "mean_push_cm": 12.87,
+          "frame_375_cm": 15.9,
+          "max_cm": 18.51
+        },
+        "right_ankle_roll_link": {
+          "mean_all_cm": 2.57,
+          "mean_push_cm": 3.73,
+          "frame_375_cm": 3.44,
+          "max_cm": 10.0
+        }
+      }
+    },
+    "stage4_deployed_tracker": {
+      "rollout": "/home/galbot/workspace/robosimstudio/examples/humanoid-real2sim/push_bin_1019/rollouts/stage4_mu_0p10_com_0p03_contactfix/motion_repair/rollout.npz",
+      "body_error": {
+        "pelvis": {
+          "mean_precontact_200_299_cm": 5.35,
+          "mean_push_300_424_cm": 10.35,
+          "frame_375_cm": 12.01
+        },
+        "left_wrist_yaw_link": {
+          "mean_precontact_200_299_cm": 3.44,
+          "mean_push_300_424_cm": 13.34,
+          "frame_375_cm": 14.59
+        },
+        "right_wrist_yaw_link": {
+          "mean_precontact_200_299_cm": 7.91,
+          "mean_push_300_424_cm": 12.47,
+          "frame_375_cm": 13.76
+        },
+        "left_ankle_roll_link": {
+          "mean_precontact_200_299_cm": 7.14,
+          "mean_push_300_424_cm": 20.78,
+          "frame_375_cm": 15.14
+        },
+        "right_ankle_roll_link": {
+          "mean_precontact_200_299_cm": 3.9,
+          "mean_push_300_424_cm": 8.24,
+          "frame_375_cm": 6.9
+        }
+      },
+      "bin_final_xyz_m": [
+        0.771150529384613,
+        0.37855714559555054,
+        -2.2816127511759987e-06
+      ]
+    },
+    "stage4_raw_scaletrack": {
+      "rollout": "/home/galbot/workspace/robosimstudio/examples/humanoid-real2sim/push_bin_1019/rollouts/stage4_raw_scaletrack_baseline/rollout.npz",
+      "body_error": {
+        "pelvis": {
+          "mean_precontact_200_299_cm": 9.67,
+          "mean_push_300_424_cm": 8.6,
+          "frame_375_cm": 10.79
+        },
+        "left_wrist_yaw_link": {
+          "mean_precontact_200_299_cm": 10.92,
+          "mean_push_300_424_cm": 10.68,
+          "frame_375_cm": 12.21
+        },
+        "right_wrist_yaw_link": {
+          "mean_precontact_200_299_cm": 9.02,
+          "mean_push_300_424_cm": 9.43,
+          "frame_375_cm": 11.76
+        },
+        "left_ankle_roll_link": {
+          "mean_precontact_200_299_cm": 9.18,
+          "mean_push_300_424_cm": 14.37,
+          "frame_375_cm": 15.52
+        },
+        "right_ankle_roll_link": {
+          "mean_precontact_200_299_cm": 2.85,
+          "mean_push_300_424_cm": 9.36,
+          "frame_375_cm": 10.99
+        }
+      },
+      "bin_final_xyz_m": [
+        0.4062234163284302,
+        0.9705396294593811,
+        -2.2836588868813124e-06
+      ]
+    }
+  },
+  "conclusion": "Raw ScaleTrack checkpoint improves some later body pose errors but worsens precontact left-wrist error (10.9 vs 3.4 cm) and nearly misses bin push; retain deployed ScaleBridge tracker as editor default."
+}

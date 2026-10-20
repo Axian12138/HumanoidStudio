@@ -1,0 +1,215 @@
+{
+  "status": "kinematic_candidate_unreviewed",
+  "fps": 50,
+  "source_window_s_half_open": [
+    8.0,
+    27.98
+  ],
+  "base_motion_sha256": "00ee77ab13a858dff49f0c2f0cbf98ce63c5eb750c73e566288698afdf677bf7",
+  "robot_mjcf_sha256": "7c3edae05ef00938e7505541b7c7ab28a0f4db851f1c0a74921697dbe298ae1e",
+  "grip_fit_source_sha256": "953aa7d50438d6e9db2d4c9a22858a8dbc23df874690f1e878f0b26d28f949eb",
+  "edited_arm": "right only, pickup and return windows",
+  "root_legs_torso_left_arm_unchanged": true,
+  "commanded_hand_events_s": {
+    "open_start": 10.5,
+    "open_complete": 11.6,
+    "close_start": 11.9,
+    "close_complete": 12.8,
+    "release_start": 25.45,
+    "release_complete": 26.25
+  },
+  "estimated_grasp_s": 12.8,
+  "estimated_release_s": 25.65,
+  "offsethand_closed_finger_angles_rad": [
+    0.4382826813888073,
+    -0.7173815043289874,
+    -1.1750759481672906,
+    1.5708,
+    1.74533,
+    1.0615531170940133,
+    1.4136975346692842
+  ],
+  "closed_finger_signed_grip_gaps_m": {
+    "thumb_2": 0.0006437612758721203,
+    "middle_1": 0.0060813629879521505,
+    "index_1": 0.0004950057220774716
+  },
+  "fist_eye_errors": [
+    {
+      "source_time_s": 11.45,
+      "fist_eye_error_m": 0.03069416696220757,
+      "handle_axis_error_deg": 60.8521260480533,
+      "palm_to_handle_error_deg": 22.94574143425518,
+      "wrist_axes_rad": [
+        0.6108652381933893,
+        0.511478720719514,
+        -0.6108652381980152
+      ]
+    },
+    {
+      "source_time_s": 11.8,
+      "fist_eye_error_m": 0.02374467740422573,
+      "handle_axis_error_deg": 65.60151941826,
+      "palm_to_handle_error_deg": 37.593946773694675,
+      "wrist_axes_rad": [
+        0.6108652381980152,
+        0.6108652381980152,
+        -0.6108652381980152
+      ]
+    },
+    {
+      "source_time_s": 12.15,
+      "fist_eye_error_m": 0.02684933035607617,
+      "handle_axis_error_deg": 50.04730846816666,
+      "palm_to_handle_error_deg": 51.48581649654319,
+      "wrist_axes_rad": [
+        -0.6108652381980152,
+        0.6108652381980152,
+        -0.6108652381980152
+      ]
+    },
+    {
+      "source_time_s": 12.4,
+      "fist_eye_error_m": 0.02759996864089442,
+      "handle_axis_error_deg": 32.60740141574629,
+      "palm_to_handle_error_deg": 54.539497833769055,
+      "wrist_axes_rad": [
+        -0.6108652381980152,
+        0.6108652381980152,
+        -0.6108652381980152
+      ]
+    },
+    {
+      "source_time_s": 12.6,
+      "fist_eye_error_m": 0.027962585514842042,
+      "handle_axis_error_deg": 28.98501173534829,
+      "palm_to_handle_error_deg": 54.136918562732816,
+      "wrist_axes_rad": [
+        -0.6108652381980152,
+        0.6108652381980152,
+        -0.6108652381980152
+      ]
+    },
+    {
+      "source_time_s": 12.8,
+      "fist_eye_error_m": 0.027857113329886322,
+      "handle_axis_error_deg": 30.416541598854927,
+      "palm_to_handle_error_deg": 53.466777574492006,
+      "wrist_axes_rad": [
+        -0.6108652381980152,
+        0.6108652381980152,
+        -0.6108652381980152
+      ]
+    },
+    {
+      "source_time_s": 13.0,
+      "fist_eye_error_m": 0.029637583157403464,
+      "handle_axis_error_deg": 33.47938089638539,
+      "palm_to_handle_error_deg": 53.15973931201349,
+      "wrist_axes_rad": [
+        -0.6108652381980152,
+        0.6108652381980152,
+        -0.6108652381980152
+      ]
+    },
+    {
+      "source_time_s": 13.4,
+      "fist_eye_error_m": 0.031195797678095487,
+      "handle_axis_error_deg": 54.41054169282655,
+      "palm_to_handle_error_deg": 49.17195567936612,
+      "wrist_axes_rad": [
+        -0.6108652381980152,
+        0.6108652381980152,
+        -0.6108652381980152
+      ]
+    },
+    {
+      "source_time_s": 24.5,
+      "fist_eye_error_m": 0.025205514721446987,
+      "handle_axis_error_deg": 62.55676805351044,
+      "palm_to_handle_error_deg": 18.301880852894868,
+      "wrist_axes_rad": [
+        -0.6108650504981907,
+        0.6108652381905495,
+        -0.6108652381974489
+      ]
+    },
+    {
+      "source_time_s": 24.9,
+      "fist_eye_error_m": 0.038386228516057865,
+      "handle_axis_error_deg": 52.050491476583325,
+      "palm_to_handle_error_deg": 28.777217319367846,
+      "wrist_axes_rad": [
+        0.6108652381980152,
+        0.6108652381980152,
+        -0.6108652381980152
+      ]
+    },
+    {
+      "source_time_s": 25.2,
+      "fist_eye_error_m": 0.029325481419483324,
+      "handle_axis_error_deg": 50.70161262783741,
+      "palm_to_handle_error_deg": 33.98764862376491,
+      "wrist_axes_rad": [
+        0.6108652381980152,
+        0.6108652381980152,
+        -0.6108652381980152
+      ]
+    },
+    {
+      "source_time_s": 25.45,
+      "fist_eye_error_m": 0.02175953473782421,
+      "handle_axis_error_deg": 49.399748255410906,
+      "palm_to_handle_error_deg": 35.38476886807222,
+      "wrist_axes_rad": [
+        0.6108652381980152,
+        0.6108652381980152,
+        -0.6108652381980152
+      ]
+    },
+    {
+      "source_time_s": 25.65,
+      "fist_eye_error_m": 0.022861462852490987,
+      "handle_axis_error_deg": 48.440412362336346,
+      "palm_to_handle_error_deg": 35.06049006850724,
+      "wrist_axes_rad": [
+        0.6108652381980152,
+        0.6108652381980152,
+        -0.6108652381980152
+      ]
+    },
+    {
+      "source_time_s": 25.85,
+      "fist_eye_error_m": 0.02275746662941944,
+      "handle_axis_error_deg": 48.069469803076124,
+      "palm_to_handle_error_deg": 34.527759642280955,
+      "wrist_axes_rad": [
+        0.6108652381980152,
+        0.6108652381980152,
+        -0.6108652381980152
+      ]
+    },
+    {
+      "source_time_s": 26.2,
+      "fist_eye_error_m": 0.046688382920373736,
+      "handle_axis_error_deg": 49.49094214627845,
+      "palm_to_handle_error_deg": 30.324737419069375,
+      "wrist_axes_rad": [
+        0.6108652381980152,
+        0.6108652381980152,
+        -0.6108652381980152
+      ]
+    }
+  ],
+  "grip_world_m": [
+    0.8265918319273675,
+    -0.5864677100883806,
+    0.5155647712937531
+  ],
+  "estimated_return_position_error_m": 0.010884881007111534,
+  "estimated_return_orientation_error_deg": 48.45574393182357,
+  "max_edited_arm_joint_speed_rad_s": 7.353283179357467,
+  "motion_sha256": "c509a7412f4da256a332510ee3df402c14c2a4e6a17ff5cfdbbfee59c09bbd56",
+  "physics_grasp_verified": false,
+  "physical_table_contact_verified": false
+}

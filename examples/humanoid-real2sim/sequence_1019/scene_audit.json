@@ -1,0 +1,56 @@
+{
+  "recording": "1-2026-10-19-16-31-26",
+  "reference_scene": "/home/galbot/workspace/ScaleTrack/data/1012test/1012-1/ikea1012_hoi_v2_first35s.yaml",
+  "coordinate_frame": "IKEA_1012_world, meters, Z-up",
+  "scope": "visual and globally located human reach audit; no new scene placement was silently applied to the reference YAML",
+  "findings": [
+    {
+      "id": "floor_strawberry_1019",
+      "status": "new_object_instance_needed",
+      "evidence": "Head frames 27–32 s show a red strawberry on the floor beneath the coffee table; left wrist approaches x=0.65, y=-0.05, z=0.20 m at 30.5 s. A different strawberry remains on the dining table at 90–93 s after the first was dropped into the round basket at 66–68 s.",
+      "candidate_initial_position_m": [0.65, -0.05, 0.06],
+      "position_confidence": "rough hand-supported estimate; check object center and floor contact in stage 3.2"
+    },
+    {
+      "id": "strawberry_existing",
+      "status": "reference_pose_consistent",
+      "reference_initial_position_m": [-0.822655201, -2.071139812, 0.803148925],
+      "evidence": "Second strawberry visible on dining tabletop at 82–93 s; right human wrist is near (-0.95, -2.00, 1.00) m on approach at 92 s."
+    },
+    {
+      "id": "black_ribbon_hat",
+      "status": "reference_start_consistent",
+      "reference_initial_position_m": [2.005000114, 0.819999993, 0.443100005],
+      "evidence": "Hat visible on sofa at 35–37 s; right wrist reaches (2.02, 0.66, 0.67) m at 38 s."
+    },
+    {
+      "id": "round_laundry_basket",
+      "status": "reference_start_consistent",
+      "reference_initial_position_m": [0.159999996, -1.920000076, 0.001],
+      "evidence": "Round lined basket beside dining table at 58–74 s, strawberry dropped inside at 66–68 s."
+    },
+    {
+      "id": "lined_rect_basket",
+      "status": "placement_recheck_before_hoi",
+      "reference_initial_position_m": [-0.775000095, -2.569999933, 0.754000008],
+      "evidence": "Rectangular basket is on dining table at 90–98 s; grip side wrist midpoint around (-1.0, -2.56, 1.03) m at 98 s suggests a possible table-plane offset from the 1012 pose. Camera calibration or a calibrated scene overlay is needed to distinguish grip offset from actual basket movement."
+    },
+    {
+      "id": "grey_armchair",
+      "status": "reference_start_plausible",
+      "reference_initial_position_m": [-0.649999917, -1.25, 0.001],
+      "evidence": "Chair visible beside dining table at 77–82 s and pulled under it by both hands."
+    },
+    {
+      "id": "flower_bouquet",
+      "status": "reference_start_consistent",
+      "reference_initial_position_m": [-2.572504044, 0.58258009, 0.712115347],
+      "evidence": "Flowers beside TV at 112–116 s; right wrist reaches (-2.57, 0.54, 0.82) m at 114 s."
+    },
+    {
+      "id": "white_waste_bin, green_hand_brush, white_storage_box",
+      "status": "existing_first_two_tasks_retained",
+      "evidence": "Bin push and brush sweep have separate accepted/reviewed 1019 scene assets and motions. The white storage box is the coffee-table brush tray, not the rectangular basket on the dining table."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "status": "sampled_kinematic_audit_not_contact_validation",
+  "changed_joints": [
+    "right_shoulder_pitch_joint",
+    "right_shoulder_roll_joint",
+    "right_shoulder_yaw_joint",
+    "right_elbow_joint",
+    "right_wrist_roll_joint",
+    "right_wrist_pitch_joint",
+    "right_wrist_yaw_joint",
+    "right_hand_thumb_0_joint",
+    "right_hand_middle_0_joint",
+    "right_hand_index_0_joint",
+    "right_hand_thumb_1_joint",
+    "right_hand_middle_1_joint",
+    "right_hand_index_1_joint",
+    "right_hand_thumb_2_joint"
+  ],
+  "root_legs_torso_left_arm_unchanged": true,
+  "max_speed_limit_ratio": 0.850916862487793,
+  "sampled_hand_table_penetrations": [],
+  "sampled_hand_table_penetration_count": 0,
+  "sampled_hand_basket_penetrations": [],
+  "sampled_hand_basket_penetration_count": 0,
+  "grip_sampled_vertex_gaps": [
+    {
+      "time_s": 12.8,
+      "body": "right_hand_thumb_2_link",
+      "sampled_vertex_gap_m": 0.0011380683144046212
+    },
+    {
+      "time_s": 12.8,
+      "body": "right_hand_middle_1_link",
+      "sampled_vertex_gap_m": 0.00013774931849629138
+    },
+    {
+      "time_s": 12.8,
+      "body": "right_hand_index_1_link",
+      "sampled_vertex_gap_m": 0.0011136844462638644
+    },
+    {
+      "time_s": 25.6,
+      "body": "right_hand_thumb_2_link",
+      "sampled_vertex_gap_m": 0.0009856178604247814
+    },
+    {
+      "time_s": 25.6,
+      "body": "right_hand_middle_1_link",
+      "sampled_vertex_gap_m": 0.0005256248479195922
+    },
+    {
+      "time_s": 25.6,
+      "body": "right_hand_index_1_link",
+      "sampled_vertex_gap_m": 0.0011657818573655953
+    }
+  ],
+  "sampling_limit": "Hand visual mesh convex vertices every 2 frames; no continuous edge sweep or physical force measured."
+}

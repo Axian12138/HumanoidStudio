@@ -1,0 +1,56 @@
+{
+  "status": "ok",
+  "theta": [
+    0.0,
+    -0.5,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "task": {
+    "total": 31.776101123361844,
+    "terms": [
+      {
+        "name": "thumb_to_handle_upper_side",
+        "type": "body_position",
+        "raw": 0.024746544121611605,
+        "weight": 300.0,
+        "weighted": 7.423963236483481
+      },
+      {
+        "name": "middle_to_handle_lower_side",
+        "type": "body_position",
+        "raw": 0.0020856752091192466,
+        "weight": 100.0,
+        "weighted": 0.20856752091192465
+      },
+      {
+        "name": "index_to_handle_side",
+        "type": "body_position",
+        "raw": 0.005476592137165147,
+        "weight": 100.0,
+        "weighted": 0.5476592137165147
+      },
+      {
+        "name": "brush_lift",
+        "type": "object_position",
+        "raw": 0.04680638636090007,
+        "weight": 500.0,
+        "weighted": 23.403193180450035
+      },
+      {
+        "name": "left_stance",
+        "type": "foot_slip",
+        "raw": 0.0006423932393329656,
+        "weight": 300.0,
+        "weighted": 0.19271797179988967
+      }
+    ]
+  },
+  "reference_regularizer": {
+    "raw": 0.05,
+    "weight": 0.01,
+    "weighted": 0.0005
+  },
+  "total": 31.776601123361843
+}

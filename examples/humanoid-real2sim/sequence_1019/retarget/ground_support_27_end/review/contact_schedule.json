@@ -1,0 +1,32 @@
+{
+  "intervals": [
+    {
+      "side": "left",
+      "start_frame": 95,
+      "end_frame": 240,
+      "start_s": 1.9,
+      "end_s": 4.8
+    },
+    {
+      "side": "left",
+      "start_frame": 2196,
+      "end_frame": 2389,
+      "start_s": 70.92,
+      "end_s": 74.78,
+      "source": "video + human knee < 0.11 m"
+    },
+    {
+      "side": "left",
+      "start_frame": 2196,
+      "end_frame": 2389,
+      "start_s": 70.92,
+      "end_s": 74.78,
+      "source": "video + human knee < 0.11 m"
+    }
+  ],
+  "ramp_frames": 40,
+  "plane_z_m": 0,
+  "toe_xy_policy": "soft tracking of projected source sole guide; sliding allowed",
+  "knee_contact_geometry": "proximal visible knee hull; all leg hulls and collision geoms stay above floor",
+  "fists": "/home/galbot/workspace/ScaleTrack/data/1012test/ground_stage2/fists.json"
+}

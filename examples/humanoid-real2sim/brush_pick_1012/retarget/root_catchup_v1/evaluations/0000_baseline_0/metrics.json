@@ -1,0 +1,55 @@
+{
+  "status": "ok",
+  "theta": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "task": {
+    "total": 37.539930086086635,
+    "terms": [
+      {
+        "name": "pelvis_human_target",
+        "type": "body_position",
+        "raw": 0.008223229537620494,
+        "weight": 1000.0,
+        "weighted": 8.223229537620494
+      },
+      {
+        "name": "thumb_to_handle_upper_side",
+        "type": "body_position",
+        "raw": 0.02257566412208727,
+        "weight": 100.0,
+        "weighted": 2.257566412208727
+      },
+      {
+        "name": "brush_lift",
+        "type": "object_position",
+        "raw": 0.054005627036085656,
+        "weight": 500.0,
+        "weighted": 27.002813518042828
+      },
+      {
+        "name": "left_stance_slip",
+        "type": "foot_slip",
+        "raw": 5.6858895293248375e-05,
+        "weight": 500.0,
+        "weighted": 0.02842944764662419
+      },
+      {
+        "name": "right_stance_slip",
+        "type": "foot_slip",
+        "raw": 5.578234113592373e-05,
+        "weight": 500.0,
+        "weighted": 0.027891170567961865
+      }
+    ]
+  },
+  "reference_regularizer": {
+    "raw": 0.0,
+    "weight": 0.02,
+    "weighted": 0.0
+  },
+  "total": 37.539930086086635
+}

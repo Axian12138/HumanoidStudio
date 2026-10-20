@@ -1,0 +1,15 @@
+{
+  "status": "ok",
+  "mode": "dynamic",
+  "failure_reason": "",
+  "constraint_violations": [],
+  "samples": 601,
+  "available_quantities": [
+    "body_pose",
+    "body_velocity",
+    "controlled_joint_position",
+    "controlled_joint_velocity"
+  ],
+  "time_contract": "sample 0 is initial state; sample k+1 is after source frame k",
+  "quaternion_order": "body_q stores xyzw"
+}

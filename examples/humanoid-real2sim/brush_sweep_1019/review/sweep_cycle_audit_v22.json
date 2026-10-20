@@ -1,0 +1,47 @@
+{
+  "status": "kinematic_geometry_not_physical_contact",
+  "phases": {
+    "lift_and_far_reach": {
+      "brush_x_start_m": 0.7519968748092651,
+      "brush_x_end_m": 1.1212822198867798,
+      "bristle_clearance_mm_range": [
+        38.15573309244036,
+        191.7038265570067
+      ]
+    },
+    "far_placement": {
+      "brush_x_start_m": 1.1212822198867798,
+      "brush_x_end_m": 1.096210241317749,
+      "bristle_clearance_mm_range": [
+        4.593986688458895,
+        109.18742429492123
+      ]
+    },
+    "table_stroke": {
+      "brush_x_start_m": 1.096210241317749,
+      "brush_x_end_m": 0.8328574895858765,
+      "bristle_clearance_mm_range": [
+        -0.5273901676377535,
+        4.884910945890331
+      ]
+    },
+    "final_lift": {
+      "brush_x_start_m": 0.7790294885635376,
+      "brush_x_end_m": 0.8842306137084961,
+      "bristle_clearance_mm_range": [
+        33.58578146432589,
+        172.28435031296053
+      ]
+    }
+  },
+  "far_brush_x_m_at_19_6s": 1.1288020610809326,
+  "old_brush_x_m_at_19_6s": 0.8556129336357117,
+  "stroke_brush_x_displacement_m": -0.26335275173187256,
+  "stroke_clearance_mm_max": 4.884910945890331,
+  "hand_table_penetration_mm_max": 0.0,
+  "max_right_arm_speed_rad_s": 6.0,
+  "max_wrist_axis_abs_deg": 35.0,
+  "root_legs_torso_left_arm_unchanged": true,
+  "arm_outside_sweep_unchanged": true,
+  "failures": []
+}

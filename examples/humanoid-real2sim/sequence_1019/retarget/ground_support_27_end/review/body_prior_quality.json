@@ -1,0 +1,161 @@
+{
+  "stage": "3.1 body prior candidate",
+  "frames": 5104,
+  "fps": 50,
+  "source_range_s_half_open": [
+    27.0,
+    129.07999999999998
+  ],
+  "task_frames": {
+    "03_floor_strawberry_to_basket": 2150,
+    "04_hat_to_stand": 700,
+    "05_drawer": 350,
+    "06_round_basket": 350,
+    "07_armchair": 800,
+    "08_table_strawberry": 450,
+    "09_lined_rect_basket": 550,
+    "10_flower_bouquet": 1054
+  },
+  "task_overlap_checks": [
+    {
+      "tasks": [
+        "03_floor_strawberry_to_basket",
+        "04_hat_to_stand"
+      ],
+      "seconds": [
+        35.0,
+        49.0
+      ],
+      "max_joint_mismatch_rad": 0.0
+    },
+    {
+      "tasks": [
+        "03_floor_strawberry_to_basket",
+        "05_drawer"
+      ],
+      "seconds": [
+        48.0,
+        55.0
+      ],
+      "max_joint_mismatch_rad": 0.0
+    },
+    {
+      "tasks": [
+        "03_floor_strawberry_to_basket",
+        "06_round_basket"
+      ],
+      "seconds": [
+        69.0,
+        70.0
+      ],
+      "max_joint_mismatch_rad": 0.0
+    },
+    {
+      "tasks": [
+        "04_hat_to_stand",
+        "05_drawer"
+      ],
+      "seconds": [
+        48.0,
+        49.0
+      ],
+      "max_joint_mismatch_rad": 0.0
+    },
+    {
+      "tasks": [
+        "06_round_basket",
+        "07_armchair"
+      ],
+      "seconds": [
+        75.0,
+        76.0
+      ],
+      "max_joint_mismatch_rad": 0.0
+    },
+    {
+      "tasks": [
+        "07_armchair",
+        "08_table_strawberry"
+      ],
+      "seconds": [
+        90.0,
+        91.0
+      ],
+      "max_joint_mismatch_rad": 0.0
+    },
+    {
+      "tasks": [
+        "08_table_strawberry",
+        "09_lined_rect_basket"
+      ],
+      "seconds": [
+        98.0,
+        99.0
+      ],
+      "max_joint_mismatch_rad": 0.0
+    },
+    {
+      "tasks": [
+        "09_lined_rect_basket",
+        "10_flower_bouquet"
+      ],
+      "seconds": [
+        108.0,
+        109.0
+      ],
+      "max_joint_mismatch_rad": 0.0
+    }
+  ],
+  "max_stance_foot_slip_mm": [
+    1.7793486292625492e-07,
+    3.1073686100033123e-07
+  ],
+  "min_visible_leg_floor_clearance_mm": -0.4999993849201523,
+  "torso_up_error_deg_max": 1.9999993569822965,
+  "joint_velocity_ratio_max": 0.2908502967056967,
+  "knee_supports": [
+    {
+      "seconds": [
+        28.9,
+        31.8
+      ],
+      "left_knee_gap_mm": 0.9809128940486411,
+      "left_knee_gap_mm_max": 0.9843610235702044,
+      "left_toe_gap_mm": -0.49999869617456394,
+      "left_toe_gap_mm_max": -0.49660087221639615,
+      "left_heel_height_mm_min": 154.7351494302509
+    },
+    {
+      "seconds": [
+        71.0,
+        74.7
+      ],
+      "left_knee_gap_mm": 0.9809108137501243,
+      "left_knee_gap_mm_max": 0.984289279225975,
+      "left_toe_gap_mm": -0.4999984843451766,
+      "left_toe_gap_mm_max": -0.49658598789123487,
+      "left_heel_height_mm_min": 158.69180237765462
+    }
+  ],
+  "right_hand_table_core_gap_mm": [
+    0.0947479506221427,
+    3.119907195799243
+  ],
+  "right_hand_table_exit_gap_mm": [
+    0.38127662614240165,
+    5.070722614564316
+  ],
+  "right_hand_surface_model": "1012 dining tabletop plane z=0.754 m; exact G1 right hand collision meshes; tabletop footprint check remains visual",
+  "max_camera_sync_error_ms_task03": {
+    "head": 16.284942626953125,
+    "left": 17.836332321166992,
+    "right": 17.49897003173828
+  },
+  "existing_brush_to_new_overlap_at_27s": {
+    "root_position_gap_mm": 12.669078074395657,
+    "maximum_nonhand_joint_gap_rad": 0.10053980350494385,
+    "status": "separate accepted Stage 2 and Stage 3.1 candidates retain 1 s overlap; splice optimization remains pending"
+  },
+  "physics_validated": false,
+  "failures": []
+}

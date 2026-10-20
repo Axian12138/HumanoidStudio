@@ -1,0 +1,35 @@
+{
+  "status": "kinematic_geometry_audit_not_physical_contact",
+  "human_right_knee_contact_window_global_s": [
+    16.4,
+    22.18
+  ],
+  "human_right_knee_mean_xy_m": [
+    0.5631325695753923,
+    -0.036531239910418706
+  ],
+  "robot_right_knee_mean_xy_m": [
+    0.5554145983425335,
+    -0.05835957840943692
+  ],
+  "robot_to_human_right_knee_xy_error_mm_max": 33.06890501477564,
+  "robot_to_human_right_knee_xy_error_mm_mean": 23.204956925565572,
+  "right_knee_mesh_gap_mm_range": [
+    0.9807727636801655,
+    0.9842419471690206
+  ],
+  "right_knee_mesh_gap_mm_max": 0.9842419471690206,
+  "right_toe_mesh_gap_mm_range": [
+    -0.5000400899393687,
+    -0.4965554612688938
+  ],
+  "right_heel_height_mm_min": 144.3222804436086,
+  "right_toe_xy_excursion_mm": 13.668362610971823,
+  "right_toe_xy_path_length_mm": 37.32833081254648,
+  "left_stance_ankle_slip_mm_max": 8.064851107421115e-05,
+  "minimum_visible_foot_knee_mesh_floor_clearance_mm": -0.5000400899393687,
+  "sweep_bristle_table_clearance_mm_min": 5.723859044544922,
+  "max_joint_speed_rad_s": 6.000000953674316,
+  "max_root_translation_step_mm": 17.973206368204462,
+  "failures": []
+}

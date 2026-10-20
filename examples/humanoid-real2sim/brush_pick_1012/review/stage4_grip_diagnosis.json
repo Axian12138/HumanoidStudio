@@ -1,0 +1,57 @@
+{
+  "status": "grasp_not_verified",
+  "current_live_branch_untouched": true,
+  "diagnosis": "Finger target lag exists in saved interactive branch, but the main failure is hand/handle spatial mismatch. Stronger closure or hand servo gains pushes the brush away; neither is accepted.",
+  "rollouts": {
+    "palm_waist_v3_wrist_pid_baseline_probe": {
+      "sha256": "f0527734260cf0fb82f3beaf20dc9cfbfe33f3b578862721307954172c76c420",
+      "frames": 300,
+      "peak_brush_rise_mm": 98.0,
+      "final_brush_rise_mm": 74.5,
+      "final_brush_xy_displacement_mm": 37.9,
+      "rise_above_50mm_for_0p4s": true
+    },
+    "grip18_wrist_pid_probe": {
+      "sha256": "bfcc50da3d02023543a05e7b7cc9365c72a87b7b69df5acce4836512e1211ffe",
+      "frames": 300,
+      "peak_brush_rise_mm": 75.5,
+      "final_brush_rise_mm": 15.2,
+      "final_brush_xy_displacement_mm": 145.5,
+      "rise_above_50mm_for_0p4s": false
+    },
+    "grip18_arm_pid_probe": {
+      "sha256": "e8f29fcd7f968e7dcfff86e2b4dfa7af985f9379781a6a412b78a9f5bf8c0647",
+      "frames": 300,
+      "peak_brush_rise_mm": -0.1,
+      "final_brush_rise_mm": -0.1,
+      "final_brush_xy_displacement_mm": 0.4,
+      "rise_above_50mm_for_0p4s": false
+    },
+    "dwell40_wrist_pid_probe": {
+      "sha256": "59659b2986fbf1f0ae52c1f07881f26207657a1e4c1af9be21548ab87369c33f",
+      "frames": 300,
+      "peak_brush_rise_mm": -0.1,
+      "final_brush_rise_mm": -0.4,
+      "final_brush_xy_displacement_mm": 0.7,
+      "rise_above_50mm_for_0p4s": false
+    },
+    "hand_kp4_wrist_pid_probe": {
+      "sha256": "7e1835d2226c69e17d9d9f42d176379f75c255516060df4e8c426f95b98c367b",
+      "frames": 300,
+      "peak_brush_rise_mm": 67.4,
+      "final_brush_rise_mm": 2.3,
+      "final_brush_xy_displacement_mm": 94.7,
+      "rise_above_50mm_for_0p4s": false
+    },
+    "hand_kp8_wrist_pid_probe": {
+      "sha256": "da6341c43a0101eafc5028be5c5db18c1f830c3bf4212a03037f0fbc2af2f3b3",
+      "frames": 300,
+      "peak_brush_rise_mm": 63.7,
+      "final_brush_rise_mm": 12.9,
+      "final_brush_xy_displacement_mm": 104.9,
+      "rise_above_50mm_for_0p4s": false
+    }
+  },
+  "interpretation": "Brush rise alone is not a grasp: in the baseline wrist-PID rollout the wrist-to-handle-grip distance grows from 144.7 mm at source frame 560 to 429.0 mm at frame 599, so the brush separates from the hand while elevated.",
+  "next_step": "Return to full-body/contact retarget so achieved hand and handle coincide before increasing squeeze; then rerun RSS pickup with free brush."
+}

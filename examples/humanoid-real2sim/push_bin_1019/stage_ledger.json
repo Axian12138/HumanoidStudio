@@ -1,0 +1,226 @@
+{
+  "recording_id": "1-2026-10-19-16-31-26",
+  "source_clip_seconds_half_open": [
+    0,
+    9.5
+  ],
+  "source_motive_frames_inclusive": [
+    656007,
+    657147
+  ],
+  "motion_frames": 474,
+  "fps": 50,
+  "scene": "IKEA_LivingRoom_Mesh_1012 v4 reused per user",
+  "stage_1_2": "reused per user; initial white_waste_bin pose from 1012 stage7 YAML",
+  "rss_contact_scene": "scene.py; Stage 5 IKEA 1012 coffee table (56 visual / 8 collision parts), G1, white_waste_bin 25 hulls plus mouth guard, z=0 floor",
+  "bin_source_physics": {
+    "reference": "ScaleTrack/data/1012test/trashbin-v2/white_waste_bin_mu_0p10_guard_v2.usd",
+    "mass_kg": 0.3,
+    "usd_static_friction": 0.1,
+    "usd_dynamic_friction": 0.08,
+    "rss_single_coulomb_friction": 0.1,
+    "mouth_guard": {
+      "shape": "cylinder",
+      "radius_m": 0.094,
+      "height_m": 0.024,
+      "local_center_z_m": 0.27
+    },
+    "collision_hulls": 25,
+    "rss_collision_parts": 26,
+    "note": "RSS currently has one Coulomb coefficient per shape, so the USD static/dynamic split is approximated by 0.10"
+  },
+  "kinematic_review": "http://localhost:8101/; retarget/hoi_candidate_scene.npz and sidecars/white_waste_bin_viewer.npz; no physics steps",
+  "stage_3_body_prior": "approved_by_user_2026-10-19",
+  "stage_3_hoi": "approved_by_user_for_stage4_2026-10-19",
+  "stage_4_tracker": "Audited 2026-10-19: future world-coordinate targets and live-root global error are present. Raw ScaleTrack checkpoint worsens precontact wrist tracking and misses most of the bin push; the ScaleBridge deployed tracker remains the editor default.",
+  "stage_5_final": "pending operator review of physical contact and possible motion/contact refinement",
+  "bin_initial_pos_w_m": [
+    0.18,
+    0.97,
+    0.001
+  ],
+  "bin_trajectory_estimate": "sidecars/white_waste_bin_estimated.npz; kinematic prior only, not object measurement",
+  "source_sync": "sidecars/source_sync.npz",
+  "source_hashes_sha256": {
+    "mcap": "de0bfc6ddace48c085b799d415ba5cae3abeb98dc0b5a097184db70787c3ea03",
+    "head_video": "c274fea7ffa633f3b7dd723f4cbb18f16f6acff29cb267cdc6c159409973bf23",
+    "scene_usd": "7e2b15643043ddd19f0076042a67c5d3c579f8651c95e3c75aee166340a5ff02",
+    "bin_usd": "0938602c8d0e8a2b4fec7d0a68594299fea1e243fa9b89c918f156faeaf6fbc2",
+    "body_prior": "3aecae49c78c19c59f91bce442d626f69ae896c5c93ef9d3d0db10c625dc4e38",
+    "hoi_motion": "9656e90c2e814194eb1e79f792c4a8cb93e54c2a8603b1b528ac4c7122f64256",
+    "hoi_fit_script": "6590747372ad700eaa851ac4bc59475d3c6e4d349d1c3297a969600506c4ed66",
+    "estimated_bin_track": "d27c4ab2e5b8e3df6ef55feb8826991cffee731f7268da76c234d337154d5512",
+    "contact_schedule": "69a3c287c9d94a5633234b2917d4faadac412dff5a500028b3f4af18a125cb2a",
+    "trashbin_v2_usd": "47c19aba2040573483e769bd6064a3e7ba1a6d90d93f1b4c94e0d44cf2db32c4",
+    "rss_mouth_guard": "844a7d7930cf07b3c3a659f64792e5c93d9058fb373e5798045838988230c6e9",
+    "rss_scene": "c456e919d51a8ff04daac645ec637cf023903c1008954186abf2d34cc4691943",
+    "stage4_baseline_rollout": "57637587949a8e1fcdc39aa93cc22276153e9f628229ae859836746f7833a71a",
+    "mu_0p05_scene": "d666d38da2f5bfc89837164709471522a0f0a24f9231cf0ab239d86a706fab87",
+    "mu_0p05_usd": "40c72a182dad4579f1edaee366ad320cb80035a293d6e35825167f0471d92d4c",
+    "mu_0p10_rollout": "f56b54b70c25f77330267fd0e2e1d10015be8db1bd3d999c7763b6524fa5ea11",
+    "mu_0p10_low_com_scene": "8b39ce282f39f31cc51683bf4a531a04cc1a57d06fb67583172c0c268276618f",
+    "mu_0p10_low_com_usd": "89a1e9dbf11b789a680e6d49c68e0bcb561c17f8c8198f1338837f7401336907",
+    "mu_0p05_rollout": "ad63c5d76af00c1f8d73e0d1ffbda998eccb92b18da21fc2e79f5cfc19feab01",
+    "contactfix_scene": "44fdd78213b2d7fd268000ebc06666494a8425f1a5b36c2390346931ed8143f3",
+    "contactfix_rollout": "71a7bbf91d225e1ff9e31fbd0eb47c76e545c3c49b900802094381bb077154ec",
+    "contactfix_comparison": "22beb36536e6064ed90e3d2a802cdc925f44102c4399c523a04777e997df8aa0",
+    "stage5_scene": "e424c77b598a8b2eac1b685e358546fe920bd67880eb396d7138cd2ae021ff9a",
+    "stage5_table_visual": "d6251d0dcf20fb472fbedcb7de6b2825286707812abe4ce3c7d3a2834cd34d61",
+    "stage5_bin_usd": "95f378462deea25c9dbc62a952c91fca6d48a3f0b918f20acd4bb7f4fd9b1fd7",
+    "stage5_rollout_mu_0p15": "69cb9627fd94d57b51b56fea13689c46950b88e1a42afd7fa155aa49464e2cee",
+    "stage5_rollout_mu_0p20": "7f36e93f67e25351600550e987cc82e96024e0a0f9d7b7e25c9f2a707b6f3120",
+    "stage5_review": "36e778c28af2c471a087d0140fd765638c1574b946080013a129f8260916d96c",
+    "stage5_mu_0p20_bin_usd": "115ef96fef8501676fd55ffa965245e14870395152b3a836fb47a20a7d2643b2",
+    "stage5_human_video": "1f0a06467213f95862ab3d5d7b240092f426e2cf845bea96ba01a979d4512ef0",
+    "stage5_human_contact_audit": "d59edcb22555f69af1d26877e4e2d052b44517a63b1ea1d48540ae50ebce18f2",
+    "stage3_human_overlay": "8760090ebc294bb323699007f7d64a5c2612ac4a3e392d78629a7647292bbd20"
+  },
+  "review_images": [
+    "review/body_prior_00s.jpg",
+    "review/body_prior_02s.jpg",
+    "review/body_prior_03s.jpg",
+    "review/body_prior_04s.jpg",
+    "review/body_prior_05s.jpg",
+    "review/body_prior_06s.jpg",
+    "review/body_prior_07s.jpg",
+    "review/body_prior_08s.jpg",
+    "review/body_prior_09s.jpg"
+  ],
+  "hoi_contact_revision": "left thumb and index contact the trailing exterior from the outer/left side; their contact chord straddles the estimated bin travel direction at every moving frame 235–375; right arm unchanged",
+  "hoi_fit_script": "scripts/humanoid-real2sim/tasks/push_bin_1019/fit_hoi.py",
+  "hoi_review_images": [
+    "review/hoi_03.2s.jpg",
+    "review/hoi_03.8s.jpg",
+    "review/hoi_04.3s.jpg",
+    "review/hoi_04.7s.jpg",
+    "review/hoi_05.5s.jpg",
+    "review/hoi_06.5s.jpg",
+    "review/hoi_07.5s.jpg",
+    "review/hoi_08.3s.jpg",
+    "review/hoi_09.0s.jpg",
+    "review/hoi_top_04.7s.jpg",
+    "review/hoi_top_05.5s.jpg",
+    "review/hoi_top_06.5s.jpg",
+    "review/hoi_top_07.5s.jpg"
+  ],
+  "hoi_kinematic_metrics": {
+    "thumb_index_angle_deg_range": [
+      61.09596964841068,
+      69.81408576736823
+    ],
+    "wrist_min_gap_m": 0.0067893273892397216,
+    "thumb_tip_min_gap_m": -0.004073251401479724,
+    "index_tip_min_gap_m": -0.0014189679595773969,
+    "moving_push_direction": {
+      "frames_inclusive": [
+        235,
+        375
+      ],
+      "contact_midpoint_direction_cosine_min": 0.9947281143454924,
+      "contact_midpoint_direction_cosine_mean": 0.9994340779511673,
+      "motion_ray_between_thumb_and_index_frame_fraction": 1.0,
+      "direction_source": "centered 24-frame displacement of estimated bin trajectory; endpoint tangent extended"
+    },
+    "max_added_joint_velocity_rad_s": 3.0268069634952606,
+    "max_added_joint_acceleration_rad_s2": 43.131607181694264,
+    "root_legs_torso_right_arm_unchanged": true,
+    "max_joint_velocity_ratio": 1.0089356544984203,
+    "joint_limit_violation_rad": 0.0,
+    "first_thumb_within_2mm_frame": 214,
+    "first_index_within_2mm_frame": 211
+  },
+  "hoi_physics_verified": false,
+  "hoi_release_path": "hold fitted hand aperture through frame 420 while the source arm withdraws; blend to neutral through frame 450; full mesh sweep checked through frame 465",
+  "stage_4_editor": "http://localhost:8223/",
+  "stage_4_launch": {
+    "script": "scripts/humanoid-real2sim/tasks/push_bin_1019/run_stage4.sh",
+    "motion": "retarget/hoi_candidate_scene.npz",
+    "scene": "scripts/humanoid-real2sim/tasks/push_bin_1019/scene_mu_0p10_com_0p03_contactfix.py",
+    "start_frame": 0,
+    "stop_frame": 474,
+    "output": "rollouts/stage4_deployed_tracker_editor",
+    "checkpoint": "ScaleBridge bfm_transformer_dataset_L_8192_64_64/model_22200_tensorrt.pt",
+    "reference_frame": "world",
+    "future_offsets_frames": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      32
+    ]
+  },
+  "stage_4_baseline": "rollouts/stage4_initial/motion_repair/rollout.npz (original 0.50 RSS friction, no mouth guard; 474 physical frames)",
+  "stage_4_comparisons": {
+    "mu_0p50": "rollouts/stage4_initial/motion_repair/rollout.npz",
+    "mu_0p10_auto_com": "rollouts/stage4_trashbin_v2/motion_repair/rollout.npz",
+    "mu_0p05_auto_com": "rollouts/stage4_mu_0p05/motion_repair/rollout.npz",
+    "mu_0p10_low_com": "rollouts/stage4_mu_0p10_com_0p03 (new interactive branch)"
+  },
+  "bin_current_physics": {
+    "mass_kg": 0.3,
+    "rss_single_coulomb_friction": 0.1,
+    "usd_variant_static_dynamic_friction": [
+      0.1,
+      0.08
+    ],
+    "original_rss_auto_com_z_m": 0.1233362183,
+    "new_rss_com_local_m": [
+      0,
+      0,
+      0.03
+    ],
+    "usd_variant": "assets/white_waste_bin_mu_0p10_com_0p03_guard_v2.usd",
+    "collision_hulls": 25,
+    "mouth_guard": "assets/play_only_mouth_guard.obj",
+    "mujoco_bin_geom_priority": 1,
+    "floor_mu": 1.0,
+    "effective_bin_floor_mu": 0.1
+  },
+  "stage_4_contact_friction_finding": "equal-priority floor mu=1.0 overrode bin mu=0.10; bin geom priority 1 selects 0.10 without changing foot-floor contact",
+  "stage_4_comparison": "review/stage4_contact_friction_comparison.json",
+  "stage_5_trial": {
+    "status": "physics replayed; human/object contact review pending",
+    "chosen_scene": "scene.py (same as scene_stage5_coffee_mu_0p15.py)",
+    "coffee_table_source_prim": "/World/MeasuredFurniture/CoffeeTable in IKEA_LivingRoom_Mesh_1012_drawer_renderable_v4.usd",
+    "coffee_table_collision_parts": 8,
+    "bin_mass_kg": 0.3,
+    "bin_com_local_z_m": 0.03,
+    "bin_rss_effective_mu": 0.15,
+    "bin_usd": "assets/white_waste_bin_mu_0p15_com_0p03_guard_v2.usd",
+    "usd_static_dynamic_friction": [
+      0.15,
+      0.12
+    ],
+    "rollout_mu_0p15": "rollouts/stage5_coffee_mu_0p15/rollout.npz",
+    "rollout_mu_0p20": "rollouts/stage5_coffee_mu_0p20/rollout.npz",
+    "review": "review/stage5_coffee_mu_0p15_top.png",
+    "final_bin_xy_m": [
+      0.6832385659,
+      0.4680283666
+    ],
+    "final_xy_error_to_kinematic_prior_m": 0.035626961,
+    "max_tilt_deg": 3.42831864,
+    "limitation": "At frame 360, hand/bin separation begins before table contact; by frame 375 projected physical contact gap is about 9.7 cm vs 1.6 cm in retargeted reference. Table position alone does not explain mismatch.",
+    "comparison_usd": "assets/white_waste_bin_mu_0p20_com_0p03_guard_v2.usd",
+    "human_motion_comparison": "review/stage5_human_vs_physics_contact.json",
+    "visual_review_url": "http://localhost:8193/"
+  },
+  "stage_3_human_overlay": {
+    "sidecar": "sidecars/human_motion_world.npz",
+    "source": "source mocap.bvh, first 9.5 s",
+    "viewer": "http://localhost:8201/",
+    "fps": 50,
+    "frames": 474,
+    "root_xy_alignment_rmse_m": 0.0250675,
+    "alignment": "rigid XY rotation+translation to reviewed retarget root; original human limb lengths and heights retained"
+  },
+  "stage_4_previous_editor": "http://localhost:8181/",
+  "stage_4_tracker_audit": "review/tracker_stage4_audit.json",
+  "stage_5_raw_tracker_comparison": "rollouts/stage5_raw_scaletrack_mu_0p15/rollout.npz",
+  "stage_4_raw_tracker_comparison": "rollouts/stage4_raw_scaletrack_baseline/rollout.npz",
+  "code_relocation": {
+    "task_scripts": "scripts/humanoid-real2sim/tasks/push_bin_1019/",
+    "note": "Executable task code moved from the example; recorded results and review status are unchanged."
+  }
+}

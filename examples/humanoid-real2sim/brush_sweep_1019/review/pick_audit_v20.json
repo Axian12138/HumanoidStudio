@@ -1,0 +1,15 @@
+{
+  "status": "50_hz_vertex_audit_not_continuous_collision_or_physical_grasp",
+  "palm_vs_brush_penetration_over_0_5mm_count": 0,
+  "palm_vs_brush_max_penetration_m": 0.0,
+  "palm_vs_brush_first_hits": [],
+  "palm_approach_direction_error_deg": {
+    "11.80-12.15s": 19.726796303585957,
+    "12.15-12.40s": 19.221814666988845
+  },
+  "right_wrist_axis_abs_max_deg_11_to_27_2s": {
+    "roll": 34.999996185302734,
+    "pitch": 34.999996185302734,
+    "yaw": 17.826459884643555
+  }
+}

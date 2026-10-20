@@ -1,0 +1,24 @@
+{
+  "status": "ok",
+  "theta": [
+    0.0
+  ],
+  "task": {
+    "total": 40.3911266880546,
+    "terms": [
+      {
+        "name": "brush_lift",
+        "type": "object_position",
+        "raw": 0.0403911266880546,
+        "weight": 1000.0,
+        "weighted": 40.3911266880546
+      }
+    ]
+  },
+  "reference_regularizer": {
+    "raw": 0.0,
+    "weight": 0.01,
+    "weighted": 0.0
+  },
+  "total": 40.3911266880546
+}

@@ -1,0 +1,419 @@
+{
+  "recording_id": "1-2026-10-19-16-31-26",
+  "scope_source_seconds": [
+    9.5,
+    27.0
+  ],
+  "coordinate_frame": "IKEA_1012_world; metres; +Z up; root quaternions wxyz",
+  "stages": {
+    "input_alignment": "complete; 999 new 50 Hz frames from source 8..27.96 s; max camera match error <18 ms",
+    "scene_and_placement": "reused from approved 1012/1019 assets per user; table bounds corrected from 1012 static mesh; CPU scene build and free-rest checked",
+    "body_prior": "right_knee_ground_v3 contact refinement composed into v21 HOI; kinematic geometry audit passed",
+    "hoi": "v22_human_timed_lift_far_place_table_stroke_lift_kinematic_candidate; v21 grasp and knee preserved",
+    "kinematic_player": "v22/v5 on accepted kinematic_viewer.py at http://localhost:8461/; only implementation in robosimstudio/humanoid_real2sim/visualization; old Viser pages closed; HTTP 200 and seek frame 1000 verified, human and brush present, sim_steps=0",
+    "tracker_and_rss_physics": "skipped_by_user_2026-10-20",
+    "object_contact_and_release": "skipped_by_user_2026-10-20; kinematic estimates only",
+    "archive": "data/1019test/push-bin-brush-sweep-kinematic-v3-cycle; kinematic_only; archived_unaccepted_2026-10-20"
+  },
+  "accepted": false,
+  "training_data_ready": false,
+  "source": {
+    "recording_id": "1-2026-10-19-16-31-26",
+    "source_mcap": "/home/galbot/workspace/ScaleTrack/data/1019test/16-31-26/1-2026-10-19-16-31-26_0.mcap",
+    "time_window_s_half_open": [
+      8.0,
+      27.98
+    ],
+    "motive_frames_inclusive": [
+      656967,
+      659362
+    ],
+    "motion_fps": 50.0,
+    "source_to_motion": "Motive 120 Hz frame index rounded from absolute recording seconds; camera nearest by recorded Unix receive timestamp",
+    "source_hashes_sha256": {
+      "mocap.bvh": "a1dd6c0e04deee17659f13757c390e5eef3fe62025f66ee50f24f14470eadee9",
+      "camera_head_color_image_raw_compressed.mp4": "c274fea7ffa633f3b7dd723f4cbb18f16f6acff29cb267cdc6c159409973bf23",
+      "camera_hand_right_color_image_raw_compressed.mp4": "fb37832ed7270c5a59d0b728dac460f8aa4d30b19bf9ab713dd996e9c4a4e3bc"
+    }
+  },
+  "source_push_motion_sha256": "9656e90c2e814194eb1e79f792c4a8cb93e54c2a8603b1b528ac4c7122f64256",
+  "source_motion_fps": 50,
+  "combined_frames": 1399,
+  "splice": {
+    "splice_frame": 474,
+    "splice_time_s": 9.48,
+    "new_suffix_fade_frames": 30,
+    "splice_root_step_m": 0.002522696988545242,
+    "splice_max_joint_step_rad": 0.02852974832057953,
+    "splice_root_angle_step_deg": 1.076962034610408
+  },
+  "audits": {
+    "body_prior": {
+      "mode": "body_prior",
+      "frames": 999,
+      "max_stance_slip_mm": 1.6826533566160738e-07,
+      "min_sole_height_mm": -8.247499905245093e-09,
+      "torso_up_error_deg_mean": 0.20492712379394085,
+      "torso_up_error_deg_max": 0.7616175221616008,
+      "carry_right_wrist_error_mm_max": null,
+      "hand_target_error_mm_max": 188.65974872456664,
+      "joint_velocity_max_ratio": 0.21179888281504866,
+      "failures": []
+    },
+    "sweep": {
+      "sweep_min_bristle_clearance_m": 0.004896630479432895,
+      "sweep_max_bristle_clearance_m": 0.1350372577145348,
+      "sweep_fraction_frames_any_bristles_over_table": 0.8547008547008547,
+      "sweep_mean_bristle_vertex_fraction_over_table": 0.8386752136752137,
+      "sweep_fraction_frames_bristle_penetrating_table": 0.0,
+      "sweep_bristle_clearance_samples_s_m": [
+        [
+          15.47999999999999,
+          0.060494079815443136
+        ],
+        [
+          15.979999999999979,
+          0.040241204164676025
+        ],
+        [
+          16.47999999999997,
+          0.021459199880323854
+        ],
+        [
+          16.979999999999958,
+          0.01770026423196497
+        ],
+        [
+          17.479999999999947,
+          0.010283216334207312
+        ],
+        [
+          17.979999999999936,
+          0.017631514879590915
+        ],
+        [
+          18.479999999999926,
+          0.020648434795286608
+        ],
+        [
+          18.979999999999915,
+          0.07054220779393672
+        ],
+        [
+          19.479999999999905,
+          0.01727640179148826
+        ],
+        [
+          19.979999999999894,
+          0.01578547690537435
+        ],
+        [
+          20.479999999999883,
+          0.016728002403847697
+        ],
+        [
+          20.979999999999873,
+          0.04754023325557155
+        ]
+      ],
+      "max_joint_speed_rad_s": 5.999997615814209,
+      "max_joint_acceleration_rad_s2": 133.9842071533203,
+      "wrist_axis_ranges_rad": {
+        "right_wrist_roll_joint": [
+          -0.6108652353286743,
+          0.1936374008655548
+        ],
+        "right_wrist_pitch_joint": [
+          -0.6765093803405762,
+          0.6108652353286743
+        ],
+        "right_wrist_yaw_joint": [
+          -0.31113043427467346,
+          0.3025503158569336
+        ]
+      }
+    },
+    "hand": {
+      "status": "sampled_kinematic_audit_not_contact_validation",
+      "changed_joints": [
+        "right_shoulder_pitch_joint",
+        "right_shoulder_roll_joint",
+        "right_shoulder_yaw_joint",
+        "right_elbow_joint",
+        "right_wrist_roll_joint",
+        "right_wrist_pitch_joint",
+        "right_wrist_yaw_joint",
+        "right_hand_thumb_0_joint",
+        "right_hand_middle_0_joint",
+        "right_hand_index_0_joint",
+        "right_hand_thumb_1_joint",
+        "right_hand_middle_1_joint",
+        "right_hand_index_1_joint",
+        "right_hand_thumb_2_joint"
+      ],
+      "root_legs_torso_left_arm_unchanged": true,
+      "max_speed_limit_ratio": 0.8663684527079264,
+      "sampled_hand_table_penetrations": [],
+      "sampled_hand_table_penetration_count": 0,
+      "sampled_hand_basket_penetrations": [],
+      "sampled_hand_basket_penetration_count": 0,
+      "grip_sampled_vertex_gaps": [
+        {
+          "time_s": 12.8,
+          "body": "right_hand_thumb_2_link",
+          "sampled_vertex_gap_m": 0.001957892332988353
+        },
+        {
+          "time_s": 12.8,
+          "body": "right_hand_middle_1_link",
+          "sampled_vertex_gap_m": 0.0013092474097200237
+        },
+        {
+          "time_s": 12.8,
+          "body": "right_hand_index_1_link",
+          "sampled_vertex_gap_m": 0.001428609760271507
+        },
+        {
+          "time_s": 25.6,
+          "body": "right_hand_thumb_2_link",
+          "sampled_vertex_gap_m": 0.0020744398200515765
+        },
+        {
+          "time_s": 25.6,
+          "body": "right_hand_middle_1_link",
+          "sampled_vertex_gap_m": 0.0015918734561718836
+        },
+        {
+          "time_s": 25.6,
+          "body": "right_hand_index_1_link",
+          "sampled_vertex_gap_m": 0.0015658439588621287
+        }
+      ],
+      "sampling_limit": "Hand visual mesh convex vertices every 2 frames; no continuous edge sweep or physical force measured."
+    },
+    "release_free_rest_5s_delta_m": [
+      -0.0010336041450500488,
+      0.009219229221343994,
+      -0.008303731679916382
+    ],
+    "release_free_rest_last_1s_position_range_m": [
+      2.6047229766845703e-05,
+      8.33272933959961e-05,
+      3.173947334289551e-05
+    ],
+    "initial_free_rest_5s_delta_m": [
+      0.0014064311981201172,
+      0.00033283233642578125,
+      -0.0008071660995483398
+    ],
+    "initial_free_rest_last_1s_position_range_m": [
+      0.00015145540237426758,
+      4.094839096069336e-05,
+      5.4717063903808594e-05
+    ],
+    "pick": {
+      "status": "50_hz_vertex_audit_not_continuous_collision_or_physical_grasp",
+      "palm_vs_brush_penetration_over_0_5mm_count": 0,
+      "palm_vs_brush_max_penetration_m": 0.0,
+      "palm_vs_brush_first_hits": [],
+      "palm_approach_direction_error_deg": {
+        "11.80-12.15s": 19.726796303585957,
+        "12.15-12.40s": 19.221814666988845
+      },
+      "right_wrist_axis_abs_max_deg_11_to_27_2s": {
+        "roll": 34.999996185302734,
+        "pitch": 34.999996185302734,
+        "yaw": 17.826459884643555
+      }
+    },
+    "right_knee": {
+      "status": "kinematic_geometry_audit_not_physical_contact",
+      "human_right_knee_contact_window_global_s": [
+        16.4,
+        22.18
+      ],
+      "human_right_knee_mean_xy_m": [
+        0.5631325695753923,
+        -0.036531239910418706
+      ],
+      "robot_right_knee_mean_xy_m": [
+        0.5554145983425335,
+        -0.05835957840943692
+      ],
+      "robot_to_human_right_knee_xy_error_mm_max": 33.06890501477564,
+      "robot_to_human_right_knee_xy_error_mm_mean": 23.204956925565572,
+      "right_knee_mesh_gap_mm_range": [
+        0.9807727636801655,
+        0.9842419471690206
+      ],
+      "right_knee_mesh_gap_mm_max": 0.9842419471690206,
+      "right_toe_mesh_gap_mm_range": [
+        -0.5000400899393687,
+        -0.4965554612688938
+      ],
+      "right_heel_height_mm_min": 144.3222804436086,
+      "right_toe_xy_excursion_mm": 13.668362610971823,
+      "right_toe_xy_path_length_mm": 37.32833081254648,
+      "left_stance_ankle_slip_mm_max": 8.064851107421115e-05,
+      "minimum_visible_foot_knee_mesh_floor_clearance_mm": -0.5000400899393687,
+      "sweep_bristle_table_clearance_mm_min": 5.723859044544922,
+      "max_joint_speed_rad_s": 6.000000953674316,
+      "max_root_translation_step_mm": 17.973206368204462,
+      "failures": []
+    },
+    "knee_hoi_composition": {
+      "status": "kinematic_knee_and_hoi_composed_candidate",
+      "source_motion_sha256": "e7aa68fa4da0f0403361220ba8b8296e0c5abb76283e4ebdf192a6f56592333c",
+      "ground_q_sha256": "7a2d9688d2c28cc1b5721cc565f3a3021321995d7fb445235c35e027abf2087a",
+      "motion_sha256": "62646b70fb96e45ba6c97042687923c6ee7fdd8449b48d9fa995e0b62a74da50",
+      "ground_window_global_s": [
+        15.4,
+        24.6
+      ],
+      "right_knee_core_global_s": [
+        16.4,
+        22.18
+      ],
+      "wrist_position_error_m_max": 0.04174628015047899,
+      "wrist_orientation_error_deg_max": 23.437108977609682,
+      "wrist_error_max_frame_local": 729,
+      "right_wrist_axis_abs_max_deg": {
+        "roll": 34.99999999999999,
+        "pitch": 34.99999999999999,
+        "yaw": 34.99999999999999
+      },
+      "transition_floor_lift_m_max": 0.0009866826113881988,
+      "stage4_stage5": "skipped_by_user"
+    },
+    "sweep_cycle_v22": {
+      "status": "kinematic_geometry_not_physical_contact",
+      "phases": {
+        "lift_and_far_reach": {
+          "brush_x_start_m": 0.7519968748092651,
+          "brush_x_end_m": 1.1212822198867798,
+          "bristle_clearance_mm_range": [
+            38.15573309244036,
+            191.7038265570067
+          ]
+        },
+        "far_placement": {
+          "brush_x_start_m": 1.1212822198867798,
+          "brush_x_end_m": 1.096210241317749,
+          "bristle_clearance_mm_range": [
+            4.593986688458895,
+            109.18742429492123
+          ]
+        },
+        "table_stroke": {
+          "brush_x_start_m": 1.096210241317749,
+          "brush_x_end_m": 0.8328574895858765,
+          "bristle_clearance_mm_range": [
+            -0.5273901676377535,
+            4.884910945890331
+          ]
+        },
+        "final_lift": {
+          "brush_x_start_m": 0.7790294885635376,
+          "brush_x_end_m": 0.8842306137084961,
+          "bristle_clearance_mm_range": [
+            33.58578146432589,
+            172.28435031296053
+          ]
+        }
+      },
+      "far_brush_x_m_at_19_6s": 1.1288020610809326,
+      "old_brush_x_m_at_19_6s": 0.8556129336357117,
+      "stroke_brush_x_displacement_m": -0.26335275173187256,
+      "stroke_clearance_mm_max": 4.884910945890331,
+      "hand_table_penetration_mm_max": 0.0,
+      "max_right_arm_speed_rad_s": 6.0,
+      "max_wrist_axis_abs_deg": 35.0,
+      "root_legs_torso_left_arm_unchanged": true,
+      "arm_outside_sweep_unchanged": true,
+      "failures": []
+    },
+    "right_knee_v22": {
+      "status": "kinematic_geometry_audit_not_physical_contact",
+      "human_right_knee_contact_window_global_s": [
+        16.4,
+        22.18
+      ],
+      "human_right_knee_mean_xy_m": [
+        0.5631325695753923,
+        -0.036531239910418706
+      ],
+      "robot_right_knee_mean_xy_m": [
+        0.5554145983425335,
+        -0.05835957840943692
+      ],
+      "robot_to_human_right_knee_xy_error_mm_max": 33.06890501477564,
+      "robot_to_human_right_knee_xy_error_mm_mean": 23.204956925565572,
+      "right_knee_mesh_gap_mm_range": [
+        0.9807727636801655,
+        0.9842419471690206
+      ],
+      "right_knee_mesh_gap_mm_max": 0.9842419471690206,
+      "right_toe_mesh_gap_mm_range": [
+        -0.5000400899393687,
+        -0.4965554612688938
+      ],
+      "right_heel_height_mm_min": 144.3222804436086,
+      "right_toe_xy_excursion_mm": 13.668362610971823,
+      "right_toe_xy_path_length_mm": 37.32833081254648,
+      "left_stance_ankle_slip_mm_max": 8.064851107421115e-05,
+      "minimum_visible_foot_knee_mesh_floor_clearance_mm": -0.5000400899393687,
+      "sweep_bristle_table_clearance_mm_min": -0.5273901676377535,
+      "max_joint_speed_rad_s": 6.0,
+      "max_root_translation_step_mm": 17.973206368204462,
+      "failures": []
+    }
+  },
+  "artifact_sha256": {
+    "sidecars/contact_schedule.json": "059ba576d67cc07bd0d53387368de8015372799750efeed10d09c537cebce6be",
+    "retarget/body_prior_8_28/motion.npz": "00ee77ab13a858dff49f0c2f0cbf98ce63c5eb750c73e566288698afdf677bf7",
+    "retarget/brush_sweep_kinematic_v8/motion.npz": "c2e422feaedc52e3413da1f6baa41b5cd9158962fe572872aa513db46aff35f3",
+    "retarget/brush_sweep_kinematic_v8/object_estimate.npz": "1f6e46063f5b96de87e53dc8968f392e9ecb5d54ec7db73f27bca965c0884c6d",
+    "retarget/push_to_brush_kinematic_v1/motion.npz": "45ffd3fa4fab179fe8ace6b7e812b522d4c81a675bbcd83779087ff9223042cd",
+    "retarget/push_to_brush_kinematic_v1/objects_estimated.npz": "717016a2cbb1a506839ff620b3e5e9bf932a520d3a1b88ece70b83db8f57a092",
+    "retarget/push_to_brush_kinematic_v1/source_sync.npz": "c25f75d61b856691ac634a01b9d0f4c0ae3c385f8d8f9b61b4b758c004b4dbb6",
+    "retarget/brush_sweep_kinematic_v20/motion.npz": "e7aa68fa4da0f0403361220ba8b8296e0c5abb76283e4ebdf192a6f56592333c",
+    "retarget/brush_sweep_kinematic_v20/object_estimate.npz": "1f8a487cba4628974008e66ab1b03371c09d168eaade811a612b2f9ec6b55c1c",
+    "retarget/push_to_brush_kinematic_v3/motion.npz": "ce8b306d4748e99db1a19b06a250e7b2eaa1bbf7bde438406a4ce2dd262aa04f",
+    "retarget/push_to_brush_kinematic_v3/objects_estimated.npz": "823b79a68d5fe4f41dba2d3429850c6c2634c1b46137868297b4a1a21d8825c9",
+    "retarget/push_to_brush_kinematic_v3/source_sync.npz": "c25f75d61b856691ac634a01b9d0f4c0ae3c385f8d8f9b61b4b758c004b4dbb6",
+    "retarget/push_to_brush_kinematic_v3/human_motion_world.npz": "d4ec234d18f664400cb67866dea26e93e01b3ecb6c2ed15e5d9a79369df7ac4b",
+    "retarget/right_knee_ground_v3/intermediate/debug_370_830_q.npy": "7a2d9688d2c28cc1b5721cc565f3a3021321995d7fb445235c35e027abf2087a",
+    "retarget/brush_sweep_kinematic_v21_knee/motion.npz": "62646b70fb96e45ba6c97042687923c6ee7fdd8449b48d9fa995e0b62a74da50",
+    "retarget/brush_sweep_kinematic_v21_knee/object_estimate.npz": "74257007ed284416391299b5d61907e2206fd1891c28740461727530942b32a0",
+    "retarget/push_to_brush_kinematic_v4_knee/motion.npz": "df7f144c859eaaae5d808425e07359f5954fad7a9873496829a43ef8c7096b40",
+    "retarget/push_to_brush_kinematic_v4_knee/objects_estimated.npz": "8dd8cc73b74300eac94b0ca0747e06d5257e8b9c2605c88c8082a740f6fd3839",
+    "retarget/brush_sweep_kinematic_v22_cycle/motion.npz": "96713f1c9c1cb86df186209ab44ec7fc55a2d94dd6b1643461766ac152c5b6e9",
+    "retarget/brush_sweep_kinematic_v22_cycle/object_estimate.npz": "0668d4e408d4db7181fe9558abd17d3b074ebb4f9286b7ded77f083211361c3f",
+    "retarget/push_to_brush_kinematic_v5_cycle/motion.npz": "0be9c0df4e63e490386a0cc6445e4e684a7f8bee650502f7c70dc3eda31773a6",
+    "retarget/push_to_brush_kinematic_v5_cycle/objects_estimated.npz": "1cd1d5fad71e81484d409bc0a226a7998bf5884d0604d21c3e3104658f78bbef",
+    "retarget/push_to_brush_kinematic_v5_cycle/green_hand_brush_viewer.npz": "93a02ba4aac5d25e658e8eda15a4747b6b0c284bc78f8eba7843802a60b689fd",
+    "scripts/humanoid-real2sim/tasks/brush_sweep_1019/scene.py": "6d2d129af8c9328c69efc5084a1e48e9f065bd52741179bb585586493ce73246"
+  },
+  "review_images": [
+    "review/candidate_v19_close_12.4s.jpg",
+    "review/candidate_v19_close_12.8s.jpg",
+    "review/candidate_v19_close_25.6s.jpg",
+    "review/candidate_v19_close_26.2s.jpg"
+  ],
+  "limitations": [
+    "New human/body and HOI stages require operator visual review before tracker stage.",
+    "Source head camera has no calibrated matching simulated extrinsics in these panels.",
+    "Kinematic object sidecar is not measured object motion or proof of grasp/contact.",
+    "Actual ScaleBridge tracker, force/slip and brush-table contact remain unverified.",
+    "Stages 4 and 5 intentionally skipped by user; archived kinematic reference has no tracker or physical contact validation.",
+    "Knee contact is kinematic geometry only; v21 exit transition has up to 41.7 mm / 23.4 deg wrist residual against v20.",
+    "Sweep v22 follows the human four-phase cycle in kinematic geometry; no physical brush/table contact force or tracker rollout measured."
+  ],
+  "archive_status": "kinematic_only_user_requested_skip_stages_4_5",
+  "archive_path": "/home/galbot/workspace/ScaleTrack/data/1019test/push-bin-brush-sweep-kinematic-v3-cycle",
+  "code_relocation": {
+    "scene_script": "scripts/humanoid-real2sim/tasks/brush_sweep_1019/scene.py",
+    "prior_scene_sha256": "bdd653e5ab644b44087e78b703e0d8731391fe86e3a31a5f44d8c63b418aa560",
+    "note": "Task code moved from example to scripts; reviewed motion and assets were not changed by this relocation."
+  }
+}

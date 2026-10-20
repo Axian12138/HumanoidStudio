@@ -1,0 +1,1652 @@
+[
+  {
+    "frame": 2155,
+    "status": "Solve_Succeeded",
+    "iterations": 16,
+    "max_violation": 2.0007254994446402e-12
+  },
+  {
+    "frame": 2156,
+    "status": "Solve_Succeeded",
+    "iterations": 17,
+    "max_violation": 1.4290919467772889e-11
+  },
+  {
+    "frame": 2157,
+    "status": "Solve_Succeeded",
+    "iterations": 18,
+    "max_violation": 1.0211345657928916e-11
+  },
+  {
+    "frame": 2158,
+    "status": "Solve_Succeeded",
+    "iterations": 17,
+    "max_violation": 2.806979648717345e-11
+  },
+  {
+    "frame": 2159,
+    "status": "Solve_Succeeded",
+    "iterations": 15,
+    "max_violation": 7.199102425303749e-13
+  },
+  {
+    "frame": 2160,
+    "status": "Solve_Succeeded",
+    "iterations": 14,
+    "max_violation": 2.448009452594793e-13
+  },
+  {
+    "frame": 2161,
+    "status": "Solve_Succeeded",
+    "iterations": 14,
+    "max_violation": 1.3493058658272812e-12
+  },
+  {
+    "frame": 2162,
+    "status": "Solve_Succeeded",
+    "iterations": 14,
+    "max_violation": 1.2219966859599314e-12
+  },
+  {
+    "frame": 2163,
+    "status": "Solve_Succeeded",
+    "iterations": 15,
+    "max_violation": 5.578332267185133e-13
+  },
+  {
+    "frame": 2164,
+    "status": "Solve_Succeeded",
+    "iterations": 15,
+    "max_violation": 2.9031607248284787e-13
+  },
+  {
+    "frame": 2165,
+    "status": "Solve_Succeeded",
+    "iterations": 14,
+    "max_violation": 1.8049819665043476e-13
+  },
+  {
+    "frame": 2166,
+    "status": "Solve_Succeeded",
+    "iterations": 14,
+    "max_violation": 2.3486758642219543e-13
+  },
+  {
+    "frame": 2167,
+    "status": "Solve_Succeeded",
+    "iterations": 15,
+    "max_violation": 9.91803701512146e-13
+  },
+  {
+    "frame": 2168,
+    "status": "Solve_Succeeded",
+    "iterations": 13,
+    "max_violation": 6.064593272014918e-14
+  },
+  {
+    "frame": 2169,
+    "status": "Solve_Succeeded",
+    "iterations": 12,
+    "max_violation": 1.9321261149924088e-14
+  },
+  {
+    "frame": 2170,
+    "status": "Solve_Succeeded",
+    "iterations": 13,
+    "max_violation": 9.919842725025774e-14
+  },
+  {
+    "frame": 2171,
+    "status": "Solve_Succeeded",
+    "iterations": 15,
+    "max_violation": 4.856115509710437e-13
+  },
+  {
+    "frame": 2172,
+    "status": "Solve_Succeeded",
+    "iterations": 15,
+    "max_violation": 6.43013420287275e-13
+  },
+  {
+    "frame": 2173,
+    "status": "Solve_Succeeded",
+    "iterations": 15,
+    "max_violation": 2.366162821232365e-13
+  },
+  {
+    "frame": 2174,
+    "status": "Solve_Succeeded",
+    "iterations": 17,
+    "max_violation": 2.929045894717319e-13
+  },
+  {
+    "frame": 2175,
+    "status": "Solve_Succeeded",
+    "iterations": 19,
+    "max_violation": 9.560301596367976e-12
+  },
+  {
+    "frame": 2176,
+    "status": "Solve_Succeeded",
+    "iterations": 20,
+    "max_violation": 1.7818347983645268e-13
+  },
+  {
+    "frame": 2177,
+    "status": "Solve_Succeeded",
+    "iterations": 16,
+    "max_violation": 2.292971215707591e-13
+  },
+  {
+    "frame": 2178,
+    "status": "Solve_Succeeded",
+    "iterations": 17,
+    "max_violation": 7.952217890386752e-12
+  },
+  {
+    "frame": 2179,
+    "status": "Solve_Succeeded",
+    "iterations": 16,
+    "max_violation": 1.6643585659718442e-12
+  },
+  {
+    "frame": 2180,
+    "status": "Solve_Succeeded",
+    "iterations": 16,
+    "max_violation": 3.9235914931126023e-13
+  },
+  {
+    "frame": 2181,
+    "status": "Solve_Succeeded",
+    "iterations": 17,
+    "max_violation": 2.749407005972079e-13
+  },
+  {
+    "frame": 2182,
+    "status": "Solve_Succeeded",
+    "iterations": 17,
+    "max_violation": 2.272105893686695e-13
+  },
+  {
+    "frame": 2183,
+    "status": "Solve_Succeeded",
+    "iterations": 15,
+    "max_violation": 2.196822495628762e-12
+  },
+  {
+    "frame": 2184,
+    "status": "Solve_Succeeded",
+    "iterations": 17,
+    "max_violation": 2.552933940573601e-12
+  },
+  {
+    "frame": 2185,
+    "status": "Solve_Succeeded",
+    "iterations": 15,
+    "max_violation": 9.850445108257034e-13
+  },
+  {
+    "frame": 2186,
+    "status": "Solve_Succeeded",
+    "iterations": 15,
+    "max_violation": 1.6625157295336993e-13
+  },
+  {
+    "frame": 2187,
+    "status": "Solve_Succeeded",
+    "iterations": 15,
+    "max_violation": 1.2807476539025852e-14
+  },
+  {
+    "frame": 2188,
+    "status": "Solve_Succeeded",
+    "iterations": 15,
+    "max_violation": 2.1954660311974663e-14
+  },
+  {
+    "frame": 2189,
+    "status": "Solve_Succeeded",
+    "iterations": 15,
+    "max_violation": 2.847696291890161e-14
+  },
+  {
+    "frame": 2190,
+    "status": "Solve_Succeeded",
+    "iterations": 15,
+    "max_violation": 4.15278689952583e-14
+  },
+  {
+    "frame": 2191,
+    "status": "Solve_Succeeded",
+    "iterations": 15,
+    "max_violation": 3.732915622745422e-14
+  },
+  {
+    "frame": 2192,
+    "status": "Solve_Succeeded",
+    "iterations": 15,
+    "max_violation": 2.881028748902281e-14
+  },
+  {
+    "frame": 2193,
+    "status": "Solve_Succeeded",
+    "iterations": 15,
+    "max_violation": 4.335420911161236e-14
+  },
+  {
+    "frame": 2194,
+    "status": "Solve_Succeeded",
+    "iterations": 15,
+    "max_violation": 6.084022174945858e-14
+  },
+  {
+    "frame": 2195,
+    "status": "Solve_Succeeded",
+    "iterations": 16,
+    "max_violation": 7.152611836147571e-14
+  },
+  {
+    "frame": 2196,
+    "status": "Solve_Succeeded",
+    "iterations": 16,
+    "max_violation": 4.7628567756419216e-14
+  },
+  {
+    "frame": 2197,
+    "status": "Solve_Succeeded",
+    "iterations": 17,
+    "max_violation": 3.514801860512469e-14
+  },
+  {
+    "frame": 2198,
+    "status": "Solve_Succeeded",
+    "iterations": 16,
+    "max_violation": 1.2734770197276643e-13
+  },
+  {
+    "frame": 2199,
+    "status": "Solve_Succeeded",
+    "iterations": 16,
+    "max_violation": 2.4861087706782894e-13
+  },
+  {
+    "frame": 2200,
+    "status": "Solve_Succeeded",
+    "iterations": 16,
+    "max_violation": 5.084690180154882e-13
+  },
+  {
+    "frame": 2201,
+    "status": "Solve_Succeeded",
+    "iterations": 16,
+    "max_violation": 9.019500525591904e-13
+  },
+  {
+    "frame": 2202,
+    "status": "Solve_Succeeded",
+    "iterations": 17,
+    "max_violation": 1.4912567175245446e-12
+  },
+  {
+    "frame": 2203,
+    "status": "Solve_Succeeded",
+    "iterations": 17,
+    "max_violation": 1.411067508957045e-12
+  },
+  {
+    "frame": 2204,
+    "status": "Solve_Succeeded",
+    "iterations": 17,
+    "max_violation": 1.127236667224831e-12
+  },
+  {
+    "frame": 2205,
+    "status": "Solve_Succeeded",
+    "iterations": 17,
+    "max_violation": 8.90206329673099e-13
+  },
+  {
+    "frame": 2206,
+    "status": "Solve_Succeeded",
+    "iterations": 17,
+    "max_violation": 8.457838165908806e-13
+  },
+  {
+    "frame": 2207,
+    "status": "Solve_Succeeded",
+    "iterations": 17,
+    "max_violation": 8.737082729872311e-13
+  },
+  {
+    "frame": 2208,
+    "status": "Solve_Succeeded",
+    "iterations": 17,
+    "max_violation": 1.1138777459225168e-12
+  },
+  {
+    "frame": 2209,
+    "status": "Solve_Succeeded",
+    "iterations": 17,
+    "max_violation": 1.4983253344632583e-12
+  },
+  {
+    "frame": 2210,
+    "status": "Solve_Succeeded",
+    "iterations": 17,
+    "max_violation": 2.0802555349555203e-12
+  },
+  {
+    "frame": 2211,
+    "status": "Solve_Succeeded",
+    "iterations": 17,
+    "max_violation": 2.116628083678156e-12
+  },
+  {
+    "frame": 2212,
+    "status": "Solve_Succeeded",
+    "iterations": 17,
+    "max_violation": 1.8132344158264148e-12
+  },
+  {
+    "frame": 2213,
+    "status": "Solve_Succeeded",
+    "iterations": 17,
+    "max_violation": 1.4552883003485369e-12
+  },
+  {
+    "frame": 2214,
+    "status": "Solve_Succeeded",
+    "iterations": 18,
+    "max_violation": 1.2325885626132422e-12
+  },
+  {
+    "frame": 2215,
+    "status": "Solve_Succeeded",
+    "iterations": 17,
+    "max_violation": 1.1019332900631534e-12
+  },
+  {
+    "frame": 2216,
+    "status": "Solve_Succeeded",
+    "iterations": 17,
+    "max_violation": 1.1231614795857916e-12
+  },
+  {
+    "frame": 2217,
+    "status": "Solve_Succeeded",
+    "iterations": 18,
+    "max_violation": 1.1409008327004305e-12
+  },
+  {
+    "frame": 2218,
+    "status": "Solve_Succeeded",
+    "iterations": 18,
+    "max_violation": 1.163495266380475e-12
+  },
+  {
+    "frame": 2219,
+    "status": "Solve_Succeeded",
+    "iterations": 18,
+    "max_violation": 1.3355486096007872e-12
+  },
+  {
+    "frame": 2220,
+    "status": "Solve_Succeeded",
+    "iterations": 19,
+    "max_violation": 1.603586024431337e-12
+  },
+  {
+    "frame": 2221,
+    "status": "Solve_Succeeded",
+    "iterations": 19,
+    "max_violation": 1.9760430172682877e-12
+  },
+  {
+    "frame": 2222,
+    "status": "Solve_Succeeded",
+    "iterations": 19,
+    "max_violation": 2.3157861402628385e-12
+  },
+  {
+    "frame": 2223,
+    "status": "Solve_Succeeded",
+    "iterations": 19,
+    "max_violation": 2.8272379305244517e-12
+  },
+  {
+    "frame": 2224,
+    "status": "Solve_Succeeded",
+    "iterations": 19,
+    "max_violation": 2.4294777379671678e-12
+  },
+  {
+    "frame": 2225,
+    "status": "Solve_Succeeded",
+    "iterations": 19,
+    "max_violation": 2.1461091766852205e-12
+  },
+  {
+    "frame": 2226,
+    "status": "Solve_Succeeded",
+    "iterations": 20,
+    "max_violation": 4.130661028997039e-12
+  },
+  {
+    "frame": 2227,
+    "status": "Solve_Succeeded",
+    "iterations": 20,
+    "max_violation": 5.733360296563506e-12
+  },
+  {
+    "frame": 2228,
+    "status": "Solve_Succeeded",
+    "iterations": 20,
+    "max_violation": 9.215646230468436e-12
+  },
+  {
+    "frame": 2229,
+    "status": "Solve_Succeeded",
+    "iterations": 20,
+    "max_violation": 2.6103872223842743e-11
+  },
+  {
+    "frame": 2230,
+    "status": "Solve_Succeeded",
+    "iterations": 21,
+    "max_violation": 5.850478925786673e-11
+  },
+  {
+    "frame": 2231,
+    "status": "Solve_Succeeded",
+    "iterations": 24,
+    "max_violation": 2.1887764160416018e-11
+  },
+  {
+    "frame": 2232,
+    "status": "Solve_Succeeded",
+    "iterations": 20,
+    "max_violation": 1.9209208716607918e-10
+  },
+  {
+    "frame": 2233,
+    "status": "Solve_Succeeded",
+    "iterations": 20,
+    "max_violation": 7.846098392677214e-11
+  },
+  {
+    "frame": 2234,
+    "status": "Solve_Succeeded",
+    "iterations": 20,
+    "max_violation": 4.797518559194576e-11
+  },
+  {
+    "frame": 2235,
+    "status": "Solve_Succeeded",
+    "iterations": 20,
+    "max_violation": 2.959054460206178e-11
+  },
+  {
+    "frame": 2236,
+    "status": "Solve_Succeeded",
+    "iterations": 19,
+    "max_violation": 3.053257682824255e-11
+  },
+  {
+    "frame": 2237,
+    "status": "Solve_Succeeded",
+    "iterations": 20,
+    "max_violation": 2.8753173626199305e-11
+  },
+  {
+    "frame": 2238,
+    "status": "Solve_Succeeded",
+    "iterations": 20,
+    "max_violation": 3.5386809742567965e-11
+  },
+  {
+    "frame": 2239,
+    "status": "Solve_Succeeded",
+    "iterations": 19,
+    "max_violation": 3.014846742471007e-11
+  },
+  {
+    "frame": 2240,
+    "status": "Solve_Succeeded",
+    "iterations": 19,
+    "max_violation": 3.623339445026279e-11
+  },
+  {
+    "frame": 2241,
+    "status": "Solve_Succeeded",
+    "iterations": 22,
+    "max_violation": 6.961719873589269e-12
+  },
+  {
+    "frame": 2242,
+    "status": "Solve_Succeeded",
+    "iterations": 19,
+    "max_violation": 5.42750839364537e-11
+  },
+  {
+    "frame": 2243,
+    "status": "Solve_Succeeded",
+    "iterations": 17,
+    "max_violation": 1.6299483800512032e-11
+  },
+  {
+    "frame": 2244,
+    "status": "Solve_Succeeded",
+    "iterations": 17,
+    "max_violation": 4.94790948978296e-12
+  },
+  {
+    "frame": 2245,
+    "status": "Solve_Succeeded",
+    "iterations": 18,
+    "max_violation": 2.284103383601686e-12
+  },
+  {
+    "frame": 2246,
+    "status": "Solve_Succeeded",
+    "iterations": 17,
+    "max_violation": 1.009700121831311e-12
+  },
+  {
+    "frame": 2247,
+    "status": "Solve_Succeeded",
+    "iterations": 19,
+    "max_violation": 5.091482790930968e-13
+  },
+  {
+    "frame": 2248,
+    "status": "Solve_Succeeded",
+    "iterations": 19,
+    "max_violation": 2.405020627094246e-13
+  },
+  {
+    "frame": 2249,
+    "status": "Solve_Succeeded",
+    "iterations": 18,
+    "max_violation": 1.2587153541687712e-13
+  },
+  {
+    "frame": 2250,
+    "status": "Solve_Succeeded",
+    "iterations": 17,
+    "max_violation": 7.299716386910404e-14
+  },
+  {
+    "frame": 2251,
+    "status": "Solve_Succeeded",
+    "iterations": 19,
+    "max_violation": 5.108808488843063e-14
+  },
+  {
+    "frame": 2252,
+    "status": "Solve_Succeeded",
+    "iterations": 18,
+    "max_violation": 5.1135467736895e-14
+  },
+  {
+    "frame": 2253,
+    "status": "Solve_Succeeded",
+    "iterations": 18,
+    "max_violation": 4.796723277834444e-14
+  },
+  {
+    "frame": 2254,
+    "status": "Solve_Succeeded",
+    "iterations": 18,
+    "max_violation": 3.7989388377843245e-14
+  },
+  {
+    "frame": 2255,
+    "status": "Solve_Succeeded",
+    "iterations": 18,
+    "max_violation": 2.8067995403026905e-14
+  },
+  {
+    "frame": 2256,
+    "status": "Solve_Succeeded",
+    "iterations": 18,
+    "max_violation": 1.944700101696001e-14
+  },
+  {
+    "frame": 2257,
+    "status": "Solve_Succeeded",
+    "iterations": 18,
+    "max_violation": 1.4870294526642033e-14
+  },
+  {
+    "frame": 2258,
+    "status": "Solve_Succeeded",
+    "iterations": 18,
+    "max_violation": 3.2015026338485565e-14
+  },
+  {
+    "frame": 2259,
+    "status": "Solve_Succeeded",
+    "iterations": 18,
+    "max_violation": 5.758055095907595e-14
+  },
+  {
+    "frame": 2260,
+    "status": "Solve_Succeeded",
+    "iterations": 18,
+    "max_violation": 9.593839119746396e-14
+  },
+  {
+    "frame": 2261,
+    "status": "Solve_Succeeded",
+    "iterations": 18,
+    "max_violation": 1.7774428387986405e-13
+  },
+  {
+    "frame": 2262,
+    "status": "Solve_Succeeded",
+    "iterations": 18,
+    "max_violation": 3.4950463536079757e-13
+  },
+  {
+    "frame": 2263,
+    "status": "Solve_Succeeded",
+    "iterations": 19,
+    "max_violation": 7.608824826222116e-13
+  },
+  {
+    "frame": 2264,
+    "status": "Solve_Succeeded",
+    "iterations": 17,
+    "max_violation": 1.4749186777226005e-11
+  },
+  {
+    "frame": 2265,
+    "status": "Solve_Succeeded",
+    "iterations": 17,
+    "max_violation": 9.503337922836658e-12
+  },
+  {
+    "frame": 2266,
+    "status": "Solve_Succeeded",
+    "iterations": 17,
+    "max_violation": 2.951099285264758e-11
+  },
+  {
+    "frame": 2267,
+    "status": "Solve_Succeeded",
+    "iterations": 17,
+    "max_violation": 1.4628565945953775e-11
+  },
+  {
+    "frame": 2268,
+    "status": "Solve_Succeeded",
+    "iterations": 17,
+    "max_violation": 3.115503542413992e-12
+  },
+  {
+    "frame": 2269,
+    "status": "Solve_Succeeded",
+    "iterations": 18,
+    "max_violation": 2.586130491145878e-12
+  },
+  {
+    "frame": 2270,
+    "status": "Solve_Succeeded",
+    "iterations": 18,
+    "max_violation": 2.50064980762241e-12
+  },
+  {
+    "frame": 2271,
+    "status": "Solve_Succeeded",
+    "iterations": 18,
+    "max_violation": 2.410460118915625e-12
+  },
+  {
+    "frame": 2272,
+    "status": "Solve_Succeeded",
+    "iterations": 19,
+    "max_violation": 2.0013362800309887e-12
+  },
+  {
+    "frame": 2273,
+    "status": "Solve_Succeeded",
+    "iterations": 19,
+    "max_violation": 1.4470163199455827e-12
+  },
+  {
+    "frame": 2274,
+    "status": "Solve_Succeeded",
+    "iterations": 21,
+    "max_violation": 1.7307459715928255e-12
+  },
+  {
+    "frame": 2275,
+    "status": "Solve_Succeeded",
+    "iterations": 21,
+    "max_violation": 1.9257089168085633e-12
+  },
+  {
+    "frame": 2276,
+    "status": "Solve_Succeeded",
+    "iterations": 22,
+    "max_violation": 2.034966407237312e-12
+  },
+  {
+    "frame": 2277,
+    "status": "Solve_Succeeded",
+    "iterations": 18,
+    "max_violation": 2.068177712657041e-12
+  },
+  {
+    "frame": 2278,
+    "status": "Solve_Succeeded",
+    "iterations": 18,
+    "max_violation": 2.053596580679426e-12
+  },
+  {
+    "frame": 2279,
+    "status": "Solve_Succeeded",
+    "iterations": 18,
+    "max_violation": 1.9752927751362483e-12
+  },
+  {
+    "frame": 2280,
+    "status": "Solve_Succeeded",
+    "iterations": 18,
+    "max_violation": 1.9014719609910003e-12
+  },
+  {
+    "frame": 2281,
+    "status": "Solve_Succeeded",
+    "iterations": 18,
+    "max_violation": 1.8446474507081235e-12
+  },
+  {
+    "frame": 2282,
+    "status": "Solve_Succeeded",
+    "iterations": 19,
+    "max_violation": 1.8151176249199486e-12
+  },
+  {
+    "frame": 2283,
+    "status": "Solve_Succeeded",
+    "iterations": 19,
+    "max_violation": 1.8412134842444513e-12
+  },
+  {
+    "frame": 2284,
+    "status": "Solve_Succeeded",
+    "iterations": 19,
+    "max_violation": 1.942585449485282e-12
+  },
+  {
+    "frame": 2285,
+    "status": "Solve_Succeeded",
+    "iterations": 22,
+    "max_violation": 2.2877056479137645e-12
+  },
+  {
+    "frame": 2286,
+    "status": "Solve_Succeeded",
+    "iterations": 22,
+    "max_violation": 4.308272348974002e-12
+  },
+  {
+    "frame": 2287,
+    "status": "Solve_Succeeded",
+    "iterations": 22,
+    "max_violation": 9.110088470371545e-12
+  },
+  {
+    "frame": 2288,
+    "status": "Solve_Succeeded",
+    "iterations": 24,
+    "max_violation": 2.284294793660738e-12
+  },
+  {
+    "frame": 2289,
+    "status": "Solve_Succeeded",
+    "iterations": 23,
+    "max_violation": 1.5405952281594337e-12
+  },
+  {
+    "frame": 2290,
+    "status": "Solve_Succeeded",
+    "iterations": 22,
+    "max_violation": 1.1591925893676958e-12
+  },
+  {
+    "frame": 2291,
+    "status": "Solve_Succeeded",
+    "iterations": 25,
+    "max_violation": 7.327349715790725e-13
+  },
+  {
+    "frame": 2292,
+    "status": "Solve_Succeeded",
+    "iterations": 28,
+    "max_violation": 4.752448434786061e-13
+  },
+  {
+    "frame": 2293,
+    "status": "Solve_Succeeded",
+    "iterations": 27,
+    "max_violation": 4.699851618994444e-13
+  },
+  {
+    "frame": 2294,
+    "status": "Solve_Succeeded",
+    "iterations": 23,
+    "max_violation": 5.08537656429553e-13
+  },
+  {
+    "frame": 2295,
+    "status": "Solve_Succeeded",
+    "iterations": 27,
+    "max_violation": 5.41969247258578e-13
+  },
+  {
+    "frame": 2296,
+    "status": "Solve_Succeeded",
+    "iterations": 27,
+    "max_violation": 5.296596494730466e-13
+  },
+  {
+    "frame": 2297,
+    "status": "Solve_Succeeded",
+    "iterations": 30,
+    "max_violation": 5.063865993193417e-13
+  },
+  {
+    "frame": 2298,
+    "status": "Solve_Succeeded",
+    "iterations": 29,
+    "max_violation": 4.651487528484211e-13
+  },
+  {
+    "frame": 2299,
+    "status": "Solve_Succeeded",
+    "iterations": 33,
+    "max_violation": 5.042203632278991e-13
+  },
+  {
+    "frame": 2300,
+    "status": "Solve_Succeeded",
+    "iterations": 32,
+    "max_violation": 6.222863112539789e-13
+  },
+  {
+    "frame": 2301,
+    "status": "Solve_Succeeded",
+    "iterations": 35,
+    "max_violation": 5.794733715759869e-13
+  },
+  {
+    "frame": 2302,
+    "status": "Solve_Succeeded",
+    "iterations": 38,
+    "max_violation": 6.43009324396211e-13
+  },
+  {
+    "frame": 2303,
+    "status": "Solve_Succeeded",
+    "iterations": 29,
+    "max_violation": 7.711105177624704e-13
+  },
+  {
+    "frame": 2304,
+    "status": "Solve_Succeeded",
+    "iterations": 28,
+    "max_violation": 9.183072380753933e-13
+  },
+  {
+    "frame": 2305,
+    "status": "Solve_Succeeded",
+    "iterations": 26,
+    "max_violation": 1.078146740568267e-12
+  },
+  {
+    "frame": 2306,
+    "status": "Solve_Succeeded",
+    "iterations": 27,
+    "max_violation": 1.1486689525852603e-12
+  },
+  {
+    "frame": 2307,
+    "status": "Solve_Succeeded",
+    "iterations": 26,
+    "max_violation": 1.2262100344782746e-12
+  },
+  {
+    "frame": 2308,
+    "status": "Solve_Succeeded",
+    "iterations": 26,
+    "max_violation": 1.2380570277332673e-12
+  },
+  {
+    "frame": 2309,
+    "status": "Solve_Succeeded",
+    "iterations": 26,
+    "max_violation": 1.2688183170201913e-12
+  },
+  {
+    "frame": 2310,
+    "status": "Solve_Succeeded",
+    "iterations": 25,
+    "max_violation": 1.321890787947993e-12
+  },
+  {
+    "frame": 2311,
+    "status": "Solve_Succeeded",
+    "iterations": 24,
+    "max_violation": 1.3947059941660162e-12
+  },
+  {
+    "frame": 2312,
+    "status": "Solve_Succeeded",
+    "iterations": 24,
+    "max_violation": 1.5174168782001199e-12
+  },
+  {
+    "frame": 2313,
+    "status": "Solve_Succeeded",
+    "iterations": 24,
+    "max_violation": 1.7091038665522975e-12
+  },
+  {
+    "frame": 2314,
+    "status": "Solve_Succeeded",
+    "iterations": 24,
+    "max_violation": 1.8988181804174214e-12
+  },
+  {
+    "frame": 2315,
+    "status": "Solve_Succeeded",
+    "iterations": 24,
+    "max_violation": 2.0952525304473283e-12
+  },
+  {
+    "frame": 2316,
+    "status": "Solve_Succeeded",
+    "iterations": 24,
+    "max_violation": 2.1097741960063423e-12
+  },
+  {
+    "frame": 2317,
+    "status": "Solve_Succeeded",
+    "iterations": 24,
+    "max_violation": 2.192943071660278e-12
+  },
+  {
+    "frame": 2318,
+    "status": "Solve_Succeeded",
+    "iterations": 24,
+    "max_violation": 2.277197840057465e-12
+  },
+  {
+    "frame": 2319,
+    "status": "Solve_Succeeded",
+    "iterations": 24,
+    "max_violation": 2.313480320564536e-12
+  },
+  {
+    "frame": 2320,
+    "status": "Solve_Succeeded",
+    "iterations": 24,
+    "max_violation": 2.3279542099002937e-12
+  },
+  {
+    "frame": 2321,
+    "status": "Solve_Succeeded",
+    "iterations": 23,
+    "max_violation": 2.201060273527929e-12
+  },
+  {
+    "frame": 2322,
+    "status": "Solve_Succeeded",
+    "iterations": 31,
+    "max_violation": 2.1437723141742778e-12
+  },
+  {
+    "frame": 2323,
+    "status": "Solve_Succeeded",
+    "iterations": 23,
+    "max_violation": 2.1913339741904204e-12
+  },
+  {
+    "frame": 2324,
+    "status": "Solve_Succeeded",
+    "iterations": 31,
+    "max_violation": 2.495851460012124e-12
+  },
+  {
+    "frame": 2325,
+    "status": "Solve_Succeeded",
+    "iterations": 27,
+    "max_violation": 8.649767489468498e-12
+  },
+  {
+    "frame": 2326,
+    "status": "Solve_Succeeded",
+    "iterations": 25,
+    "max_violation": 1.0655796046936672e-11
+  },
+  {
+    "frame": 2327,
+    "status": "Solve_Succeeded",
+    "iterations": 25,
+    "max_violation": 1.069596760374843e-12
+  },
+  {
+    "frame": 2328,
+    "status": "Solve_Succeeded",
+    "iterations": 25,
+    "max_violation": 2.257392974445695e-12
+  },
+  {
+    "frame": 2329,
+    "status": "Solve_Succeeded",
+    "iterations": 24,
+    "max_violation": 1.6881171790142684e-12
+  },
+  {
+    "frame": 2330,
+    "status": "Solve_Succeeded",
+    "iterations": 25,
+    "max_violation": 1.3104599060466046e-12
+  },
+  {
+    "frame": 2331,
+    "status": "Solve_Succeeded",
+    "iterations": 29,
+    "max_violation": 1.2128973529978341e-12
+  },
+  {
+    "frame": 2332,
+    "status": "Solve_Succeeded",
+    "iterations": 28,
+    "max_violation": 1.1358206055120883e-12
+  },
+  {
+    "frame": 2333,
+    "status": "Solve_Succeeded",
+    "iterations": 25,
+    "max_violation": 1.1247762698884243e-12
+  },
+  {
+    "frame": 2334,
+    "status": "Solve_Succeeded",
+    "iterations": 25,
+    "max_violation": 1.073024577474369e-12
+  },
+  {
+    "frame": 2335,
+    "status": "Solve_Succeeded",
+    "iterations": 25,
+    "max_violation": 1.012524376849976e-12
+  },
+  {
+    "frame": 2336,
+    "status": "Solve_Succeeded",
+    "iterations": 26,
+    "max_violation": 6.692552566569888e-13
+  },
+  {
+    "frame": 2337,
+    "status": "Solve_Succeeded",
+    "iterations": 26,
+    "max_violation": 6.240077898844731e-13
+  },
+  {
+    "frame": 2338,
+    "status": "Solve_Succeeded",
+    "iterations": 27,
+    "max_violation": 6.404716975472915e-13
+  },
+  {
+    "frame": 2339,
+    "status": "Solve_Succeeded",
+    "iterations": 28,
+    "max_violation": 7.261665550081823e-13
+  },
+  {
+    "frame": 2340,
+    "status": "Solve_Succeeded",
+    "iterations": 27,
+    "max_violation": 8.130024608360339e-13
+  },
+  {
+    "frame": 2341,
+    "status": "Solve_Succeeded",
+    "iterations": 29,
+    "max_violation": 8.885696346395211e-13
+  },
+  {
+    "frame": 2342,
+    "status": "Solve_Succeeded",
+    "iterations": 31,
+    "max_violation": 9.856141179417828e-13
+  },
+  {
+    "frame": 2343,
+    "status": "Solve_Succeeded",
+    "iterations": 30,
+    "max_violation": 2.7755575615628914e-16
+  },
+  {
+    "frame": 2344,
+    "status": "Solve_Succeeded",
+    "iterations": 32,
+    "max_violation": 5.290784747527671e-16
+  },
+  {
+    "frame": 2345,
+    "status": "Solve_Succeeded",
+    "iterations": 29,
+    "max_violation": 1.0604867365575837e-16
+  },
+  {
+    "frame": 2346,
+    "status": "Solve_Succeeded",
+    "iterations": 28,
+    "max_violation": 6.661338147750939e-16
+  },
+  {
+    "frame": 2347,
+    "status": "Solve_Succeeded",
+    "iterations": 27,
+    "max_violation": 2.498001805406602e-16
+  },
+  {
+    "frame": 2348,
+    "status": "Solve_Succeeded",
+    "iterations": 24,
+    "max_violation": 3.2612801348363973e-16
+  },
+  {
+    "frame": 2349,
+    "status": "Solve_Succeeded",
+    "iterations": 27,
+    "max_violation": 2.790710113554039e-16
+  },
+  {
+    "frame": 2350,
+    "status": "Solve_Succeeded",
+    "iterations": 24,
+    "max_violation": 3.08226034638691e-16
+  },
+  {
+    "frame": 2351,
+    "status": "Solve_Succeeded",
+    "iterations": 24,
+    "max_violation": 4.440892098500626e-16
+  },
+  {
+    "frame": 2352,
+    "status": "Solve_Succeeded",
+    "iterations": 27,
+    "max_violation": 3.4933695318937527e-16
+  },
+  {
+    "frame": 2353,
+    "status": "Solve_Succeeded",
+    "iterations": 28,
+    "max_violation": 9.270362255620057e-15
+  },
+  {
+    "frame": 2354,
+    "status": "Solve_Succeeded",
+    "iterations": 26,
+    "max_violation": 1.6317242002017451e-10
+  },
+  {
+    "frame": 2355,
+    "status": "Solve_Succeeded",
+    "iterations": 21,
+    "max_violation": 6.796835316791316e-11
+  },
+  {
+    "frame": 2356,
+    "status": "Solve_Succeeded",
+    "iterations": 26,
+    "max_violation": 2.220446049250313e-16
+  },
+  {
+    "frame": 2357,
+    "status": "Solve_Succeeded",
+    "iterations": 26,
+    "max_violation": 2.220446049250313e-16
+  },
+  {
+    "frame": 2358,
+    "status": "Solve_Succeeded",
+    "iterations": 26,
+    "max_violation": 3.693731044641877e-16
+  },
+  {
+    "frame": 2359,
+    "status": "Solve_Succeeded",
+    "iterations": 28,
+    "max_violation": 2.2204460492504275e-16
+  },
+  {
+    "frame": 2360,
+    "status": "Solve_Succeeded",
+    "iterations": 27,
+    "max_violation": 1.9428902930941778e-16
+  },
+  {
+    "frame": 2361,
+    "status": "Solve_Succeeded",
+    "iterations": 22,
+    "max_violation": 1.1866876905525745e-13
+  },
+  {
+    "frame": 2362,
+    "status": "Solve_Succeeded",
+    "iterations": 22,
+    "max_violation": 1.8955099565672624e-13
+  },
+  {
+    "frame": 2363,
+    "status": "Solve_Succeeded",
+    "iterations": 23,
+    "max_violation": 2.4238279849926357e-13
+  },
+  {
+    "frame": 2364,
+    "status": "Solve_Succeeded",
+    "iterations": 23,
+    "max_violation": 2.8515658905831176e-13
+  },
+  {
+    "frame": 2365,
+    "status": "Solve_Succeeded",
+    "iterations": 23,
+    "max_violation": 3.0662419185613975e-13
+  },
+  {
+    "frame": 2366,
+    "status": "Solve_Succeeded",
+    "iterations": 23,
+    "max_violation": 3.1495240872774835e-13
+  },
+  {
+    "frame": 2367,
+    "status": "Solve_Succeeded",
+    "iterations": 27,
+    "max_violation": 2.973290958007136e-13
+  },
+  {
+    "frame": 2368,
+    "status": "Solve_Succeeded",
+    "iterations": 23,
+    "max_violation": 2.618866137988147e-13
+  },
+  {
+    "frame": 2369,
+    "status": "Solve_Succeeded",
+    "iterations": 24,
+    "max_violation": 2.298000369716407e-13
+  },
+  {
+    "frame": 2370,
+    "status": "Solve_Succeeded",
+    "iterations": 21,
+    "max_violation": 2.564729284174159e-13
+  },
+  {
+    "frame": 2371,
+    "status": "Solve_Succeeded",
+    "iterations": 19,
+    "max_violation": 3.252170272044039e-13
+  },
+  {
+    "frame": 2372,
+    "status": "Solve_Succeeded",
+    "iterations": 19,
+    "max_violation": 3.8268946503674913e-13
+  },
+  {
+    "frame": 2373,
+    "status": "Solve_Succeeded",
+    "iterations": 22,
+    "max_violation": 4.530005161266074e-13
+  },
+  {
+    "frame": 2374,
+    "status": "Solve_Succeeded",
+    "iterations": 19,
+    "max_violation": 5.315692334942377e-13
+  },
+  {
+    "frame": 2375,
+    "status": "Solve_Succeeded",
+    "iterations": 19,
+    "max_violation": 6.294555552665092e-13
+  },
+  {
+    "frame": 2376,
+    "status": "Solve_Succeeded",
+    "iterations": 18,
+    "max_violation": 9.146958990870073e-13
+  },
+  {
+    "frame": 2377,
+    "status": "Solve_Succeeded",
+    "iterations": 21,
+    "max_violation": 2.663181747647794e-12
+  },
+  {
+    "frame": 2378,
+    "status": "Solve_Succeeded",
+    "iterations": 22,
+    "max_violation": 1.2603290136055908e-11
+  },
+  {
+    "frame": 2379,
+    "status": "Solve_Succeeded",
+    "iterations": 23,
+    "max_violation": 1.5868140135211206e-12
+  },
+  {
+    "frame": 2380,
+    "status": "Solve_Succeeded",
+    "iterations": 22,
+    "max_violation": 8.738287871068451e-13
+  },
+  {
+    "frame": 2381,
+    "status": "Solve_Succeeded",
+    "iterations": 23,
+    "max_violation": 2.356448369766895e-13
+  },
+  {
+    "frame": 2382,
+    "status": "Solve_Succeeded",
+    "iterations": 21,
+    "max_violation": 3.382849556032852e-13
+  },
+  {
+    "frame": 2383,
+    "status": "Solve_Succeeded",
+    "iterations": 18,
+    "max_violation": 3.478606291906772e-13
+  },
+  {
+    "frame": 2384,
+    "status": "Solve_Succeeded",
+    "iterations": 17,
+    "max_violation": 1.2947976024690888e-13
+  },
+  {
+    "frame": 2385,
+    "status": "Solve_Succeeded",
+    "iterations": 17,
+    "max_violation": 2.4807933485249123e-13
+  },
+  {
+    "frame": 2386,
+    "status": "Solve_Succeeded",
+    "iterations": 15,
+    "max_violation": 6.40626440784331e-13
+  },
+  {
+    "frame": 2387,
+    "status": "Solve_Succeeded",
+    "iterations": 19,
+    "max_violation": 1.7790845234660076e-14
+  },
+  {
+    "frame": 2388,
+    "status": "Solve_Succeeded",
+    "iterations": 17,
+    "max_violation": 6.228351168146787e-13
+  },
+  {
+    "frame": 2389,
+    "status": "Solve_Succeeded",
+    "iterations": 17,
+    "max_violation": 2.4863444636482067e-13
+  },
+  {
+    "frame": 2390,
+    "status": "Solve_Succeeded",
+    "iterations": 17,
+    "max_violation": 2.1241902846902268e-13
+  },
+  {
+    "frame": 2391,
+    "status": "Solve_Succeeded",
+    "iterations": 17,
+    "max_violation": 2.6371364466295726e-13
+  },
+  {
+    "frame": 2392,
+    "status": "Solve_Succeeded",
+    "iterations": 14,
+    "max_violation": 3.091075117843175e-13
+  },
+  {
+    "frame": 2393,
+    "status": "Solve_Succeeded",
+    "iterations": 15,
+    "max_violation": 5.191985307842737e-13
+  },
+  {
+    "frame": 2394,
+    "status": "Solve_Succeeded",
+    "iterations": 15,
+    "max_violation": 4.851211611264522e-13
+  },
+  {
+    "frame": 2395,
+    "status": "Solve_Succeeded",
+    "iterations": 16,
+    "max_violation": 4.517938482096918e-13
+  },
+  {
+    "frame": 2396,
+    "status": "Solve_Succeeded",
+    "iterations": 16,
+    "max_violation": 2.734311661885565e-13
+  },
+  {
+    "frame": 2397,
+    "status": "Solve_Succeeded",
+    "iterations": 15,
+    "max_violation": 1.200311515375368e-13
+  },
+  {
+    "frame": 2398,
+    "status": "Solve_Succeeded",
+    "iterations": 15,
+    "max_violation": 3.5826897004665227e-13
+  },
+  {
+    "frame": 2399,
+    "status": "Solve_Succeeded",
+    "iterations": 16,
+    "max_violation": 2.3385182679191985e-12
+  },
+  {
+    "frame": 2400,
+    "status": "Solve_Succeeded",
+    "iterations": 16,
+    "max_violation": 1.9212409441144657e-11
+  },
+  {
+    "frame": 2401,
+    "status": "Solve_Succeeded",
+    "iterations": 19,
+    "max_violation": 1.2292805662283968e-11
+  },
+  {
+    "frame": 2402,
+    "status": "Solve_Succeeded",
+    "iterations": 18,
+    "max_violation": 1.0896950008998372e-11
+  },
+  {
+    "frame": 2403,
+    "status": "Solve_Succeeded",
+    "iterations": 19,
+    "max_violation": 6.626088566719091e-13
+  },
+  {
+    "frame": 2404,
+    "status": "Solve_Succeeded",
+    "iterations": 18,
+    "max_violation": 1.2811224303632684e-11
+  },
+  {
+    "frame": 2405,
+    "status": "Solve_Succeeded",
+    "iterations": 20,
+    "max_violation": 7.426503856322597e-12
+  },
+  {
+    "frame": 2406,
+    "status": "Solve_Succeeded",
+    "iterations": 18,
+    "max_violation": 2.4195843115121534e-12
+  },
+  {
+    "frame": 2407,
+    "status": "Solve_Succeeded",
+    "iterations": 20,
+    "max_violation": 2.254625563021057e-12
+  },
+  {
+    "frame": 2408,
+    "status": "Solve_Succeeded",
+    "iterations": 17,
+    "max_violation": 1.9567084674234872e-12
+  },
+  {
+    "frame": 2409,
+    "status": "Solve_Succeeded",
+    "iterations": 17,
+    "max_violation": 1.6685366535837337e-12
+  },
+  {
+    "frame": 2410,
+    "status": "Solve_Succeeded",
+    "iterations": 18,
+    "max_violation": 1.3277661026538881e-12
+  },
+  {
+    "frame": 2411,
+    "status": "Solve_Succeeded",
+    "iterations": 18,
+    "max_violation": 1.0544883333160802e-12
+  },
+  {
+    "frame": 2412,
+    "status": "Solve_Succeeded",
+    "iterations": 16,
+    "max_violation": 8.728652678324342e-13
+  },
+  {
+    "frame": 2413,
+    "status": "Solve_Succeeded",
+    "iterations": 19,
+    "max_violation": 1.825024579427812e-12
+  },
+  {
+    "frame": 2414,
+    "status": "Solve_Succeeded",
+    "iterations": 19,
+    "max_violation": 3.8954950376535185e-13
+  },
+  {
+    "frame": 2415,
+    "status": "Solve_Succeeded",
+    "iterations": 28,
+    "max_violation": 6.826654938814161e-12
+  },
+  {
+    "frame": 2416,
+    "status": "Solve_Succeeded",
+    "iterations": 20,
+    "max_violation": 5.559947158148653e-12
+  },
+  {
+    "frame": 2417,
+    "status": "Solve_Succeeded",
+    "iterations": 17,
+    "max_violation": 3.0365546152073483e-12
+  },
+  {
+    "frame": 2418,
+    "status": "Solve_Succeeded",
+    "iterations": 22,
+    "max_violation": 1.3112856274962385e-12
+  },
+  {
+    "frame": 2419,
+    "status": "Solve_Succeeded",
+    "iterations": 26,
+    "max_violation": 1.001809746266908e-12
+  },
+  {
+    "frame": 2420,
+    "status": "Solve_Succeeded",
+    "iterations": 26,
+    "max_violation": 1.5416001808432611e-12
+  },
+  {
+    "frame": 2421,
+    "status": "Solve_Succeeded",
+    "iterations": 19,
+    "max_violation": 2.2892243656258415e-12
+  },
+  {
+    "frame": 2422,
+    "status": "Solve_Succeeded",
+    "iterations": 20,
+    "max_violation": 2.4975854717723678e-12
+  },
+  {
+    "frame": 2423,
+    "status": "Solve_Succeeded",
+    "iterations": 23,
+    "max_violation": 5.856921935826357e-13
+  },
+  {
+    "frame": 2424,
+    "status": "Solve_Succeeded",
+    "iterations": 27,
+    "max_violation": 1.240479940989303e-12
+  },
+  {
+    "frame": 2425,
+    "status": "Solve_Succeeded",
+    "iterations": 21,
+    "max_violation": 6.122047313539269e-13
+  },
+  {
+    "frame": 2426,
+    "status": "Solve_Succeeded",
+    "iterations": 22,
+    "max_violation": 2.220446049250313e-16
+  },
+  {
+    "frame": 2427,
+    "status": "Solve_Succeeded",
+    "iterations": 21,
+    "max_violation": 4.440892098500626e-16
+  },
+  {
+    "frame": 2428,
+    "status": "Solve_Succeeded",
+    "iterations": 22,
+    "max_violation": 3.133258632787674e-16
+  },
+  {
+    "frame": 2429,
+    "status": "Solve_Succeeded",
+    "iterations": 23,
+    "max_violation": 4.440892098500626e-16
+  }
+]

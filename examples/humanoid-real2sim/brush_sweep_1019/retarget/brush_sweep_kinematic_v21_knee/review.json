@@ -1,0 +1,24 @@
+{
+  "status": "kinematic_knee_and_hoi_composed_candidate",
+  "source_motion_sha256": "e7aa68fa4da0f0403361220ba8b8296e0c5abb76283e4ebdf192a6f56592333c",
+  "ground_q_sha256": "7a2d9688d2c28cc1b5721cc565f3a3021321995d7fb445235c35e027abf2087a",
+  "motion_sha256": "62646b70fb96e45ba6c97042687923c6ee7fdd8449b48d9fa995e0b62a74da50",
+  "ground_window_global_s": [
+    15.4,
+    24.6
+  ],
+  "right_knee_core_global_s": [
+    16.4,
+    22.18
+  ],
+  "wrist_position_error_m_max": 0.04174628015047899,
+  "wrist_orientation_error_deg_max": 23.437108977609682,
+  "wrist_error_max_frame_local": 729,
+  "right_wrist_axis_abs_max_deg": {
+    "roll": 34.99999999999999,
+    "pitch": 34.99999999999999,
+    "yaw": 34.99999999999999
+  },
+  "transition_floor_lift_m_max": 0.0009866826113881988,
+  "stage4_stage5": "skipped_by_user"
+}

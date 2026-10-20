@@ -1,0 +1,63 @@
+{
+  "status": "baseline_retained_or_unverified",
+  "evaluation_mode": "dynamic",
+  "tracker_mode": 7,
+  "theta": [
+    0.0
+  ],
+  "search_cost": 41.42449935939753,
+  "verification_total": 76.62850708952881,
+  "verification_task": {
+    "total": 76.62850708952881,
+    "terms": [
+      {
+        "name": "brush_lift",
+        "type": "object_position",
+        "raw": 0.07662850708952881,
+        "weight": 1000.0,
+        "weighted": 76.62850708952881
+      }
+    ]
+  },
+  "baseline_costs": [
+    42.45787203074046,
+    40.3911266880546
+  ],
+  "measured_noise_floor": 2.066745342685863,
+  "evaluations_in_budget": 2,
+  "final_verification_is_extra_evaluation": true,
+  "history": [
+    {
+      "label": "baseline_0",
+      "theta": [
+        0.0
+      ],
+      "cost": 42.45787203074046
+    },
+    {
+      "label": "baseline_1",
+      "theta": [
+        0.0
+      ],
+      "cost": 40.3911266880546
+    }
+  ],
+  "inputs": {
+    "motion": "/home/galbot/workspace/ScaleTrack/data/1012test/1012-1/stage4-brush/motion_candidate.npz",
+    "motion_sha256": "855a890d6e072799f2796f2ff402a6cd414fb045f7d0be4560a90ba8125d6868",
+    "config": "/home/galbot/workspace/robosimstudio/examples/humanoid-real2sim/brush_pick_1012/dynamic_schedule_probe.json",
+    "config_sha256": "e511121c0a3a87705774a5d28c6b474e87b4ed8d6d0bba330d1533375c65430c",
+    "scene_file": "/home/galbot/workspace/robosimstudio/examples/humanoid-real2sim/brush_pick_1012/scene_stage4_probe.py",
+    "scene_sha256": "085a201468836d3f84a163be309f37b726392a679a8917d18ec1ed0935c3ae2a",
+    "checkpoint": "/home/galbot/workspace/ScaleBridge/scalebridge/data/model/bfm_transformer_dataset_L_8192_64_64/model_22200_tensorrt.pt",
+    "checkpoint_sha256": "c09fbe41cc70bc73d3f6b24f7c695791da8dd791b6f50e14277ce8aa2394c5ef",
+    "fk_model": "/home/galbot/workspace/ScaleTrack/retarget3/assets/robot/robot.xml",
+    "fk_model_sha256": "7c3edae05ef00938e7505541b7c7ab28a0f4db851f1c0a74921697dbe298ae1e",
+    "cost_target_files": [
+      {
+        "path": "/home/galbot/workspace/ScaleTrack/data/1012test/1012-1/stage8-bin-brush-natural/sidecars/objects_estimated.npz",
+        "sha256": "893c03a5bd99bb48411978d844ba119fe543a8cac9ba2744b841004e5b42f655"
+      }
+    ]
+  }
+}

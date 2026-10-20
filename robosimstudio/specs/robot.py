@@ -542,6 +542,9 @@ class EmbodimentSpec:
             ships a merged export its own compiler produced contains its robot,
             and importing it a second time would put two of them in the model --
             so such an embodiment only *indexes* what is already there.
+        preserve_free_bodies: Keep free-jointed roots in an MJCF import. Mobile
+            robots need their floating base; the default strips free bodies
+            because manipulation-cell MJCFs often contain loose props.
         collapse_fixed_joints: Collapse the import's fixed joints. Goes through
             ``add_mjcf_collapsed``, which
             keeps the remap tables so custom attributes can be re-keyed.
@@ -807,6 +810,7 @@ class EmbodimentSpec:
 
     name: str
     asset: AssetSpec | None = None
+    preserve_free_bodies: bool = False
     collapse_fixed_joints: bool = False
     gravcomp_restate: bool = False
     gravcomp: bool = False

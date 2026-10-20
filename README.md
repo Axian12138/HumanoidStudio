@@ -19,6 +19,10 @@ and create a simulation environment for [Your task instruction]
 based on the video at [Your Video Path].
 ```
 
+### Humanoid real2sim harness
+
+The [humanoid-real2sim tool library](robosimstudio/humanoid_real2sim/README.md) contains retarget motion handling, RSS tracker execution, and the reusable Viser review player. [Task scripts and launchers](scripts/humanoid-real2sim/README.md) call those tools. [Examples and curated feedback](examples/humanoid-real2sim/README.md) hold descriptions, configurations, motions, assets, and review results; binary example files use Git LFS. Routine candidates and logs go under the ignored `outputs/humanoid-real2sim/`. The [RSS × ScaleTrack skill](codex_skills/rss-scaletrack-real2sim/SKILL.md) routes the stages to these tools and examples.
+
 ## Acknowledgements
 
 RoboSimStudio is built on [Newton](https://github.com/newton-physics/newton),

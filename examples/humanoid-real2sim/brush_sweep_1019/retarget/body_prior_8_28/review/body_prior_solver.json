@@ -1,0 +1,6001 @@
+{
+  "status": [
+    {
+      "frame": 0,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.2231939358934877e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 1,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.8596235662471372e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 2,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.5847379792054426e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 3,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 3.657257823982122e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 4,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.502368039042454e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 5,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 5.0393658878104094e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 6,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 5.059178743591839e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 7,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.941369598358776e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 8,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.6670928632557395e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 9,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.2300521065901107e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 10,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 3.8040221208013166e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 11,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 3.479161403419084e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 12,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 3.280015148376947e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 13,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 3.122502256758253e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 14,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.926825448668069e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 15,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.8185787037671162e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 16,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.5097979250432445e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 17,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.48620568576996e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 18,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.646494134950217e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 19,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.3770542745846797e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 20,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.530193052967093e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 21,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 8.650719030001142e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 22,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 9.998252226139925e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 23,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.0186296250935811e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 24,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.0728917754221357e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 25,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.1793344079080725e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 26,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.4316325902541394e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 27,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.1086661341677684e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 28,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.885132353934012e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 29,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.538976425910067e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 30,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.543956860494162e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 31,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.0162134369937949e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 32,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.9726755887712523e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 33,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.2570844541122419e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 34,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 7.070775963856495e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 35,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 5.691443669006554e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 36,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 5.205142929515472e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 37,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 3.300843921949014e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 38,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.7841031256383447e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 39,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.0923215307489105e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 40,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.901762502336148e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 41,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.6081914995823779e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 42,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.02307299852412e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 43,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 8.595169411038521e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 44,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.29617702276714e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 45,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 9.997522128049648e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 46,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.2172971836934785e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 47,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.5156769120092195e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 48,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.7182961137877015e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 49,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.6497914145929826e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 50,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 5.067474218023449e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 51,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.0067281170099704e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 52,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.5001888620247428e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 53,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.6410484082740595e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 54,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 3.577693696854567e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 55,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.1729146260085486e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 56,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.676273257508967e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 57,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 5.129022206951106e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 58,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.5368886718825081e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 59,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.490751966315429e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 60,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.6065065944204093e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 61,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 3.1031635594480633e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 62,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 3.4392072523203865e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 63,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.036837696399289e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 64,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 3.633780776279849e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 65,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 7.088496456475468e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 66,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.1360357099476914e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 67,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 3.555489236362064e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 68,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.4835355166553654e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 69,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 9.2148511043888e-15,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 70,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.0219484794367821e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 71,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 3.465394844460129e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 72,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 5.703232946841429e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 73,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 7.348360900717533e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 74,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 7.924483822222961e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 75,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 8.738778945631655e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 76,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.85722573273506e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 77,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.674016372815825e-17,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 78,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.2898349882893854e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 79,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.0816681711721685e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 80,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 5.551115123125783e-17,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 81,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.3750436644702698e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 82,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.6653345369377348e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 83,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 3.469446951953614e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 84,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 9.020562075079397e-17,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 85,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.942890293094024e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 86,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.1102230246251565e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 87,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.249000902703301e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 88,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 5.0007400997920115e-11,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 89,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.220446049250313e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 90,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.1102230246251565e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 91,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 8.326672684688674e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 92,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.1796119636642288e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 93,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.457167719820518e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 94,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.1102230246251565e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 95,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 5.647874616768922e-17,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 96,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.8733500861678465e-11,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 97,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.518081493845358e-11,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 98,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.1434693469869472e-11,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 99,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.613490591134692e-11,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 100,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.1154729917528527e-11,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 101,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.1104187014332467e-11,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 102,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.3159778822213752e-11,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 103,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.306849156141766e-11,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 104,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.0339951944947643e-11,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 105,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.921652420522335e-11,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 106,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 8.881784197001252e-15,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 107,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 3.0531133177191805e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 108,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.3183898417423734e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 109,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.1102230246251565e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 110,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 9.71445146547012e-17,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 111,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.7755575615628914e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 112,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 9.71445146547012e-17,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 113,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.245004513516506e-17,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 114,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.011074127706168e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 115,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 3.1902258612603873e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 116,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.7755575615628914e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 117,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 9.71445146547012e-17,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 118,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.249000902703301e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 119,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.7757494957227738e-11,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 120,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 3.569453773496614e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 121,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 5.744245810722708e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 122,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.1191458097201734e-10,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 123,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.5963159381672165e-15,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 124,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.4624292701556765e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 125,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.9942381079829374e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 126,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 3.610871203934788e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 127,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.947195431093121e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 128,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 7.400802193302525e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 129,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 9.378194429851959e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 130,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 3.4947450424723105e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 131,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 7.252517899792158e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 132,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.7762963210575913e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 133,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.762825708193273e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 134,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 5.937798863708821e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 135,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.2246516672243165e-11,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 136,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.0337006668313674e-11,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 137,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.4248296986707487e-11,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 138,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.42861286636753e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 139,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.44182687149504e-17,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 140,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 7.912281940747334e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 141,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 3.982344573570859e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 142,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.6653345369377348e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 143,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.7755575615628914e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 144,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.7755885650672099e-10,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 145,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.2283196682005837e-10,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 146,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.023252038656608e-10,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 147,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.2708985146403588e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 148,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 8.92809477431457e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 149,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.6653345369377348e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 150,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.1510571102112408e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 151,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.375738494819757e-10,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 152,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.590883229127485e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 153,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.6653345369377348e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 154,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.7755575615628914e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 155,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.163336342344337e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 156,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.3592381669846189e-11,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 157,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.732620515273059e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 158,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.942890293094024e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 159,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 3.733124920302089e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 160,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.718447854656915e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 161,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 5.551115123125783e-17,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 162,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.0777325960306143e-11,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 163,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.498001805406602e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 164,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.168146092627259e-17,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 165,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.002624143559049e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 166,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.5031065288863926e-11,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 167,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 5.214439990908204e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 168,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.6733836538662672e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 169,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.2814026913120874e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 170,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.9389037166328514e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 171,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.486136831042455e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 172,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.871387813312589e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 173,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.998112204224353e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 174,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.9912032097804493e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 175,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.8986262629668446e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 176,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.6920340583036866e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 177,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.398976387423011e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 178,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.021030961181211e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 179,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.665538886864726e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 180,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.3914067485291502e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 181,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.1656101629173124e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 182,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.004194607498411e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 183,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 8.909539772616881e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 184,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 8.537615059367454e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 185,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 8.273937091018979e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 186,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 7.649436639667329e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 187,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 7.21922521762508e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 188,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.705747068735946e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 189,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.183942247162122e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 190,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 5.756506382681437e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 191,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 5.573319583618286e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 192,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 5.5289106626332796e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 193,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 5.359601651377943e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 194,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 5.334621633323877e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 195,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 5.367928324062632e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 196,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 5.3262949606391885e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 197,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 5.2985393850235596e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 198,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 5.134781488891349e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 199,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.826694599557868e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 200,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.524158825347513e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 201,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.721223412218478e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 202,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.77118344832661e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 203,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.726774527341604e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 204,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.649058915617843e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 205,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.4853010194856324e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 206,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.4020342926387457e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 207,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.349298698969051e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 208,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.3048897779840445e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 209,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.1994185906446546e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 210,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.1522341120980855e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 211,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.285460875053104e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 212,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.4103609653234344e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 213,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.4797499043625066e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 214,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.52138326778595e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 215,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.6074255521943996e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 216,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.6906922790412864e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 217,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.704570066849101e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 218,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.676814491233472e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 219,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.707345624410664e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 220,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.77118344832661e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 221,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.7156722970953524e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 222,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.624078897563777e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 223,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.515832152662824e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 224,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.493627692170321e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 225,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.4353409833775004e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 226,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.427014310692812e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 227,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.3826053897078054e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 228,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.338196468722799e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 229,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.3076653355456074e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 230,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.3076653355456074e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 231,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.263256414560601e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 232,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.246603069191224e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 233,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.235500838944972e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 234,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.135580766728708e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 235,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 3.9496184101039944e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 236,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.0523140398818214e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 237,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.143907439413397e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 238,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.1300296516055823e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 239,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.188316360398403e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 240,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.2743586448068527e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 241,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.318767565791859e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 242,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.3576253716537394e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 243,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.340972026284362e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 244,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.1772141301521515e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 245,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.0273340218277554e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 246,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.1244785364824565e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 247,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.210520820890906e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 248,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.285460875053104e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 249,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.368727601899991e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 250,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.4825254619240695e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 251,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.446443213623752e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 252,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.39648317751562e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 253,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.313216450668733e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 254,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.299338662860919e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 255,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.3298697960381105e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 256,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.3770542745846797e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 257,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.440892098500626e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 258,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.4797499043625066e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 259,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.52138326778595e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 260,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.549138843401579e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 261,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.474198789239381e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 262,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.413136522884997e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 263,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.335420911161236e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 264,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.3298697960381105e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 265,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.315992008230296e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 266,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.3548498140921765e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 267,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.393707619954057e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 268,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.471423231677818e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 269,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.463096558993129e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 270,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.493627692170321e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 271,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.5380366131553274e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 272,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.574118861455645e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 273,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.601874437071274e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 274,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.62685445512534e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 275,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.6351811278100286e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 276,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.7101211819722266e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 277,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.77118344832661e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 278,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.8405723873656825e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 279,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.8471099194256895e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 280,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 5.262243792297464e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 281,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 5.775143370187644e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 282,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.209666534957e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 283,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.479704187809787e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 284,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.1102230246251565e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 285,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.220446049250313e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 286,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.3877787807814457e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 287,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.220446049250313e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 288,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.3877787807814457e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 289,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.067588217275941e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 290,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.942890293094024e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 291,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.0122792321330962e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 292,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.7755575615628914e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 293,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.5215410052318076e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 294,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.7755575615628914e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 295,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.3183898417423734e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 296,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.3093477912738535e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 297,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 3.5308882533669925e-11,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 298,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.5061444823320789e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 299,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.1102230246251565e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 300,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.220446049250313e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 301,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.3592239273284576e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 302,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.1102230246251565e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 303,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 3.3306690738754696e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 304,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.7755575615628914e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 305,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 7.354441200499432e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 306,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 5.339976224399462e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 307,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 3.7505650464674507e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 308,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 3.87741959691393e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 309,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.922387732599801e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 310,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 5.520281904916913e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 311,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 5.019834350303308e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 312,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.2292162510479416e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 313,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 3.285517198718349e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 314,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.7882747437064807e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 315,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.864409993594377e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 316,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.433236797840372e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 317,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.249000902703301e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 318,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.0122792321330962e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 319,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.2898349882893854e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 320,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.6653345369377348e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 321,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.3869795029440866e-15,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 322,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.3877787807814457e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 323,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 3.3306690738754696e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 324,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.498001805406602e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 325,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 9.248839478992153e-17,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 326,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.6781524578912384e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 327,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.942890293094024e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 328,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.220446049250313e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 329,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 5.551115123125783e-17,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 330,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.5265566588595902e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 331,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.1102230246251565e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 332,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.0201069347469465e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 333,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 8.326672684688674e-17,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 334,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 3.95516952522712e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 335,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 8.326672684688674e-17,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 336,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.914335439641036e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 337,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 8.870667528827649e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 338,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 5.477562847744366e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 339,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.148553888252195e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 340,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.664113705312502e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 341,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 7.116529587847253e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 342,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 7.53563877964325e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 343,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 7.732009477123825e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 344,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 8.728434641724903e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 345,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.636779683484747e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 346,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.5265566588595902e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 347,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.1102230246251565e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 348,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.6670790815591115e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 349,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 3.191891195797325e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 350,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.914335439641036e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 351,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.2898349882893854e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 352,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 3.407342003175503e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 353,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.942890293094024e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 354,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.1102230246251565e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 355,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 3.0531133177191805e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 356,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.7755575615628914e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 357,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.2627581867006708e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 358,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.364786917351458e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 359,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.3877787807814457e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 360,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.3877787807814457e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 361,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.7755575615628914e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 362,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.3877787807814457e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 363,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.5670485426422142e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 364,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 5.551115123125783e-17,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 365,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.167810814254961e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 366,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.220446049250313e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 367,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.5318550847204066e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 368,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.1476877249319265e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 369,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.366548576953943e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 370,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.5267442963895575e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 371,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.590705145229363e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 372,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.635164818691994e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 373,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.6686652849578373e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 374,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 8.004708007547379e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 375,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.5360490657201353e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 376,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.7183283020613048e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 377,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.5547323087753887e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 378,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.4457619137023465e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 379,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.3741888882006828e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 380,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.6653345369377348e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 381,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.201347203085064e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 382,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.9035473873462107e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 383,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.3702177576118163e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 384,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 9.912299140844798e-17,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 385,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.5959455978986625e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 386,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.6653345369377348e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 387,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.6653345369377348e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 388,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.6653345369377348e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 389,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.220446049250313e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 390,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.7755575615628914e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 391,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.969128840758867e-11,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 392,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.040212608913407e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 393,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.5761946262169757e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 394,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 3.6570746431152656e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 395,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.105882300819985e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 396,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 8.086920022520871e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 397,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 5.603864306026186e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 398,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.2130557024472492e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 399,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 7.414676795392742e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 400,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 5.800863196673123e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 401,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 9.884315588237769e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 402,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 7.456257833382551e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 403,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 3.616884569623835e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 404,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.835684197184393e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 405,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.470183645368228e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 406,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.498001805406602e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 407,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.6653345369377348e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 408,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.718105643960383e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 409,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.1553507130827429e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 410,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.4345180704454119e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 411,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.527185210527565e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 412,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.1480681656789216e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 413,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.127078011619602e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 414,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.115677408935483e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 415,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.103353933362143e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 416,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.069894586957503e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 417,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 5.917988321613166e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 418,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.752551844998711e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 419,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.5265566588595902e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 420,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 3.085543323120144e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 421,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.1648459974367142e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 422,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.498001805406602e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 423,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.734723475976807e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 424,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.0103029524088925e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 425,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 3.632649736573512e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 426,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.1046441539264151e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 427,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.2904568786639175e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 428,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 3.3306690738754696e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 429,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.220446049250313e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 430,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 7.181540750258705e-17,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 431,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.3665240625549488e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 432,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.483971989590696e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 433,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.6927661840991359e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 434,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.9110082157542787e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 435,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.362233893737108e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 436,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.338923896262951e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 437,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.7922085505574153e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 438,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.0972222651439953e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 439,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 3.1499579690921675e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 440,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.980531213775259e-11,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 441,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.80198947955934e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 442,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 8.501638023254145e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 443,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.675800771048334e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 444,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.813542198663786e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 445,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.0408340855860843e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 446,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.944791841466983e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 447,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.9532036599720668e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 448,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.734723475976807e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 449,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 5.633833677354261e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 450,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 5.758872545502669e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 451,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 5.8331048324866686e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 452,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 5.8836685523644405e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 453,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 5.922318191409204e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 454,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 5.951017456595764e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 455,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 5.969211236411809e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 456,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 5.977454642369651e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 457,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 5.983623319050224e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 458,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 5.989479745505122e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 459,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 5.99009730706257e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 460,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 5.989597706701488e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 461,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 5.983574746792897e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 462,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 5.977301986703765e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 463,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 5.965831995080606e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 464,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 5.95282156901078e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 465,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 5.9386384698711936e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 466,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 5.909904510215114e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 467,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 5.882190567962908e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 468,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 5.847301809414063e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 469,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 5.800693259061518e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 470,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 5.739492214829056e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 471,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 5.655129142745352e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 472,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.97445468113459e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 473,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 8.490801051232741e-17,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 474,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.457167719820518e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 475,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.4814361015196394e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 476,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.1801641082395513e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 477,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.1102230246251565e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 478,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.6564861421718433e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 479,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.0737244426906045e-11,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 480,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.372704256732754e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 481,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.5594916731062085e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 482,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.0513755525125836e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 483,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.277540104258248e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 484,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.7064857047438102e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 485,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.7483608014987062e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 486,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.54431520224766e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 487,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.0122792321330962e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 488,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.7755575615628914e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 489,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.33671205271876e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 490,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.4061009917578322e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 491,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.520449363134206e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 492,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.4236255116908315e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 493,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.7755575615628914e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 494,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.938893903907228e-17,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 495,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.8638208561536727e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 496,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.747659054933729e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 497,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.9608058325996963e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 498,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.1102230246251565e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 499,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.7625650598518232e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 500,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.1102230246251565e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 501,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.9746042831242448e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 502,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.0485285056281498e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 503,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.902120848190268e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 504,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.414102009907155e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 505,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.1102230246251565e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 506,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.020924210451105e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 507,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.6653345369377348e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 508,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.3734249204386736e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 509,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 8.071302073735507e-17,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 510,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.608628236259572e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 511,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.1102230246251565e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 512,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.7351186244345267e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 513,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.0699254317163536e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 514,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 3.1117142044634275e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 515,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.734723475976807e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 516,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.446946600356911e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 517,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.457558739393191e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 518,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.2674727156693427e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 519,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.4405978870485086e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 520,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 8.326672684688674e-17,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 521,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.2669205710940202e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 522,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 3.362628610373755e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 523,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.154784043261837e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 524,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 3.32098531073129e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 525,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.5189540544108882e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 526,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.5057003543337143e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 527,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.1102230246251565e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 528,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.561287577605337e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 529,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.0048188355461014e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 530,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.1796119636642288e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 531,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.588887743897335e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 532,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.1417874126657226e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 533,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.7755575615628914e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 534,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 3.3809656096060375e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 535,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.222844789224131e-17,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 536,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.33671205271876e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 537,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.0656546118605282e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 538,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.1335293250353405e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 539,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.249000902703301e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 540,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.497529953411649e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 541,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 3.404428906133824e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 542,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.5265566588595902e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 543,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.5316366927717973e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 544,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 3.123919499243842e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 545,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.3347989813328064e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 546,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.328154329287995e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 547,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.0060182055330103e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 548,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.724349057459571e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 549,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.6653345369377348e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 550,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.3853934255794656e-17,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 551,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.9964585540321877e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 552,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.472311445257657e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 553,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.552958817865174e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 554,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.3877787807814457e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 555,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.249000902703301e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 556,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.40726855889031e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 557,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.7965772174340569e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 558,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.008110675637113e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 559,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.019670872881022e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 560,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.0224186748669695e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 561,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.022252141413276e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 562,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.021468046402134e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 563,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.0183802386148955e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 564,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.011816044981799e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 565,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.004155506111886e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 566,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 5.992595308867976e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 567,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 5.979002015710222e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 568,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 5.961349469618682e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 569,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 5.937181302151373e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 570,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 5.90268806055505e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 571,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 5.851166773318539e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 572,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 5.764631827442912e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 573,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.23076311319233e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 574,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.0788104649168856e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 575,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.249000902703301e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 576,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.8041124150158794e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 577,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.2197841116703521e-11,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 578,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.3917466995939876e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 579,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.658671399573054e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 580,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.510393065737222e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 581,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.8026937018089565e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 582,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.3113356848050196e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 583,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 8.326672684688674e-17,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 584,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.745734460534781e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 585,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.8041124150158794e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 586,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 8.474162772693592e-17,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 587,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 8.326672684688674e-17,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 588,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.1102230246251565e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 589,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.860090657860175e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 590,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.1102230246251565e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 591,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 3.3576556121318795e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 592,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.5401976814454632e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 593,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.2498807888694634e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 594,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.620459094244776e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 595,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.4137957316985068e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 596,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.040362160050425e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 597,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 7.727373616284742e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 598,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.0180520906381173e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 599,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.3877787807814457e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 600,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.7330522539949442e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 601,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.6374355984874995e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 602,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.8516944912531326e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 603,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 3.0547197909978763e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 604,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.6653345369377348e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 605,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.6653345369377348e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 606,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.5316366927717973e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 607,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.5265566588595902e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 608,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.3114026598508266e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 609,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.005314301393838e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 610,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.018588405432013e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 611,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.028372245836522e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 612,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.0360258458125315e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 613,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.042125133554066e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 614,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.048231360189504e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 615,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.05257510777335e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 616,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.055891899059418e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 617,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.058639701045365e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 618,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.060985047184886e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 619,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.063198554340232e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 620,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.065370428132155e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 621,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.067049640456901e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 622,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.068215374632757e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 623,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.069415803278133e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 624,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.070345615061257e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 625,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.071199099011437e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 626,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.072045644067714e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 627,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.072739533458105e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 628,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.07340566727288e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 629,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.073919145421769e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 630,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.938893903907228e-17,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 631,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.245004513516506e-17,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 632,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 3.4404289360968387e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 633,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.249000902703301e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 634,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.942890293094024e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 635,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.077367775692011e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 636,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.1102230246251565e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 637,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 8.326672684688674e-17,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 638,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.5265566588595902e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 639,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.078408609777597e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 640,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.1355956954749227e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 641,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.1102230246251565e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 642,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.0408340855860843e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 643,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.0274344805832292e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 644,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.220446049250313e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 645,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.4506694045224606e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 646,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.7755575615628914e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 647,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.200954800420115e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 648,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.240511017960489e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 649,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.0781909134746836e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 650,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.3877787807814457e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 651,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.6916618949484911e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 652,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.056683254652174e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 653,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.0816681711721685e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 654,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.9785795960647343e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 655,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.0550272527472798e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 656,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.942890293094024e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 657,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 9.71445146547012e-17,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 658,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.1102230246251565e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 659,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.1102230246251565e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 660,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.391750396657961e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 661,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.1456630840638282e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 662,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.1102230246251565e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 663,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.6183964208691673e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 664,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 3.205229317339914e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 665,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.9043598666454934e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 666,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.449001447783499e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 667,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.3183898417423734e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 668,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.533698934326333e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 669,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 8.326672684688674e-17,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 670,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.624883536954463e-17,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 671,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.3877787807814457e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 672,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.1796119636642288e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 673,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.5230752722770583e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 674,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.9936356347935565e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 675,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 5.551115123125783e-17,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 676,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.6653345369377348e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 677,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 3.147978266214377e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 678,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 8.214092667214952e-17,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 679,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.6713688261898587e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 680,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.241394601190625e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 681,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.9506636430159634e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 682,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.7963486855645276e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 683,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.3790607959901769e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 684,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.1904807403604952e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 685,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.432178674415477e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 686,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.1377368669093329e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 687,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.1102230246251565e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 688,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.9108586137646236e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 689,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.9765247486381462e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 690,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.075806524563632e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 691,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.079289849303393e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 692,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.082370718196728e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 693,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.085229542485138e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 694,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.087443049640484e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 695,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.089032056344479e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 696,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.090822290971687e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 697,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.0923488476305465e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 698,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.094652560406644e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 699,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.0963178949435815e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 700,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.097761184875594e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 701,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.098954674627066e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 702,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.099204474807607e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 703,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.0996832584869765e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 704,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.0987048744465255e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 705,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.098538340992832e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 706,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.09851752431112e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 707,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.099551419502802e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 708,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.10109185394947e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 709,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.1019245212179385e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 710,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.102701677335176e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 711,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.837988158403677e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 712,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.3877787807814457e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 713,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.498001805406602e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 714,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 3.122502256758253e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 715,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.923585121816019e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 716,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.6653345369377348e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 717,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.942890293094024e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 718,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.09947717822862e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 719,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.404467477470205e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 720,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.9121627231775233e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 721,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 3.3306690738754696e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 722,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.1770774366403093e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 723,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.711331386237197e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 724,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.304289290838455e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 725,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 3.0531133177191805e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 726,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.7069801597660904e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 727,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 3.454262359604886e-11,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 728,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 3.476998852647037e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 729,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.051948308947093e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 730,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 3.4967312520162415e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 731,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 9.861435509323308e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 732,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.0299868376950416e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 733,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.996514065183419e-11,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 734,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 5.3710241815915445e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 735,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 8.594790948402122e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 736,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.603469744646696e-11,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 737,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.085507410488272e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 738,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.9627894637350204e-11,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 739,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.686471711657531e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 740,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 7.124561327861718e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 741,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 3.0489312149941976e-11,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 742,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.517488728321712e-11,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 743,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.550864245018925e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 744,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 5.851152895530731e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 745,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.1307955400118317e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 746,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 7.186612416276716e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 747,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.548234177117251e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 748,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 8.357203817865866e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 749,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 9.848610169752806e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 750,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.6377476890145091e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 751,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.4828630700774437e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 752,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.033495759614425e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 753,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.7436052601738083e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 754,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.363076318483536e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 755,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.199873533863638e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 756,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.1102230246251565e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 757,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.7755575615628914e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 758,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.498001805406602e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 759,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.734723475976807e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 760,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.3046382006383088e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 761,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.3877787807814457e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 762,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.1102230246251565e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 763,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.220446049250313e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 764,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.5265566588595902e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 765,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.3877787807814457e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 766,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.6653345369377348e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 767,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.220446049250313e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 768,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.6653345369377348e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 769,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.1102230246251565e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 770,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.0816681711721685e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 771,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 5.551115123125783e-17,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 772,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.1102230246251565e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 773,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.942890293094024e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 774,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.2898349882893854e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 775,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.1102230246251565e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 776,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.264443447896411e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 777,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.942890293094024e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 778,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.3877787807814457e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 779,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.8726771988339088e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 780,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 5.833528105014807e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 781,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.154667969353911e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 782,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 3.196393290114377e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 783,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.9584379348808122e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 784,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 3.5529781998598566e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 785,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 8.629208458899029e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 786,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 7.763234499691407e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 787,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.955547249276606e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 788,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 5.917488721252084e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 789,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 5.3157780500856876e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 790,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 7.138310333396607e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 791,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 8.107277410299219e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 792,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 8.689627047538413e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 793,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 8.681148236327778e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 794,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 7.658368572704575e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 795,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 5.0207336993663555e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 796,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.090961068849765e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 797,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 5.419359915780854e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 798,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 5.9626252391519185e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 799,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 8.922138178590423e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 800,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.1102230246251565e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 801,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.457167719820518e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 802,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.0882770403604348e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 803,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 5.551115123125783e-17,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 804,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.6653345369377348e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 805,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.3207439387390948e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 806,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 5.551115123125783e-17,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 807,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 5.551115123125783e-17,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 808,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.249000902703301e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 809,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.636779683484747e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 810,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.1102230246251565e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 811,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.127756816206268e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 812,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.5357493882438575e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 813,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.1915468611789493e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 814,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.2145839889399213e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 815,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.1696199564426024e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 816,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.1127210264305631e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 817,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.0219602941674566e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 818,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 9.212075546827236e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 819,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 8.54739364699871e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 820,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.0484419454948432e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 821,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.258092491203036e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 822,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.4245733271860988e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 823,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.5643191795164496e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 824,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.630476897398495e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 825,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.6510760869369764e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 826,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.599251964698153e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 827,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.5387717022243054e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 828,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.4668802882918496e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 829,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.3794084414347945e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 830,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.3000707663198496e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 831,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.2030296064622662e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 832,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.1201160464550954e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 833,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.4652275671627692e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 834,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.2926662255362978e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 835,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.1914873381634378e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 836,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.181251281128792e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 837,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.2582586644788746e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 838,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.3443843162907166e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 839,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 8.447554185576642e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 840,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 7.58394857870328e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 841,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.5926594467283e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 842,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.811218256075335e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 843,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.894484982922222e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 844,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.908362770730037e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 845,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.925016116099414e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 846,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 7.011058400507864e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 847,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 7.069345109300684e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 848,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 7.130407375655068e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 849,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 7.335798635210722e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 850,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 7.571721027943568e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 851,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 7.779887845060784e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 852,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 7.782663402622347e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 853,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 7.491229858658244e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 854,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 7.571721027943568e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 855,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 7.749356711883593e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 856,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 7.87148124459236e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 857,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 7.921441280700492e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 858,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 7.971401316808624e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 859,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 8.074096946586451e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 860,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 8.107403637325206e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 861,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 8.087974734394265e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 862,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 8.040790255847696e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 863,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 7.963074644123935e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 864,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 7.979727989493313e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 865,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 7.982503547054876e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 866,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 8.043565813409259e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 867,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 7.899236820207989e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 868,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 7.774336729937659e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 869,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 7.732703366514215e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 870,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 7.760458942129844e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 871,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 7.757683384568281e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 872,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 7.627232179174825e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 873,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 7.585598815751382e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 874,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 7.568945470382005e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 875,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 7.494005416219807e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 876,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 7.388534228880417e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 877,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 7.355227538141662e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 878,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 7.269185253733212e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 879,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 7.222000775186643e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 880,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 7.149836278586008e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 881,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.977751709769109e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 882,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.925016116099414e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 883,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.94999613415348e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 884,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.908362770730037e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 885,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.850076061937216e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 886,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.727951529228449e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 887,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.65301147506625e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 888,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.547540287726861e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 889,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.45039577307216e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 890,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.347700143294333e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 891,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.300515664747763e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 892,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.231126725708691e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 893,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.19226891984681e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 894,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.139533326177116e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 895,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.072919944699606e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 896,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.006306563222097e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 897,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 5.975775430044905e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 898,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 5.931366509059899e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 899,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 5.881406472951767e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 900,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 5.853650897336138e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 901,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 5.861977570020827e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 902,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 5.842548667089886e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 903,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 5.812017533912694e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 904,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 5.762057497804562e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 905,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 5.725975249504245e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 906,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 5.759281940243e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 907,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 5.784261958297066e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 908,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 5.814793091474257e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 909,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 5.856426454897701e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 910,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 5.839773109528323e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 911,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 5.909162048567396e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 912,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 5.945244296867713e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 913,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 5.953570969552402e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 914,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.181166689600559e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 915,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.358802373540584e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 916,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.189493362285248e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 917,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.131206653492427e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 918,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.09512440519211e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 919,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.109002192999924e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 920,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.111777750561487e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 921,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.00908212078366e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 922,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 5.948019854429276e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 923,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 5.820344206597383e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 924,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 5.695444116327053e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 925,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 5.551115123125783e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 926,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 5.383649392708692e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 927,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 5.6354588939020006e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 928,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 5.949484449017249e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 929,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.37219399255212e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 930,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.798048546040769e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 931,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.5959455978986625e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 932,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.1796119636642288e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 933,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.1102230246251565e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 934,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.1102230246251565e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 935,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.4776621283411905e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 936,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 9.71445146547012e-17,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 937,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.8691050757973685e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 938,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.5265566588595902e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 939,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.7827823603266602e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 940,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.3913565769592635e-11,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 941,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.1102230246251565e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 942,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 3.3306690738754696e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 943,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 3.0531133177191805e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 944,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.983724378680108e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 945,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.0816681711721685e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 946,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.0816681711721685e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 947,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.6653345369377348e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 948,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 9.455491944976302e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 949,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.0400090400514211e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 950,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.71570130742432e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 951,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 3.344622523925314e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 952,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 3.9596911407628295e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 953,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.569913061556428e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 954,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 5.197796359769972e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 955,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.129178919143018e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 956,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.1975319554744182e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 957,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 7.696928404874509e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 958,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 3.910869985255129e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 959,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 3.417448977855671e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 960,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.9069489777815334e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 961,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.249000902703301e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 962,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.3877787807814457e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 963,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 9.71445146547012e-17,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 964,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 3.191891195797325e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 965,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.5774833313330296e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 966,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.162985653994151e-11,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 967,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.1510571102112408e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 968,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 7.528491771910604e-17,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 969,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.249000902703301e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 970,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.938893903907228e-17,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 971,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.235861604643645e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 972,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 5.551115123125783e-17,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 973,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 3.1436650793158906e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 974,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 6.245004513516506e-17,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 975,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.6767243073184623e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 976,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.4697024521456477e-16,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 977,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 8.326672684688674e-17,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 978,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 7.972351458163497e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 979,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.6208563336489956e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 980,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 5.852701061663962e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 981,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 8.980441620557028e-14,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 982,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.736710635118841e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 983,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 9.713460466952412e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 984,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.189502325320178e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 985,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 5.262896278773107e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 986,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 5.90547179875295e-12,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 987,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 4.745443984171737e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 988,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.399394936526252e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 989,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.866043129658902e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 990,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.6569850225804135e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 991,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.637165101253204e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 992,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.6958294678269987e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 993,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 1.8414342461898616e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 994,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.0539477672691545e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 995,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.30413013863233e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 996,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.440528734502234e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 997,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.641561364034182e-13,
+      "scene_projection_iterations": 0
+    },
+    {
+      "frame": 998,
+      "status": "Solve_Succeeded",
+      "constraint_violation": 2.806459194949239e-13,
+      "scene_projection_iterations": 0
+    }
+  ],
+  "body_released_frames": [],
+  "scene_collision": false,
+  "start_frame": 0
+}

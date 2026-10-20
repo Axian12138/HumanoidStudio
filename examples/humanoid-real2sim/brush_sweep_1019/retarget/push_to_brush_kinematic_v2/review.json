@@ -1,0 +1,21 @@
+{
+  "status": "kinematic_candidate_unreviewed",
+  "frames": 1399,
+  "fps": 50,
+  "source_window_s_half_open": [
+    0,
+    27.98
+  ],
+  "splice_frame": 474,
+  "splice_time_s": 9.48,
+  "source_push_sha256": "9656e90c2e814194eb1e79f792c4a8cb93e54c2a8603b1b528ac4c7122f64256",
+  "source_brush_sha256": "d1721b155639282ff41d725e316d840e180ace4e5f0cda07cbf725187e353a7c",
+  "combined_motion_sha256": "0e2ac53d0394c0ecffbf33bb6f4c8f3ca2da197ed07b1a80a6de0279450413f2",
+  "unmodified_push_joint_root_frames": 474,
+  "new_suffix_fade_frames": 30,
+  "splice_root_step_m": 0.002522696988545242,
+  "splice_max_joint_step_rad": 0.02852974832057953,
+  "splice_root_angle_step_deg": 1.076962034610408,
+  "bin_track_status": "previous kinematic estimate held constant after push",
+  "brush_track_status": "rigid kinematic estimate until release; not physical grasp"
+}

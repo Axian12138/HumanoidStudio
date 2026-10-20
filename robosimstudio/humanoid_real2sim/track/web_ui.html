@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="zh">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>RSS · 物理播放与修复</title>
+<style>
+  :root{font-family:Inter,system-ui,sans-serif;color:#e9edf4;background:#111722}
+  *{box-sizing:border-box}body{margin:0;height:100vh;overflow:hidden}
+  iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+  .top{position:absolute;top:12px;left:12px;right:12px;display:flex;align-items:center;gap:12px;padding:11px 14px;background:#121a24ed;border:1px solid #364457;border-radius:14px;box-shadow:0 12px 36px #0008;z-index:2}
+  button{font:inherit;color:#eaf2fb;background:#26394d;border:1px solid #506881;border-radius:9px;padding:8px 13px;cursor:pointer;white-space:nowrap}
+  button:hover{background:#34516d}.play{min-width:92px;background:#187ec3;border-color:#42b5ee;font-weight:700}.play:hover{background:#209be7}
+  .title{font-size:12px;line-height:1.35;color:#b8c8d7;min-width:126px}.title strong{color:#fff;font-size:14px}
+  .timeline{height:47px;min-width:200px;flex:1;touch-action:none;cursor:pointer}
+  .time{font-variant-numeric:tabular-nums;color:#c6d2df;font-size:12px;min-width:72px;text-align:right}
+  .panel{position:absolute;left:12px;bottom:12px;width:min(360px,calc(100vw - 24px));padding:16px;background:#121a24ec;border:1px solid #364457;border-radius:14px;box-shadow:0 12px 36px #0008;z-index:2}
+  .hint{font-size:12px;color:#9fb0c1;line-height:1.45;margin:8px 0 14px}.row{display:flex;gap:9px;align-items:center;justify-content:space-between;margin:10px 0}
+  .label{font-size:12px;color:#acbdce}.value{font-variant-numeric:tabular-nums;font-size:12px;color:#edf7ff}
+  input[type=range]{width:100%;accent-color:#48b8f3;cursor:pointer}.links{display:grid;grid-template-columns:repeat(5,1fr);gap:5px;margin-top:10px}
+  .link{font-size:10px;text-align:center;color:#acbdce;border-top:3px solid #f65c85;padding-top:5px;cursor:pointer}.link.move{border-color:#53a7ff}.link.hold{border-color:#ffa74b}.link.selected{color:white;font-weight:bold}
+  .recovery{margin-top:12px;padding:12px;border:1px solid #3d7280;border-radius:10px;background:#10272e;display:none}.recovery.show{display:block}
+  .status{margin-top:12px;color:#f2ba7b;font-size:11px;max-height:35px;overflow:hidden}
+  .source{position:absolute;right:14px;top:82px;width:min(350px,28vw);background:#121a24ef;border:1px solid #364457;border-radius:10px;overflow:hidden;z-index:2;display:none;box-shadow:0 10px 24px #0007}
+  .source video{display:block;width:100%;background:#000}.source small{display:block;padding:6px 9px;color:#b8c8d7}
+  @media(max-width:760px){.title{display:none}.top{gap:6px}.time{display:none}.panel{width:300px}}
+</style>
+<iframe id="view" title="3D robot and room"></iframe>
+<div class="top">
+  <div class="title"><strong id="pageTitle">RSS 物理播放</strong><br><span id="pageSubtitle">tracker · motion repair</span></div>
+  <button id="play" class="play">▶ 播放</button>
+  <canvas id="timeline" class="timeline" title="修复时查看缓存；恢复时选择参考帧"></canvas>
+  <div id="time" class="time">0.00 / 3.00 s</div>
+  <button id="reference" style="display:none">隐藏参考虚影</button>
+  <button id="reset">重置</button>
+</div>
+<div id="source" class="source"><video id="humanVideo" muted playsinline preload="auto" src="/reference.mp4"></video><small>原始 human 头部视频 · 青色半透明机器人为 retarget 参考</small></div>
+<div class="panel" id="panel">
+  <div id="repairControls">
+  <p class="hint" id="wristMode" style="display:none;margin-top:0"></p>
+  <div class="row"><span class="label">当前 link</span><span class="value" id="selected">右手腕</span></div>
+  <div class="links" id="links"></div>
+  <p class="hint">双击圆点开启目标位姿。拖动目标手脚的位移轴或旋转环，半透明模型显示目标 6D 姿态；按播放后每帧朝目标移动。再次双击保持当前位置与姿态。</p>
+  <div class="row"><span class="label">当前 link 线速度</span><span class="value" id="speedValue">30 cm/s</span></div>
+  <input id="speed" type="range" min="0" max="60" step="1" value="30">
+  <div class="row"><span class="label">当前 link 角速度</span><span class="value" id="angularSpeedValue">1.0 rad/s</span></div>
+  <input id="angularSpeed" type="range" min="0" max="300" step="5" value="100">
+  <div class="row"><span class="label">左手开合</span><span class="value" id="leftValue">跟随动作</span></div>
+  <input id="leftHand" type="range" min="0" max="100" step="1" value="50" aria-label="左手开合">
+  <div class="row"><span class="label">右手开合</span><span class="value" id="rightValue">跟随动作</span></div>
+  <input id="rightHand" type="range" min="0" max="100" step="1" value="50" aria-label="右手开合">
+  </div>
+  <div class="recovery" id="recoveryControls">
+    <div class="row"><span class="label">衔接 refmotion 第 <b id="refFrame">0</b> 帧</span><span class="label" id="delta"></span></div>
+    <p class="hint">拖动上方时间轴选择衔接姿态。青色半透明机器人是目标；当前物理状态保持暂停。</p>
+    <div class="row"><span class="label">身体 qpos 插值时长（手部保持）</span><span class="value" id="durationValue">1.00 s</span></div>
+    <input id="duration" type="range" min="0" max="500" step="1" value="50" aria-label="插值时长">
+    <p class="hint" style="margin-bottom:0">0 秒立即切换参考目标；按播放后由 tracker 连续执行插值，结束后接着播放原参考动作。</p>
+  </div>
+  <div class="row"><button id="recoveryMode">进入恢复</button><button id="save">保存候选</button></div>
+  <div class="status" id="status"></div>
+</div>
+<script>
+  const $=id=>document.getElementById(id), canvas=$('timeline'), ctx=canvas.getContext('2d');
+  $('view').src=`http://${location.hostname}:${Number(location.port)-1}/`;
+  let state=null, dragging=false, editingSpeed=false, editingAngularSpeed=false, editingHand=null, editingDuration=false, linksBuilt=false;
+  const labels={pelvis:'骨盆',left_wrist_yaw_link:'左手腕',right_wrist_yaw_link:'右手腕',left_ankle_roll_link:'左脚踝',right_ankle_roll_link:'右脚踝'};
+  async function command(command,value){await fetch('/api/command',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({command,value})});}
+  function draw(){if(!state)return;const dpr=devicePixelRatio||1,w=canvas.clientWidth,h=canvas.clientHeight;canvas.width=w*dpr;canvas.height=h*dpr;ctx.scale(dpr,dpr);
+    const x0=10,x1=w-10,y=20,bw=x1-x0,total=Math.max(1,state.recovery_mode?
+      (state.recovery_started?state.recovery_total_frames:state.source_frames-1):state.frames-1),edge=s=>x0+bw*s/total;
+    ctx.fillStyle='#58636e';round(x0,y-5,bw,10,5);ctx.fill();
+    if(state.recovery_mode){const position=state.recovery_started?state.recovery_elapsed_frames:state.recovery_frame;
+      ctx.fillStyle=state.recovery_started?'#eaf0f4':'#75dbe1';round(x0,y-5,Math.max(0,edge(position)-x0),10,5);ctx.fill();
+      const cx=edge(position);ctx.fillStyle='#45baff';round(cx-2,y-14,4,28,2);ctx.fill();}
+    else{ctx.fillStyle='#eaf0f4';round(x0,y-5,Math.max(0,edge(state.cached)-x0),10,5);ctx.fill();
+    for(const m of state.marks){ctx.beginPath();ctx.fillStyle='#ff9a3d';ctx.arc(edge(m),y,6,0,Math.PI*2);ctx.fill();ctx.strokeStyle='#202b36';ctx.lineWidth=2;ctx.stroke();}
+    const cx=edge(state.cursor);ctx.fillStyle='#45baff';round(cx-2,y-14,4,28,2);ctx.fill();}
+    ctx.fillStyle='#aab7c5';ctx.font='11px system-ui';ctx.fillText('0 s',x0,y+25);ctx.textAlign='right';ctx.fillText((total/50).toFixed(2)+' s',x1,y+25);ctx.textAlign='left';
+  }
+  function round(x,y,w,h,r){ctx.beginPath();ctx.roundRect(x,y,w,h,r)}
+  function slotFromEvent(e){const r=canvas.getBoundingClientRect(),x=e.clientX-r.left,total=state.recovery_mode?state.source_frames-1:state.frames-1,limit=state.recovery_mode?total:state.cached;
+    return Math.max(0,Math.min(limit,Math.round((x-10)/(r.width-20)*total)))}
+  function timelineSeek(e){if(!state)return;if(state.recovery_mode){if(!state.recovery_started)command('recovery_frame',slotFromEvent(e));return;}
+    const r=canvas.getBoundingClientRect(),x=e.clientX-r.left;let slot=slotFromEvent(e);
+    for(const mark of state.marks){const mx=10+(r.width-20)*mark/(state.frames-1);if(Math.abs(x-mx)<10){slot=mark;break;}}
+    command('seek',slot);
+  }
+  canvas.addEventListener('pointerdown',e=>{dragging=true;canvas.setPointerCapture(e.pointerId);timelineSeek(e)});
+  canvas.addEventListener('pointermove',e=>{if(dragging)timelineSeek(e)});
+  canvas.addEventListener('pointerup',()=>dragging=false);
+  $('play').onclick=()=>command('toggle');$('reset').onclick=()=>command('reset');$('save').onclick=()=>command('save');
+  $('reference').onclick=()=>command('show_reference',!state?.show_reference);
+  $('recoveryMode').onclick=()=>command('recovery_mode',!state?.recovery_mode);
+  $('duration').onpointerdown=()=>editingDuration=true;$('duration').onpointerup=()=>editingDuration=false;
+  $('duration').oninput=e=>{$('durationValue').textContent=(Number(e.target.value)/50).toFixed(2)+' s';command('recovery_duration',Number(e.target.value));};
+  $('speed').onpointerdown=()=>editingSpeed=true;$('speed').onpointerup=()=>editingSpeed=false;
+  $('speed').oninput=e=>{$('speedValue').textContent=e.target.value+' cm/s';if(state)command('speed',[state.selected,Number(e.target.value)/100]);};
+  $('angularSpeed').onpointerdown=()=>editingAngularSpeed=true;$('angularSpeed').onpointerup=()=>editingAngularSpeed=false;
+  $('angularSpeed').oninput=e=>{$('angularSpeedValue').textContent=(Number(e.target.value)/100).toFixed(2)+' rad/s';if(state)command('angular_speed',[state.selected,Number(e.target.value)/100]);};
+  $('links').onclick=e=>{const link=e.target.closest('[data-link]');if(link)command('link',[link.dataset.link,false]);};
+  $('links').ondblclick=e=>{const link=e.target.closest('[data-link]');if(link)command('link',[link.dataset.link,true]);};
+  for(const side of ['left','right']){const slider=$(side+'Hand');slider.onpointerdown=()=>editingHand=side;
+    slider.onpointerup=()=>editingHand=null;
+    slider.oninput=e=>{$(side+'Value').textContent=e.target.value+'% 合拢';command('hand',[side,Number(e.target.value)/100]);};}
+  async function refresh(){try{const r=await fetch('/api/state');state=await r.json();$('play').textContent=state.paused?'▶ 播放':'Ⅱ 暂停';
+    $('pageTitle').textContent=state.review_only?'Stage 5 · 物体动力学':'RSS 物理播放';
+    $('pageSubtitle').textContent=state.review_only?'human · reference · physics':'青色虚影：retarget motion';
+    $('panel').style.display=state.review_only?'none':'block';
+    $('reset').textContent=state.review_only?'回到开头':'重置';
+    $('reference').style.display=state.reference_video||state.show_reference?'block':'none';
+    $('reference').textContent=state.show_reference?'隐藏参考虚影':'显示参考虚影';
+    $('source').style.display=state.reference_video&&state.show_reference?'block':'none';
+    if(state.reference_video){const video=$('humanVideo'),target=Math.max(0,state.source/50);
+      if(state.paused||!state.show_reference){video.pause();if(Math.abs(video.currentTime-target)>0.035)video.currentTime=target;}
+      else{if(Math.abs(video.currentTime-target)>0.15)video.currentTime=target;video.play().catch(()=>{});}}
+    const wristSides=[...new Set((state.reference_pid_joint_names||[]).map(name=>name.startsWith('left_')?'左':'右'))];
+    $('wristMode').style.display=wristSides.length?'block':'none';
+    $('wristMode').textContent=wristSides.length?`${wristSides.join('、')}手腕三轴平时由 refmotion → RSS PID；进入该手腕的 6D 修复时交还 tracker。`:'';
+    $('time').textContent=state.recovery_mode?(state.recovery_started?
+      `${(state.recovery_elapsed_frames/50).toFixed(2)} / ${(state.recovery_total_frames/50).toFixed(2)} s`:
+      `${(state.recovery_frame/50).toFixed(2)} / ${((state.source_frames-1)/50).toFixed(2)} s`):
+      (state.source/50).toFixed(2)+' / '+((state.stop_frame??state.source_frames-1)/50).toFixed(2)+' s';
+    $('selected').textContent=labels[state.selected]||state.selected;const link=state.links.find(x=>x.name===state.selected);
+    if(link&&!editingSpeed){$('speed').value=Math.round(link.speed*100);$('speedValue').textContent=Math.round(link.speed*100)+' cm/s';}
+    if(link&&!editingAngularSpeed){$('angularSpeed').value=Math.round(link.angular_speed*100);$('angularSpeedValue').textContent=link.angular_speed.toFixed(2)+' rad/s';}
+    for(const side of ['left','right']){const hand=state.hands[side];if(editingHand!==side){if(hand.amount!==null)$(side+'Hand').value=Math.round(hand.amount*100);
+      $(side+'Value').textContent=hand.amount===null?'跟随动作':Math.round(hand.amount*100)+'% 合拢'+(hand.staged?' *':'');}}
+    if(!linksBuilt){$('links').innerHTML=state.links.map(x=>`<div class="link" data-link="${x.name}">${labels[x.name]}</div>`).join('');linksBuilt=true;}
+    for(const el of $('links').children){const x=state.links.find(item=>item.name===el.dataset.link);
+      el.className=`link ${x.mode} ${x.name===state.selected?'selected':''}`;el.textContent=labels[x.name]+(x.staged?' *':'');}
+    $('repairControls').style.display=state.recovery_mode?'none':'block';
+    $('recoveryControls').classList.toggle('show',state.recovery_mode);
+    $('recoveryMode').textContent=state.recovery_mode?'回到修复':'进入恢复';
+    $('recoveryMode').disabled=!state.recovery_mode&&state.phase!=='takeover';
+    $('reset').disabled=state.recovery_mode;
+    $('refFrame').textContent=state.recovery_frame;
+    if(!editingDuration){$('duration').value=state.recovery_duration_frames;$('durationValue').textContent=(state.recovery_duration_frames/50).toFixed(2)+' s';}
+    $('duration').disabled=state.recovery_started;
+    $('delta').textContent=state.similarity?`平均差 ${state.similarity.mean_cm} cm`:'';
+    $('status').textContent=state.status||'';draw();}catch(e){$('status').textContent='等待仿真服务启动…'}}
+  new ResizeObserver(draw).observe(canvas);setInterval(refresh,120);refresh();
+</script>
+</html>

@@ -1,0 +1,308 @@
+{
+  "status": "sampled_kinematic_audit_not_contact_validation",
+  "changed_joints": [
+    "right_shoulder_pitch_joint",
+    "right_shoulder_roll_joint",
+    "right_shoulder_yaw_joint",
+    "right_elbow_joint",
+    "right_wrist_roll_joint",
+    "right_wrist_pitch_joint",
+    "right_wrist_yaw_joint",
+    "right_hand_thumb_0_joint",
+    "right_hand_middle_0_joint",
+    "right_hand_index_0_joint",
+    "right_hand_thumb_1_joint",
+    "right_hand_middle_1_joint",
+    "right_hand_index_1_joint",
+    "right_hand_thumb_2_joint"
+  ],
+  "root_legs_torso_left_arm_unchanged": true,
+  "max_speed_limit_ratio": 0.9451886018117269,
+  "sampled_hand_table_penetrations": [
+    {
+      "time_s": 12.24,
+      "body": "right_hand_middle_1_link",
+      "max_depth_m": 0.0016599997803162791
+    },
+    {
+      "time_s": 12.24,
+      "body": "right_hand_index_1_link",
+      "max_depth_m": 0.020777308827636287
+    },
+    {
+      "time_s": 12.280000000000001,
+      "body": "right_hand_middle_1_link",
+      "max_depth_m": 0.011865603496831245
+    },
+    {
+      "time_s": 12.280000000000001,
+      "body": "right_hand_index_1_link",
+      "max_depth_m": 0.022441468142462007
+    }
+  ],
+  "sampled_hand_table_penetration_count": 4,
+  "sampled_hand_basket_penetrations": [
+    {
+      "time_s": 12.2,
+      "body": "right_wrist_yaw_link",
+      "basket_hull": "Hull_wall_wall_003_0.obj",
+      "max_depth_m": 0.0015446231229631069
+    },
+    {
+      "time_s": 12.24,
+      "body": "right_wrist_yaw_link",
+      "basket_hull": "Hull_wall_wall_003_0.obj",
+      "max_depth_m": 0.001682512317952467
+    },
+    {
+      "time_s": 12.280000000000001,
+      "body": "right_wrist_yaw_link",
+      "basket_hull": "Hull_wall_wall_002_0.obj",
+      "max_depth_m": 0.0013563042094948408
+    },
+    {
+      "time_s": 12.280000000000001,
+      "body": "right_wrist_yaw_link",
+      "basket_hull": "Hull_wall_wall_003_0.obj",
+      "max_depth_m": 0.001681644398467519
+    },
+    {
+      "time_s": 12.280000000000001,
+      "body": "right_hand_index_0_link",
+      "basket_hull": "Hull_wall_wall_002_0.obj",
+      "max_depth_m": 0.001531469558019527
+    },
+    {
+      "time_s": 12.280000000000001,
+      "body": "right_hand_index_0_link",
+      "basket_hull": "Hull_wall_wall_003_0.obj",
+      "max_depth_m": 0.0012037886304309131
+    },
+    {
+      "time_s": 12.32,
+      "body": "right_wrist_yaw_link",
+      "basket_hull": "Hull_wall_wall_002_0.obj",
+      "max_depth_m": 0.0014748902926783325
+    },
+    {
+      "time_s": 12.32,
+      "body": "right_hand_index_0_link",
+      "basket_hull": "Hull_wall_wall_002_0.obj",
+      "max_depth_m": 0.0014751020639074408
+    },
+    {
+      "time_s": 12.32,
+      "body": "right_hand_index_1_link",
+      "basket_hull": "Hull_wall_wall_002_0.obj",
+      "max_depth_m": 0.0015246781772010332
+    },
+    {
+      "time_s": 12.36,
+      "body": "right_hand_index_0_link",
+      "basket_hull": "Hull_wall_wall_003_0.obj",
+      "max_depth_m": 0.0013361516602097279
+    },
+    {
+      "time_s": 12.36,
+      "body": "right_hand_index_1_link",
+      "basket_hull": "Hull_wall_wall_002_0.obj",
+      "max_depth_m": 0.0016409394045756587
+    },
+    {
+      "time_s": 12.36,
+      "body": "right_hand_index_1_link",
+      "basket_hull": "Hull_wall_wall_003_0.obj",
+      "max_depth_m": 0.0013734551772720538
+    },
+    {
+      "time_s": 12.4,
+      "body": "right_hand_index_1_link",
+      "basket_hull": "Hull_wall_wall_002_0.obj",
+      "max_depth_m": 0.0015567187181715347
+    },
+    {
+      "time_s": 12.4,
+      "body": "right_hand_index_1_link",
+      "basket_hull": "Hull_wall_wall_003_0.obj",
+      "max_depth_m": 0.0014635231021694617
+    },
+    {
+      "time_s": 12.440000000000001,
+      "body": "right_hand_index_1_link",
+      "basket_hull": "Hull_wall_wall_002_0.obj",
+      "max_depth_m": 0.001595993848367061
+    },
+    {
+      "time_s": 12.440000000000001,
+      "body": "right_hand_index_1_link",
+      "basket_hull": "Hull_wall_wall_003_0.obj",
+      "max_depth_m": 0.0014859974975748313
+    },
+    {
+      "time_s": 12.48,
+      "body": "right_hand_index_1_link",
+      "basket_hull": "Hull_wall_wall_002_0.obj",
+      "max_depth_m": 0.0015691488046246649
+    },
+    {
+      "time_s": 12.48,
+      "body": "right_hand_index_1_link",
+      "basket_hull": "Hull_wall_wall_003_0.obj",
+      "max_depth_m": 0.0014725075722469283
+    },
+    {
+      "time_s": 12.52,
+      "body": "right_hand_index_1_link",
+      "basket_hull": "Hull_wall_wall_002_0.obj",
+      "max_depth_m": 0.001552733813825924
+    },
+    {
+      "time_s": 12.52,
+      "body": "right_hand_index_1_link",
+      "basket_hull": "Hull_wall_wall_003_0.obj",
+      "max_depth_m": 0.001459606998121754
+    },
+    {
+      "time_s": 12.559999999999999,
+      "body": "right_hand_index_1_link",
+      "basket_hull": "Hull_wall_wall_002_0.obj",
+      "max_depth_m": 0.0015160793443269593
+    },
+    {
+      "time_s": 12.559999999999999,
+      "body": "right_hand_index_1_link",
+      "basket_hull": "Hull_wall_wall_003_0.obj",
+      "max_depth_m": 0.0015101986263111877
+    },
+    {
+      "time_s": 12.6,
+      "body": "right_hand_index_1_link",
+      "basket_hull": "Hull_wall_wall_002_0.obj",
+      "max_depth_m": 0.0014805343132086035
+    },
+    {
+      "time_s": 12.6,
+      "body": "right_hand_index_1_link",
+      "basket_hull": "Hull_wall_wall_003_0.obj",
+      "max_depth_m": 0.0015293005803022064
+    },
+    {
+      "time_s": 12.64,
+      "body": "right_hand_index_1_link",
+      "basket_hull": "Hull_wall_wall_003_0.obj",
+      "max_depth_m": 0.001493892627270177
+    },
+    {
+      "time_s": 12.68,
+      "body": "right_hand_index_1_link",
+      "basket_hull": "Hull_wall_wall_003_0.obj",
+      "max_depth_m": 0.0013745148790600403
+    },
+    {
+      "time_s": 12.719999999999999,
+      "body": "right_hand_index_1_link",
+      "basket_hull": "Hull_wall_wall_003_0.obj",
+      "max_depth_m": 0.0011872089569509026
+    },
+    {
+      "time_s": 13.2,
+      "body": "right_hand_index_0_link",
+      "basket_hull": "Hull_wall_wall_003_0.obj",
+      "max_depth_m": 0.0012508490794683746
+    },
+    {
+      "time_s": 13.24,
+      "body": "right_hand_index_0_link",
+      "basket_hull": "Hull_wall_wall_003_0.obj",
+      "max_depth_m": 0.0013607830818634925
+    },
+    {
+      "time_s": 24.84,
+      "body": "right_hand_index_1_link",
+      "basket_hull": "Hull_wall_wall_004_0.obj",
+      "max_depth_m": 0.0013343066124964498
+    },
+    {
+      "time_s": 24.96,
+      "body": "right_hand_index_1_link",
+      "basket_hull": "Hull_wall_wall_003_0.obj",
+      "max_depth_m": 0.0010657967143179459
+    },
+    {
+      "time_s": 25.24,
+      "body": "right_hand_index_1_link",
+      "basket_hull": "Hull_wall_wall_003_0.obj",
+      "max_depth_m": 0.0012844272262950707
+    },
+    {
+      "time_s": 25.28,
+      "body": "right_hand_index_1_link",
+      "basket_hull": "Hull_wall_wall_003_0.obj",
+      "max_depth_m": 0.001495981114609246
+    },
+    {
+      "time_s": 25.32,
+      "body": "right_hand_index_1_link",
+      "basket_hull": "Hull_wall_wall_003_0.obj",
+      "max_depth_m": 0.0011955910810261816
+    },
+    {
+      "time_s": 26.0,
+      "body": "right_hand_index_0_link",
+      "basket_hull": "Hull_wall_wall_003_0.obj",
+      "max_depth_m": 0.001075209447269243
+    },
+    {
+      "time_s": 26.04,
+      "body": "right_wrist_yaw_link",
+      "basket_hull": "Hull_wall_wall_003_0.obj",
+      "max_depth_m": 0.0014130789956130485
+    },
+    {
+      "time_s": 26.04,
+      "body": "right_hand_index_0_link",
+      "basket_hull": "Hull_wall_wall_003_0.obj",
+      "max_depth_m": 0.0012854613880218801
+    },
+    {
+      "time_s": 26.08,
+      "body": "right_wrist_yaw_link",
+      "basket_hull": "Hull_wall_wall_003_0.obj",
+      "max_depth_m": 0.0015083015054890847
+    }
+  ],
+  "sampled_hand_basket_penetration_count": 38,
+  "grip_sampled_vertex_gaps": [
+    {
+      "time_s": 12.8,
+      "body": "right_hand_thumb_2_link",
+      "sampled_vertex_gap_m": 0.0013379958382477592
+    },
+    {
+      "time_s": 12.8,
+      "body": "right_hand_middle_1_link",
+      "sampled_vertex_gap_m": 0.0017400680003167369
+    },
+    {
+      "time_s": 12.8,
+      "body": "right_hand_index_1_link",
+      "sampled_vertex_gap_m": 0.0015299469438393915
+    },
+    {
+      "time_s": 25.6,
+      "body": "right_hand_thumb_2_link",
+      "sampled_vertex_gap_m": 0.003683638859258834
+    },
+    {
+      "time_s": 25.6,
+      "body": "right_hand_middle_1_link",
+      "sampled_vertex_gap_m": 0.00844471332501159
+    },
+    {
+      "time_s": 25.6,
+      "body": "right_hand_index_1_link",
+      "sampled_vertex_gap_m": 0.0036364998634341545
+    }
+  ],
+  "sampling_limit": "Hand visual mesh convex vertices every 2 frames; no continuous edge sweep or physical force measured."
+}

@@ -1,0 +1,559 @@
+{
+  "status": "sampled_kinematic_audit_not_physical_grasp",
+  "sample_count": 475,
+  "changed_joints": [
+    "right_shoulder_pitch_joint",
+    "right_shoulder_roll_joint",
+    "right_shoulder_yaw_joint",
+    "right_elbow_joint",
+    "right_wrist_roll_joint",
+    "right_wrist_pitch_joint",
+    "right_wrist_yaw_joint",
+    "right_hand_thumb_0_joint",
+    "right_hand_middle_0_joint",
+    "right_hand_index_0_joint",
+    "right_hand_thumb_1_joint",
+    "right_hand_middle_1_joint",
+    "right_hand_index_1_joint",
+    "right_hand_thumb_2_joint"
+  ],
+  "only_right_arm_and_hand_changed": true,
+  "seam_joint_max_rad": 0.0,
+  "max_joint_speed_limit_ratio": 0.3422039747238159,
+  "right_wrist_axis_abs_max_deg": {
+    "roll": 61.1444091796875,
+    "pitch": 37.88494110107422,
+    "yaw": 34.999996185302734
+  },
+  "approach_palm_velocity_angle_deg": {
+    "72.0-72.5": 80.25428344711179,
+    "72.5-72.9": 59.86927965607938,
+    "72.9-73.25": 12.151421427315436
+  },
+  "sampled_all_collision_count": 465,
+  "sampled_forbidden_collision_count": 215,
+  "sampled_forbidden_max_depth_m": 0.0034325465976673963,
+  "sampled_forbidden_time_range_s": [
+    73.37,
+    74.64
+  ],
+  "sampled_forbidden_deepest": [
+    {
+      "time_s": 73.47,
+      "body": "right_hand_middle_1_link",
+      "basket_part": "Hull_wall_007.002",
+      "depth_m": 0.0034325465976673963
+    },
+    {
+      "time_s": 73.53,
+      "body": "right_hand_thumb_2_link",
+      "basket_part": "Hull_wall_007.002",
+      "depth_m": 0.003432369520940892
+    },
+    {
+      "time_s": 73.48,
+      "body": "right_hand_middle_1_link",
+      "basket_part": "Hull_wall_007.002",
+      "depth_m": 0.0034319467035169027
+    },
+    {
+      "time_s": 74.44,
+      "body": "right_hand_thumb_2_link",
+      "basket_part": "Hull_wall_007.002",
+      "depth_m": 0.0034316511928084437
+    },
+    {
+      "time_s": 73.44,
+      "body": "right_hand_middle_1_link",
+      "basket_part": "Hull_wall_007.002",
+      "depth_m": 0.003431453800714218
+    },
+    {
+      "time_s": 73.45,
+      "body": "right_hand_thumb_2_link",
+      "basket_part": "Hull_wall_007.002",
+      "depth_m": 0.003429848250565831
+    },
+    {
+      "time_s": 73.52,
+      "body": "right_hand_thumb_2_link",
+      "basket_part": "Hull_wall_007.002",
+      "depth_m": 0.0034297459152822507
+    },
+    {
+      "time_s": 74.49,
+      "body": "right_hand_thumb_2_link",
+      "basket_part": "Hull_wall_007.002",
+      "depth_m": 0.0034295361629334276
+    },
+    {
+      "time_s": 73.54,
+      "body": "right_hand_middle_1_link",
+      "basket_part": "Hull_wall_007.002",
+      "depth_m": 0.003429367190591559
+    },
+    {
+      "time_s": 74.47,
+      "body": "right_hand_thumb_2_link",
+      "basket_part": "Hull_wall_007.002",
+      "depth_m": 0.003429334553748692
+    },
+    {
+      "time_s": 74.48,
+      "body": "right_hand_thumb_2_link",
+      "basket_part": "Hull_wall_007.002",
+      "depth_m": 0.003428934000660855
+    },
+    {
+      "time_s": 73.53,
+      "body": "right_hand_middle_1_link",
+      "basket_part": "Hull_wall_007.002",
+      "depth_m": 0.003428919319290319
+    },
+    {
+      "time_s": 73.49,
+      "body": "right_hand_middle_1_link",
+      "basket_part": "Hull_wall_007.002",
+      "depth_m": 0.0034281399941582524
+    },
+    {
+      "time_s": 73.5,
+      "body": "right_hand_thumb_2_link",
+      "basket_part": "Hull_wall_007.002",
+      "depth_m": 0.0034280710095828115
+    },
+    {
+      "time_s": 73.54,
+      "body": "right_hand_thumb_2_link",
+      "basket_part": "Hull_wall_007.002",
+      "depth_m": 0.003427958781410806
+    },
+    {
+      "time_s": 73.48,
+      "body": "right_hand_thumb_2_link",
+      "basket_part": "Hull_wall_007.002",
+      "depth_m": 0.003427768669440584
+    },
+    {
+      "time_s": 73.49,
+      "body": "right_hand_thumb_2_link",
+      "basket_part": "Hull_wall_007.002",
+      "depth_m": 0.003427634061526297
+    },
+    {
+      "time_s": 74.45,
+      "body": "right_hand_thumb_2_link",
+      "basket_part": "Hull_wall_007.002",
+      "depth_m": 0.003427265078595254
+    },
+    {
+      "time_s": 73.59,
+      "body": "right_hand_middle_1_link",
+      "basket_part": "Hull_wall_007.002",
+      "depth_m": 0.0034272549572586797
+    },
+    {
+      "time_s": 73.44,
+      "body": "right_hand_thumb_2_link",
+      "basket_part": "Hull_wall_007.002",
+      "depth_m": 0.003425803513316422
+    }
+  ],
+  "sampled_forbidden_collisions": [
+    {
+      "time_s": 73.37,
+      "body": "right_hand_thumb_2_link",
+      "basket_part": "Hull_wall_006.002",
+      "depth_m": 0.0012363427357711676
+    },
+    {
+      "time_s": 73.38,
+      "body": "right_hand_thumb_2_link",
+      "basket_part": "Hull_wall_006.002",
+      "depth_m": 0.0021814245601359528
+    },
+    {
+      "time_s": 73.39,
+      "body": "right_hand_thumb_2_link",
+      "basket_part": "Hull_wall_006.002",
+      "depth_m": 0.003186573814975918
+    },
+    {
+      "time_s": 73.4,
+      "body": "right_hand_thumb_2_link",
+      "basket_part": "Hull_wall_006.002",
+      "depth_m": 0.0029697982562026937
+    },
+    {
+      "time_s": 73.4,
+      "body": "right_hand_thumb_2_link",
+      "basket_part": "Hull_wall_007.002",
+      "depth_m": 0.0018268480834701395
+    },
+    {
+      "time_s": 73.41,
+      "body": "right_hand_thumb_2_link",
+      "basket_part": "Hull_wall_006.002",
+      "depth_m": 0.0020152127865902566
+    },
+    {
+      "time_s": 73.41,
+      "body": "right_hand_thumb_2_link",
+      "basket_part": "Hull_wall_007.002",
+      "depth_m": 0.003416323185703757
+    },
+    {
+      "time_s": 73.42,
+      "body": "right_hand_thumb_2_link",
+      "basket_part": "Hull_wall_006.002",
+      "depth_m": 0.0010409761900463128
+    },
+    {
+      "time_s": 73.42,
+      "body": "right_hand_thumb_2_link",
+      "basket_part": "Hull_wall_007.002",
+      "depth_m": 0.0034144566801352916
+    },
+    {
+      "time_s": 73.42,
+      "body": "right_hand_middle_1_link",
+      "basket_part": "Hull_wall_007.002",
+      "depth_m": 0.002374672943431383
+    },
+    {
+      "time_s": 73.42,
+      "body": "right_hand_middle_1_link",
+      "basket_part": "Hull_wall_008.002",
+      "depth_m": 0.0020571223934624794
+    },
+    {
+      "time_s": 73.43,
+      "body": "right_hand_thumb_2_link",
+      "basket_part": "Hull_wall_007.002",
+      "depth_m": 0.003335602380006797
+    },
+    {
+      "time_s": 73.43,
+      "body": "right_hand_middle_1_link",
+      "basket_part": "Hull_wall_007.002",
+      "depth_m": 0.003414115878445756
+    },
+    {
+      "time_s": 73.44,
+      "body": "right_hand_thumb_2_link",
+      "basket_part": "Hull_wall_007.002",
+      "depth_m": 0.003425803513316422
+    },
+    {
+      "time_s": 73.44,
+      "body": "right_hand_middle_1_link",
+      "basket_part": "Hull_wall_007.002",
+      "depth_m": 0.003431453800714218
+    },
+    {
+      "time_s": 73.45,
+      "body": "right_hand_thumb_2_link",
+      "basket_part": "Hull_wall_007.002",
+      "depth_m": 0.003429848250565831
+    },
+    {
+      "time_s": 73.45,
+      "body": "right_hand_middle_1_link",
+      "basket_part": "Hull_wall_007.002",
+      "depth_m": 0.0034171474653899025
+    },
+    {
+      "time_s": 73.46,
+      "body": "right_hand_thumb_2_link",
+      "basket_part": "Hull_wall_006.002",
+      "depth_m": 0.0012887681614707769
+    },
+    {
+      "time_s": 73.46,
+      "body": "right_hand_thumb_2_link",
+      "basket_part": "Hull_wall_007.002",
+      "depth_m": 0.0034176239149004417
+    },
+    {
+      "time_s": 73.46,
+      "body": "right_hand_middle_1_link",
+      "basket_part": "Hull_wall_007.002",
+      "depth_m": 0.003419709587819564
+    },
+    {
+      "time_s": 73.47,
+      "body": "right_hand_thumb_2_link",
+      "basket_part": "Hull_wall_006.002",
+      "depth_m": 0.001974735447744125
+    },
+    {
+      "time_s": 73.47,
+      "body": "right_hand_thumb_2_link",
+      "basket_part": "Hull_wall_007.002",
+      "depth_m": 0.0034223896712039514
+    },
+    {
+      "time_s": 73.47,
+      "body": "right_hand_middle_1_link",
+      "basket_part": "Hull_wall_007.002",
+      "depth_m": 0.0034325465976673963
+    },
+    {
+      "time_s": 73.48,
+      "body": "right_hand_thumb_2_link",
+      "basket_part": "Hull_wall_006.002",
+      "depth_m": 0.002592067439380813
+    },
+    {
+      "time_s": 73.48,
+      "body": "right_hand_thumb_2_link",
+      "basket_part": "Hull_wall_007.002",
+      "depth_m": 0.003427768669440584
+    },
+    {
+      "time_s": 73.48,
+      "body": "right_hand_middle_1_link",
+      "basket_part": "Hull_wall_007.002",
+      "depth_m": 0.0034319467035169027
+    },
+    {
+      "time_s": 73.49,
+      "body": "right_hand_thumb_2_link",
+      "basket_part": "Hull_wall_006.002",
+      "depth_m": 0.0027061329906943876
+    },
+    {
+      "time_s": 73.49,
+      "body": "right_hand_thumb_2_link",
+      "basket_part": "Hull_wall_007.002",
+      "depth_m": 0.003427634061526297
+    },
+    {
+      "time_s": 73.49,
+      "body": "right_hand_middle_1_link",
+      "basket_part": "Hull_wall_007.002",
+      "depth_m": 0.0034281399941582524
+    },
+    {
+      "time_s": 73.5,
+      "body": "right_hand_thumb_2_link",
+      "basket_part": "Hull_wall_006.002",
+      "depth_m": 0.002641159086324352
+    }
+  ],
+  "sampled_handle_contacts": [
+    {
+      "time_s": 73.37,
+      "body": "right_hand_thumb_2_link",
+      "basket_part": "Hull_wall_006.002",
+      "depth_m": 0.0012363427357711676
+    },
+    {
+      "time_s": 73.38,
+      "body": "right_hand_thumb_2_link",
+      "basket_part": "Hull_wall_006.002",
+      "depth_m": 0.0021814245601359528
+    },
+    {
+      "time_s": 73.39,
+      "body": "right_hand_thumb_2_link",
+      "basket_part": "Hull_wall_006.002",
+      "depth_m": 0.003186573814975918
+    },
+    {
+      "time_s": 73.4,
+      "body": "right_hand_thumb_2_link",
+      "basket_part": "Hull_wall_006.002",
+      "depth_m": 0.0029697982562026937
+    },
+    {
+      "time_s": 73.4,
+      "body": "right_hand_thumb_2_link",
+      "basket_part": "Hull_wall_007.002",
+      "depth_m": 0.0018268480834701395
+    },
+    {
+      "time_s": 73.41,
+      "body": "right_hand_thumb_2_link",
+      "basket_part": "Hull_wall_006.002",
+      "depth_m": 0.0020152127865902566
+    },
+    {
+      "time_s": 73.41,
+      "body": "right_hand_thumb_2_link",
+      "basket_part": "Hull_wall_007.002",
+      "depth_m": 0.003416323185703757
+    },
+    {
+      "time_s": 73.42,
+      "body": "right_hand_thumb_2_link",
+      "basket_part": "Hull_wall_006.002",
+      "depth_m": 0.0010409761900463128
+    },
+    {
+      "time_s": 73.42,
+      "body": "right_hand_thumb_2_link",
+      "basket_part": "Hull_wall_007.002",
+      "depth_m": 0.0034144566801352916
+    },
+    {
+      "time_s": 73.42,
+      "body": "right_hand_middle_1_link",
+      "basket_part": "Hull_wall_007.002",
+      "depth_m": 0.002374672943431383
+    },
+    {
+      "time_s": 73.42,
+      "body": "right_hand_middle_1_link",
+      "basket_part": "Hull_wall_008.002",
+      "depth_m": 0.0020571223934624794
+    },
+    {
+      "time_s": 73.43,
+      "body": "right_hand_thumb_2_link",
+      "basket_part": "Hull_wall_007.002",
+      "depth_m": 0.003335602380006797
+    },
+    {
+      "time_s": 73.43,
+      "body": "right_hand_middle_1_link",
+      "basket_part": "Hull_wall_007.002",
+      "depth_m": 0.003414115878445756
+    },
+    {
+      "time_s": 73.44,
+      "body": "right_hand_thumb_2_link",
+      "basket_part": "Hull_wall_007.002",
+      "depth_m": 0.003425803513316422
+    },
+    {
+      "time_s": 73.44,
+      "body": "right_hand_middle_1_link",
+      "basket_part": "Hull_wall_007.002",
+      "depth_m": 0.003431453800714218
+    },
+    {
+      "time_s": 73.45,
+      "body": "right_hand_thumb_2_link",
+      "basket_part": "Hull_wall_007.002",
+      "depth_m": 0.003429848250565831
+    },
+    {
+      "time_s": 73.45,
+      "body": "right_hand_middle_1_link",
+      "basket_part": "Hull_wall_007.002",
+      "depth_m": 0.0034171474653899025
+    },
+    {
+      "time_s": 73.46,
+      "body": "right_hand_thumb_2_link",
+      "basket_part": "Hull_wall_006.002",
+      "depth_m": 0.0012887681614707769
+    },
+    {
+      "time_s": 73.46,
+      "body": "right_hand_thumb_2_link",
+      "basket_part": "Hull_wall_007.002",
+      "depth_m": 0.0034176239149004417
+    },
+    {
+      "time_s": 73.46,
+      "body": "right_hand_middle_1_link",
+      "basket_part": "Hull_wall_007.002",
+      "depth_m": 0.003419709587819564
+    },
+    {
+      "time_s": 73.47,
+      "body": "right_hand_thumb_2_link",
+      "basket_part": "Hull_wall_006.002",
+      "depth_m": 0.001974735447744125
+    },
+    {
+      "time_s": 73.47,
+      "body": "right_hand_thumb_2_link",
+      "basket_part": "Hull_wall_007.002",
+      "depth_m": 0.0034223896712039514
+    },
+    {
+      "time_s": 73.47,
+      "body": "right_hand_middle_1_link",
+      "basket_part": "Hull_wall_007.002",
+      "depth_m": 0.0034325465976673963
+    },
+    {
+      "time_s": 73.48,
+      "body": "right_hand_thumb_2_link",
+      "basket_part": "Hull_wall_006.002",
+      "depth_m": 0.002592067439380813
+    },
+    {
+      "time_s": 73.48,
+      "body": "right_hand_thumb_2_link",
+      "basket_part": "Hull_wall_007.002",
+      "depth_m": 0.003427768669440584
+    },
+    {
+      "time_s": 73.48,
+      "body": "right_hand_middle_1_link",
+      "basket_part": "Hull_wall_007.002",
+      "depth_m": 0.0034319467035169027
+    },
+    {
+      "time_s": 73.49,
+      "body": "right_hand_thumb_2_link",
+      "basket_part": "Hull_wall_006.002",
+      "depth_m": 0.0027061329906943876
+    },
+    {
+      "time_s": 73.49,
+      "body": "right_hand_thumb_2_link",
+      "basket_part": "Hull_wall_007.002",
+      "depth_m": 0.003427634061526297
+    },
+    {
+      "time_s": 73.49,
+      "body": "right_hand_middle_1_link",
+      "basket_part": "Hull_wall_007.002",
+      "depth_m": 0.0034281399941582524
+    },
+    {
+      "time_s": 73.5,
+      "body": "right_hand_thumb_2_link",
+      "basket_part": "Hull_wall_006.002",
+      "depth_m": 0.002641159086324352
+    }
+  ],
+  "finger_handle_vertex_gaps_m": [
+    {
+      "time_s": 73.5,
+      "body": "right_hand_thumb_2_link",
+      "sampled_vertex_gap_m": 0.00137485656715767
+    },
+    {
+      "time_s": 73.5,
+      "body": "right_hand_middle_1_link",
+      "sampled_vertex_gap_m": 0.009484197431078199
+    },
+    {
+      "time_s": 73.5,
+      "body": "right_hand_index_1_link",
+      "sampled_vertex_gap_m": 0.0068125798826365784
+    },
+    {
+      "time_s": 74.3,
+      "body": "right_hand_thumb_2_link",
+      "sampled_vertex_gap_m": 0.0021320348195444697
+    },
+    {
+      "time_s": 74.3,
+      "body": "right_hand_middle_1_link",
+      "sampled_vertex_gap_m": 0.0007253338800105395
+    },
+    {
+      "time_s": 74.3,
+      "body": "right_hand_index_1_link",
+      "sampled_vertex_gap_m": 0.0004417359666949164
+    }
+  ],
+  "limits": "Hand hull vertices at 50 Hz and interleaved half frames; static 1012 collision hulls, no physical forces or continuous-time certificate."
+}

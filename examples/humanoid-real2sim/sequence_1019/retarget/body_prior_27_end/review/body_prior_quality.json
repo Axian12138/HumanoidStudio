@@ -1,0 +1,12 @@
+{
+  "mode": "body_prior",
+  "frames": 5104,
+  "max_stance_slip_mm": 3.1073686100033123e-07,
+  "min_sole_height_mm": -3.505346707344259e-08,
+  "torso_up_error_deg_mean": 0.04781198811801525,
+  "torso_up_error_deg_max": 0.4177433076418781,
+  "carry_right_wrist_error_mm_max": null,
+  "hand_target_error_mm_max": 263.66994469930665,
+  "joint_velocity_max_ratio": 0.2908502967056967,
+  "failures": []
+}

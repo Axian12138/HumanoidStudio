@@ -1,0 +1,111 @@
+{
+  "status": "kinematic_candidate_unreviewed",
+  "fps": 50,
+  "source_window_s_half_open": [
+    8.0,
+    27.98
+  ],
+  "base_motion_sha256": "00ee77ab13a858dff49f0c2f0cbf98ce63c5eb750c73e566288698afdf677bf7",
+  "robot_mjcf_sha256": "7c3edae05ef00938e7505541b7c7ab28a0f4db851f1c0a74921697dbe298ae1e",
+  "grip_fit_source_sha256": "953aa7d50438d6e9db2d4c9a22858a8dbc23df874690f1e878f0b26d28f949eb",
+  "edited_arm": "right only, pickup and return windows",
+  "root_legs_torso_left_arm_unchanged": true,
+  "commanded_hand_events_s": {
+    "open_start": 10.5,
+    "open_complete": 11.6,
+    "close_start": 11.9,
+    "close_complete": 12.8,
+    "release_start": 25.45,
+    "release_complete": 26.0
+  },
+  "estimated_grasp_s": 12.8,
+  "estimated_release_s": 25.65,
+  "fist_eye_errors": [
+    {
+      "source_time_s": 11.45,
+      "fist_eye_error_m": 0.008592147982268315,
+      "handle_axis_error_deg": 28.059534183385786
+    },
+    {
+      "source_time_s": 11.8,
+      "fist_eye_error_m": 3.669630390418655e-05,
+      "handle_axis_error_deg": 0.12884078524992376
+    },
+    {
+      "source_time_s": 12.15,
+      "fist_eye_error_m": 4.311396103469272e-05,
+      "handle_axis_error_deg": 0.09972315722967105
+    },
+    {
+      "source_time_s": 12.4,
+      "fist_eye_error_m": 4.522509337449539e-05,
+      "handle_axis_error_deg": 0.09147581377518582
+    },
+    {
+      "source_time_s": 12.6,
+      "fist_eye_error_m": 4.761775342934267e-05,
+      "handle_axis_error_deg": 0.09139922394752809
+    },
+    {
+      "source_time_s": 12.8,
+      "fist_eye_error_m": 4.799111956797044e-05,
+      "handle_axis_error_deg": 0.0912675792057537
+    },
+    {
+      "source_time_s": 13.0,
+      "fist_eye_error_m": 5.10594068038984e-05,
+      "handle_axis_error_deg": 0.09981456482533597
+    },
+    {
+      "source_time_s": 13.4,
+      "fist_eye_error_m": 5.3378683283660605e-05,
+      "handle_axis_error_deg": 0.11223740282202226
+    },
+    {
+      "source_time_s": 24.5,
+      "fist_eye_error_m": 0.01593676533992931,
+      "handle_axis_error_deg": 41.79086613030954
+    },
+    {
+      "source_time_s": 24.9,
+      "fist_eye_error_m": 5.800622302189357e-05,
+      "handle_axis_error_deg": 0.22934459730783183
+    },
+    {
+      "source_time_s": 25.2,
+      "fist_eye_error_m": 4.727803374221426e-05,
+      "handle_axis_error_deg": 0.13502530152971098
+    },
+    {
+      "source_time_s": 25.45,
+      "fist_eye_error_m": 3.051177244146517e-05,
+      "handle_axis_error_deg": 0.1838726889999657
+    },
+    {
+      "source_time_s": 25.65,
+      "fist_eye_error_m": 3.660646763448078e-05,
+      "handle_axis_error_deg": 0.15697037949539103
+    },
+    {
+      "source_time_s": 25.85,
+      "fist_eye_error_m": 3.5839643262561544e-05,
+      "handle_axis_error_deg": 0.16496199540877307
+    },
+    {
+      "source_time_s": 26.2,
+      "fist_eye_error_m": 6.315921450758202e-05,
+      "handle_axis_error_deg": 0.2127958349134785
+    }
+  ],
+  "grip_world_m": [
+    0.8265918319273675,
+    -0.5864677100883806,
+    0.5155647712937531
+  ],
+  "estimated_return_position_error_m": 0.026995334502721274,
+  "estimated_return_orientation_error_deg": 25.519491727706104,
+  "max_edited_arm_joint_speed_rad_s": 6.8520777684385745,
+  "motion_sha256": "eb3c532712b4e6c081a42db527894b963c0a76f759a4204ab7f7d018c6f30361",
+  "physics_grasp_verified": false,
+  "physical_table_contact_verified": false
+}

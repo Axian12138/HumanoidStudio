@@ -1,0 +1,258 @@
+{
+  "keyframe_fit": [
+    {
+      "frame": 215,
+      "success": true,
+      "cost": 0.9805769216955121
+    },
+    {
+      "frame": 220,
+      "success": true,
+      "cost": 1.012216071453558
+    },
+    {
+      "frame": 225,
+      "success": true,
+      "cost": 1.053173769250207
+    },
+    {
+      "frame": 230,
+      "success": true,
+      "cost": 1.0614489629337642
+    },
+    {
+      "frame": 235,
+      "success": true,
+      "cost": 1.042730112591007
+    },
+    {
+      "frame": 240,
+      "success": true,
+      "cost": 0.9936872434593016
+    },
+    {
+      "frame": 245,
+      "success": true,
+      "cost": 0.975169182082125
+    },
+    {
+      "frame": 250,
+      "success": true,
+      "cost": 0.9629459883419124
+    },
+    {
+      "frame": 255,
+      "success": true,
+      "cost": 0.9617586862516878
+    },
+    {
+      "frame": 260,
+      "success": true,
+      "cost": 0.976620752367614
+    },
+    {
+      "frame": 265,
+      "success": true,
+      "cost": 0.9840705531121196
+    },
+    {
+      "frame": 270,
+      "success": true,
+      "cost": 1.0024387110914574
+    },
+    {
+      "frame": 275,
+      "success": true,
+      "cost": 1.1050418136244018
+    },
+    {
+      "frame": 280,
+      "success": true,
+      "cost": 1.1434952932323408
+    },
+    {
+      "frame": 285,
+      "success": true,
+      "cost": 1.3131058960676527
+    },
+    {
+      "frame": 290,
+      "success": true,
+      "cost": 1.5198918485196249
+    },
+    {
+      "frame": 295,
+      "success": true,
+      "cost": 1.683929290464421
+    },
+    {
+      "frame": 300,
+      "success": true,
+      "cost": 1.7383805795817318
+    },
+    {
+      "frame": 305,
+      "success": true,
+      "cost": 1.7110264218174855
+    },
+    {
+      "frame": 310,
+      "success": true,
+      "cost": 1.532378827700092
+    },
+    {
+      "frame": 315,
+      "success": true,
+      "cost": 1.3044376306291947
+    },
+    {
+      "frame": 320,
+      "success": true,
+      "cost": 1.1954859905565725
+    },
+    {
+      "frame": 325,
+      "success": true,
+      "cost": 1.203698215443979
+    },
+    {
+      "frame": 330,
+      "success": true,
+      "cost": 1.2124474205322062
+    },
+    {
+      "frame": 335,
+      "success": true,
+      "cost": 1.3802425055800667
+    },
+    {
+      "frame": 340,
+      "success": true,
+      "cost": 1.4892953242139715
+    },
+    {
+      "frame": 345,
+      "success": true,
+      "cost": 1.5513511609182902
+    },
+    {
+      "frame": 350,
+      "success": true,
+      "cost": 1.9150787732266272
+    },
+    {
+      "frame": 355,
+      "success": true,
+      "cost": 2.5010552004583406
+    },
+    {
+      "frame": 360,
+      "success": true,
+      "cost": 2.9455224283440353
+    },
+    {
+      "frame": 365,
+      "success": true,
+      "cost": 3.6085728779954955
+    },
+    {
+      "frame": 370,
+      "success": true,
+      "cost": 4.079307953688041
+    },
+    {
+      "frame": 375,
+      "success": true,
+      "cost": 3.735719862576819
+    },
+    {
+      "frame": 380,
+      "success": true,
+      "cost": 4.091723055917135
+    },
+    {
+      "frame": 385,
+      "success": true,
+      "cost": 4.285487996452366
+    },
+    {
+      "frame": 390,
+      "success": true,
+      "cost": 4.150560497759463
+    },
+    {
+      "frame": 395,
+      "success": true,
+      "cost": 4.095919261364352
+    },
+    {
+      "frame": 400,
+      "success": true,
+      "cost": 4.031930164192597
+    }
+  ],
+  "contact_geometry": "tapered USD exterior: 82 mm bottom to 102 mm rim",
+  "contact_window": {
+    "frames_inclusive": [
+      215,
+      400
+    ],
+    "thumb_index_angle_deg_range": [
+      61.09596964841068,
+      69.81408576736823
+    ],
+    "mesh_min_gap_m": {
+      "left_wrist_yaw_link": 0.0067893273892397216,
+      "left_hand_thumb_0_link": 0.010049433273672484,
+      "left_hand_thumb_1_link": -0.004734021287402565,
+      "left_hand_thumb_2_link": -0.004073251401479724,
+      "left_hand_index_0_link": 0.00043031487799355395,
+      "left_hand_index_1_link": -0.0014189679595773969,
+      "left_hand_middle_0_link": 0.04975078708247081,
+      "left_hand_middle_1_link": 0.059216441591561586
+    },
+    "mesh_max_gap_m": {
+      "left_wrist_yaw_link": 0.01355380631024121,
+      "left_hand_thumb_0_link": 0.036866493305723974,
+      "left_hand_thumb_1_link": 0.005994013334447323,
+      "left_hand_thumb_2_link": 0.0029944243652728075,
+      "left_hand_index_0_link": 0.02065038097351493,
+      "left_hand_index_1_link": 0.029606691697309423,
+      "left_hand_middle_0_link": 0.07136624412641278,
+      "left_hand_middle_1_link": 0.08526330688971957
+    }
+  },
+  "moving_push_direction": {
+    "frames_inclusive": [
+      235,
+      375
+    ],
+    "contact_midpoint_direction_cosine_min": 0.9947281143454924,
+    "contact_midpoint_direction_cosine_mean": 0.9994340779511673,
+    "motion_ray_between_thumb_and_index_frame_fraction": 1.0,
+    "direction_source": "centered 24-frame displacement of estimated bin trajectory; endpoint tangent extended"
+  },
+  "approach_and_withdrawal": {
+    "frames_half_open": [
+      130,
+      465
+    ],
+    "mesh_min_gap_m": {
+      "left_wrist_yaw_link": 0.0067893273892397216,
+      "left_hand_thumb_0_link": 0.010049433273672484,
+      "left_hand_thumb_1_link": -0.004734021287402565,
+      "left_hand_thumb_2_link": -0.004073251401479724,
+      "left_hand_index_0_link": 0.00043031487799355395,
+      "left_hand_index_1_link": -0.0014189679595773969,
+      "left_hand_middle_0_link": 0.04975078708247081,
+      "left_hand_middle_1_link": 0.05916892533518871
+    },
+    "first_thumb_within_2mm_frame": 214,
+    "first_index_within_2mm_frame": 211
+  },
+  "max_added_joint_velocity_rad_s": 3.0268069634952606,
+  "max_added_joint_acceleration_rad_s2": 43.131607181694264,
+  "max_joint_velocity_ratio": 1.0089356544984203,
+  "joint_limit_violation_rad": 0.0,
+  "unchanged_root_legs_torso_right_arm": true
+}

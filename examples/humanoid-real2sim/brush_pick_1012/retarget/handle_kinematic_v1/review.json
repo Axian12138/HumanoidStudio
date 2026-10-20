@@ -1,0 +1,89 @@
+{
+  "status": "kinematic_candidate_unreviewed",
+  "fps": 50,
+  "source_window_frames": [
+    300,
+    600
+  ],
+  "edited_frames": [
+    450,
+    660
+  ],
+  "base_motion": "/home/galbot/workspace/robosimstudio/examples/humanoid-real2sim/brush_pick_1012/retarget/kinematic_motion.npz",
+  "base_sha256": "763c5941f1de81ad851216bcb97778998ab2be8c74afdda65ba1234de51ffc77",
+  "model_sha256": "7c3edae05ef00938e7505541b7c7ab28a0f4db851f1c0a74921697dbe298ae1e",
+  "handle_fit_sha256": "953aa7d50438d6e9db2d4c9a22858a8dbc23df874690f1e878f0b26d28f949eb",
+  "brush_position_m": [
+    0.8716025949,
+    -0.5871267319,
+    0.4387029409
+  ],
+  "brush_quat_xyzw": [
+    0.002078,
+    0.14354791,
+    -0.00853049,
+    0.98960447
+  ],
+  "grip_world_m": [
+    0.8122121950190337,
+    -0.586223404557693,
+    0.5198269722735476
+  ],
+  "grip_local_m": [
+    -0.08,
+    0.0,
+    0.06090274266898632
+  ],
+  "handle_axis_world": [
+    0.9586424605555851,
+    -0.016287035379172542,
+    -0.28414673198629514
+  ],
+  "fixed_hand_commands_s": {
+    "open_start": 8.9,
+    "open_complete": 9.8,
+    "close_start": 10.36,
+    "close_complete": 11.2
+  },
+  "contact_prior_frames": [
+    522,
+    560
+  ],
+  "lift_start_frame": 560,
+  "contact_eye_error_m": {
+    "mean": 7.30509584680711e-05,
+    "max": 0.0002847923744061121
+  },
+  "contact_axis_error_deg": {
+    "mean": 0.03342786158626369,
+    "max": 0.2445727411088775
+  },
+  "grip_error_before_m": 0.06451507144939486,
+  "grip_error_after_m": 4.8289206998647455e-05,
+  "closed_finger_surface_gaps_m": {
+    "thumb_2": -0.000403903334570347,
+    "middle_1": -0.00041974205364647417,
+    "index_1": -0.0004192067327164474
+  },
+  "closed_finger_angles_rad": [
+    0.23417827148964993,
+    -0.42126893838184293,
+    -1.1859464615706994,
+    1.1137754118356458,
+    1.4531647414970394,
+    1.1116142551699109,
+    1.4512979233282628
+  ],
+  "max_joint_speed_rad_s": 7.465684851993026,
+  "max_arm_delta_rad": 1.630146301257101,
+  "root_legs_torso_left_arm_unchanged": true,
+  "body_prior": "stage8 inherited global/stance reference; no new full-body solve",
+  "physics_grasp_verified": false,
+  "estimated_brush_displacement_11p2_to_12s_m": [
+    -0.3974798184428474,
+    0.2170943551612714,
+    0.17853678859544636
+  ],
+  "estimated_brush_lift_11p2_to_12s_m": 0.17853678859544636,
+  "motion_sha256": "839b95f2d9d94655ce39134827c0e8c71206638dfc52afe7c90709b4f949ffb9"
+}

@@ -267,7 +267,11 @@ class EntityEmbodiment(Entity):
 
         path = resolve_asset(self.spec.asset)
         source = str(path)
-        stripped = strip_free_bodies(source) if path.suffix.lower() in (".xml", ".mjcf") else None
+        stripped = (
+            strip_free_bodies(source)
+            if path.suffix.lower() in (".xml", ".mjcf") and not self.spec.preserve_free_bodies
+            else None
+        )
         shape_start = builder.shape_count
         # The mount, composed onto every root the asset declares. Never through
         # ``override_root_xform``: both YAM cells are two separate articulation
@@ -283,7 +287,7 @@ class EntityEmbodiment(Entity):
                         builder,
                         stripped or source,
                         scale=self.spec.asset.scale,
-                        floating=False,
+                        floating=self.spec.preserve_free_bodies,
                         enable_self_collisions=self.spec.import_self_collisions,
                         **({} if mount is None else {"xform": mount}),
                     )
@@ -291,7 +295,7 @@ class EntityEmbodiment(Entity):
                     builder.add_mjcf(
                         stripped or source,
                         scale=self.spec.asset.scale,
-                        floating=False,
+                        floating=self.spec.preserve_free_bodies,
                         collapse_fixed_joints=False,
                         enable_self_collisions=self.spec.import_self_collisions,
                         verbose=False,

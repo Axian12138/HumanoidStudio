@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="zh">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Retarget 运动学预览</title>
+<style>
+  :root{font-family:Inter,system-ui,sans-serif;color:#e9edf4;background:#111722}
+  *{box-sizing:border-box}body{margin:0;height:100vh;overflow:hidden}
+  iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+  .top{position:absolute;top:12px;left:12px;right:12px;display:flex;align-items:center;gap:12px;padding:11px 14px;background:#121a24ed;border:1px solid #364457;border-radius:14px;box-shadow:0 12px 36px #0008;z-index:2}
+  button{font:inherit;color:#eaf2fb;background:#26394d;border:1px solid #506881;border-radius:9px;padding:8px 13px;cursor:pointer;white-space:nowrap}
+  button:hover{background:#34516d}.play{min-width:92px;background:#187ec3;border-color:#42b5ee;font-weight:700}
+  .title{font-size:12px;line-height:1.35;color:#b8c8d7;min-width:120px}.title strong{color:#fff;font-size:14px}
+  .seek{min-width:120px;flex:1;accent-color:#48b8f3;cursor:pointer}.time{font-variant-numeric:tabular-nums;color:#c6d2df;font-size:12px;min-width:125px;text-align:right}
+  .hint{position:absolute;left:12px;bottom:12px;padding:9px 12px;background:#121a24ed;border:1px solid #364457;border-radius:10px;color:#c4d1df;font-size:12px;z-index:2}
+  @media(max-width:760px){.title{display:none}.top{gap:6px}.time{min-width:85px;font-size:11px}.hint{right:12px}}
+</style>
+<iframe id="view" title="RSS 3D scene"></iframe>
+<div class="top">
+  <div class="title"><strong>Stage 3 · Retarget 预览</strong><br>青色虚影：原始 human motion</div>
+  <button id="play" class="play">▶ 播放</button>
+  <select id="task" aria-label="跳转到任务" style="font:inherit;color:#eaf2fb;background:#26394d;border:1px solid #506881;border-radius:9px;padding:8px;max-width:210px"><option value="">整段动作</option></select>
+  <input id="seek" class="seek" type="range" aria-label="源动作进度条">
+  <div id="time" class="time">加载中</div>
+  <button id="reset">回到起点</button>
+</div>
+<div id="hint" class="hint">青色骨架是原始 human motion；实体机器人是 retarget 结果。可拖动进度条查看任意帧。</div>
+<script>
+  const $=id=>document.getElementById(id);
+  $('view').src=`http://${location.hostname}:${Number(location.port)-1}/`;
+  let seeking=false, loadedTasks=false;
+  async function command(command,value){
+    const response=await fetch('/api/command',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({command,value})});
+    if(!response.ok) $('hint').textContent=`操作失败：${await response.text()}`;
+  }
+  async function refresh(){
+    try{
+      const response=await fetch('/api/state',{cache:'no-store'});
+      const state=await response.json();
+      if(!loadedTasks){
+        for(const task of state.segments||[]){const option=document.createElement('option');option.value=task.start;option.textContent=task.id.replace(/^\d+_/,'').replaceAll('_',' ');$('task').append(option)}
+        $('task').hidden=!state.segments?.length;loadedTasks=true;
+      }
+      $('seek').min=state.start;$('seek').max=state.stop-1;$('seek').step=1;
+      if(!seeking) $('seek').value=state.cursor;
+      const frame=seeking?Number($('seek').value):state.cursor;
+      $('time').textContent=`${(state.source_offset_s+frame/state.fps).toFixed(2)} / ${(state.source_offset_s+(state.stop-1)/state.fps).toFixed(2)} s`;
+      $('play').textContent=state.playing?'⏸ 暂停':'▶ 播放';
+      $('hint').textContent=`本段帧 ${frame} · 录制时间 ${(state.source_offset_s+frame/state.fps).toFixed(2)} s · 青色虚影：原始 human motion · ${state.object_track?'物体估计轨迹：'+state.object_track+' · ':''}仅运动学，无物理步进。`;
+    }catch(error){$('hint').textContent=`连接中断：${error.message}`;}
+  }
+  $('play').onclick=()=>command('toggle');
+  $('reset').onclick=()=>command('reset');
+  $('task').onchange=()=>{if($('task').value!=='')command('seek',Number($('task').value))};
+  $('seek').onpointerdown=()=>{seeking=true};
+  $('seek').oninput=()=>{command('seek',Number($('seek').value));refresh()};
+  $('seek').onpointerup=()=>{seeking=false};
+  $('seek').onchange=()=>{seeking=false;command('seek',Number($('seek').value))};
+  window.addEventListener('keydown',event=>{if(event.code==='Space'&&event.target.tagName!=='INPUT'){event.preventDefault();command('toggle')}});
+  setInterval(refresh,100);refresh();
+</script>
+</html>

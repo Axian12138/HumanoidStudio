@@ -1,0 +1,68 @@
+{
+  "status": "projected_motion_unreviewed",
+  "source_motion_sha256": "839b95f2d9d94655ce39134827c0e8c71206638dfc52afe7c90709b4f949ffb9",
+  "hand_targets_sha256": "057cc1ae830d4335bf29c2edc6042748fe732b4a366fc1606f2e4d45f055f4ec",
+  "motion_sha256": "0e240813c82d63fe13493c3cabf71d3107fc0bc75e94e23d6d9e2ec3e78d1227",
+  "projected_keyframes": [
+    {
+      "frame": 450,
+      "wrist_position_error_m": 1.1561870545445211e-11,
+      "wrist_angle_error_rad": 4.909239919080019e-10
+    },
+    {
+      "frame": 480,
+      "wrist_position_error_m": 7.01968905821218e-11,
+      "wrist_angle_error_rad": 3.869096441203603e-09
+    },
+    {
+      "frame": 500,
+      "wrist_position_error_m": 1.0345727103076348e-05,
+      "wrist_angle_error_rad": 0.0011382123399193325
+    },
+    {
+      "frame": 518,
+      "wrist_position_error_m": 2.089694522183046e-05,
+      "wrist_angle_error_rad": 0.002140739036733783
+    },
+    {
+      "frame": 525,
+      "wrist_position_error_m": 2.1926721772261397e-05,
+      "wrist_angle_error_rad": 0.0021306429631346878
+    },
+    {
+      "frame": 545,
+      "wrist_position_error_m": 2.3339262897793675e-05,
+      "wrist_angle_error_rad": 0.002118591197105827
+    },
+    {
+      "frame": 560,
+      "wrist_position_error_m": 4.186250441295297e-05,
+      "wrist_angle_error_rad": 0.002637989132228289
+    },
+    {
+      "frame": 575,
+      "wrist_position_error_m": 4.6916627918307346e-05,
+      "wrist_angle_error_rad": 0.001609509588302425
+    },
+    {
+      "frame": 600,
+      "wrist_position_error_m": 2.3963502102079065e-05,
+      "wrist_angle_error_rad": 0.002195055639855208
+    },
+    {
+      "frame": 625,
+      "wrist_position_error_m": 2.1817405668108864e-05,
+      "wrist_angle_error_rad": 0.0016867681927049663
+    },
+    {
+      "frame": 660,
+      "wrist_position_error_m": 1.6960841815374073e-11,
+      "wrist_angle_error_rad": 7.680786557058202e-10
+    }
+  ],
+  "max_wrist_position_error_m": 4.6916627918307346e-05,
+  "max_wrist_angle_error_rad": 0.002637989132228289,
+  "max_changed_joint_speed_rad_s": 7.170748964983595,
+  "root_legs_torso_left_arm_unchanged": true,
+  "physics_grasp_verified": false
+}

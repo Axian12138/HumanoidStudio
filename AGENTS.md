@@ -61,3 +61,33 @@ The method and what counts as a finished twin are in
 (the `real-to-sim` skill for Claude Code). The `scene.py` contract, every
 command and every reading are in
 [`examples/live/REFERENCE.md`](examples/live/REFERENCE.md).
+
+## Feedback memory and humanoid real to sim
+
+For every task in this repository, record user reported failures, omissions,
+and new requirements in
+[`examples/humanoid-real2sim/cases/feedback/`](examples/humanoid-real2sim/cases/feedback/README.md).
+Search by natural-language task, action, and symptom before solving; read the
+matching example's successful motion, failure mechanism, code, and evidence.
+Record a new correction immediately, then update the same case and its action
+example with the fix and validation. Use `repository` as the stage for work outside
+the humanoid pipeline. For humanoid reconstruction, retarget, tracking,
+object interaction, or related visualization, use
+[`codex_skills/rss-scaletrack-real2sim/SKILL.md`](codex_skills/rss-scaletrack-real2sim/SKILL.md)
+as the stage router. Keep take-specific frame/version approval in that
+take's stage ledger. Store task feedback in language-rich action examples with
+code, motion, and validation evidence; do not promote task-specific rules to
+the main skill. Change the main skill only for feedback about the harness itself.
+
+Reusable retarget, tracker, and visualization code belongs under
+[`robosimstudio/humanoid_real2sim/`](robosimstudio/humanoid_real2sim/README.md), independent of
+the skill. Put task programs and launchers under
+[`scripts/humanoid-real2sim/`](scripts/humanoid-real2sim/README.md), and keep task
+descriptions, configurations, motions, assets, and review results under
+`examples/humanoid-real2sim/`. Example binaries use Git LFS; Python code uses
+ordinary Git. Put reusable, language-rich, user-corrected cases in
+[`examples/humanoid-real2sim/cases/`](examples/humanoid-real2sim/cases/README.md); put ordinary candidates,
+duplicate cases, logs, and scratch results in `outputs/humanoid-real2sim/`. Search with
+`python scripts/humanoid-real2sim/feedback.py search --query '<task action symptom>'`.
+The humanoid pipeline has one canonical name and location. Do not recreate
+parallel legacy packages or directory aliases.

@@ -1,0 +1,32 @@
+{
+  "comparison": "Same 0.30 kg, local COM z=0.03 m, 26 bin collision parts, requested bin mu=0.10. Only bin MuJoCo geom priority differs.",
+  "root_cause": "With equal geom priority, floor mu=1.0 overrides bin mu=0.10 by MuJoCo max-friction contact mixing. Bin priority 1 selects mu=0.10 for bin contacts while foot-floor contacts remain priority 0.",
+  "results": {
+    "same_priority_mu_0p10_low_com": {
+      "rollout": "rollouts/stage4_mu_0p10_com_0p03/motion_repair/rollout.npz",
+      "rollout_sha256": "5c75127d3fa951a96a2b6240d46949cf12717603e87f004f38be12fc015c7ffb",
+      "frames": 474,
+      "bin_horizontal_displacement_m": 0.1833651937997777,
+      "bin_max_tilt_deg": 86.05296268102938,
+      "first_frame_tilt_above_30_deg": 289,
+      "bin_final_xyz_m": [
+        0.360625684261322,
+        0.9384222030639648,
+        0.08164229243993759
+      ]
+    },
+    "bin_priority_mu_0p10_low_com": {
+      "rollout": "rollouts/stage4_mu_0p10_com_0p03_contactfix/motion_repair/rollout.npz",
+      "rollout_sha256": "71a7bbf91d225e1ff9e31fbd0eb47c76e545c3c49b900802094381bb077154ec",
+      "frames": 474,
+      "bin_horizontal_displacement_m": 0.8362198417903914,
+      "bin_max_tilt_deg": 0.8483626772446111,
+      "first_frame_tilt_above_30_deg": null,
+      "bin_final_xyz_m": [
+        0.771150529384613,
+        0.37855714559555054,
+        -2.2816127511759987e-06
+      ]
+    }
+  }
+}

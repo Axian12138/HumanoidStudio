@@ -1,0 +1,263 @@
+{
+  "status": "sampled_kinematic_audit_not_physical_grasp",
+  "sample_count": 475,
+  "changed_joints": [
+    "right_shoulder_pitch_joint",
+    "right_shoulder_roll_joint",
+    "right_shoulder_yaw_joint",
+    "right_elbow_joint",
+    "right_wrist_roll_joint",
+    "right_wrist_pitch_joint",
+    "right_wrist_yaw_joint",
+    "right_hand_thumb_0_joint",
+    "right_hand_middle_0_joint",
+    "right_hand_index_0_joint",
+    "right_hand_thumb_1_joint",
+    "right_hand_middle_1_joint",
+    "right_hand_index_1_joint",
+    "right_hand_thumb_2_joint"
+  ],
+  "only_right_arm_and_hand_changed": true,
+  "seam_joint_max_rad": 0.0,
+  "max_joint_speed_limit_ratio": 0.4662527084350586,
+  "right_wrist_axis_abs_max_deg": {
+    "roll": 61.1444091796875,
+    "pitch": 37.88494110107422,
+    "yaw": 34.999996185302734
+  },
+  "active_right_wrist_axis_abs_max_deg": {
+    "roll": 34.999996185302734,
+    "pitch": 34.999996185302734,
+    "yaw": 34.999996185302734
+  },
+  "joint_limit_excess_rad": {},
+  "approach_palm_velocity_angle_deg": {
+    "72.0-72.5": 92.33032494930612,
+    "72.5-72.9": 82.86310657302077,
+    "72.9-73.25": 35.57882577695405
+  },
+  "sampled_all_collision_count": 73,
+  "sampled_forbidden_collision_count": 0,
+  "sampled_forbidden_max_depth_m": 0.0,
+  "sampled_forbidden_time_range_s": [
+    null,
+    null
+  ],
+  "sampled_forbidden_deepest": [],
+  "sampled_forbidden_collisions": [],
+  "sampled_handle_contacts": [
+    {
+      "time_s": 73.43,
+      "body": "right_hand_middle_1_link",
+      "basket_part": "Hull_handle_003",
+      "depth_m": 0.003574956996405032
+    },
+    {
+      "time_s": 73.43,
+      "body": "right_hand_middle_1_link",
+      "basket_part": "Hull_handle_004",
+      "depth_m": 0.0020301726966844846
+    },
+    {
+      "time_s": 73.44,
+      "body": "right_hand_thumb_2_link",
+      "basket_part": "Hull_handle_003",
+      "depth_m": 0.0010297520780485625
+    },
+    {
+      "time_s": 73.44,
+      "body": "right_hand_middle_1_link",
+      "basket_part": "Hull_handle_003",
+      "depth_m": 0.003433978500119339
+    },
+    {
+      "time_s": 73.44,
+      "body": "right_hand_middle_1_link",
+      "basket_part": "Hull_handle_004",
+      "depth_m": 0.0029665033591501078
+    },
+    {
+      "time_s": 73.45,
+      "body": "right_hand_middle_1_link",
+      "basket_part": "Hull_handle_003",
+      "depth_m": 0.0020490443398669123
+    },
+    {
+      "time_s": 73.45,
+      "body": "right_hand_middle_1_link",
+      "basket_part": "Hull_handle_004",
+      "depth_m": 0.002039562080225779
+    },
+    {
+      "time_s": 73.46,
+      "body": "right_hand_middle_1_link",
+      "basket_part": "Hull_handle_003",
+      "depth_m": 0.003066234946588531
+    },
+    {
+      "time_s": 73.47,
+      "body": "right_hand_middle_1_link",
+      "basket_part": "Hull_handle_003",
+      "depth_m": 0.003181684091585424
+    },
+    {
+      "time_s": 73.48,
+      "body": "right_hand_middle_1_link",
+      "basket_part": "Hull_handle_002",
+      "depth_m": 0.0013542300845089672
+    },
+    {
+      "time_s": 73.48,
+      "body": "right_hand_middle_1_link",
+      "basket_part": "Hull_handle_003",
+      "depth_m": 0.0035923491932816076
+    },
+    {
+      "time_s": 73.49,
+      "body": "right_hand_middle_1_link",
+      "basket_part": "Hull_handle_002",
+      "depth_m": 0.0012217188892326702
+    },
+    {
+      "time_s": 73.49,
+      "body": "right_hand_middle_1_link",
+      "basket_part": "Hull_handle_003",
+      "depth_m": 0.002946706856536474
+    },
+    {
+      "time_s": 73.5,
+      "body": "right_hand_middle_0_link",
+      "basket_part": "Hull_handle_003",
+      "depth_m": 0.002002468849918615
+    },
+    {
+      "time_s": 73.5,
+      "body": "right_hand_middle_1_link",
+      "basket_part": "Hull_handle_003",
+      "depth_m": 0.0014815682494240257
+    },
+    {
+      "time_s": 73.51,
+      "body": "right_hand_middle_0_link",
+      "basket_part": "Hull_handle_003",
+      "depth_m": 0.0028537765436406903
+    },
+    {
+      "time_s": 73.52,
+      "body": "right_hand_middle_0_link",
+      "basket_part": "Hull_handle_003",
+      "depth_m": 0.003103459843600692
+    },
+    {
+      "time_s": 73.53,
+      "body": "right_hand_middle_0_link",
+      "basket_part": "Hull_handle_003",
+      "depth_m": 0.0036919711192592297
+    },
+    {
+      "time_s": 73.54,
+      "body": "right_hand_middle_0_link",
+      "basket_part": "Hull_handle_003",
+      "depth_m": 0.0034869911214123472
+    },
+    {
+      "time_s": 73.55,
+      "body": "right_hand_middle_0_link",
+      "basket_part": "Hull_handle_003",
+      "depth_m": 0.003099353694626661
+    },
+    {
+      "time_s": 73.56,
+      "body": "right_hand_middle_0_link",
+      "basket_part": "Hull_handle_003",
+      "depth_m": 0.0030169678108744047
+    },
+    {
+      "time_s": 73.57,
+      "body": "right_hand_middle_0_link",
+      "basket_part": "Hull_handle_003",
+      "depth_m": 0.002857545624859348
+    },
+    {
+      "time_s": 73.58,
+      "body": "right_hand_middle_0_link",
+      "basket_part": "Hull_handle_003",
+      "depth_m": 0.0026852914140464423
+    },
+    {
+      "time_s": 73.59,
+      "body": "right_hand_middle_0_link",
+      "basket_part": "Hull_handle_003",
+      "depth_m": 0.0024706489483291016
+    },
+    {
+      "time_s": 73.6,
+      "body": "right_hand_middle_0_link",
+      "basket_part": "Hull_handle_003",
+      "depth_m": 0.002245496338840469
+    },
+    {
+      "time_s": 73.61,
+      "body": "right_hand_middle_0_link",
+      "basket_part": "Hull_handle_003",
+      "depth_m": 0.001966676480187002
+    },
+    {
+      "time_s": 73.62,
+      "body": "right_hand_middle_0_link",
+      "basket_part": "Hull_handle_003",
+      "depth_m": 0.0016771626740299528
+    },
+    {
+      "time_s": 73.63,
+      "body": "right_hand_middle_0_link",
+      "basket_part": "Hull_handle_003",
+      "depth_m": 0.001467223131715989
+    },
+    {
+      "time_s": 73.64,
+      "body": "right_hand_middle_0_link",
+      "basket_part": "Hull_handle_003",
+      "depth_m": 0.0013370703137944306
+    },
+    {
+      "time_s": 73.65,
+      "body": "right_hand_middle_0_link",
+      "basket_part": "Hull_handle_003",
+      "depth_m": 0.0013606388515403633
+    }
+  ],
+  "finger_handle_vertex_gaps_m": [
+    {
+      "time_s": 73.5,
+      "body": "right_hand_thumb_2_link",
+      "sampled_vertex_gap_m": 0.005569298735514629
+    },
+    {
+      "time_s": 73.5,
+      "body": "right_hand_middle_1_link",
+      "sampled_vertex_gap_m": 0.0024567229022199955
+    },
+    {
+      "time_s": 73.5,
+      "body": "right_hand_index_1_link",
+      "sampled_vertex_gap_m": 0.009082642035556943
+    },
+    {
+      "time_s": 74.3,
+      "body": "right_hand_thumb_2_link",
+      "sampled_vertex_gap_m": 0.001596821916067862
+    },
+    {
+      "time_s": 74.3,
+      "body": "right_hand_middle_1_link",
+      "sampled_vertex_gap_m": 0.009976221899979222
+    },
+    {
+      "time_s": 74.3,
+      "body": "right_hand_index_1_link",
+      "sampled_vertex_gap_m": 0.024516229601547354
+    }
+  ],
+  "limits": "Hand hull vertices at 50 Hz and interleaved half frames; static 1012 collision hulls, no physical forces or continuous-time certificate."
+}
