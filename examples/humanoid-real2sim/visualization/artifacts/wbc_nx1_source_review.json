@@ -1,0 +1,825 @@
+{
+  "run": "outputs/humanoid-real2sim/2026-10-22/wbc-hoi-1014/runs/14-02-09.180626+0800",
+  "samples": [
+    {
+      "sample": "01_1014",
+      "episode": "20261008_172423_003",
+      "frames": 1031,
+      "fps": 50,
+      "source": "teleop_replay",
+      "robot": {
+        "version": "v1.0.1",
+        "variant": "direct_drive_knees_movable_head",
+        "repository": null,
+        "commit": null,
+        "source_file": "galbot_nx1_v1_0_1/galbot_nx1_v1_0_1_simplify.xml",
+        "source_sha256": "1cef2c7fba79f46b38a641dd76904bc95a3e0e68c45ecb159aa6df379d02f8a0",
+        "nq": 39,
+        "joint_order": [
+          "left_hip_pitch_joint",
+          "left_hip_roll_joint",
+          "left_hip_yaw_joint",
+          "left_knee_joint",
+          "left_ankle_pitch_joint",
+          "left_ankle_roll_joint",
+          "right_hip_pitch_joint",
+          "right_hip_roll_joint",
+          "right_hip_yaw_joint",
+          "right_knee_joint",
+          "right_ankle_pitch_joint",
+          "right_ankle_roll_joint",
+          "waist_yaw_joint",
+          "waist_pitch_joint",
+          "waist_roll_joint",
+          "head_yaw_joint",
+          "head_pitch_joint",
+          "head_roll_joint",
+          "left_shoulder_pitch_joint",
+          "left_shoulder_roll_joint",
+          "left_shoulder_yaw_joint",
+          "left_elbow_joint",
+          "left_wrist_roll_joint",
+          "left_wrist_pitch_joint",
+          "left_wrist_yaw_joint",
+          "right_shoulder_pitch_joint",
+          "right_shoulder_roll_joint",
+          "right_shoulder_yaw_joint",
+          "right_elbow_joint",
+          "right_wrist_roll_joint",
+          "right_wrist_pitch_joint",
+          "right_wrist_yaw_joint"
+        ],
+        "source_archive": "galbot_nx1_v1_0_1.zip",
+        "source_archive_sha256": "04ff8ef7d9d51c55fc739b1140eca118c1d8179295eab6e46634b7803990337c"
+      },
+      "human_alignment_rotation_xyzw": [
+        1.5322136528300723e-10,
+        8.326131556673881e-10,
+        0.04184667505419213,
+        0.9991240442442114
+      ],
+      "human_alignment_translation": [
+        2.59138333251396,
+        -2.254010947356405,
+        -0.004685409122942352
+      ],
+      "display_translation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "root_ref_actual_rms": 4.5346910311346554e-08,
+      "qpos_ref_joint_max_difference": 0.0
+    },
+    {
+      "sample": "02_1014",
+      "episode": "20261008_164701_001",
+      "frames": 615,
+      "fps": 50,
+      "source": "teleop_replay",
+      "robot": {
+        "version": "v1.0.1",
+        "variant": "direct_drive_knees_movable_head",
+        "repository": null,
+        "commit": null,
+        "source_file": "galbot_nx1_v1_0_1/galbot_nx1_v1_0_1_simplify.xml",
+        "source_sha256": "1cef2c7fba79f46b38a641dd76904bc95a3e0e68c45ecb159aa6df379d02f8a0",
+        "nq": 39,
+        "joint_order": [
+          "left_hip_pitch_joint",
+          "left_hip_roll_joint",
+          "left_hip_yaw_joint",
+          "left_knee_joint",
+          "left_ankle_pitch_joint",
+          "left_ankle_roll_joint",
+          "right_hip_pitch_joint",
+          "right_hip_roll_joint",
+          "right_hip_yaw_joint",
+          "right_knee_joint",
+          "right_ankle_pitch_joint",
+          "right_ankle_roll_joint",
+          "waist_yaw_joint",
+          "waist_pitch_joint",
+          "waist_roll_joint",
+          "head_yaw_joint",
+          "head_pitch_joint",
+          "head_roll_joint",
+          "left_shoulder_pitch_joint",
+          "left_shoulder_roll_joint",
+          "left_shoulder_yaw_joint",
+          "left_elbow_joint",
+          "left_wrist_roll_joint",
+          "left_wrist_pitch_joint",
+          "left_wrist_yaw_joint",
+          "right_shoulder_pitch_joint",
+          "right_shoulder_roll_joint",
+          "right_shoulder_yaw_joint",
+          "right_elbow_joint",
+          "right_wrist_roll_joint",
+          "right_wrist_pitch_joint",
+          "right_wrist_yaw_joint"
+        ],
+        "source_archive": "galbot_nx1_v1_0_1.zip",
+        "source_archive_sha256": "04ff8ef7d9d51c55fc739b1140eca118c1d8179295eab6e46634b7803990337c"
+      },
+      "human_alignment_rotation_xyzw": [
+        9.838982753529457e-11,
+        1.4682491403239517e-09,
+        0.45191696643628165,
+        0.8920600066402645
+      ],
+      "human_alignment_translation": [
+        0.24514207488826345,
+        -0.3085333282844649,
+        -0.003096339064599052
+      ],
+      "display_translation": [
+        12.0,
+        0.0,
+        0.0
+      ],
+      "root_ref_actual_rms": 3.568632354223535e-08,
+      "qpos_ref_joint_max_difference": 0.0
+    }
+  ],
+  "robot_assets": {
+    "commit": "841e1460157762231222d9086b76977e1a699605",
+    "mesh_checks": [
+      {
+        "mesh": "pelvis_link",
+        "present": true,
+        "hash_matches_recording": true
+      },
+      {
+        "mesh": "left_hip_pitch_link",
+        "present": true,
+        "hash_matches_recording": true
+      },
+      {
+        "mesh": "left_hip_roll_link",
+        "present": true,
+        "hash_matches_recording": true
+      },
+      {
+        "mesh": "left_hip_yaw_link",
+        "present": true,
+        "hash_matches_recording": true
+      },
+      {
+        "mesh": "left_knee_link",
+        "present": true,
+        "hash_matches_recording": true
+      },
+      {
+        "mesh": "left_ankle_pitch_link",
+        "present": true,
+        "hash_matches_recording": true
+      },
+      {
+        "mesh": "left_ankle_roll_link",
+        "present": true,
+        "hash_matches_recording": true
+      },
+      {
+        "mesh": "right_hip_pitch_link",
+        "present": true,
+        "hash_matches_recording": true
+      },
+      {
+        "mesh": "right_hip_roll_link",
+        "present": true,
+        "hash_matches_recording": true
+      },
+      {
+        "mesh": "right_hip_yaw_link",
+        "present": true,
+        "hash_matches_recording": true
+      },
+      {
+        "mesh": "right_knee_link",
+        "present": true,
+        "hash_matches_recording": true
+      },
+      {
+        "mesh": "right_ankle_pitch_link",
+        "present": true,
+        "hash_matches_recording": true
+      },
+      {
+        "mesh": "right_ankle_roll_link",
+        "present": true,
+        "hash_matches_recording": true
+      },
+      {
+        "mesh": "waist_yaw_link",
+        "present": true,
+        "hash_matches_recording": true
+      },
+      {
+        "mesh": "waist_pitch_link",
+        "present": true,
+        "hash_matches_recording": true
+      },
+      {
+        "mesh": "waist_roll_link",
+        "present": true,
+        "hash_matches_recording": true
+      },
+      {
+        "mesh": "head_yaw_link",
+        "present": true,
+        "hash_matches_recording": true
+      },
+      {
+        "mesh": "head_pitch_link",
+        "present": true,
+        "hash_matches_recording": true
+      },
+      {
+        "mesh": "head_roll_link",
+        "present": true,
+        "hash_matches_recording": true
+      },
+      {
+        "mesh": "left_shoulder_pitch_link",
+        "present": true,
+        "hash_matches_recording": true
+      },
+      {
+        "mesh": "left_shoulder_roll_link",
+        "present": true,
+        "hash_matches_recording": true
+      },
+      {
+        "mesh": "left_shoulder_yaw_link",
+        "present": true,
+        "hash_matches_recording": true
+      },
+      {
+        "mesh": "left_elbow_link",
+        "present": true,
+        "hash_matches_recording": true
+      },
+      {
+        "mesh": "left_wrist_roll_link",
+        "present": true,
+        "hash_matches_recording": true
+      },
+      {
+        "mesh": "left_wrist_pitch_link",
+        "present": true,
+        "hash_matches_recording": true
+      },
+      {
+        "mesh": "left_wrist_yaw_link",
+        "present": true,
+        "hash_matches_recording": true
+      },
+      {
+        "mesh": "right_shoulder_pitch_link",
+        "present": true,
+        "hash_matches_recording": true
+      },
+      {
+        "mesh": "right_shoulder_roll_link",
+        "present": true,
+        "hash_matches_recording": true
+      },
+      {
+        "mesh": "right_shoulder_yaw_link",
+        "present": true,
+        "hash_matches_recording": true
+      },
+      {
+        "mesh": "right_elbow_link",
+        "present": true,
+        "hash_matches_recording": true
+      },
+      {
+        "mesh": "right_wrist_roll_link",
+        "present": true,
+        "hash_matches_recording": true
+      },
+      {
+        "mesh": "right_wrist_pitch_link",
+        "present": true,
+        "hash_matches_recording": true
+      },
+      {
+        "mesh": "right_wrist_yaw_link",
+        "present": true,
+        "hash_matches_recording": true
+      }
+    ],
+    "note": "Version-matched URDF used; original simplified MJCF hash was not reproduced."
+  },
+  "room_alignment": [
+    {
+      "sample": "01_1014",
+      "matched": 146,
+      "missing": [],
+      "max_world_matrix_error": 0.0
+    },
+    {
+      "sample": "02_1014",
+      "matched": 149,
+      "missing": [],
+      "max_world_matrix_error": 0.0
+    }
+  ],
+  "viewer": {
+    "url": "http://localhost:8511/",
+    "seek_checks": [
+      {
+        "cursor": 0,
+        "start": 0,
+        "stop": 1646,
+        "fps": 50,
+        "playing": false,
+        "playback_rate": 1.0,
+        "source_offset_s": 0.0,
+        "segments": [
+          {
+            "id": "Sample 01_1014 / 20261008_172423_003",
+            "start": 0,
+            "stop": 1031
+          },
+          {
+            "id": "Sample 02_1014 / 20261008_164701_001",
+            "start": 1031,
+            "stop": 1646
+          }
+        ],
+        "human_motion": true,
+        "object_track": null,
+        "scene_tracks": [
+          {
+            "name": "object_01_1014",
+            "kind": "free",
+            "path": "/home/galbot/workspace/robosimstudio/outputs/humanoid-real2sim/2026-10-22/wbc-hoi-1014/runs/14-02-09.180626+0800/01_1014/combined_track.npz",
+            "position": [
+              0.631433367729187,
+              -4.097071170806885,
+              0.9080228805541992,
+              0.01948954164981842,
+              -0.7606645226478577,
+              0.0088998693972826,
+              0.6487915515899658
+            ]
+          },
+          {
+            "name": "object_02_1014",
+            "kind": "free",
+            "path": "/home/galbot/workspace/robosimstudio/outputs/humanoid-real2sim/2026-10-22/wbc-hoi-1014/runs/14-02-09.180626+0800/02_1014/combined_track.npz",
+            "position": [
+              14.095752716064453,
+              -0.9043771624565125,
+              0.660618007183075,
+              0.00511929951608181,
+              -0.003968908917158842,
+              -1.7655411284067668e-05,
+              0.9999790191650391
+            ]
+          }
+        ],
+        "rigid_track": false,
+        "context_mesh": null,
+        "rigid_valid": null,
+        "sim_steps": 0
+      },
+      {
+        "cursor": 500,
+        "start": 0,
+        "stop": 1646,
+        "fps": 50,
+        "playing": false,
+        "playback_rate": 1.0,
+        "source_offset_s": 0.0,
+        "segments": [
+          {
+            "id": "Sample 01_1014 / 20261008_172423_003",
+            "start": 0,
+            "stop": 1031
+          },
+          {
+            "id": "Sample 02_1014 / 20261008_164701_001",
+            "start": 1031,
+            "stop": 1646
+          }
+        ],
+        "human_motion": true,
+        "object_track": null,
+        "scene_tracks": [
+          {
+            "name": "object_01_1014",
+            "kind": "free",
+            "path": "/home/galbot/workspace/robosimstudio/outputs/humanoid-real2sim/2026-10-22/wbc-hoi-1014/runs/14-02-09.180626+0800/01_1014/combined_track.npz",
+            "position": [
+              0.632142961025238,
+              -4.09825325012207,
+              0.9083521366119385,
+              -0.008194045163691044,
+              -0.7804509401321411,
+              -0.017590301111340523,
+              0.6249158382415771
+            ]
+          },
+          {
+            "name": "object_02_1014",
+            "kind": "free",
+            "path": "/home/galbot/workspace/robosimstudio/outputs/humanoid-real2sim/2026-10-22/wbc-hoi-1014/runs/14-02-09.180626+0800/02_1014/combined_track.npz",
+            "position": [
+              14.095752716064453,
+              -0.9043771624565125,
+              0.660618007183075,
+              0.00511929951608181,
+              -0.003968908917158842,
+              -1.7655411284067668e-05,
+              0.9999790191650391
+            ]
+          }
+        ],
+        "rigid_track": false,
+        "context_mesh": null,
+        "rigid_valid": null,
+        "sim_steps": 0
+      },
+      {
+        "cursor": 1030,
+        "start": 0,
+        "stop": 1646,
+        "fps": 50,
+        "playing": false,
+        "playback_rate": 1.0,
+        "source_offset_s": 0.0,
+        "segments": [
+          {
+            "id": "Sample 01_1014 / 20261008_172423_003",
+            "start": 0,
+            "stop": 1031
+          },
+          {
+            "id": "Sample 02_1014 / 20261008_164701_001",
+            "start": 1031,
+            "stop": 1646
+          }
+        ],
+        "human_motion": true,
+        "object_track": null,
+        "scene_tracks": [
+          {
+            "name": "object_01_1014",
+            "kind": "free",
+            "path": "/home/galbot/workspace/robosimstudio/outputs/humanoid-real2sim/2026-10-22/wbc-hoi-1014/runs/14-02-09.180626+0800/01_1014/combined_track.npz",
+            "position": [
+              0.53971266746521,
+              -4.106362819671631,
+              1.190316915512085,
+              -0.11822955310344696,
+              -0.8496931195259094,
+              0.06988920271396637,
+              0.5090764760971069
+            ]
+          },
+          {
+            "name": "object_02_1014",
+            "kind": "free",
+            "path": "/home/galbot/workspace/robosimstudio/outputs/humanoid-real2sim/2026-10-22/wbc-hoi-1014/runs/14-02-09.180626+0800/02_1014/combined_track.npz",
+            "position": [
+              14.095752716064453,
+              -0.9043771624565125,
+              0.660618007183075,
+              0.00511929951608181,
+              -0.003968908917158842,
+              -1.7655411284067668e-05,
+              0.9999790191650391
+            ]
+          }
+        ],
+        "rigid_track": false,
+        "context_mesh": null,
+        "rigid_valid": null,
+        "sim_steps": 0
+      },
+      {
+        "cursor": 1031,
+        "start": 0,
+        "stop": 1646,
+        "fps": 50,
+        "playing": false,
+        "playback_rate": 1.0,
+        "source_offset_s": 0.0,
+        "segments": [
+          {
+            "id": "Sample 01_1014 / 20261008_172423_003",
+            "start": 0,
+            "stop": 1031
+          },
+          {
+            "id": "Sample 02_1014 / 20261008_164701_001",
+            "start": 1031,
+            "stop": 1646
+          }
+        ],
+        "human_motion": true,
+        "object_track": null,
+        "scene_tracks": [
+          {
+            "name": "object_01_1014",
+            "kind": "free",
+            "path": "/home/galbot/workspace/robosimstudio/outputs/humanoid-real2sim/2026-10-22/wbc-hoi-1014/runs/14-02-09.180626+0800/01_1014/combined_track.npz",
+            "position": [
+              0.53971266746521,
+              -4.106362819671631,
+              1.190316915512085,
+              -0.11822955310344696,
+              -0.8496931195259094,
+              0.06988920271396637,
+              0.5090764760971069
+            ]
+          },
+          {
+            "name": "object_02_1014",
+            "kind": "free",
+            "path": "/home/galbot/workspace/robosimstudio/outputs/humanoid-real2sim/2026-10-22/wbc-hoi-1014/runs/14-02-09.180626+0800/02_1014/combined_track.npz",
+            "position": [
+              14.095752716064453,
+              -0.9043771624565125,
+              0.660618007183075,
+              0.00511929951608181,
+              -0.003968908917158842,
+              -1.7655411284067668e-05,
+              0.9999790191650391
+            ]
+          }
+        ],
+        "rigid_track": false,
+        "context_mesh": null,
+        "rigid_valid": null,
+        "sim_steps": 0
+      },
+      {
+        "cursor": 1330,
+        "start": 0,
+        "stop": 1646,
+        "fps": 50,
+        "playing": false,
+        "playback_rate": 1.0,
+        "source_offset_s": 0.0,
+        "segments": [
+          {
+            "id": "Sample 01_1014 / 20261008_172423_003",
+            "start": 0,
+            "stop": 1031
+          },
+          {
+            "id": "Sample 02_1014 / 20261008_164701_001",
+            "start": 1031,
+            "stop": 1646
+          }
+        ],
+        "human_motion": true,
+        "object_track": null,
+        "scene_tracks": [
+          {
+            "name": "object_01_1014",
+            "kind": "free",
+            "path": "/home/galbot/workspace/robosimstudio/outputs/humanoid-real2sim/2026-10-22/wbc-hoi-1014/runs/14-02-09.180626+0800/01_1014/combined_track.npz",
+            "position": [
+              0.53971266746521,
+              -4.106362819671631,
+              1.190316915512085,
+              -0.11822955310344696,
+              -0.8496931195259094,
+              0.06988920271396637,
+              0.5090764760971069
+            ]
+          },
+          {
+            "name": "object_02_1014",
+            "kind": "free",
+            "path": "/home/galbot/workspace/robosimstudio/outputs/humanoid-real2sim/2026-10-22/wbc-hoi-1014/runs/14-02-09.180626+0800/02_1014/combined_track.npz",
+            "position": [
+              14.096151351928711,
+              -0.905954122543335,
+              0.6604423522949219,
+              0.01548859104514122,
+              -0.003385813906788826,
+              0.0006294554914347827,
+              0.9998741149902344
+            ]
+          }
+        ],
+        "rigid_track": false,
+        "context_mesh": null,
+        "rigid_valid": null,
+        "sim_steps": 0
+      },
+      {
+        "cursor": 1645,
+        "start": 0,
+        "stop": 1646,
+        "fps": 50,
+        "playing": false,
+        "playback_rate": 1.0,
+        "source_offset_s": 0.0,
+        "segments": [
+          {
+            "id": "Sample 01_1014 / 20261008_172423_003",
+            "start": 0,
+            "stop": 1031
+          },
+          {
+            "id": "Sample 02_1014 / 20261008_164701_001",
+            "start": 1031,
+            "stop": 1646
+          }
+        ],
+        "human_motion": true,
+        "object_track": null,
+        "scene_tracks": [
+          {
+            "name": "object_01_1014",
+            "kind": "free",
+            "path": "/home/galbot/workspace/robosimstudio/outputs/humanoid-real2sim/2026-10-22/wbc-hoi-1014/runs/14-02-09.180626+0800/01_1014/combined_track.npz",
+            "position": [
+              0.53971266746521,
+              -4.106362819671631,
+              1.190316915512085,
+              -0.11822955310344696,
+              -0.8496931195259094,
+              0.06988920271396637,
+              0.5090764760971069
+            ]
+          },
+          {
+            "name": "object_02_1014",
+            "kind": "free",
+            "path": "/home/galbot/workspace/robosimstudio/outputs/humanoid-real2sim/2026-10-22/wbc-hoi-1014/runs/14-02-09.180626+0800/02_1014/combined_track.npz",
+            "position": [
+              14.060151100158691,
+              -0.8894410729408264,
+              0.9939877986907959,
+              -0.3341391086578369,
+              0.04017835110425949,
+              0.005021621007472277,
+              -0.9416536092758179
+            ]
+          }
+        ],
+        "rigid_track": false,
+        "context_mesh": null,
+        "rigid_valid": null,
+        "sim_steps": 0
+      }
+    ],
+    "playback_check": {
+      "cursor": 1121,
+      "start": 0,
+      "stop": 1646,
+      "fps": 50,
+      "playing": true,
+      "playback_rate": 1.0,
+      "source_offset_s": 0.0,
+      "segments": [
+        {
+          "id": "Sample 01_1014 / 20261008_172423_003",
+          "start": 0,
+          "stop": 1031
+        },
+        {
+          "id": "Sample 02_1014 / 20261008_164701_001",
+          "start": 1031,
+          "stop": 1646
+        }
+      ],
+      "human_motion": true,
+      "object_track": null,
+      "scene_tracks": [
+        {
+          "name": "object_01_1014",
+          "kind": "free",
+          "path": "/home/galbot/workspace/robosimstudio/outputs/humanoid-real2sim/2026-10-22/wbc-hoi-1014/runs/14-02-09.180626+0800/01_1014/combined_track.npz",
+          "position": [
+            0.53971266746521,
+            -4.106362819671631,
+            1.190316915512085,
+            -0.11822955310344696,
+            -0.8496931195259094,
+            0.06988920271396637,
+            0.5090764760971069
+          ]
+        },
+        {
+          "name": "object_02_1014",
+          "kind": "free",
+          "path": "/home/galbot/workspace/robosimstudio/outputs/humanoid-real2sim/2026-10-22/wbc-hoi-1014/runs/14-02-09.180626+0800/02_1014/combined_track.npz",
+          "position": [
+            14.095685005187988,
+            -0.9046106338500977,
+            0.6605151891708374,
+            0.005990426056087017,
+            -0.004011217504739761,
+            0.00012225759564898908,
+            0.9999740123748779
+          ]
+        }
+      ],
+      "rigid_track": false,
+      "context_mesh": null,
+      "rigid_valid": null,
+      "sim_steps": 0
+    },
+    "ui_review": "Both room scenes, NX1 and cyan original skeleton visibly inspected through browser; source fruit meshes missing and orange markers explicitly labelled."
+  },
+  "limitations": [
+    "teleop_replay is not real robot execution",
+    "source simplified MJCF unavailable; version-matched URDF used",
+    "fruit meshes missing; orange position markers only",
+    "room texture maps omitted",
+    "second episode displayed +12m X; concatenated review clock",
+    "not physical contact validation or user motion acceptance"
+  ],
+  "files": [
+    {
+      "file": "01_1014/traj.npz",
+      "bytes": 1182624,
+      "sha256": "1c82de75d5723d700ad05af93f2e1c08d4872da05be9a75a20f780df7fc59d8d"
+    },
+    {
+      "file": "01_1014/motion.bvh",
+      "bytes": 509353,
+      "sha256": "a4308f8e1c25434dc71a25311b9c7f614192b9679c05ced58a129ac021e18771"
+    },
+    {
+      "file": "01_1014/scene_config.json",
+      "bytes": 657995,
+      "sha256": "927d3fe9de2395d6a5d7bde919b1bb73c40323543bbf5e1a68eeb7fd972923fb"
+    },
+    {
+      "file": "01_1014/scene.xml",
+      "bytes": 497544,
+      "sha256": "19e340d4ed9e1be1399e5f8fd8e387754fb62f756386d7a82efbc275cbd67c3d"
+    },
+    {
+      "file": "01_1014/video.mp4",
+      "bytes": 9949194,
+      "sha256": "1b47957b395df2e6057d97d3706ce434a1fb0fe4584bfe2ffa38d87ae7b7f7a1"
+    },
+    {
+      "file": "01_1014/motion.npz",
+      "bytes": 162037,
+      "sha256": "c55e58bcfb65fd97ef6ec9472b05b32b1e11af416b2b1095f612e0dbaa813dd9"
+    },
+    {
+      "file": "01_1014/human.npz",
+      "bytes": 458733,
+      "sha256": "d7f1637437a1e03bae5d2b7b42446332fed64ed94ee3e97a1a54d3ec7a65ebfe"
+    },
+    {
+      "file": "01_1014/object_track.npz",
+      "bytes": 23809,
+      "sha256": "e332848996d4e20057d9f0c11ef67b1a3c02b4753ccfdd1d86383c6143fb5126"
+    },
+    {
+      "file": "02_1014/traj.npz",
+      "bytes": 899686,
+      "sha256": "d6a5b0754473d91a09926acfe5df81309d395a93427795f1e1bca04743aa4b8c"
+    },
+    {
+      "file": "02_1014/motion.bvh",
+      "bytes": 306698,
+      "sha256": "5be5cfab8dcf2a5a32c4dab77313d0cc31160d7d3066d189dd4ea4248b105b45"
+    },
+    {
+      "file": "02_1014/scene_config.json",
+      "bytes": 484184,
+      "sha256": "d43ab1be5d8e67fcf1d546192a5a1a7b2f361e2d55f172029bbc6feb46befebb"
+    },
+    {
+      "file": "02_1014/scene.xml",
+      "bytes": 468542,
+      "sha256": "f72f95e39dd875ee8392bceb6c5642f37d3429109916ff7dec9462bc43022132"
+    },
+    {
+      "file": "02_1014/video.mp4",
+      "bytes": 5613543,
+      "sha256": "0a6c1c395cc1f16f8442e5e17fc20b1e7ebf7e9aa16be04d5e5b6671eac6c8f7"
+    },
+    {
+      "file": "02_1014/motion.npz",
+      "bytes": 99948,
+      "sha256": "ae1ef8338f31857461aee542ed2cc7ce1593c213b0ff494c6ef2fb5caaf6c114"
+    },
+    {
+      "file": "02_1014/human.npz",
+      "bytes": 272666,
+      "sha256": "8719e485a932793aa5d1f9ae2e6c4ebc0eed053e0b5910a2f3fa12a6a7e33013"
+    },
+    {
+      "file": "02_1014/object_track.npz",
+      "bytes": 14518,
+      "sha256": "234fc3ab153b1f0a5e227e24d4d84173d6fee0ead5b3659e53d311ffbda56a20"
+    }
+  ]
+}

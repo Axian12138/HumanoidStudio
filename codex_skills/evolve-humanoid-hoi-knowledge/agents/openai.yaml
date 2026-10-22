@@ -1,0 +1,4 @@
+interface:
+  display_name: "跨机器人 HOI 知识进化"
+  short_description: "从多机器人训练数据学习交互知识并以 G1 独立验证的长期 RSI 流程"
+  default_prompt: "使用 $evolve-humanoid-hoi-knowledge 在已准备的 whole body HOI 数据上开展长期 RSI，仅从 train 学习，并始终使用 G1 在 test 上验证知识。"

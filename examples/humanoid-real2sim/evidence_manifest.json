@@ -325,6 +325,24 @@
       "source": "outputs/humanoid-real2sim/2026-10-22/sequence_1019__09_lined_rect_basket_dynamics/runs/11-52-04.668402+0800/comparison_0250.png",
       "sha256": "719b6bf435caa94d002ce591083b45662d2aaaafd3e7b9a2e14030043b68f9d6",
       "bytes": 41876
+    },
+    {
+      "id": "wbc_nx1_source_review",
+      "file": "visualization/artifacts/wbc_nx1_source_review.json",
+      "status": "diagnostic_verified",
+      "meaning": "Source schema, fixed human transform, 33 matching NX1 mesh hashes, room transforms, viewer seek/playback checks; fruit geometry missing.",
+      "source": "outputs/humanoid-real2sim/2026-10-22/wbc-hoi-1014/runs/14-02-09.180626+0800/review_report.json",
+      "sha256": "96424a04e58b51f8dd9d70dc9e70fc8001d8bd81156c2e8073090a742e41af64",
+      "bytes": 24431
+    },
+    {
+      "id": "wbc_nx1_review_keyframes",
+      "file": "visualization/artifacts/wbc_nx1_review_keyframes.npz",
+      "status": "diagnostic_verified",
+      "meaning": "Three source-indexed review keyframes with aligned original human positions; sparse diagnostic evidence, not a playable accepted motion.",
+      "source": "outputs/humanoid-real2sim/2026-10-22/wbc-hoi-1014/runs/14-02-09.180626+0800/01_1014/motion.npz",
+      "sha256": "2d7f9a6c6072aa45f21858937358000eff72ca2bccd49ffe748430296a2c2c61",
+      "bytes": 4339
     }
   ]
 }

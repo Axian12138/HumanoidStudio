@@ -1,0 +1,39 @@
+{
+  "id": "2026-10-22-wbc-hoi-nx1-review",
+  "kind": "new_requirement",
+  "stage": "visualization",
+  "category": "data",
+  "impact": "medium",
+  "task": "wbc-hoi-1014",
+  "title": "采样远端WBC HOI并用Stage3审阅NX1和人体动作",
+  "narrative": "用户指定服务器huangjy/datasets的01_1014与02_1014，也可能在liusy/perceptiveloco；要求下载少量样本，使用NX1模型和Room_assets，核实human与机器人motion是否同时存在。",
+  "expected": "源数据结构和时间轴有证据；少量本地样本可复现；一个Stage3动画审阅页面展示真实NX1、人骨架和匹配场景，明确缺失或未验证项。",
+  "observed": "待检查远端压缩包和Room_assets，尚未确认motion类型。",
+  "source": "用户2026-10-22会话",
+  "example_id": "",
+  "actions": [
+    "数据采样",
+    "human机器人同步播放",
+    "场景资产对齐"
+  ],
+  "date": "2026-10-22",
+  "status": "verified",
+  "recurrences": 1,
+  "cause": "原始压缩包包含NX1、人体和物体；liusy找到的是读取压缩包后生成的G1 retarget而非确认过的原始解压目录。Room_assets精确哈希恢复包不完整。",
+  "routing": {
+    "skill": {
+      "decision": "none",
+      "reason": "单次数据接入不改变阶段路由"
+    },
+    "tool": {
+      "decision": "none",
+      "reason": "现有KinematicStudio支持命名关节和多物体轨迹，使用任务适配器即可"
+    },
+    "example": {
+      "decision": "update",
+      "reason": "在已有播放器复用案例补充外部NX1录制数据对齐、资产缺失和页面审查证据"
+    }
+  },
+  "fix": "完成两份原始样本下载和NX1/human/物体轨迹适配；复用KinematicStudio单页双样本时间轴；恢复原USD场景；缺失水果网格明确显示橙色位置标记；保留审查报告和稀疏关键帧。",
+  "validation": "浏览器确认两场景human/NX1可见；6个跨样本seek和播放通过，sim_steps=0；33个NX1网格哈希全匹配；146/149个房间对象变换完全一致；源简化MJCF及水果几何未恢复，物理未验证。"
+}

@@ -1,0 +1,39 @@
+{
+  "id": "2026-10-22-dsw-uv-project-environment",
+  "kind": "new_requirement",
+  "stage": "repository",
+  "category": "tooling",
+  "impact": "medium",
+  "task": "DSW RSS uv 环境",
+  "title": "服务器 RSS 使用仓库内 uv 虚拟环境",
+  "narrative": "用户要求服务器通过uv配置所需环境，最终类似本机robosimstudio/.venv，使用 /mnt/home/xuehan/robosimstudio/.venv。此前基础环境已配置，本次补齐仓库默认依赖并验证。",
+  "expected": "uv.lock锁定依赖安装于服务器仓库.venv，Python路径正确，RSS及默认组件可导入，使用方法明确。",
+  "observed": "此前使用--no-group rtx安装基础环境，默认RTX组件尚未安装。",
+  "source": "2026-10-22 用户会话",
+  "example_id": "",
+  "actions": [
+    "uv依赖同步",
+    "仓库内venv",
+    "默认RTX依赖"
+  ],
+  "date": "2026-10-22",
+  "status": "verified",
+  "recurrences": 1,
+  "cause": "前次部署为了先完成基础验证排除了默认rtx组，本次按用户要求补齐默认环境。",
+  "routing": {
+    "skill": {
+      "decision": "none",
+      "reason": "环境部署要求不改变阶段路由"
+    },
+    "tool": {
+      "decision": "none",
+      "reason": "使用现有uv锁文件，无共享工具改动"
+    },
+    "example": {
+      "decision": "none",
+      "reason": "部署反馈不属于动作知识"
+    }
+  },
+  "fix": "在 /mnt/home/xuehan/robosimstudio/.venv 用 uv sync --frozen --extra dev 同步默认依赖；新增ovrtx、usd-core、pyglet；保存deployment/rss/activate.sh和更新环境说明。",
+  "validation": "Python3.12.13；uv pip check 84 packages兼容；sys.prefix为指定.venv；RSS、USD、OVRTX、RendererRTX导入通过；远端git工作区干净；未执行GPU渲染。验证日志位于服务器deployment/rss/uv-environment-check.log和uv-pip-check.log。"
+}

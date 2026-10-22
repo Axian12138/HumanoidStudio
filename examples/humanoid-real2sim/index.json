@@ -199,7 +199,13 @@
       "human+humanoid",
       "进度条",
       "motion更新",
-      "数据适配"
+      "数据适配",
+      "NX1",
+      "WBC HOI",
+      "qpos_ref",
+      "teleop_replay",
+      "1014",
+      "坐标对齐"
     ],
     "summary": "先查原页面和服务状态；只换 motion、人骨架及物体 sidecar，保留已认可的进度条和同步动画。",
     "status": "verified",
@@ -207,10 +213,15 @@
     "category": "visualization",
     "evidence_ids": [
       "grasp_1012_palm_motion",
-      "grasp_1012_palm_image"
+      "grasp_1012_palm_image",
+      "wbc_nx1_source_review",
+      "wbc_nx1_review_keyframes"
     ],
     "code_paths": [
-      "scripts/humanoid-real2sim/kinematic_viewer.py"
+      "scripts/humanoid-real2sim/kinematic_viewer.py",
+      "scripts/humanoid-real2sim/tasks/wbc_hoi_1014/prepare.py",
+      "scripts/humanoid-real2sim/tasks/wbc_hoi_1014/export_scene.py",
+      "scripts/humanoid-real2sim/tasks/wbc_hoi_1014/view.py"
     ],
     "result_ids": []
   },

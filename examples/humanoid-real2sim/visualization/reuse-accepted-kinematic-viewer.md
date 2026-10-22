@@ -43,3 +43,16 @@
 - **审查证据** [1012_palm_approach_closeup.png](../grasp/artifacts/1012_palm_approach_closeup.png) — `kinematic_candidate`；1012 palm-approach hand/brush geometric diagnostic。
 
 **可证明的范围与限制：**这里的 motion 和图片是播放器的可打开输入与预期内容，不是页面运行成功截图；播放器行为仍由实现代码和实际启动检查确认。
+
+
+## 外部 NX1 录制接入（2026-10-22）
+
+01_1014 与 02_1014 的两个原始样本在家具场景中行走并接近水果目标，分别有1031和615帧、50Hz。原始 `traj.npz` 同时含 NX1 `qpos/qpos_ref`、人体 `axis_skel_pos`、物体 `object_pose`；BVH也在同一episode。它们标记为 `teleop_replay`，不能称为实机执行日志。liusy目录中找到的现成结果是NX1到G1的转换，不应拿它代替用户要求的NX1。
+
+本例仍使用共享KinematicStudio，只增加任务数据适配器。反例风险是把未变换的人体骨架直接叠加到已spawn的机器人，或看到旧scene.xml的G1模型名就误认运动类型；应以录制robot_model、32关节顺序和实际数组为准。固定刚体变换将qpos_ref全段根坐标对齐qpos，两个样本RMS均小于5e-8m，关节逐帧完全一致。版本匹配NX1 v1.0.1仓库的33个网格哈希与录制记录完全一致；录制的简化MJCF本身未恢复。
+
+Room_assets原始USD的146/149个对象世界变换逐项与录制配置完全一致。精确哈希恢复包缺大部分资产，使用原USD恢复房间，保留简化的漫反射颜色，未加载纹理。水果原网格没有找到，因此只展示明确标注的橙色位置标记，不能据此审查水果接触几何。房间大网格的投影阴影曾使画面发白，任务入口关闭静态背景的cast/receive shadow后已通过浏览器可见性检查。
+
+页面验证了两个样本的human+NX1+房间，以及0、500、1030、1031、1330、1645帧跳转和播放，sim_steps始终为0。两个独立片段拼接为审阅时间轴，第二段整套场景平移12m以便同页展示；全局1031帧对应第二段源0帧，不是连续动作，也不应把显示平移加入训练数据。没有做物理验证或取得用户动作验收，因此本次不建立results。
+
+复现代码与命令：[任务入口](../../../scripts/humanoid-real2sim/tasks/wbc_hoi_1014/README.md)。全量数据与stage_ledger保留于`outputs/humanoid-real2sim/2026-10-22/wbc-hoi-1014/runs/14-02-09.180626+0800/`。最小审查证据：[来源与页面检查](artifacts/wbc_nx1_source_review.json)、[源帧0/500/1030的数据切片](artifacts/wbc_nx1_review_keyframes.npz)。后者是稀疏诊断帧而不是连续motion。可迁移结论是保持播放器不变，验证外部数据的关节语义、固定坐标变换、时钟和资产来源；显示成功不等于接触或训练验收。
