@@ -1,0 +1,608 @@
+[
+  {
+    "id": "foot-hook-forearm-return-basket",
+    "title": "圆篮勾出与推回：左脚小腿持续接触、左膝跪地、右前臂推回",
+    "task": "sequence_1019/06_round_basket",
+    "actions": [
+      "左脚勾篮",
+      "小腿推篮",
+      "左膝跪地",
+      "右前臂推篮",
+      "非抓取操纵"
+    ],
+    "keywords": [
+      "圆篮",
+      "篮子",
+      "足面小腿凹陷",
+      "接触式推动",
+      "非抓取",
+      "nonprehensile",
+      "foot hook",
+      "forearm push",
+      "受力方向",
+      "人体时间对齐",
+      "手腕rigidbody",
+      "59秒任务起点",
+      "source_sync"
+    ],
+    "summary": "圆篮从59秒开始由足面/小腿移出，67秒左手放入物品，随后左脚尖贴地滑动、脚跟抬起、左膝落地，再由右前臂推回；运动学候选待审。",
+    "status": "pending_work_and_user_review",
+    "file": "foot-push/foot-hook-forearm-return-basket.md",
+    "category": "foot-push",
+    "evidence_ids": [
+      "foot_61_before_image",
+      "foot_67_context_image",
+      "foot_v3_motion",
+      "foot_v5_motion",
+      "foot_v4_review",
+      "kneel_left_v5_review"
+    ],
+    "code_paths": [
+      "scripts/humanoid-real2sim/tasks/sequence_1019/tasks/06_round_basket/fit_foot_pull_59_76.py"
+    ],
+    "result_ids": []
+  },
+  {
+    "id": "brush-pick-sweep-return-1019",
+    "title": "取刷、扫桌、放回：上身持刷与右膝跪地的时空组合",
+    "task": "brush_sweep_1019 sequence_1019/02_brush_floor_return",
+    "actions": [
+      "推垃圾桶",
+      "站立",
+      "抓刷子",
+      "右膝跪地",
+      "扫桌",
+      "放回刷子"
+    ],
+    "keywords": [
+      "刷子",
+      "手刷",
+      "单膝",
+      "右膝",
+      "下跪",
+      "脚尖",
+      "上身下身组合",
+      "时间组合",
+      "brush sweep",
+      "kneel"
+    ],
+    "summary": "保留掌侧取刷和持刷轨迹，重新解右膝与脚尖接地，再用受速度约束的右臂 IK 组合动作；运动学归档，不声称物理抓取。",
+    "status": "kinematic_candidate",
+    "file": "composed-actions/brush-pick-sweep-return-1019.md",
+    "category": "composed-actions",
+    "evidence_ids": [
+      "tool_brush_visual"
+    ],
+    "code_paths": [
+      "scripts/humanoid-real2sim/tasks/brush_sweep_1019/refine_sweep_cycle_v22.py"
+    ],
+    "result_ids": []
+  },
+  {
+    "id": "right-knee-toe-slide",
+    "title": "单膝下跪：脚跟离地、脚尖贴地滑动、膝盖与地面相切",
+    "task": "brush_sweep_1019",
+    "actions": [
+      "右膝跪地",
+      "脚跟抬起",
+      "脚尖滑动接地",
+      "站起"
+    ],
+    "keywords": [
+      "单膝跪地",
+      "跪地",
+      "膝盖没碰地",
+      "脚不滑步",
+      "脚尖水平运动",
+      "toe slide",
+      "heel lift",
+      "ground contact",
+      "下跪"
+    ],
+    "summary": "先从 human motion 确定哪侧膝盖、接触时窗与世界落点；接地模式将全脚锁定切换为膝盖和脚尖接地，允许脚尖水平移动。",
+    "status": "kinematic_geometry_checked",
+    "file": "kneeling/right-knee-toe-slide.md",
+    "category": "kneeling",
+    "evidence_ids": [
+      "kneel_right_v21_audit"
+    ],
+    "code_paths": [
+      "scripts/humanoid-real2sim/tasks/brush_sweep_1019/refine_knee_v21.py"
+    ],
+    "result_ids": [
+      "result_right_knee_v21"
+    ]
+  },
+  {
+    "id": "palm-first-long-handle-grasp",
+    "title": "长柄物体抓取：掌侧进入、手背避碰和逐轴腕角",
+    "task": "brush_sweep_1019",
+    "actions": [
+      "抓刷子",
+      "持刷",
+      "放回刷子"
+    ],
+    "keywords": [
+      "抓取",
+      "手背穿模",
+      "掌心",
+      "拳眼",
+      "翻腕",
+      "腕角",
+      "palm first",
+      "Dex3"
+    ],
+    "summary": "拳眼与把手对齐不足以说明可抓；检查掌面朝向、全手接近扫掠与腕角，保留物理夹持未验证状态。",
+    "status": "kinematic_geometry_checked",
+    "file": "grasp/palm-first-long-handle-grasp.md",
+    "category": "grasp",
+    "evidence_ids": [
+      "grasp_1012_old_image",
+      "grasp_1012_palm_image",
+      "grasp_1012_old_motion",
+      "grasp_1012_palm_motion",
+      "grasp_1019_v20_audit"
+    ],
+    "code_paths": [
+      "scripts/humanoid-real2sim/tasks/brush_sweep_1019/finalize_brush_v20.py"
+    ],
+    "result_ids": [
+      "result_grasp_1019_v20"
+    ]
+  },
+  {
+    "id": "left-knee-ground-1019",
+    "title": "左膝两次接地：低膝高阈值漏检后的接触补标",
+    "task": "sequence_1019",
+    "actions": [
+      "左膝跪地",
+      "脚尖滑动接地",
+      "起身"
+    ],
+    "keywords": [
+      "左膝",
+      "下跪",
+      "漏检",
+      "膝高",
+      "接触时间",
+      "toe slide"
+    ],
+    "summary": "同一录制后段有两次左膝接地；第二次人体膝高约 8–10 厘米，自动 7 厘米阈值漏检，须结合视频和人体轨迹补标。",
+    "status": "kinematic_geometry_checked",
+    "file": "kneeling/left-knee-ground-1019.md",
+    "category": "kneeling",
+    "evidence_ids": [
+      "foot_v5_motion",
+      "kneel_left_v5_review"
+    ],
+    "code_paths": [
+      "scripts/humanoid-real2sim/tasks/sequence_1019/tasks/06_round_basket/refine_kneel_entry_69_71.py"
+    ],
+    "result_ids": [
+      "result_left_knee_69_71"
+    ]
+  },
+  {
+    "id": "reuse-accepted-kinematic-viewer",
+    "title": "修复 motion 后复用已认可的进度条与 human+humanoid 页面",
+    "task": "brush_sweep_1019",
+    "actions": [
+      "运动学审阅",
+      "修复后对比",
+      "进度条拖动"
+    ],
+    "keywords": [
+      "可视化复用",
+      "不要重写页面",
+      "原播放器",
+      "Viser",
+      "human+humanoid",
+      "进度条",
+      "motion更新",
+      "数据适配"
+    ],
+    "summary": "先查原页面和服务状态；只换 motion、人骨架及物体 sidecar，保留已认可的进度条和同步动画。",
+    "status": "verified",
+    "file": "visualization/reuse-accepted-kinematic-viewer.md",
+    "category": "visualization",
+    "evidence_ids": [
+      "grasp_1012_palm_motion",
+      "grasp_1012_palm_image"
+    ],
+    "code_paths": [
+      "scripts/humanoid-real2sim/kinematic_viewer.py"
+    ],
+    "result_ids": []
+  },
+  {
+    "id": "brush-lift-far-place-table-stroke-lift",
+    "title": "长柄刷扫桌：抬起、远端落刷、贴桌扫回、再次抬起",
+    "task": "brush_sweep_1019",
+    "actions": [
+      "抬起刷子",
+      "远端落刷",
+      "贴桌扫回",
+      "再次抬刷"
+    ],
+    "keywords": [
+      "刷子扫桌",
+      "扫桌面",
+      "人手轨迹",
+      "重复扫刷",
+      "物体轨迹",
+      "桌面接触",
+      "时间循环",
+      "lift place stroke lift"
+    ],
+    "summary": "用原人体源帧分出抬刷、远端落刷、近桌扫回和再抬刷；修复固定X目标压扁水平行程的问题，保留下跪与抓取。",
+    "status": "kinematic_geometry_checked",
+    "file": "tool-use/brush-lift-far-place-table-stroke-lift.md",
+    "category": "tool-use",
+    "evidence_ids": [
+      "tool_brush_visual",
+      "tool_brush_v22_audit"
+    ],
+    "code_paths": [
+      "scripts/humanoid-real2sim/tasks/brush_sweep_1019/audit_sweep_cycle_v22.py"
+    ],
+    "result_ids": [
+      "result_brush_sweep_v22"
+    ]
+  },
+  {
+    "id": "continuous-exterior-bin-push",
+    "title": "手推落地容器：双接触点、位移方向与物理分离",
+    "category": "hand-push",
+    "task": "push_bin_1019 sequence_1019/01_push_waste_bin",
+    "actions": [
+      "手推垃圾桶",
+      "持续接触",
+      "双指推"
+    ],
+    "keywords": [
+      "hand push",
+      "thumb index",
+      "contact direction",
+      "tracker gap"
+    ],
+    "summary": "左拇指和食指接触桶外侧；运动学已获用户通过，物理后段有手桶分离反例。",
+    "status": "kinematic_approved_physics_pending",
+    "file": "hand-push/continuous-exterior-bin-push.md",
+    "evidence_ids": [
+      "hand_bin_path_image",
+      "hand_bin_kinematic_audit"
+    ],
+    "code_paths": [
+      "scripts/humanoid-real2sim/tasks/push_bin_1019/fit_hoi.py"
+    ],
+    "result_ids": [
+      "result_hand_bin_hoi"
+    ]
+  },
+  {
+    "id": "foot-contact-versus-kick",
+    "title": "脚推物体：持续勾推与一次踢击不能混用",
+    "category": "foot-push",
+    "task": "kick_basket sequence_1019/06_round_basket",
+    "actions": [
+      "脚推篮子",
+      "左脚勾篮",
+      "小腿推篮"
+    ],
+    "keywords": [
+      "foot push",
+      "kick",
+      "continuous hook",
+      "ankle tracking"
+    ],
+    "summary": "短片 tracker 脚误差导致篮子不动；长片用脚/小腿连续移篮，不能以瞬时踢击替代。",
+    "status": "failed_physics_and_pending_kinematic",
+    "file": "foot-push/foot-contact-versus-kick.md",
+    "evidence_ids": [
+      "foot_kick_failure",
+      "foot_61_before_image",
+      "foot_v5_motion"
+    ],
+    "code_paths": [
+      "scripts/humanoid-real2sim/tasks/kick_basket/analyze.py"
+    ],
+    "result_ids": []
+  },
+  {
+    "id": "classify-contact-and-overlap",
+    "title": "先判定交互类别，再切完整动作窗口",
+    "category": "task-analysis",
+    "task": "sequence_1019/03_floor_strawberry_to_basket sequence_1019/04_hat_to_stand sequence_1019/05_drawer sequence_1019/06_round_basket sequence_1019/08_table_strawberry sequence_1019/09_lined_rect_basket sequence_1019/10_flower_bouquet",
+    "actions": [
+      "任务拆分",
+      "交互分类",
+      "并行动作"
+    ],
+    "keywords": [
+      "misclassified grasp",
+      "time alignment",
+      "source sync",
+      "overlap"
+    ],
+    "summary": "圆篮有把手却非抓取；完整源窗口从59秒开始且与左手放草莓并行。",
+    "status": "task_semantics_reviewed_hoi_pending",
+    "file": "task-analysis/classify-contact-and-overlap.md",
+    "evidence_ids": [
+      "task_segments",
+      "foot_61_before_image",
+      "foot_67_context_image"
+    ],
+    "code_paths": [
+      "scripts/humanoid-real2sim/tasks/sequence_1019/split_body.py"
+    ],
+    "result_ids": []
+  },
+  {
+    "id": "rigid-wrist-and-kinematic-review",
+    "title": "运动学页叠加独立手腕 rigid tracker",
+    "category": "visualization",
+    "task": "sequence_1019/06_round_basket",
+    "actions": [
+      "rigid手腕",
+      "运动学可视化",
+      "源时钟"
+    ],
+    "keywords": [
+      "Viser",
+      "OptiTrack",
+      "wrist calibration",
+      "invalid samples"
+    ],
+    "summary": "独立刚体手腕按 Motive 帧和安装偏移与骨架对齐，保留有效性与残差；页面只 set qpos。",
+    "status": "diagnostic_geometry_checked",
+    "file": "visualization/rigid-wrist-and-kinematic-review.md",
+    "evidence_ids": [
+      "visual_rigid_wrist",
+      "foot_v5_motion"
+    ],
+    "code_paths": [
+      "scripts/humanoid-real2sim/tasks/sequence_1019/tasks/06_round_basket/build_review_59_76.py"
+    ],
+    "result_ids": []
+  },
+  {
+    "id": "hand-closure-and-held-object",
+    "title": "抓取：闭手命令、真实接触力与稳定提起",
+    "category": "grasp",
+    "task": "brush_pick_1012",
+    "actions": [
+      "手指闭合",
+      "抓取长柄",
+      "稳定提起"
+    ],
+    "keywords": [
+      "Dex3",
+      "grip kp",
+      "contact force",
+      "wrist offset"
+    ],
+    "summary": "统一实际手模型；指尖有力或短暂抬起仍不足以证明稳定抓刷。",
+    "status": "failed_physical_grasp",
+    "file": "grasp/hand-closure-and-held-object.md",
+    "evidence_ids": [
+      "grasp_failed_physics",
+      "grasp_1012_palm_motion"
+    ],
+    "code_paths": [
+      "robosimstudio/humanoid_real2sim/track/repair_studio.py"
+    ],
+    "result_ids": []
+  },
+  {
+    "id": "articulated-drawer-and-bimanual-chair",
+    "title": "手推：抽屉关节、体型差异与双手移椅",
+    "category": "hand-push",
+    "task": "sequence_1019/05_drawer sequence_1019/07_armchair",
+    "actions": [
+      "开关抽屉",
+      "双手推椅",
+      "食指中指主推",
+      "拇指主推",
+      "接近时张开手指",
+      "右手撑桌"
+    ],
+    "keywords": [
+      "articulated object",
+      "chair push",
+      "human motion priority",
+      "human robot size mismatch",
+      "object initial pose shift",
+      "Dex3 thumb face",
+      "index middle finger hook",
+      "open hand approach",
+      "table support"
+    ],
+    "summary": "人体动作约束椅子目标行程；机器人短臂通过根与手臂适配，可有限调整自由椅子的接近位姿；Dex3 推椅有食中指主推与拇指主推两种接触分工，接近时先张开再卡位。拇指方案获运动学视觉认可，物理未验。",
+    "status": "mixed_drawer_body_prior_chair_kinematic_approved",
+    "file": "hand-push/articulated-drawer-and-bimanual-chair.md",
+    "evidence_ids": [
+      "hand_armchair_motion",
+      "task_segments",
+      "hand_armchair_finger_entry_clearance",
+      "hand_armchair_approach_object_offset"
+    ],
+    "code_paths": [
+      "scripts/humanoid-real2sim/tasks/sequence_1019/tasks/07_armchair/fit_hoi_v2.py",
+      "scripts/humanoid-real2sim/tasks/sequence_1019/tasks/07_armchair/refine_split_feedback.py",
+      "scripts/humanoid-real2sim/tasks/sequence_1019/tasks/07_armchair/refine_finger_entry.py"
+    ],
+    "result_ids": [
+      "result_hand_armchair_thumb_finger_entry"
+    ]
+  },
+  {
+    "id": "bimanual-carry-and-placement",
+    "title": "双手搬容器与单手放置：保留物体身份和终点",
+    "category": "grasp",
+    "task": "sequence_1019/03_floor_strawberry_to_basket sequence_1019/04_hat_to_stand sequence_1019/08_table_strawberry sequence_1019/09_lined_rect_basket sequence_1019/10_flower_bouquet",
+    "actions": [
+      "双手搬篮",
+      "捡草莓",
+      "放花束",
+      "搬帽子"
+    ],
+    "keywords": [
+      "bimanual carry",
+      "pick place",
+      "object identity",
+      "release"
+    ],
+    "summary": "五个任务的物体身份与时窗语义样例；本例证据为body prior，Task 09另有待审HOI预压案例。",
+    "status": "task_semantics_body_prior_only",
+    "file": "grasp/bimanual-carry-and-placement.md",
+    "evidence_ids": [
+      "bimanual_body_prior",
+      "task_segments"
+    ],
+    "code_paths": [
+      "scripts/humanoid-real2sim/tasks/sequence_1019/split_body.py"
+    ],
+    "result_ids": []
+  },
+  {
+    "id": "contact-priority-and-free-rest",
+    "title": "自由静置、材质绑定与接触优先级",
+    "category": "scene-physics",
+    "task": "brush_pick_1012 push_bin_1019 kick_basket",
+    "actions": [
+      "物体静置",
+      "摩擦",
+      "接触优先级"
+    ],
+    "keywords": [
+      "gravity rest",
+      "material binding",
+      "COM",
+      "collision hull"
+    ],
+    "summary": "手刷放置、垃圾桶接触优先级、篮子分离凸包说明物理参数与真实接触要分开查。",
+    "status": "physics_diagnostics",
+    "file": "scene-physics/contact-priority-and-free-rest.md",
+    "evidence_ids": [
+      "physics_release_rest",
+      "hand_bin_path_image"
+    ],
+    "code_paths": [
+      "scripts/humanoid-real2sim/tasks/kick_basket/rest_check.py"
+    ],
+    "result_ids": []
+  },
+  {
+    "id": "repair-target-recovery-and-hand-hold",
+    "title": "Tracker 修复：6D 目标、future 速度与合手保持",
+    "category": "tracking",
+    "task": "brush_pick_1012 kick_basket",
+    "actions": [
+      "修复目标",
+      "恢复动作",
+      "合手保持"
+    ],
+    "keywords": [
+      "repair",
+      "future target",
+      "hand closure",
+      "recovery"
+    ],
+    "summary": "局部目标逐帧推进；恢复时手指保持明确命令，仍需验证实际夹持。",
+    "status": "workflow_checked_grasp_pending",
+    "file": "tracking/repair-target-recovery-and-hand-hold.md",
+    "evidence_ids": [
+      "tracking_recovery_diagnostic",
+      "grasp_failed_physics"
+    ],
+    "code_paths": [
+      "robosimstudio/humanoid_real2sim/track/repair_studio.py"
+    ],
+    "result_ids": []
+  },
+  {
+    "id": "fist-forearm-table-brace-after-chair",
+    "title": "推椅后握拳撑桌：独立片段、rigid 相对运动与全手网格避让",
+    "task": "sequence_1019/07_armchair",
+    "actions": [
+      "右手握拳撑桌",
+      "小臂接触桌面",
+      "左手避让",
+      "推椅与撑桌拆分"
+    ],
+    "keywords": [
+      "握拳撑桌",
+      "桌面支撑",
+      "刚体手腕",
+      "rigid pose",
+      "相机外参",
+      "相对旋转",
+      "全手网格",
+      "穿模",
+      "table brace",
+      "forearm support"
+    ],
+    "summary": "以可达拳头锚点跟随手背 rigid 相对位姿，左手避让并逐帧检查全手网格；83.5–91 秒独立归档，运动学视觉认可，物理支撑未验证。",
+    "status": "kinematic_user_visual_ok_physics_pending",
+    "file": "composed-actions/fist-forearm-table-brace-after-chair.md",
+    "category": "composed-actions",
+    "evidence_ids": [
+      "table_brace_1019_before_geometry",
+      "table_brace_1019_after_geometry"
+    ],
+    "code_paths": [
+      "scripts/humanoid-real2sim/tasks/sequence_1019/tasks/07_armchair/refine_split_feedback.py",
+      "scripts/humanoid-real2sim/tasks/sequence_1019/tasks/07_armchair/archive_table_brace.py"
+    ],
+    "result_ids": [
+      "result_table_brace_1019"
+    ]
+  },
+  {
+    "id": "sidewall-arm-preload",
+    "title": "双手夹持长方篮：在受力侧壁给腕部和小臂留浅预压",
+    "category": "grasp",
+    "task": "sequence_1019/09_lined_rect_basket",
+    "actions": [
+      "双手搬篮",
+      "侧壁夹持",
+      "腕部和小臂预压",
+      "法向接近"
+    ],
+    "keywords": [
+      "force surface",
+      "shallow penetration",
+      "sidewall grasp",
+      "forearm contact",
+      "preload",
+      "离线动力学",
+      "MPPI",
+      "SPIDER-inspired",
+      "物体误差小但动作失真",
+      "双侧接触丢失"
+    ],
+    "summary": "侧壁预压的运动学正例与物理反例；独立离线采样完成可重放搬运候选，v1因动作失真淘汰，v2改善姿态和夹持但未通过全部训练质量门槛。",
+    "status": "kinematic_user_reviewed_offline_physics_pending",
+    "file": "grasp/sidewall-arm-preload.md",
+    "evidence_ids": [
+      "rect_basket_v16_wall_contact",
+      "rect_basket_preload_audit",
+      "rect_basket_offline_v1_review",
+      "rect_basket_offline_v1_pose",
+      "rect_basket_offline_v2_review",
+      "rect_basket_offline_v2_motion",
+      "rect_basket_offline_v2_object",
+      "rect_basket_offline_v2_pose"
+    ],
+    "code_paths": [
+      "scripts/humanoid-real2sim/tasks/sequence_1019/tasks/09_lined_rect_basket/fit_hoi.py",
+      "scripts/humanoid-real2sim/tasks/sequence_1019/tasks/09_lined_rect_basket/audit_hoi.py",
+      "robosimstudio/humanoid_real2sim/refinement/sampling.py",
+      "robosimstudio/humanoid_real2sim/refinement/warp_backend.py",
+      "scripts/humanoid-real2sim/tasks/sequence_1019/tasks/09_lined_rect_basket/refine_dynamics.py"
+    ],
+    "result_ids": [
+      "result_rect_basket_v18_arm_preload"
+    ]
+  }
+]

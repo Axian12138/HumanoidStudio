@@ -9,4 +9,4 @@
 | 物理跟踪与修复 | 4 | [track.md](track.md) | RSS tracker 修复页 |
 | 最终归档 | 5 完成后 | [scene-objects.md](scene-objects.md) 的归档节和 [local-interfaces.md](local-interfaces.md) 的字段契约 | 归档验证结果 |
 
-跨阶段失败与用户反馈在 [反馈库](../../../examples/humanoid-real2sim/cases/feedback/README.md) 记录和检索。单个 take 的版本、证据与批准状态仍放在其任务目录的 stage ledger，不由反馈库代替。
+跨阶段失败与用户反馈在 [反馈库](../../../examples/humanoid-real2sim/feedback/README.md) 记录和检索。单个 take 的版本、证据与批准状态仍放在其任务目录的 stage ledger，不由反馈库代替。

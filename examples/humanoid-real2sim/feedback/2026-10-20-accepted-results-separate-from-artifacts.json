@@ -1,0 +1,26 @@
+{
+  "id": "2026-10-20-accepted-results-separate-from-artifacts",
+  "kind": "new_requirement",
+  "stage": "repository",
+  "category": "data",
+  "impact": "high",
+  "task": "real2sim_harness",
+  "title": "成功结果单独保存并标记通过范围",
+  "narrative": "用户指出 example 不能只保存 artifact，已通过的成功结果也应以 motion NPZ 或图片形式留在仓库。先前将成功 motion 与失败、诊断和待验证候选都称作 artifact，难以判断哪些版本可作为正例。",
+  "expected": "每个有通过结论的动作案例明确链接已审查结果文件；结果与诊断材料分目录、分清单，记录帧数、来源、哈希、审查证据和通过阶段。没有通过结论的案例不生成伪结果。",
+  "observed": "原 evidence_manifest.json 同时含 v20/v21/v22 运动学成功 motion 和 v3 失败、v5 待验证候选，没有单独的结果身份。",
+  "source": "2026-10-20 用户关于成功结果也应保存为 NPZ 或图片的反馈。",
+  "example_id": "",
+  "actions": ["成功结果归档", "证据分流", "验收范围"],
+  "date": "2026-10-20",
+  "status": "verified",
+  "recurrences": 1,
+  "cause": "此前 example 只定义直接证据，没有把范围内通过的结果作为独立实体。",
+  "routing": {
+    "skill": {"decision": "update", "reason": "增加成功结果与审查 artifact 的分流和入库门槛。"},
+    "tool": {"decision": "update", "reason": "审计脚本验证 result_ids、结果来源、帧数、哈希和支撑审查。"},
+    "example": {"decision": "update", "reason": "五个已审查的运动学结果进入类别 results，三份交互结果附同帧估计物体轨迹；正文明确通过范围。"}
+  },
+  "fix": "新增 results_manifest.json 与各类别 results/，把 v20 抓刷、推桶 HOI、右膝 v21、扫刷 v22 和左膝 69–71 秒运动学结果单列；诊断、失败和待验证候选仍在 artifacts/。",
+  "validation": "五份结果的 NPZ 都可加载，帧数与 50 Hz 一致；三份物体轨迹与机器人 motion 同帧。audit_knowledge.py --require-archive 核对结果/证据哈希、链接和审查关系。没有物理成功结果被虚构。"
+}

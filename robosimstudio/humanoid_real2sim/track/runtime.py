@@ -16,6 +16,7 @@ from typing import Any
 
 import numpy as np
 
+from robosimstudio.humanoid_real2sim.retarget.root_joint import root_joint_index
 from robosimstudio.scene.entity import label_index
 
 from .timeline import FUTURE_OFFSETS, ReferenceMotion, RepairTimeline
@@ -89,8 +90,9 @@ class RepairRuntime:
         labels = list(sim.model.joint_label)
         q_start = sim.model.joint_q_start.numpy()
         qd_start = sim.model.joint_qd_start.numpy()
-        self.root_coord = int(q_start[label_index(labels, "floating_base")])
-        self.root_dof = int(qd_start[label_index(labels, "floating_base")])
+        root_index = root_joint_index(sim.model, motion.body_names[0])
+        self.root_coord = int(q_start[root_index])
+        self.root_dof = int(qd_start[root_index])
         self._scene_start_joint_q = np.asarray(sim._start_joint_q, dtype=np.float32).copy()
         self.anchor_source_frame = 0
         self.joint_coords = np.array(

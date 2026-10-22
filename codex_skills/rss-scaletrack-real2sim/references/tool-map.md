@@ -14,4 +14,4 @@
 
 先确认当前 take 的 README、stage ledger 和已接受版本，再选择工具。详细命令和七字段 NPZ/导出约束见 [local-interfaces.md](local-interfaces.md)；模型和页面的能力边界见 [implementation-boundaries.md](implementation-boundaries.md)。
 
-动作检索入口：`python scripts/humanoid-real2sim/feedback.py search --query '<动作与症状>'`，接着 `show <example-id>` 阅读语言、代码和 motion 证据。新用户反馈先入库，修复后更新 `examples/humanoid-real2sim/cases/` 的样本；普通未提炼的候选留在 `outputs/humanoid-real2sim/`。
+动作检索入口：`python scripts/humanoid-real2sim/feedback.py search --query '<动作与症状>'`，接着 `show <example-id>` 阅读语言、代码和 motion 证据。新用户反馈先入库；一次运行的全部实验结果留在 `outputs/humanoid-real2sim/<date>/<task>/`，审查后才把有迁移价值的正反例按通用动作提炼到 `examples/humanoid-real2sim/`。已通过范围内的 motion/物体轨迹/图片放类别 `results/`，失败或待验证候选与审查材料放 `artifacts/`，两类均记录哈希与验收范围。

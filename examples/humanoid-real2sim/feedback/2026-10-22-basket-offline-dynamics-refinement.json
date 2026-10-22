@@ -1,0 +1,39 @@
+{
+  "id": "2026-10-22-basket-offline-dynamics-refinement",
+  "kind": "new_requirement",
+  "stage": "track",
+  "category": "physics",
+  "impact": "high",
+  "task": "sequence_1019/09_lined_rect_basket",
+  "title": "独立自动化动力学refinement，不污染原Stage4方案",
+  "narrative": "用户要求先修整HOI参考的接触与动力学，再交给RL；在rect basket数据上运行采样式自动refinement，倾向SPIDER滚动窗口。",
+  "expected": "独立入口与输出；保留原方案；自由物体无强制跟随的控制重放，量化穿透、足滑、搬运误差、接触和耗时；失败如实报告。",
+  "observed": "现有v21只有运动学审查，物理搬运待验证；本机nvidia-smi无法连接驱动。",
+  "source": "2026-10-22 用户请求",
+  "example_id": "sidewall-arm-preload",
+  "actions": [
+    "双手搬篮",
+    "离线动力学优化",
+    "MPPI"
+  ],
+  "date": "2026-10-22",
+  "status": "fixed",
+  "recurrences": 1,
+  "cause": "原v21在RSS餐桌代理中的初始左中指穿入33.8mm；直接关节目标执行会跌倒。冻结BFM能维持全身平衡，但仅短暂双侧夹持，未证明物体能完成搬运。",
+  "routing": {
+    "skill": {
+      "decision": "none",
+      "reason": "现有阶段路由允许新增独立工具，非harness规则反馈"
+    },
+    "tool": {
+      "decision": "update",
+      "reason": "独立离线采样与实测轨迹导出工具，不改现有tracker"
+    },
+    "example": {
+      "decision": "update",
+      "reason": "在双侧夹持案例中补充离线动力学实验及失败边界"
+    }
+  },
+  "fix": "独立refinement包与任务入口已实现；初态投影、冻结BFM初值、退火MPPI、全身/脚/腕相对物体代价和非期望接触惩罚；输出控制、实测motion、自由物体轨迹和审阅页，未修改原v21或Stage4。",
+  "validation": "v2完整550帧：位置RMSE 0.0761m，终点0.0108m，峰值0.2469m，穿入峰值0.00287m，CPU控制重放误差0；双侧提起接触覆盖63.6%、姿态和非期望接触门槛未通过，accepted/training_data_ready=false。fast1704项通过，新增6项CPU/GPU测试通过，知识库审计通过。v1动作失真反例及v2候选均已附哈希证据。"
+}

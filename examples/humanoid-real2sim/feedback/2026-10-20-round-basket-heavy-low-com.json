@@ -1,0 +1,30 @@
+{
+  "id": "2026-10-20-round-basket-heavy-low-com",
+  "kind": "error",
+  "stage": "scene",
+  "category": "physics",
+  "impact": "medium",
+  "task": "sequence_1019/06_round_basket",
+  "title": "圆篮质量应更大且重心更低",
+  "narrative": "用户看过Stage4动力学基线后指出圆篮比场景设定的0.8kg更重，重心也更低。基线约63秒侧翻，篮子与估计参考轨迹偏离。",
+  "expected": "使用更重和更低重心的独立物理参数候选，检查自由静置并重跑同一Stage4参考动作，对比侧翻、篮子位置和机器人误差，提供新页面。",
+  "observed": "Stage4基线场景篮子质量0.8kg，未显式降低模型重心；850帧物理回放约63秒篮子倾角83.5度。",
+  "source": "本会话2026-10-20；stage4_round_basket_baseline_01/review/stage4_baseline.json",
+  "example_id": "foot-hook-forearm-return-basket",
+  "actions": [
+    "左脚推圆篮",
+    "篮子侧翻",
+    "质量与重心校准"
+  ],
+  "date": "2026-10-20",
+  "status": "verified",
+  "recurrences": 1,
+  "cause": "旧 Stage 4 场景的 0.8 kg 篮子未显式设置较低重心；足/篮接触和暂定轨迹同时存在误差，因此物理回放侧翻并偏离参考。",
+  "routing": {
+    "main_skill": "不修改：五阶段路由与物理调参职责已有定义。",
+    "shared_tools": "扩展本任务 Stage 4 scene 参数接口并新增独立场景候选；未发现共享工具缺陷。",
+    "action_example": "更新 foot-hook-forearm-return-basket.md 中的物理参数反例、可观察结果与未通过边界。"
+  },
+  "fix": "新增独立 scene_stage4_heavy_low_com.py 候选：质量 1.6 kg、局部重心 z=0.08 m；摩擦保持 0.8，65 个凸包与非碰撞桌子保持一致。运行同一 850 帧参考动作并保留青色 refmotion 虚影。",
+  "validation": "运行时模型质量 1.60000002 kg、局部重心 z=0.079999998 m。3 s 自由静置 xy 漂移 0、最大倾角 0.0000043°。850 帧回放第 200 帧篮子倾角从 83.49° 降至近 0°，全程最大 4.81°；参考轨迹中位距离从 0.546 m 降至 0.333 m，但实际 XY 位移仅 0.063 m，接触推篮尚未成功。证据见 stage4_round_basket_heavy_low_com_01/review/parameter_comparison.json。"
+}

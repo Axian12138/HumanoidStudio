@@ -1,9 +1,0 @@
-version: 1
-name: 1019_remaining_ground_support
-stage: ground
-fps: 50
-body_prior_directory: /home/galbot/workspace/robosimstudio/examples/humanoid-real2sim/sequence_1019/retarget/body_prior_27_end
-fists: /home/galbot/workspace/ScaleTrack/data/1012test/ground_stage2/fists.json
-robot:
-  xml: assets/robot/robot.xml
-  mesh_dir: assets/robot/meshes

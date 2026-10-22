@@ -1,0 +1,48 @@
+{
+  "id": "2026-10-20-lined-basket-palm-down-rigid-reference",
+  "kind": "new_requirement",
+  "stage": "retarget",
+  "category": "interaction",
+  "impact": "high",
+  "task": "sequence_1019/09_lined_rect_basket",
+  "title": "长方篮双手夹持须兼顾手腕刚体姿态和掌面向下",
+  "narrative": "用户要求任务09的3.2使用原MCAP中左右手腕rigid 6D动捕及机器人手腕相机外参作为姿态参考；最终仍以HOI接触优化为主，让双手卡住长方篮且不穿模，并考虑相机朝向选择掌心朝下。 用户随后明确允许少量浅穿模供tracker夹紧，并要求接触前沿篮筐侧壁法向靠近，参照掌侧接近example。 用户以审阅截图指出v9手位过高、仅指端点接触；要求优先使手腕/虎口和部分小臂沿两侧绿色长条区域贴合，形成多点或面接触；动画审阅只交付单一入口。 用户审阅v12动画后进一步指出起始时右手穿入篮内，搬运时手仍然高于期望位置。 用户审阅v16后认可方向，并补充施力动作允许手臂沿受力面法向少量穿入，以给后续tracker夹持留下预压。",
+  "expected": "双手从侧壁法向接近，并让手腕、虎口与可达的一段小臂在篮筐两侧外壁形成持续的多点/面接触，夹持高度低于篮沿且匹配侧壁；可有几毫米浅穿入但避免整手穿壁；初始至接触前右手不得伸入篮内；3.5仅交付一个动画审阅入口。 搬运接触期允许腕部与近端小臂沿两侧受力面法向形成可量化、受限的浅穿入；起始及接近阶段仍保持篮内避碰。",
+  "observed": "v9虽然手指浅穿入受控且法向接近，但截图显示掌腕悬在篮沿上方，侧壁仅局部指尖接触，不能形成可靠夹持；交付时错误地同时列出Viser画布和审阅控制页两个链接。",
+  "source": "2026-10-20 用户当前要求；ScaleTrack 1019 MCAP 与 g1_29dof_dex3_cam_mat.usda",
+  "example_id": "sidewall-arm-preload",
+  "actions": [
+    "双手搬篮",
+    "夹持",
+    "掌心朝下",
+    "相机外参",
+    "手腕刚体参考",
+    "接触法向接近",
+    "允许浅穿模",
+    "手腕贴壁",
+    "小臂贴壁",
+    "面接触",
+    "单一动画审阅页",
+    "受力面法向浅穿入"
+  ],
+  "date": "2026-10-20",
+  "status": "fixed",
+  "recurrences": 5,
+  "cause": "v12 audit started at 98.4s, missing the initial 98.0–98.2s right-hand wall penetration; the side-wall wrist target was set near the 140mm rim at 125mm above the base. A hard early clearance-to-contact switch increased arm speed. v16 wrist/forearm only touched or barely crossed the loaded wall in ~1–3% of carry frames because the optimizer imposed 1.5mm clearance on every arm primitive.",
+  "routing": {
+    "skill": {
+      "decision": "update",
+      "reason": "用户指出同一候选被错误交付两个可视化URL；已在主skill的可视化规范中规定唯一动画审阅入口"
+    },
+    "tool": {
+      "decision": "update",
+      "reason": "给通用运动学审阅播放器增加可选root跟随镜头，任务启动脚本启用；侧壁拟合与胶囊接触审查保持任务局部代码"
+    },
+    "example": {
+      "decision": "update",
+      "reason": "The user-corrected force-surface preload is a transferable mechanism; record v16 versus v18 as pending kinematic evidence in a language-rich grasp example, without labeling an unaccepted result as successful."
+    }
+  },
+  "fix": "Fit collision clearance from the first frame, keep every hand collision sample outside the basket interior before contact, lower palm/wrist/forearm/tip targets by 30–35mm, and ramp contact targets across the first 0.6s. The complete 98.0–106.4s audit now reports precontact penetration and basket-interior samples. For v18, the fitted wrist and proximal forearm targets advance 4mm inward along the loaded side-wall normal after first contact; their clearance limit admits about 3mm shallow penetration while fingers and precontact retain the stricter constraint.",
+  "validation": "v18 50Hz audit: precontact penetration and basket-interior hand samples zero. During carry, wrist shallow-penetration frame fractions left/right 73/77%, proximal forearm 50/54%; maximum sampled depth <4mm on either side. Wrist centers remain about 101/99mm above basket base; root/noninteraction joints unchanged, no joint-limit violation, peak joint speed 8.17rad/s. This is kinematic overlap rather than physical force; user visual acceptance and tracker remain pending. The single animation review page is http://localhost:8410/. User then requested entry to Stage4 after reviewing v18, accepting this kinematic scope; physical force remains pending."
+}

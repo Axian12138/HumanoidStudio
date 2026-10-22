@@ -104,7 +104,7 @@
     slider.oninput=e=>{$(side+'Value').textContent=e.target.value+'% 合拢';command('hand',[side,Number(e.target.value)/100]);};}
   async function refresh(){try{const r=await fetch('/api/state');state=await r.json();$('play').textContent=state.paused?'▶ 播放':'Ⅱ 暂停';
     $('pageTitle').textContent=state.review_only?'Stage 5 · 物体动力学':'RSS 物理播放';
-    $('pageSubtitle').textContent=state.review_only?'human · reference · physics':'青色虚影：retarget motion';
+    $('pageSubtitle').textContent=state.review_only?'human · reference · physics':state.reference_object?'青色虚影：retarget motion · 黄色线框：运动学物体':'青色虚影：retarget motion';
     $('panel').style.display=state.review_only?'none':'block';
     $('reset').textContent=state.review_only?'回到开头':'重置';
     $('reference').style.display=state.reference_video||state.show_reference?'block':'none';

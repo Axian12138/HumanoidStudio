@@ -1,0 +1,32 @@
+{
+  "id": "2026-10-20-lined-basket-stage4-grip-friction",
+  "kind": "new_requirement",
+  "stage": "track",
+  "category": "physics",
+  "impact": "high",
+  "task": "sequence_1019/09_lined_rect_basket",
+  "title": "Stage 4 双侧夹紧不足且篮子摩擦偏低",
+  "narrative": "用户审阅长方篮 v18 Stage 4 后指出夹持仍不够紧，要求提高篮子摩擦系数。v19 增至约 7 mm 法向目标预压后，用户进一步明确允许约 3 cm 穿模，以形成更紧的受力侧壁夹持。",
+  "expected": "新候选在接近前仍避开篮内；接触与搬运期间允许双侧腕部、近端小臂和掌部沿受力侧壁法向从外壁面起有约 3 cm 的穿入，并量化覆盖时间和最大值；Stage 4 物理篮子的摩擦系数高于原 0.6，并在单一审阅页显示新候选。",
+  "observed": "v18 运动学预压约 4 mm，Stage 4 审阅中用户认为仍夹不紧；scene_stage4.py 中篮子摩擦为 0.6。",
+  "source": "2026-10-20 用户 Stage 4 反馈",
+  "example_id": "sidewall-arm-preload",
+  "actions": [
+    "双手搬篮",
+    "夹紧",
+    "约3厘米穿模",
+    "提高摩擦"
+  ],
+  "date": "2026-10-20",
+  "status": "fixed",
+  "recurrences": 2,
+  "cause": "v19 约 7 mm 法向目标预压仍不满足用户希望的夹紧程度；原 SDF 内部深度指标受 8 mm 篮壁厚度限制，无法衡量约 3 cm 的外壁面穿入。",
+  "routing": {
+    "skill": {
+      "decision": "none",
+      "reason": "主 skill 已定义反馈与 Stage 4 审阅流程；tool=none: 本次是任务局部轨迹和场景参数；example=update: 记录 v18 物理反馈及新候选验证边界"
+    }
+  },
+  "fix": "v21 将腕部/近端小臂法向目标预压设为 27 mm，掌部 17 mm；加载期允许最多约 30 mm 外壁面重叠，预压在首次接触之后 0.4 秒内开启。保留 Stage 4 摩擦系数 1.2，并增加外壁面穿入审查。",
+  "validation": "v20 因接近前约 4 mm 篮壁穿入淘汰。v21 50 Hz 审查：左右腕搬运期中位外壁面穿入 25/26 mm、峰值 30/30 mm；小臂中位 17/18 mm、峰值 30/29 mm；接触前穿入与篮内采样点均为零，关节越限为零。单一 Stage 4 页面已加载 v21；实际物理夹起与搬运尚待审阅。"
+}

@@ -26,12 +26,18 @@ class RepairStudio(StudioSession):
         stop_frame: int | None = None,
         show_reference: bool = True,
         reference_video: Path | None = None,
+        reference_object_track: Path | None = None,
+        reference_object_mesh: Path | None = None,
+        reference_object_outline: str = "ellipse",
         review_only: bool = False,
     ):
         self.runtime = runtime
         self._stop_frame = stop_frame
         self._show_reference = show_reference
         self._reference_video = reference_video
+        self._reference_object_track = reference_object_track
+        self._reference_object_mesh = reference_object_mesh
+        self._reference_object_outline = reference_object_outline
         self._review_only = review_only
         self._requests: deque[tuple[str, object]] = deque()
         self._out = out
@@ -217,6 +223,7 @@ class RepairStudio(StudioSession):
             "reference_pid_joint_names": self.runtime.reference_pid_joint_names,
             "show_reference": self._show_reference,
             "reference_video": self._reference_video is not None,
+            "reference_object": self._reference_object_track is not None,
             "review_only": self._review_only,
             "recovery_mode": self._recovery_mode,
             "recovery_started": self._recovery_started,
@@ -356,6 +363,72 @@ class RepairStudio(StudioSession):
 
     def _build_ghost(self) -> None:
         scene = self.server.scene
+        self._ghost_object = None
+        self._ghost_object_position = None
+        self._ghost_object_quaternion = None
+        self._ghost_object_segments = None
+        if self._reference_object_track is not None and self._reference_object_mesh is not None:
+            import trimesh
+
+            with np.load(self._reference_object_track, allow_pickle=False) as track:
+                position = track["position_w"]
+                quaternion = track["quaternion_xyzw"]
+            if position.shape != (self.runtime.motion.frames, 3) or quaternion.shape != (self.runtime.motion.frames, 4):
+                raise ValueError("reference object track must match the robot reference frames")
+            self._ghost_object_position = position
+            self._ghost_object_quaternion = quaternion
+            bounds = trimesh.load(self._reference_object_mesh, force="mesh", process=False).bounds
+            if self._reference_object_outline == "box":
+                corners = np.asarray(
+                    [
+                        (x, y, z)
+                        for z in (bounds[0, 2], bounds[1, 2])
+                        for x, y in (
+                            (bounds[0, 0], bounds[0, 1]),
+                            (bounds[1, 0], bounds[0, 1]),
+                            (bounds[1, 0], bounds[1, 1]),
+                            (bounds[0, 0], bounds[1, 1]),
+                        )
+                    ]
+                )
+                edges = [(i, (i + 1) % 4) for i in range(4)]
+                edges += [(i + 4, (i + 1) % 4 + 4) for i in range(4)]
+                edges += [(i, i + 4) for i in range(4)]
+                loops = [corners[[a, b]] for a, b in edges]
+            else:
+                center_xy = (bounds[0, :2] + bounds[1, :2]) / 2
+                half_xy = (bounds[1, :2] - bounds[0, :2]) / 2
+                height = bounds[1, 2] - bounds[0, 2]
+                # A lightweight outline stays legible next to the solid
+                # physical object without transparency sorting artifacts.
+                angles = np.linspace(0, 2 * np.pi, 25)
+                loops = []
+                for height_fraction, width_fraction in ((0.05, 0.55), (0.35, 0.72), (0.70, 0.86), (0.98, 0.98)):
+                    z = bounds[0, 2] + height_fraction * height
+                    points = np.column_stack(
+                        (
+                            center_xy[0] + width_fraction * half_xy[0] * np.cos(angles),
+                            center_xy[1] + width_fraction * half_xy[1] * np.sin(angles),
+                            np.full_like(angles, z),
+                        )
+                    )
+                    loops.extend(np.stack((points[:-1], points[1:]), axis=1))
+                for angle in np.linspace(0, 2 * np.pi, 9)[:-1]:
+                    low = np.r_[
+                        center_xy + 0.55 * half_xy * (np.cos(angle), np.sin(angle)), bounds[0, 2] + 0.05 * height
+                    ]
+                    high = np.r_[
+                        center_xy + 0.98 * half_xy * (np.cos(angle), np.sin(angle)), bounds[0, 2] + 0.98 * height
+                    ]
+                    loops.append(np.stack((low, high)))
+            self._ghost_object_segments = np.asarray(loops)
+            self._ghost_object = scene.add_line_segments(
+                "/reference_object/kinematic_basket",
+                points=self._ghost_object_segments + position[0],
+                colors=(250, 204, 65),
+                thickness=0.005,
+                visible=False,
+            )
         self._ghost_meshes = []
         self._ghost_model = None
         self._ghost_data = None
@@ -484,6 +557,17 @@ class RepairStudio(StudioSession):
             else self.runtime.timeline.source_frame
         )
         frame = max(0, min(self.runtime.motion.frames - 1, frame))
+        if self._ghost_object is not None:
+            self._ghost_object.visible = visible
+            if visible:
+                from scipy.spatial.transform import Rotation
+
+                self._ghost_object.points = (
+                    Rotation.from_quat(self._ghost_object_quaternion[frame])
+                    .apply(self._ghost_object_segments.reshape(-1, 3))
+                    .reshape(-1, 2, 3)
+                    + self._ghost_object_position[frame]
+                )
         for i, node in enumerate(self._ghost):
             node.visible = visible
             if visible:

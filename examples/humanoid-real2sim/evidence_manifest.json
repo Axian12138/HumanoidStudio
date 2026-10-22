@@ -1,0 +1,330 @@
+{
+  "schema_version": 1,
+  "selection_rule": "Small direct evidence for a transferable claim; keep full runs in outputs. Pending examples remain pending.",
+  "artifacts": [
+    {
+      "id": "grasp_1012_old_motion",
+      "file": "grasp/artifacts/1012_handle_first_motion.npz",
+      "status": "negative",
+      "meaning": "1012 brush 0–35 s; inspect 6–12 s approach",
+      "source": "outputs/humanoid-real2sim/2026-10-20/brush_pick_1012/curated_snapshot/retarget/handle_kinematic_v1/motion.npz",
+      "sha256": "839b95f2d9d94655ce39134827c0e8c71206638dfc52afe7c90709b4f949ffb9",
+      "bytes": 3974526
+    },
+    {
+      "id": "grasp_1012_palm_motion",
+      "file": "grasp/artifacts/1012_palm_approach_motion.npz",
+      "status": "kinematic_candidate",
+      "meaning": "1012 brush 0–35 s; inspect 6–12 s approach",
+      "source": "outputs/humanoid-real2sim/2026-10-20/brush_pick_1012/curated_snapshot/retarget/palm_approach_v2/motion.npz",
+      "sha256": "b8a2e025fbe97a8aa7378fcb86c66dc6aa29d07067d2b4e2dc5c404248fd2419",
+      "bytes": 3974666
+    },
+    {
+      "id": "grasp_1012_old_image",
+      "file": "grasp/artifacts/1012_handle_first_closeup.png",
+      "status": "negative",
+      "meaning": "1012 handle-first hand/brush geometric diagnostic",
+      "source": "outputs/humanoid-real2sim/2026-10-20/brush_pick_1012/curated_snapshot/retarget/handle_kinematic_v1/review_closeup.png",
+      "sha256": "56c7d223a662cd2afb65232ff4b872cc1d645f40e2012f2a850c4049945f3c29",
+      "bytes": 37291
+    },
+    {
+      "id": "grasp_1012_palm_image",
+      "file": "grasp/artifacts/1012_palm_approach_closeup.png",
+      "status": "kinematic_candidate",
+      "meaning": "1012 palm-approach hand/brush geometric diagnostic",
+      "source": "outputs/humanoid-real2sim/2026-10-20/brush_pick_1012/curated_snapshot/retarget/palm_approach_v2/review_closeup.png",
+      "sha256": "f52f589f4f2cd3d699ab86ca96ba285e66ad0a394eb6b1b4a900cbe39977ff4e",
+      "bytes": 36291
+    },
+    {
+      "id": "grasp_1019_v20_audit",
+      "file": "grasp/artifacts/1019_brush_v20_hand_audit.json",
+      "status": "kinematic_geometry_checked",
+      "meaning": "1019 brush hand mesh audit",
+      "source": "outputs/humanoid-real2sim/2026-10-20/brush_sweep_1019/curated_snapshot/review/hand_audit_v20.json",
+      "sha256": "0fd2a04704bd45fafa76139699261c693ac9761d65328b4fcdc4900c7b62e204",
+      "bytes": 1727
+    },
+    {
+      "id": "grasp_failed_physics",
+      "file": "grasp/artifacts/1012_hand_physics_failure.json",
+      "status": "negative",
+      "meaning": "1012 brush physical replay; hand closure did not yield reliable grasp",
+      "source": "outputs/humanoid-real2sim/2026-10-20/brush_pick_1012/historical_examples/retarget/dexagent_hand_only_v1/physical_replay/analysis.json",
+      "sha256": "d0c7baa8d46696084e7ff0e254add58bc1340e66658b7af06352c57cf910e531",
+      "bytes": 1223
+    },
+    {
+      "id": "hand_bin_path_image",
+      "file": "hand-push/artifacts/bin_physics_top_view.png",
+      "status": "physics_diagnostic",
+      "meaning": "1019 waste bin path vs replay, thumb/index tracks and table",
+      "source": "outputs/humanoid-real2sim/2026-10-20/push_bin_1019/curated_snapshot/review/stage5_coffee_mu_0p15_top.png",
+      "sha256": "36e778c28af2c471a087d0140fd765638c1574b946080013a129f8260916d96c",
+      "bytes": 128946
+    },
+    {
+      "id": "hand_armchair_motion",
+      "file": "hand-push/artifacts/armchair_backrest_hook_motion.npz",
+      "status": "pending_hoi",
+      "meaning": "1019 armchair HOI candidate",
+      "source": "outputs/humanoid-real2sim/2026-10-20/sequence_1019/curated_snapshot/tasks/07_armchair/hoi_v2_backrest_hook/motion.npz",
+      "sha256": "6124d3b54fe768f3188c4c8d60c5bd3ea78eb6f870b9082344be59f83fb00b8d",
+      "bytes": 1875933
+    },
+    {
+      "id": "foot_61_before_image",
+      "file": "foot-push/artifacts/round_basket_61s_contact_failure.png",
+      "status": "negative",
+      "meaning": "User screenshot at about 61 s: foot pose/contact mismatch",
+      "source": "user screenshot supplied in conversation; original codex-clipboard-N8xgl0.png",
+      "sha256": "090098fb1927cf1365f8672e0628518d9c3b200589b0ba42684be6fa2b5aea69",
+      "bytes": 155948
+    },
+    {
+      "id": "foot_67_context_image",
+      "file": "foot-push/artifacts/round_basket_67s_context.png",
+      "status": "source_context",
+      "meaning": "User screenshot at about 67 s: basket final pulled-out position and left-hand deposit",
+      "source": "user screenshot supplied in conversation; original codex-clipboard-V5Hx63.png",
+      "sha256": "1580b52688cd2a78bec335314db35d1bdc540585069e0db18a2330819f144970",
+      "bytes": 127291
+    },
+    {
+      "id": "foot_v3_motion",
+      "file": "foot-push/artifacts/round_basket_69_76_only_motion.npz",
+      "status": "negative",
+      "meaning": "Wrong 69–76 s crop; omits 59–69 s foot manipulation",
+      "source": "outputs/humanoid-real2sim/2026-10-20/sequence_1019/curated_snapshot/tasks/06_round_basket/hoi_v3_nonprehensile/motion.npz",
+      "sha256": "500eb79d94717596375e699e644b4eeb2ed04c633c2b1d78e37b60f8482b8f13",
+      "bytes": 762699
+    },
+    {
+      "id": "foot_v5_motion",
+      "file": "foot-push/artifacts/round_basket_59_76_v5_motion.npz",
+      "status": "pending_kinematic",
+      "meaning": "Full 59–76 s candidate; force direction and arm residual not passed",
+      "source": "outputs/humanoid-real2sim/2026-10-20/sequence_1019/curated_snapshot/tasks/06_round_basket/hoi_v5_kneel_59_76/motion.npz",
+      "sha256": "ac85026ca6a1ae8d4b1d771ef33d4cc55def520ab17a239d6689631c2b98eeb4",
+      "bytes": 1871182
+    },
+    {
+      "id": "foot_v4_review",
+      "file": "foot-push/artifacts/round_basket_v4_review.json",
+      "status": "negative_diagnostic",
+      "meaning": "Foot/basket contact proximity does not establish force direction",
+      "source": "outputs/humanoid-real2sim/2026-10-20/sequence_1019/curated_snapshot/tasks/06_round_basket/hoi_v4_59_76/review.json",
+      "sha256": "0800c47bc460dec9aea4f00260ce05d3cf81d43288bfa8fe3c3db2916f11609c",
+      "bytes": 24936
+    },
+    {
+      "id": "kneel_left_v5_review",
+      "file": "kneeling/artifacts/left_knee_entry_v5_review.json",
+      "status": "kinematic_geometry_checked",
+      "meaning": "Left knee entry 69–71 s; full task pending",
+      "source": "outputs/humanoid-real2sim/2026-10-20/sequence_1019/curated_snapshot/tasks/06_round_basket/hoi_v5_kneel_59_76/kneel_review.json",
+      "sha256": "48edbe9539b5d92fbf3349b7c0753cc255fe8f6a050a35e11d28d8777e98ad80",
+      "bytes": 58481
+    },
+    {
+      "id": "kneel_right_v21_audit",
+      "file": "kneeling/artifacts/right_knee_v21_audit.json",
+      "status": "kinematic_geometry_checked",
+      "meaning": "Right knee, toe, heel ground-geometry audit",
+      "source": "outputs/humanoid-real2sim/2026-10-20/brush_sweep_1019/curated_snapshot/review/knee_audit_v21.json",
+      "sha256": "9442de75a8888c5d8bd8e8d50608287d70453862e80326bec4adfbdcb1e7b3be",
+      "bytes": 1142
+    },
+    {
+      "id": "tool_brush_visual",
+      "file": "tool-use/artifacts/brush_source_body_candidate_20_5s.jpg",
+      "status": "comparison",
+      "meaning": "Source head camera, body prior, brush candidate at 20.5 s",
+      "source": "outputs/humanoid-real2sim/2026-10-20/brush_sweep_1019/curated_snapshot/review/candidate_close_20.5s.jpg",
+      "sha256": "68f2e8b024e435ee1f9b56f284eb98faf73b66bba35f2c8175cd0f40db7748d5",
+      "bytes": 199971
+    },
+    {
+      "id": "tool_brush_v22_audit",
+      "file": "tool-use/artifacts/brush_sweep_v22_cycle_audit.json",
+      "status": "kinematic_geometry_checked",
+      "meaning": "Brush sweep cycle audit",
+      "source": "outputs/humanoid-real2sim/2026-10-20/brush_sweep_1019/curated_snapshot/review/sweep_cycle_audit_v22.json",
+      "sha256": "9a19f79b8fbb39e850d20bb1dd2ad5734bb0f53ec97695208917c3853327a90f",
+      "bytes": 1361
+    },
+    {
+      "id": "visual_rigid_wrist",
+      "file": "visualization/artifacts/round_basket_rigid_wrist_track.npz",
+      "status": "diagnostic",
+      "meaning": "Independent MCAP rigidbody wrist track aligned to 59–76 s",
+      "source": "outputs/humanoid-real2sim/2026-10-20/sequence_1019/curated_snapshot/tasks/06_round_basket/review_59_76/rigid_wrist_track.npz",
+      "sha256": "7e25f1a51a2ec5c60beb07928fe7569fac55299dc5a250b0a2028cecf37a7254",
+      "bytes": 63914
+    },
+    {
+      "id": "physics_release_rest",
+      "file": "scene-physics/artifacts/brush_release_rest_check.json",
+      "status": "physics_diagnostic",
+      "meaning": "Brush release and free rest check",
+      "source": "outputs/humanoid-real2sim/2026-10-20/brush_sweep_1019/curated_snapshot/review/release_rest_check.json",
+      "sha256": "b20dc0eca29ee9ddb18f6cb8779f8228c5992b213ad314f18c0516d5e06099e0",
+      "bytes": 7030
+    },
+    {
+      "id": "task_segments",
+      "file": "task-analysis/artifacts/1019_segments.json",
+      "status": "reviewed_task_split",
+      "meaning": "1019 long demo task windows and overlap",
+      "source": "outputs/humanoid-real2sim/2026-10-20/sequence_1019/curated_snapshot/segments.json",
+      "sha256": "17dd299f7da5685dd9a0b5254b97a2fce7f745343c7771e97dd3ef981a68592c",
+      "bytes": 5290
+    },
+    {
+      "id": "foot_kick_failure",
+      "file": "foot-push/artifacts/kick_tracker_failure.json",
+      "status": "negative_physics",
+      "meaning": "Short kick task tracker replay",
+      "source": "outputs/humanoid-real2sim/2026-10-20/kick_basket/legacy_outputs/correct_tracker_65_hulls_gpu/analysis.json",
+      "sha256": "6dc6ac4e4539627ddc3a678a28f7dff32b611ecf3033500310a092c865c6404c",
+      "bytes": 1264
+    },
+    {
+      "id": "bimanual_body_prior",
+      "file": "grasp/artifacts/rect_basket_bimanual_body_prior.npz",
+      "status": "body_prior_only",
+      "meaning": "Task 09 bimanual basket carry 98–109 s; HOI not fitted",
+      "source": "outputs/humanoid-real2sim/2026-10-20/sequence_1019/curated_snapshot/tasks/09_lined_rect_basket/body_prior.npz",
+      "sha256": "86f121bd0eaf118e97cebce812bec162c6525e8908b166d8c8e5e2c1bbc89d18",
+      "bytes": 1210904
+    },
+    {
+      "id": "tracking_recovery_diagnostic",
+      "file": "tracking/artifacts/kick_basket_recovery_to_117.json",
+      "status": "control_diagnostic",
+      "meaning": "Tracker recovery diagnostic; does not show grasp success",
+      "source": "outputs/humanoid-real2sim/2026-10-20/kick_basket/legacy_outputs/recovery_checks/end_to_117.json",
+      "sha256": "66a143821abd17979065af5684b7c9ee6d14e16c11091b9f934731c65f5b8df6",
+      "bytes": 28381
+    },
+    {
+      "id": "hand_bin_kinematic_audit",
+      "file": "hand-push/artifacts/bin_hoi_kinematic_audit.json",
+      "status": "kinematic_approved_physics_pending",
+      "meaning": "1019 bin hand contact and kinematic HOI audit",
+      "source": "outputs/humanoid-real2sim/2026-10-20/push_bin_1019/curated_snapshot/review/hoi_kinematic_audit.json",
+      "sha256": "25092780f613eef936dd1ca6a209f485b2eac87dd6e28ce4a16f4cb55ebbe5e6",
+      "bytes": 14730
+    },
+    {
+      "id": "table_brace_1019_before_geometry",
+      "status": "negative",
+      "meaning": "Original chair-push continuation [83.5,91.0) s: left hand mesh penetrated tabletop in 297 frames",
+      "file": "composed-actions/artifacts/table_brace_1019_before_review.json",
+      "source": "outputs/humanoid-real2sim/2026-10-20/sequence_1019__armchair_split_feedback/runs/16-57-32.904219+0800/review/table_before_geometry.json",
+      "sha256": "3504d79517402fdd696902bed62fe0ca3a322c659a4460d9b42904aad31d1417",
+      "bytes": 1265
+    },
+    {
+      "id": "table_brace_1019_after_geometry",
+      "status": "kinematic_geometry_checked_user_visual_ok",
+      "meaning": "Refined fist/table brace: no sampled hand mesh penetration, palm down and forearm near tabletop; no physical force claim",
+      "file": "composed-actions/artifacts/table_brace_1019_after_review.json",
+      "source": "outputs/humanoid-real2sim/2026-10-20/sequence_1019__armchair_split_feedback/runs/16-57-32.904219+0800/table_support/review.json",
+      "sha256": "73585e882b2703bf0a4042e12808c29d3c0e6dcae866a1e3905c96d1351d3b1e",
+      "bytes": 1255
+    },
+    {
+      "id": "rect_basket_v16_wall_contact",
+      "file": "grasp/artifacts/rect_basket_v16_wall_contact_motion.npz",
+      "status": "negative_force_preload",
+      "meaning": "98–109s kinematic comparison; wrist/forearm surface overlap is rare despite proximity; not a physics failure claim",
+      "source": "outputs/humanoid-real2sim/2026-10-20/sequence_1019__09_lined_rect_basket/runs/17-29-01.627805+0800/hoi_v16/motion.npz",
+      "sha256": "120a1de71a13aae36a46640f2ce8404f0fc5f1604074488d073aae6c55cf7986",
+      "bytes": 1333929
+    },
+    {
+      "id": "rect_basket_preload_audit",
+      "file": "grasp/artifacts/rect_basket_preload_audit_summary.json",
+      "status": "kinematic_review_evidence",
+      "meaning": "v16 versus v18 full-window arm preload, initial clearance and preserved body motion; physical force not verified",
+      "source": "outputs/humanoid-real2sim/2026-10-20/sequence_1019__09_lined_rect_basket/runs/17-29-01.627805+0800/hoi_v18/audit.json",
+      "sha256": "f53fa73c93cbe3c5f624d9a94c0594c10f201f433a52b85cc925367228dace67",
+      "bytes": 1586
+    },
+    {
+      "id": "hand_armchair_finger_entry_clearance",
+      "file": "hand-push/artifacts/armchair_finger_entry_clearance.json",
+      "status": "kinematic_user_approved",
+      "meaning": "78.88–79.30 s chair-back approach: before/after finger mesh clearance; finite kinematic samples",
+      "source": "outputs/humanoid-real2sim/2026-10-20/sequence_1019__armchair_finger_entry/runs/19-20-24.732142+0800/finger_clearance_audit.json",
+      "sha256": "4fa026623733d926e4698e4f4c1a99fb1122b1ecb05653c833ea6d665e27a6c7",
+      "bytes": 1194
+    },
+    {
+      "id": "hand_armchair_approach_object_offset",
+      "file": "hand-push/artifacts/armchair_approach_object_offset.json",
+      "status": "kinematic_review",
+      "meaning": "Chair approach trajectory offset relative to original human-aligned object estimate; final track recovered by 83.4 s",
+      "source": "outputs/humanoid-real2sim/2026-10-20/sequence_1019__armchair_finger_entry/runs/19-20-24.732142+0800/chair_thumb_backface_flip_open/object_estimate.npz",
+      "sha256": "07c52fd2e120b99b98c3fe7762a84a506554ea4511ed7638aa7c49d034b6aa3e",
+      "bytes": 1176
+    },
+    {
+      "id": "rect_basket_offline_v1_review",
+      "file": "grasp/artifacts/rect_basket_offline_v1_review.json",
+      "status": "negative",
+      "meaning": "Object-dominated offline objective: low position RMSE but wrong contact mode and torso orientation.",
+      "source": "outputs/humanoid-real2sim/2026-10-22/sequence_1019__09_lined_rect_basket_dynamics/runs/11-43-06.159211+0800/review.json",
+      "sha256": "fe50916c11ba1d62776052d5a4904d771b17d3bcb1c38119c7b7b474abe2b857",
+      "bytes": 2596
+    },
+    {
+      "id": "rect_basket_offline_v1_pose",
+      "file": "grasp/artifacts/rect_basket_offline_v1_pose.png",
+      "status": "negative",
+      "meaning": "At 5 seconds the physical candidate raises the arms and carries the basket against the upper body, unlike the reference.",
+      "source": "outputs/humanoid-real2sim/2026-10-22/sequence_1019__09_lined_rect_basket_dynamics/runs/11-43-06.159211+0800/comparison_0250.png",
+      "sha256": "f2d4b71682e30d10b2470d6a34591bc229a38a7284124ec1a5f60d5e2d5f7dca",
+      "bytes": 41502
+    },
+    {
+      "id": "rect_basket_offline_v2_review",
+      "file": "grasp/artifacts/rect_basket_offline_v2_review.json",
+      "status": "physical_candidate_quality_gates_failed",
+      "meaning": "Full 550-frame physical execution with torso/foot/relative wrist costs; contact and orientation gates remain unmet.",
+      "source": "outputs/humanoid-real2sim/2026-10-22/sequence_1019__09_lined_rect_basket_dynamics/runs/11-52-04.668402+0800/review.json",
+      "sha256": "6402dbd7b269469a946e6493667f59e38b7b32d8feea0ae6847eb428c736be13",
+      "bytes": 2593
+    },
+    {
+      "id": "rect_basket_offline_v2_motion",
+      "file": "grasp/artifacts/rect_basket_offline_v2_motion.npz",
+      "status": "physical_candidate_quality_gates_failed",
+      "meaning": "Executed 550-frame robot motion at 50 Hz, not a tracking target or accepted RL reference.",
+      "source": "outputs/humanoid-real2sim/2026-10-22/sequence_1019__09_lined_rect_basket_dynamics/runs/11-52-04.668402+0800/candidate_motion.npz",
+      "sha256": "3f09e8b11fdf375526338772087caa9f7b2e2454d159c822e877f64be11cd137",
+      "bytes": 1411872
+    },
+    {
+      "id": "rect_basket_offline_v2_object",
+      "file": "grasp/artifacts/rect_basket_offline_v2_object.npz",
+      "status": "physical_candidate_quality_gates_failed",
+      "meaning": "Free basket poses from the same physical trajectory, aligned to the executed robot motion.",
+      "source": "outputs/humanoid-real2sim/2026-10-22/sequence_1019__09_lined_rect_basket_dynamics/runs/11-52-04.668402+0800/object_executed.npz",
+      "sha256": "92025dc55780a38400d118f9384cca64cbb931e2c34c37ba2b2eabeccdd4839b",
+      "bytes": 40902
+    },
+    {
+      "id": "rect_basket_offline_v2_pose",
+      "file": "grasp/artifacts/rect_basket_offline_v2_pose.png",
+      "status": "physical_candidate_quality_gates_failed",
+      "meaning": "5-second comparison: reference, direct PD fall, and improved physical carry with the new objective.",
+      "source": "outputs/humanoid-real2sim/2026-10-22/sequence_1019__09_lined_rect_basket_dynamics/runs/11-52-04.668402+0800/comparison_0250.png",
+      "sha256": "719b6bf435caa94d002ce591083b45662d2aaaafd3e7b9a2e14030043b68f9d6",
+      "bytes": 41876
+    }
+  ]
+}

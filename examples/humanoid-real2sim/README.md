@@ -1,8 +1,14 @@
 # Humanoid real2sim in RoboSimStudio
 
-This directory holds task descriptions, configuration, source assets, motions, review evidence, and stage ledgers. The executable task code is in [`scripts/humanoid-real2sim/tasks/`](../../scripts/humanoid-real2sim/README.md); shared algorithms and the tracker page are in [robosimstudio.humanoid_real2sim](../../robosimstudio/humanoid_real2sim/README.md). [Curated action cases](cases/README.md) and [user feedback](cases/feedback/README.md) describe reusable lessons. New routine candidates and logs belong in `outputs/humanoid-real2sim/`.
+This directory is a knowledge library organized by reusable interaction: [grasp](grasp), [hand push](hand-push), [foot push](foot-push), [kneeling](kneeling), [tool use](tool-use), [composed actions](composed-actions), [tracking](tracking), [visualization](visualization), [scene physics](scene-physics), and [task analysis](task-analysis). The [example contract](KNOWLEDGE.md) separates accepted results in `results/` from failure, comparison, and review evidence in `artifacts/`; each case also states its code path, provenance, acceptance scope, and limits. [User feedback](feedback/README.md) remains searchable. Full task data, assets, and stage ledgers live under the dated `outputs` directory. Executable task code is in [`scripts/humanoid-real2sim/tasks/`](../../scripts/humanoid-real2sim/README.md); shared algorithms and the tracker page are in [robosimstudio.humanoid_real2sim](../../robosimstudio/humanoid_real2sim/README.md).
 
-Binary example assets and motions use Git LFS through the repository's `.gitattributes`; scripts and package code use ordinary Git. After cloning, run `git lfs pull` before loading example motions or meshes.
+[Harness review and remaining gaps](HARNESS_REVIEW.md) records the migration evidence and the still-unmigrated historical script writers.
+
+The complete record of one skill run belongs in `outputs/humanoid-real2sim/<date>/<task>/runs/<run-id>/`: date first, task second, with intermediate and final files, successful and failed candidates, logs, and checks. That directory is Git ignored. The historical 1012/1019 task results were copied and SHA-256 checked under `outputs/humanoid-real2sim/2026-10-20/<task>/historical_examples/`; the previously selected task folders have moved to each task's `curated_snapshot/`. [curation_manifest.json](curation_manifest.json) lists the local paths. The old `kick_basket` output experiments are under the same date's `kick_basket/legacy_outputs/`. The date layer records **migration date**, not original experimental time. After review, write the transferable knowledge here and link local evidence in outputs. A run's final file is not automatically accepted motion or training data. Versioned final ScaleTrack packages have their own archive location.
+
+The [result manifest](results_manifest.json) lists five scoped kinematic outcomes, including robot motion and available same-frame object estimates. The [evidence manifest](evidence_manifest.json) lists supporting comparison images, failed or pending motion, and review JSON. All selected files carry hashes; binaries under `examples` use Git LFS (`git lfs pull` after cloning). Complete task runs and assets in Git-ignored `outputs` remain local unless exported separately. Scripts and knowledge text use ordinary Git.
+
+Start with the [palm-first grasp comparison](grasp/palm-first-long-handle-grasp.md) for a before/after image and motion pair, or the [round-basket foot-push case](foot-push/foot-hook-forearm-return-basket.md) for user screenshots, a wrong-window counterexample, and a clearly pending full-window motion. Run `python scripts/humanoid-real2sim/audit_knowledge.py` to verify the portable example bundle; add `--require-archive` to check local outputs too.
 
 This editor plays a ScaleTrack reference with the ScaleBridge BFM tracker while
 **RoboSimStudio alone steps physics**. The ScaleBridge Python process performs
@@ -34,9 +40,9 @@ For the 1012 brush pickup candidate, the 6–12 second window is:
 
 ```bash
 .venv/bin/python scripts/humanoid-real2sim/kinematic_viewer.py \
-  --motion examples/humanoid-real2sim/brush_pick_1012/retarget/handle_kinematic_v1/motion.npz \
+  --motion outputs/humanoid-real2sim/2026-10-20/brush_pick_1012/curated_snapshot/retarget/handle_kinematic_v1/motion.npz \
   --scene-file scripts/humanoid-real2sim/tasks/brush_pick_1012/scene.py \
-  --object-track examples/humanoid-real2sim/brush_pick_1012/retarget/handle_kinematic_v1/object_estimate.npz \
+  --object-track outputs/humanoid-real2sim/2026-10-20/brush_pick_1012/curated_snapshot/retarget/handle_kinematic_v1/object_estimate.npz \
   --object-name green_hand_brush --start-frame 300 --stop-frame 600 --port 8090
 ```
 

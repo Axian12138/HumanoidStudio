@@ -20,6 +20,7 @@
   <div class="title"><strong>Stage 3 · Retarget 预览</strong><br>青色虚影：原始 human motion</div>
   <button id="play" class="play">▶ 播放</button>
   <select id="task" aria-label="跳转到任务" style="font:inherit;color:#eaf2fb;background:#26394d;border:1px solid #506881;border-radius:9px;padding:8px;max-width:210px"><option value="">整段动作</option></select>
+  <select id="rate" aria-label="播放倍率" style="font:inherit;color:#eaf2fb;background:#26394d;border:1px solid #506881;border-radius:9px;padding:8px"><option value="1">1×</option><option value="0.5">0.5×</option><option value="0.25">0.25×</option><option value="0.1">0.1×</option></select>
   <input id="seek" class="seek" type="range" aria-label="源动作进度条">
   <div id="time" class="time">加载中</div>
   <button id="reset">回到起点</button>
@@ -45,11 +46,13 @@
       if(!seeking) $('seek').value=state.cursor;
       const frame=seeking?Number($('seek').value):state.cursor;
       $('time').textContent=`${(state.source_offset_s+frame/state.fps).toFixed(2)} / ${(state.source_offset_s+(state.stop-1)/state.fps).toFixed(2)} s`;
+      $('rate').value=String(state.playback_rate??1);
       $('play').textContent=state.playing?'⏸ 暂停':'▶ 播放';
-      $('hint').textContent=`本段帧 ${frame} · 录制时间 ${(state.source_offset_s+frame/state.fps).toFixed(2)} s · 青色虚影：原始 human motion · ${state.object_track?'物体估计轨迹：'+state.object_track+' · ':''}仅运动学，无物理步进。`;
+      $('hint').textContent=`本段帧 ${frame} · 录制时间 ${(state.source_offset_s+frame/state.fps).toFixed(2)} s · 青色：人体骨架 · ${state.rigid_track?'橙/粉：左/右手 rigid tracker；浅色小球：固定安装偏移后的腕点 · ':''}${state.context_mesh?'棕色：桌子场景参照 · ':''}${state.object_track?'物体估计轨迹：'+state.object_track+' · ':''}${state.scene_tracks?.length?'物体／机构估计轨迹：'+state.scene_tracks.map(t=>t.name).join('、')+' · ':''}仅运动学，无物理步进。`;
     }catch(error){$('hint').textContent=`连接中断：${error.message}`;}
   }
   $('play').onclick=()=>command('toggle');
+  $('rate').onchange=()=>command('rate',Number($('rate').value));
   $('reset').onclick=()=>command('reset');
   $('task').onchange=()=>{if($('task').value!=='')command('seek',Number($('task').value))};
   $('seek').onpointerdown=()=>{seeking=true};

@@ -109,7 +109,9 @@ def _align_start_pose(sim, motion: ReferenceMotion) -> None:
     q = sim.pipeline.snapshot.joint_q.astype(np.float32).copy()
     labels = list(sim.model.joint_label)
     starts = sim.model.joint_q_start.numpy()
-    root = int(starts[label_index(labels, "floating_base")])
+    from robosimstudio.humanoid_real2sim.retarget.root_joint import root_joint_index
+
+    root = int(starts[root_joint_index(sim.model, motion.body_names[0])])
     q[root : root + 3] = motion.body_pos_w[0, 0]
     q[root + 3 : root + 7] = motion.body_quat_w[0, 0, [1, 2, 3, 0]]
     for name, value in zip(motion.joint_names, motion.joint_pos[0], strict=True):
@@ -238,11 +240,26 @@ def main() -> None:
     )
     parser.add_argument("--reference-video", type=Path, help="source human video synchronized to the motion clock")
     parser.add_argument(
+        "--reference-object-track", type=Path, help="kinematic object NPZ with position_w and quaternion_xyzw"
+    )
+    parser.add_argument("--reference-object-mesh", type=Path, help="visual mesh for the kinematic object ghost")
+    parser.add_argument(
+        "--reference-object-outline",
+        choices=("ellipse", "box"),
+        default="ellipse",
+        help="shape of the reference object's lightweight wire outline",
+    )
+    parser.add_argument(
         "--review-only", action="store_true", help="show cached physics and source motion without repair controls"
     )
     args = parser.parse_args()
     if args.reference_video is not None and not args.reference_video.is_file():
         parser.error(f"reference video does not exist: {args.reference_video}")
+    if (args.reference_object_track is None) != (args.reference_object_mesh is None):
+        parser.error("--reference-object-track and --reference-object-mesh must be supplied together")
+    for path in (args.reference_object_track, args.reference_object_mesh):
+        if path is not None and not path.is_file():
+            parser.error(f"reference object file does not exist: {path}")
     metadata = json.loads(args.metadata.read_text())
     worker_python = args.scalebridge_python or (
         SCALETRACK / ".venv/bin/python"
@@ -304,6 +321,9 @@ def main() -> None:
             stop_frame=args.stop_frame,
             show_reference=args.show_reference,
             reference_video=args.reference_video,
+            reference_object_track=args.reference_object_track,
+            reference_object_mesh=args.reference_object_mesh,
+            reference_object_outline=args.reference_object_outline,
             review_only=args.review_only,
         ).run()
     finally:

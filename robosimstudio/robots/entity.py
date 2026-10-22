@@ -287,7 +287,7 @@ class EntityEmbodiment(Entity):
                         builder,
                         stripped or source,
                         scale=self.spec.asset.scale,
-                        floating=self.spec.preserve_free_bodies,
+                        floating=None if self.spec.preserve_free_bodies else False,
                         enable_self_collisions=self.spec.import_self_collisions,
                         **({} if mount is None else {"xform": mount}),
                     )
@@ -295,7 +295,7 @@ class EntityEmbodiment(Entity):
                     builder.add_mjcf(
                         stripped or source,
                         scale=self.spec.asset.scale,
-                        floating=self.spec.preserve_free_bodies,
+                        floating=None if self.spec.preserve_free_bodies else False,
                         collapse_fixed_joints=False,
                         enable_self_collisions=self.spec.import_self_collisions,
                         verbose=False,

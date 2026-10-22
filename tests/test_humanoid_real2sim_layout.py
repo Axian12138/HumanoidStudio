@@ -22,7 +22,7 @@ class HumanoidReal2SimLayoutTests(unittest.TestCase):
         self.assertFalse((ROOT / "robosimstudio/real2sim").exists())
 
     def test_curated_examples_have_narratives(self) -> None:
-        directory = ROOT / "examples/humanoid-real2sim/cases"
+        directory = ROOT / "examples/humanoid-real2sim"
         index = json.loads((directory / "index.json").read_text())
         self.assertTrue(index)
         for item in index:
@@ -33,7 +33,8 @@ class HumanoidReal2SimLayoutTests(unittest.TestCase):
                 self.assertTrue(narrative.startswith("# "))
 
     def test_only_canonical_example_path_remains(self) -> None:
-        self.assertTrue((ROOT / "examples/humanoid-real2sim/brush_sweep_1019/README.md").is_file())
+        self.assertTrue((ROOT / "examples/humanoid-real2sim/KNOWLEDGE.md").is_file())
+        self.assertFalse((ROOT / "examples/humanoid-real2sim/brush_sweep_1019").exists())
         self.assertFalse((ROOT / "examples/humanoid_motion_repair").exists())
         self.assertFalse((ROOT / "examples/real2sim").exists())
 
@@ -44,9 +45,10 @@ class HumanoidReal2SimLayoutTests(unittest.TestCase):
         self.assertFalse([p for p in samples.rglob("*") if p.suffix in {".py", ".sh", ".html"}])
         script = ROOT / "scripts/humanoid-real2sim/tasks/brush_sweep_1019/scene.py"
         self.assertTrue(script.is_file())
-        self.assertEqual(example_dir(script), samples / "brush_sweep_1019")
+        data = ROOT / "outputs/humanoid-real2sim/2026-10-20"
+        self.assertEqual(example_dir(script), data / "brush_sweep_1019/curated_snapshot")
         nested = ROOT / "scripts/humanoid-real2sim/tasks/sequence_1019/tasks/06_round_basket/scene.py"
-        self.assertEqual(example_dir(nested), samples / "sequence_1019/tasks/06_round_basket")
+        self.assertEqual(example_dir(nested), data / "sequence_1019/curated_snapshot/tasks/06_round_basket")
 
 
 if __name__ == "__main__":

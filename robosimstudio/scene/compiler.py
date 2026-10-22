@@ -665,8 +665,11 @@ def _build_base(
     # (0.125, 0.125, 0.15) -- pixel 27 under the tiled tracer -- so every scene
     # shipped a near-black floor regardless of what its table was painted. A
     # step below GROUND rather than equal to it, or the table edge stops reading.
+    ground_cfg = builder.default_shape_cfg.copy()
+    ground_cfg.mu = float(scene_spec.ground_friction) if scene_spec is not None else 1.0
     builder.add_ground_plane(
         height=float(scene_spec.ground_z) if scene_spec is not None else 0.0,
+        cfg=ground_cfg,
         color=FLOOR,
     )
     return _BaseBuild(

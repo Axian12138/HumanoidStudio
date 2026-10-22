@@ -9,8 +9,20 @@ from datetime import date
 from pathlib import Path
 
 REPOSITORY = Path(__file__).resolve().parents[2]
-EXAMPLES = REPOSITORY / "examples/humanoid-real2sim/cases"
+EXAMPLES = REPOSITORY / "examples/humanoid-real2sim"
 CASES = EXAMPLES / "feedback"
+KNOWLEDGE_CATEGORIES = (
+    "grasp",
+    "hand-push",
+    "foot-push",
+    "kneeling",
+    "tool-use",
+    "composed-actions",
+    "tracking",
+    "visualization",
+    "scene-physics",
+    "task-analysis",
+)
 STAGES = ("scene", "retarget", "track", "visualization", "archive", "cross-stage", "repository")
 CATEGORIES = ("input", "geometry", "interaction", "motion", "physics", "tooling", "delivery", "data", "code", "test")
 STATUSES = ("open", "fixed", "verified")
@@ -113,6 +125,7 @@ def main() -> None:
     search.add_argument("--action", default="")
     search.add_argument("--stage", choices=STAGES)
     search.add_argument("--category", choices=CATEGORIES)
+    search.add_argument("--knowledge-category", choices=KNOWLEDGE_CATEGORIES)
     search.add_argument("--kind", choices=("all", "examples", "feedback"), default="all")
     show = sub.add_parser("show", help="read an example narrative or a feedback record")
     show.add_argument("id")
@@ -203,26 +216,41 @@ def main() -> None:
         print(path.read_text())
     else:
         results = []
+        example_category = {item["id"]: item.get("category") for item in load_examples()}
         if args.kind in ("all", "examples"):
             for item in load_examples():
+                if args.knowledge_category and item.get("category") != args.knowledge_category:
+                    continue
                 if args.task and not score(args.task, item["task"]):
                     continue
                 if args.action and not score(args.action, " ".join(item["actions"] + item["keywords"])):
                     continue
                 narrative = (EXAMPLES / item["file"]).read_text()
                 rank = score(
-                    args.query, " ".join((item["title"], item["summary"], " ".join(item["keywords"]), narrative))
+                    args.query,
+                    " ".join(
+                        (
+                            item["title"],
+                            item["summary"],
+                            item.get("category", ""),
+                            " ".join(item["keywords"]),
+                            narrative,
+                        )
+                    ),
                 )
                 if rank:
                     results.append(
                         (
                             rank,
-                            f"example {item['id']} [{item['task']}/{item['status']}] "
+                            f"example {item['id']} [{item.get('category', 'uncategorized')}/{item['status']}; "
+                            f"{item['task']}] "
                             f"{item['title']} — {item['summary']} ({EXAMPLES / item['file']})",
                         )
                     )
         if args.kind in ("all", "feedback"):
             for item in load_cases():
+                if args.knowledge_category and example_category.get(item.get("example_id")) != args.knowledge_category:
+                    continue
                 if args.stage and item["stage"] != args.stage:
                     continue
                 if args.category and item["category"] != args.category:

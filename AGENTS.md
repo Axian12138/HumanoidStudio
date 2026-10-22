@@ -66,7 +66,7 @@ command and every reading are in
 
 For every task in this repository, record user reported failures, omissions,
 and new requirements in
-[`examples/humanoid-real2sim/cases/feedback/`](examples/humanoid-real2sim/cases/feedback/README.md).
+[`examples/humanoid-real2sim/feedback/`](examples/humanoid-real2sim/feedback/README.md).
 Search by natural-language task, action, and symptom before solving; read the
 matching example's successful motion, failure mechanism, code, and evidence.
 Record feedback immediately and classify it as an error, new requirement, or
@@ -85,12 +85,23 @@ the main skill. Change the main skill only for feedback about the harness itself
 Reusable retarget, tracker, and visualization code belongs under
 [`robosimstudio/humanoid_real2sim/`](robosimstudio/humanoid_real2sim/README.md), independent of
 the skill. Put task programs and launchers under
-[`scripts/humanoid-real2sim/`](scripts/humanoid-real2sim/README.md), and keep task
-descriptions, configurations, motions, assets, and review results under
-`examples/humanoid-real2sim/`. Example binaries use Git LFS; Python code uses
-ordinary Git. Put reusable, language-rich, user-corrected cases in
-[`examples/humanoid-real2sim/cases/`](examples/humanoid-real2sim/cases/README.md); put ordinary candidates,
-duplicate cases, logs, and scratch results in `outputs/humanoid-real2sim/`. Search with
+[`scripts/humanoid-real2sim/`](scripts/humanoid-real2sim/README.md).
+The harness keeps experiments and examples separate: put every intermediate and
+final result of one skill use, including good and bad candidates, logs, and
+checks, in `outputs/humanoid-real2sim/<date>/<task>/runs/<run-id>/` (date first,
+task second). After review, put distilled action descriptions and code/evidence
+links under `examples/humanoid-real2sim/`; keep task data in outputs. In
+[`examples/humanoid-real2sim/`](examples/humanoid-real2sim/README.md),
+explain in complete language which candidates succeeded, which failed, why,
+what evidence supports each conclusion, and what remains unverified. An output
+does not become an example merely by being the last or best file in a run.
+Organize knowledge by reusable interaction and failure mechanism; task-named
+data folders belong in outputs, not the knowledge taxonomy.
+Full task data in outputs is local and Git ignored; each indexed example also
+includes small, hashed review evidence in `artifacts/`. An accepted outcome
+for a stated scope goes in `results/` as motion NPZ with any needed object
+track or image; pending candidates stay in `artifacts/` (Git LFS for binaries).
+Python code and case text use ordinary Git. Search with
 `python scripts/humanoid-real2sim/feedback.py search --query '<task action symptom>'`.
 The humanoid pipeline has one canonical name and location. Do not recreate
 parallel legacy packages or directory aliases.

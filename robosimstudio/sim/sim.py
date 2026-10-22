@@ -104,9 +104,8 @@ class Sim(EnvBase):
             reset. Read by :meth:`reset_scene`, which hands it to each entity's
             own ``reset``."""
         self._start_joint_q: np.ndarray | None = None
-        """The articulation this run started from. Captured rather than compiled,
-        because the warm-up steps real physics between the compiled pose and the
-        first observation."""
+        """The articulation before the first reset and physics warm-up.
+        Entity resets may then place episode-specific coordinates on top."""
         self._warned_nonfinite = False
         """Whether :meth:`run` has already said the state diverged. Once per
         episode: a loop calling ``run`` a hundred times should say it once, and
@@ -649,6 +648,11 @@ class Sim(EnvBase):
         """
         import newton
 
+        if self._start_joint_q is None and self.model.body_count:
+            # The first reset precedes warm-up. A free joint imported as part
+            # of an embodiment may have no controller or entity reset writer;
+            # capturing after warm-up would silently keep its advanced pose.
+            self._start_joint_q = np.asarray(self.pipeline.state_0.joint_q.numpy(), dtype=np.float32).copy()
         if self._start_joint_q is not None:
             self.pipeline.state_0.joint_q.assign(self._start_joint_q)
             self.pipeline.state_1.joint_q.assign(self._start_joint_q)
@@ -701,12 +705,6 @@ class Sim(EnvBase):
         """
         obs, info = super().reset()
         self._warned_nonfinite = False  # the finite flags were just cleared too
-        if self._start_joint_q is None and self.model.body_count:
-            # After the base class has warmed up *and* re-posed, so this is the
-            # articulation the first episode is actually about to be stepped
-            # from -- which is what every later episode has to be given back.
-            # A deformable-only scene has no ``joint_q`` at all, hence the guard.
-            self._start_joint_q = np.asarray(self.pipeline.snapshot.joint_q, dtype=np.float32).copy()
         self.settled_body_q = self._body_q().copy()
         return obs, info
 

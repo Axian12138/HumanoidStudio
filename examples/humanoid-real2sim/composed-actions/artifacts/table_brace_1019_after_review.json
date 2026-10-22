@@ -1,0 +1,48 @@
+{
+  "right_palm_y": {
+    "min": -2.36567907963424,
+    "mean": -2.360765293228207,
+    "max": -2.346201107553341
+  },
+  "right_palm_bottom_z": {
+    "min": 0.7957197839744511,
+    "mean": 0.7960044743523577,
+    "max": 0.7977692428569729
+  },
+  "right_palm_down_cos": {
+    "min": 0.9981544662959634,
+    "mean": 0.9996912732658763,
+    "max": 0.999989404048385
+  },
+  "right_forearm_bottom_z": {
+    "min": 0.755995676869185,
+    "mean": 0.758046817145835,
+    "max": 0.7693465890453313
+  },
+  "right_wrist_bottom_z": {
+    "min": 0.7763086388769727,
+    "mean": 0.7778496202186604,
+    "max": 0.7854871217626016
+  },
+  "left_palm_bottom_z": {
+    "min": 0.7748327247241719,
+    "mean": 0.9401805725472985,
+    "max": 1.1133072517682776
+  },
+  "exact_hand_mesh_tabletop_sweep": {
+    "left": {
+      "minimum_inside_tabletop_z_m": 0.8181868896313951,
+      "worst_recording_time_s": 86.66,
+      "penetrating_geom_frame_count": 0
+    },
+    "right": {
+      "minimum_inside_tabletop_z_m": 0.7578106525073154,
+      "worst_recording_time_s": 85.74,
+      "penetrating_geom_frame_count": 0
+    }
+  },
+  "maximum_joint_speed_rad_s": 5.999989032745361,
+  "joint_limit_max_violation_rad": 0.0,
+  "tabletop_z_m": 0.754,
+  "table_near_edge_y_m": -2.11905405
+}

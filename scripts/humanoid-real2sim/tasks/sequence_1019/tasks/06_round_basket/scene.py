@@ -9,7 +9,7 @@ import robosimstudio as rss
 HERE = example_dir(__file__)
 ROOM = HERE.parents[1] / "assets/ikea_1012_room.obj"
 BASKET = HERE / "round_laundry_basket_visual.obj"
-INITIAL_POSITION = (0.10, -1.92, 0.001)  # provisional 1019 reach-aligned pose
+INITIAL_POSITION = (0.25, -1.78, 0.001)  # provisional 1019 foot/shin contact fit
 
 
 def build_sim(asset, motion):

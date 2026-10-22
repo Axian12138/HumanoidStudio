@@ -1,0 +1,38 @@
+{
+  "status": "stage4_baseline_contact_mismatch",
+  "frames": 150,
+  "source_contact_window_frames": [
+    67,
+    105
+  ],
+  "body_position_errors": {
+    "pelvis": {
+      "mean_m": 0.03420187834587808,
+      "contact_window_mean_m": 0.03909941444969204,
+      "max_m": 0.057959566551881565,
+      "first_over_5cm_frame": 93,
+      "first_over_20cm_frame": null
+    },
+    "left_ankle_roll_link": {
+      "mean_m": 0.08536772672324332,
+      "contact_window_mean_m": 0.1390983027085573,
+      "max_m": 0.17368237023270017,
+      "first_over_5cm_frame": 46,
+      "first_over_20cm_frame": null
+    },
+    "right_ankle_roll_link": {
+      "mean_m": 0.032439760839753654,
+      "contact_window_mean_m": 0.03693467288113335,
+      "max_m": 0.0500839676689944,
+      "first_over_5cm_frame": 149,
+      "first_over_20cm_frame": null
+    }
+  },
+  "basket_actual_xy_displacement_m": 0.014220857878133038,
+  "basket_reference_xy_displacement_m": 0.2117887809964499,
+  "basket_motion_direction_dot": 0.9996899442656133,
+  "basket_final_position_error_m": 0.19786789387661316,
+  "basket_first_25_frames_max_xy_drift_m": 0.0,
+  "candidate_motion_exported": false,
+  "reason": "Pelvis remained upright, but foot-to-basket contact did not reproduce reference displacement."
+}

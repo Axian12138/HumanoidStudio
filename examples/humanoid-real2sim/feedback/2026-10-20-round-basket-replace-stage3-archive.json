@@ -1,0 +1,30 @@
+{
+  "id": "2026-10-20-round-basket-replace-stage3-archive",
+  "kind": "new_requirement",
+  "stage": "archive",
+  "category": "source_of_truth",
+  "impact": "high",
+  "task": "sequence_1019/06_round_basket",
+  "title": "以新篮子运动学轨迹和物理参数替换原 ScaleTrack 数据包",
+  "narrative": "用户确认新篮子位置更好，要求原位替换 round-basket-foot-push-kinematic-v1 的数据。归档内容是 Stage 3 结束的机器人运动学动作、新拟合篮子运动学轨迹及 Stage 5 调整的物理属性；Stage 4 仅用作诊断，不得将其 rollout 当作 motion 或物体 GT。",
+  "expected": "目标数据包中的机器人 7 字段与原 Stage 3 motion 完全一致；物体 trajectory/主 NPZ 均为新拟合的 850 帧路径；YAML 引用确有 1.6kg、低重心 0.08m、摩擦 0.8 的新 USD；旧篮子轨迹生成的视觉特征失效并移除；安装目录重载验证。",
+  "observed": "旧归档篮子初始 X=0.12475m、源 USD mass=0.65kg、静/动摩擦 0.6/0.5，且包含基于旧路径生成的 1.7GB 视觉数组。",
+  "source": "本会话用户指令，2026-10-20",
+  "example_id": "foot-hook-forearm-return-basket",
+  "actions": [
+    "脚推圆篮",
+    "运动学轨迹归档",
+    "物理资产版本化"
+  ],
+  "date": "2026-10-20",
+  "status": "verified",
+  "recurrences": 1,
+  "cause": "先前数据包引用旧篮子轨迹和质量 0.65 kg 的公共 USD，并内嵌以旧轨迹生成的视觉特征；若只改 YAML 或只覆盖物体轨迹，主 motion、USD 与视觉数组会互相矛盾。",
+  "routing": {
+    "main_skill": "不修改：用户限定的 Stage 3 运动学归档优先于通用 Stage 4 rollout 归档流程。",
+    "shared_tools": "新增任务专用归档与 USD 物理参数脚本；无需更改通用资产或源 USD。",
+    "action_example": "更新 foot-hook-forearm-return-basket.md 的归档状态、字段来源及旧视觉 GT 失效边界。"
+  },
+  "fix": "用旧包 metadata/source_motion.npz 的 Stage 3 七个机器人字段重建主 motion，加入重拟合篮子运动学轨迹及同帧速度；复制公共篮子 USD 为包内新变体并在 MassAPI/两处绑定的 PhysicsMaterialAPI 设置质量 1.6 kg、局部重心 z=0.08 m、静/动摩擦 0.8。更新 YAML 的 scene_setup.object/objects 真实 USD 路径；移除旧路径的 RGB/mask/DINO 与 kinematic_capture；旧包移入运行目录备份，原路径安装新包。",
+  "validation": "从安装目录重新载入，12 项检查全通过：850 帧、43 关节/50 身体、Stage 3 机器人数组完全相同、篮子主 NPZ 与 sidecar 逐帧一致、初始 X=0.07475285 m、无视觉旧数组、无 Stage 4 rollout。Blender 重新打开包内 USD，读到 mass 1.60000002 kg、COM z 0.079999998 m、静摩擦 0.80000001，65 个碰撞网格仍在。目标 metadata/validation.json 记录哈希。"
+}

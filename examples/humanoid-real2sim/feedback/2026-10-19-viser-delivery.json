@@ -1,0 +1,23 @@
+{
+  "id": "2026-10-19-viser-delivery",
+  "stage": "visualization",
+  "category": "delivery",
+  "impact": "medium",
+  "title": "3.2 候选交付时遗漏用户要求的 Viser 交互网页",
+  "expected": "给出能直接打开并跳帧审阅人体、机器人、物体的 Viser URL。",
+  "observed": "用户在 1019 任务中再次指定应使用本 skill 交付 Viser 可视化网页。",
+  "source": "本仓库 2026-10-19 用户反馈；outputs/humanoid-real2sim/2026-10-20/brush_sweep_1019/curated_snapshot/README.md",
+  "date": "2026-10-19",
+  "status": "fixed",
+  "recurrences": 1,
+  "fix": "已按原任务的 Viser/RSS 播放器交付可跳帧页面；对应页面与 motion 证据留在 brush-pick-sweep-return-1019 样本及任务 README。",
+  "validation": "任务 README 记录 Viser 审阅地址 http://localhost:8411/；服务存活需在每次交付前重新检查。",
+  "task": "brush_sweep_1019",
+  "actions": [
+    "运动学审阅",
+    "抓刷子",
+    "扫桌"
+  ],
+  "example_id": "brush-pick-sweep-return-1019",
+  "narrative": "取刷、跪地扫桌、放回动作必须在可跳帧的 Viser 页面同时看到人体、机器人、物体；只交运动文件无法让用户发现手背穿模或膝盖悬空。"
+}

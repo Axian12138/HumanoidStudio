@@ -14,9 +14,10 @@
 | --- | --- |
 | 主 `SKILL.md` | 改变 harness 的阶段路由、检索、复用、验证、反馈吸收或交付契约。保持短规则；详细步骤放阶段引用。单个动作的几何规则不进入主 skill。 |
 | `robosimstudio/humanoid_real2sim/` 或其他正式包 | 修复共享算法或接口，或抽出已在多个任务中稳定复用的操作。保留任务参数输入，不把某个 take 的坐标和时窗固化进工具。CLI 放 `scripts/`。 |
-| `examples/humanoid-real2sim/cases/` | 反馈揭示可迁移的动作、接触、组合或失败机制。语言先解释原因、方案、结果及迁移边界，再链接代码、motion、审查和 stage ledger。已有样本可覆盖时更新它。 |
-| 单次任务目录或 `outputs/` | 只属于该 take 的参数、候选和验证；其版本与批准状态记入 stage ledger。未经反馈、无迁移价值的尝试留在 `outputs/`。 |
+| `examples/humanoid-real2sim/` | 反馈揭示可迁移的动作、接触、组合或失败机制。自然语言明确区分失败反例、通过范围明确的正例和待验证候选，再解释原因、方案、结果及迁移边界，链接代码、motion、审查和 stage ledger。已有样本可覆盖时更新它。 |
+| `outputs/humanoid-real2sim/<date>/<task>/` | 一次 skill 使用的全量结果，日期一级、任务二级，包括中间及最终文件、好坏候选、日志和验证。完成运行不自动成为 example。 |
+| `examples/humanoid-real2sim/` | 按通用动作分类的文字知识、代码路径和精选直接证据；证据清单记录哈希、来源与验收范围。任务全量数据留在 outputs。 |
 
 先在反馈库登记类型、原话或准确转述、来源、观察与期望。可以暂记三项路由为 `pending`；调查后记录每项 `update`、`none` 或 `defer` 及理由。修复/实现后在同一记录写清原因、代码或数据改动、验证结果，并更新对应样本。只有三项路由均已判断且验证证据足够，才标记 `verified`。`none` 也是经过判断的结果，不代表漏看。
 
-查询与更新接口见 [反馈库说明](../../../examples/humanoid-real2sim/cases/feedback/README.md)。
+查询与更新接口见 [反馈库说明](../../../examples/humanoid-real2sim/feedback/README.md)。

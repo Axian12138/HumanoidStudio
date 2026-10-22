@@ -73,7 +73,7 @@ def main():
     limits = {j.get("name"): float(j.find("limit").get("velocity", "20"))
               for j in ET.parse(URDF).findall("joint") if j.find("limit") is not None}
     speed_limit = np.asarray([limits.get(name, 20.0) for name in names])
-    with np.load(OUT / "motion.npz") as motion, np.load(HERE / "body_prior.npz") as prior, np.load(OUT / "object_estimate.npz") as obj:
+    with np.load(OUT / "motion.npz") as motion, np.load(HERE / "hoi_v3_nonprehensile/body_prior_69_76.npz") as prior, np.load(OUT / "object_estimate.npz") as obj:
         q = motion["joint_pos"]
         old = prior["joint_pos"]
         obj_pos = obj["position_w"]

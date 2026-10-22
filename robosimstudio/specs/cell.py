@@ -43,6 +43,8 @@ class CellSpec:
     Attributes:
         name: Registry key.
         ground_z: World z of the floor plane [m].
+        ground_friction: Coefficient of friction of the floor plane. The
+            default is Newton's 1.0; a scene can lower it for a sliding task.
         surface_z: World z of the work surface's top [m]. Equal to
             :attr:`ground_z` when the scene has no table, and that equality is
             the whole of what "on the ground" means here.
@@ -63,6 +65,7 @@ class CellSpec:
 
     name: str
     ground_z: float = 0.0
+    ground_friction: float = 1.0
     surface_z: float = 0.0
     center: Vec3 = (0.0, 0.0, 0.0)
     half: Vec3 | None = None

@@ -20,7 +20,7 @@ from robosimstudio.humanoid_real2sim.retarget.motion_fields import MotionFields,
 
 HERE = example_dir(__file__)
 ROOT = HERE.parents[1]
-PRIOR = HERE / "body_prior.npz"
+PRIOR = HERE / "hoi_v3_nonprehensile/body_prior_69_76.npz"
 ORDER = ROOT / "retarget/ground_support_27_end/sidecars/motion_order.json"
 MODEL = Path(
     "/home/galbot/workspace/ScaleTrack/source/scaletrack/scaletrack/assets/"
