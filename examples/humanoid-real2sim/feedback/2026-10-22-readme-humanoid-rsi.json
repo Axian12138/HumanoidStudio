@@ -1,0 +1,38 @@
+{
+  "id": "2026-10-22-readme-humanoid-rsi",
+  "kind": "new_requirement",
+  "stage": "repository",
+  "category": "delivery",
+  "impact": "low",
+  "task": "根README介绍humanoid real2sim与RSI",
+  "title": "根README转为humanoid real2sim与RSI介绍并保留原版",
+  "narrative": "用户要求将仓库首页改为团队humanoid real2sim与RSI的介绍，同时备份原有README。",
+  "expected": "根README清晰介绍两个方向、实现边界与入口；原README逐字节保存在根目录备份文件。",
+  "observed": "当前首页以通用RoboSimStudio操作仿真工具为主，humanoid只有短段落，缺少RSI介绍。",
+  "source": "2026-10-22 用户会话",
+  "example_id": "",
+  "actions": [
+    "项目介绍",
+    "文档备份"
+  ],
+  "date": "2026-10-22",
+  "status": "verified",
+  "recurrences": 1,
+  "cause": "项目首页仍以基础仿真工具为主，尚未反映当前humanoid real2sim与RSI工作方向。",
+  "routing": {
+    "skill": {
+      "decision": "none",
+      "reason": "仅调整项目介绍，不改变流程或验收契约"
+    },
+    "tool": {
+      "decision": "none",
+      "reason": "没有运行时代码变更"
+    },
+    "example": {
+      "decision": "none",
+      "reason": "没有新增动作实验或可迁移交互结论"
+    }
+  },
+  "fix": "将根README改为中文项目介绍，覆盖五阶段重建、RSI隔离学习与G1验证、代码和知识入口、运行依赖及当前实现状态；原版完整备份为README.original.md。",
+  "validation": "README.original.md与修改前HEAD中README逐字节一致；新旧README本地链接目标均存在、代码围栏配对；git diff --check通过。仅文档变更，未运行仿真测试。"
+}
