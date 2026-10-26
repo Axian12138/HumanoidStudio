@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: Apache-2.0
-"""``examples/08_demos/route_the_cable``: from the robot's home pose, the routine routes the cable and seats it, by friction.
+"""``reference-knowledge/08_demos/route_the_cable``: from the robot's home pose, the routine routes the cable and seats it, by friction.
 
 The demo ends by opening the studio with a **Run** button, so it is run the way
 a person would: ``main()`` with :func:`robosimstudio.view` replaced by a stub
@@ -34,7 +34,7 @@ TIER = "slow"
 """A GPU, one scene built once, and a 42 s routine: 90 s at 28 steps a second, measured."""
 
 ROOT = Path(__file__).resolve().parents[1]
-FOLDER = ROOT / "examples" / "08_demos" / "route_the_cable"
+FOLDER = ROOT / "reference-knowledge" / "08_demos" / "route_the_cable"
 SCRIPT = FOLDER / "route_the_cable.py"
 NAME = "Route the cable"
 
@@ -193,7 +193,7 @@ class TestTheShape(unittest.TestCase):
 
     def test_the_folder_says_how_to_run_it(self) -> None:
         readme = (FOLDER / "README.md").read_text(encoding="utf-8")
-        self.assertIn("examples/08_demos/route_the_cable/route_the_cable.py", readme)
+        self.assertIn("reference-knowledge/08_demos/route_the_cable/route_the_cable.py", readme)
         self.assertIn("media/route_the_cable.webp", readme)
 
 

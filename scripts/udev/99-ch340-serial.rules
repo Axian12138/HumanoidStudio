@@ -1,6 +1,6 @@
 # Any WCH CH340/CH341 USB-serial adapter (idVendor 1a86, idProduct 55d3) gets a
 # stable /dev/ch340-<serial> symlink, keyed by the adapter's own serial number
-# rather than a role like "left"/"right" -- see examples/09_teleop/README.md's "The udev rule" section
+# rather than a role like "left"/"right" -- see reference-knowledge/09_teleop/README.md's "The udev rule" section
 # for why: the same adapter should resolve to the same device path regardless
 # of which desk or which arm it is plugged into today, and a calibration file
 # keyed by that same serial (see scripts/calibrate_leader_arms.py and

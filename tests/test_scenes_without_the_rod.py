@@ -2,7 +2,7 @@
 """Scenes build and step with the rod pack left out.
 
 ``tests/test_rod_is_a_pack.py`` asks the registries; this asks the simulator.
-A tree without ``examples/03_rope/`` still has to put a robot, rigid bodies, a
+A tree without ``reference-knowledge/03_rope/`` still has to put a robot, rigid bodies, a
 post, a sheet and a sponge on a bench and step them -- and the post is the one
 that used to be impossible: ``rss.post`` named an entity only the rod domain
 registered, so the constructor was public and the thing it built was not.

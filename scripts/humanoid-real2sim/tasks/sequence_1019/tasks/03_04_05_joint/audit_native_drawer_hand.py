@@ -18,13 +18,14 @@ def main():
     p.add_argument("model", type=Path)
     p.add_argument("--window", nargs=2, type=float, default=[49.8, 54])
     p.add_argument("--active-window", nargs=2, type=float, default=[51.2, 53.38])
+    p.add_argument("--source-start-s", type=float, default=27.0)
     a = p.parse_args()
     m, z = mujoco.MjModel.from_xml_path(str(a.model)), np.load(a.candidate / "motion.npz")
     d = mujoco.MjData(m)
     order = json.loads((a.candidate / "motion_order.json").read_text())
     addr = [m.joint(n).qposadr[0] for n in order["robot_joint_names"]]
     times = np.arange(round(a.window[0] * 100), round(a.window[1] * 100) + 1) / 100
-    source = 27 + np.arange(len(z["joint_pos"])) / 50
+    source = a.source_start_s + np.arange(len(z["joint_pos"])) / 50
     root = Slerp(source, Rotation.from_quat(z["body_quat_w"][:, 0, [1, 2, 3, 0]]))(times).as_quat()
     slide = np.load(a.candidate / "drawer_slide.npz")["position"]
     drawer_gid = next(
@@ -85,6 +86,12 @@ def main():
             hpoints = ((hand[2] @ hr.T + hp) - dp) @ dr
             forward, reverse, nearest = 0.0, 0.0, 0.3
             for part in drawer:
+                # Conservative broad phase: disjoint AABBs with 2cm clearance cannot
+                # contribute penetration or the near-surface query below.
+                if np.any(hpoints.max(axis=0) < part[0].bounds[0] - 0.02) or np.any(
+                    hpoints.min(axis=0) > part[0].bounds[1] + 0.02
+                ):
+                    continue
                 forward = max(forward, inside_depth(hpoints, part))
                 dpoints = ((part[2] @ dr.T + dp) - hp) @ hr
                 reverse = max(reverse, inside_depth(dpoints, hand))

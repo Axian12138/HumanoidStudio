@@ -22,7 +22,7 @@ from pathlib import Path
 TIER = "medium"
 """Builds scenes and runs graphs on a GPU."""
 
-EXAMPLES = Path(__file__).resolve().parents[1] / "examples"
+EXAMPLES = Path(__file__).resolve().parents[1] / "reference-knowledge"
 
 HAS_GAP = importlib.util.find_spec("gap") is not None
 NO_GAP = "the graph runtime is not installed (the [gap] extra)"

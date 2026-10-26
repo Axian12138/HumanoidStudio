@@ -39,20 +39,22 @@ class TestTheExampleReadmes(unittest.TestCase):
         """The check itself, on a tree of one page and one clip, so it is known to bite."""
         tool = _tool()
         with tempfile.TemporaryDirectory() as root:
-            folder = Path(root) / "examples" / "00_x"
+            folder = Path(root) / "reference-knowledge" / "00_x"
             (folder / "media").mkdir(parents=True)
             (folder / "media" / "here.webp").write_bytes(b"")
             (folder / "README.md").write_text("![a](media/here.webp)\n![b](media/gone.webp)\n", encoding="utf-8")
-            tool.REPO, tool.EXAMPLES = Path(root), Path(root) / "examples"
-            self.assertEqual(["examples/00_x/README.md -> media/gone.webp"], tool.dangling_media())
+            tool.REPO, tool.EXAMPLES = Path(root), Path(root) / "reference-knowledge"
+            self.assertEqual(["reference-knowledge/00_x/README.md -> media/gone.webp"], tool.dangling_media())
 
     def test_every_demo_shows_its_clip(self) -> None:
         """The demos are what a visitor from the project page looks for: each one is seen running.
 
-        A demo is a folder under ``examples/08_demos/`` holding a script of its own name, and
+        A demo is a folder under ``reference-knowledge/08_demos/`` holding a script of its own name, and
         its README shows ``media/<name>.webp``, which is there."""
-        demos = sorted(p for p in (REPO / "examples" / "08_demos").iterdir() if (p / f"{p.name}.py").is_file())
-        self.assertTrue(demos, "no demo folders under examples/08_demos/")
+        demos = sorted(
+            p for p in (REPO / "reference-knowledge" / "08_demos").iterdir() if (p / f"{p.name}.py").is_file()
+        )
+        self.assertTrue(demos, "no demo folders under reference-knowledge/08_demos/")
         for folder in demos:
             with self.subTest(demo=folder.name):
                 readme = (folder / "README.md").read_text(encoding="utf-8")

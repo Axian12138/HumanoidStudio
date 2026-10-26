@@ -22,7 +22,7 @@ class HumanoidReal2SimLayoutTests(unittest.TestCase):
         self.assertFalse((ROOT / "robosimstudio/real2sim").exists())
 
     def test_curated_examples_have_narratives(self) -> None:
-        directory = ROOT / "examples/humanoid-real2sim"
+        directory = ROOT / "reference-knowledge/humanoid-real2sim"
         index = json.loads((directory / "index.json").read_text())
         self.assertTrue(index)
         for item in index:
@@ -33,15 +33,15 @@ class HumanoidReal2SimLayoutTests(unittest.TestCase):
                 self.assertTrue(narrative.startswith("# "))
 
     def test_only_canonical_example_path_remains(self) -> None:
-        self.assertTrue((ROOT / "examples/humanoid-real2sim/KNOWLEDGE.md").is_file())
-        self.assertFalse((ROOT / "examples/humanoid-real2sim/brush_sweep_1019").exists())
-        self.assertFalse((ROOT / "examples/humanoid_motion_repair").exists())
-        self.assertFalse((ROOT / "examples/real2sim").exists())
+        self.assertTrue((ROOT / "reference-knowledge/humanoid-real2sim/KNOWLEDGE.md").is_file())
+        self.assertFalse((ROOT / "reference-knowledge/humanoid-real2sim/brush_sweep_1019").exists())
+        self.assertFalse((ROOT / "reference-knowledge/humanoid_motion_repair").exists())
+        self.assertFalse((ROOT / "reference-knowledge/real2sim").exists())
 
     def test_code_and_example_data_are_separate(self) -> None:
         from robosimstudio.humanoid_real2sim.paths import example_dir
 
-        samples = ROOT / "examples/humanoid-real2sim"
+        samples = ROOT / "reference-knowledge/humanoid-real2sim"
         self.assertFalse([p for p in samples.rglob("*") if p.suffix in {".py", ".sh", ".html"}])
         script = ROOT / "scripts/humanoid-real2sim/tasks/brush_sweep_1019/scene.py"
         self.assertTrue(script.is_file())

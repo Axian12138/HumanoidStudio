@@ -54,7 +54,7 @@ TIER = "medium"
 """Builds the examples' scenes and steps them on the GPU."""
 
 ROOT = Path(__file__).resolve().parents[1]
-EXAMPLES = ROOT / "examples" / "09_teleop"
+EXAMPLES = ROOT / "reference-knowledge" / "09_teleop"
 
 BASE_HZ = 300
 """The virtual clock's base rate: the leader ticks every 3rd count, the page steps every 5th."""

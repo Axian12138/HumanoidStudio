@@ -11,8 +11,9 @@ __pycache__/
 dist/
 
 # Run output: episodes, videos and snapshots are evidence, not source.
+output/
 outputs/
-examples/live/run/
+reference-knowledge/live/run/
 
 # A stripped MJCF is written beside its source and removed afterwards; a crash
 # in between leaks one.

@@ -10,7 +10,7 @@ few lines that do it:
   arrow, press a button, move a slider;
 * **expectations** are what the physics must have done, read off the scene at
   named marks. A take whose expectation fails is not written into
-  ``examples/``: a slipped grasp must never ship.
+  ``reference-knowledge/``: a slipped grasp must never ship.
 
 A beat plays against the film (:class:`recording.lockstep.Film`): its page, its
 clock and its scene. Its seconds are the clip's, which at a take's ``speed`` of 1

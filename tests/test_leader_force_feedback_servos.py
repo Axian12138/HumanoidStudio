@@ -20,7 +20,7 @@ in ``test_leader_force_feedback_session.py``.
 records calls in order, because with force feedback the order *is* the safety
 claim. What these prove is which registers this code writes and when; that a
 real STS3215 then does what its register says is the rig checklist's to show
-(``examples/09_teleop/README.md``, its rig checklist).
+(``reference-knowledge/09_teleop/README.md``, its rig checklist).
 """
 
 from __future__ import annotations

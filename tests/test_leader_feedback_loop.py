@@ -34,7 +34,7 @@ The two clocks are stepped in virtual time in a fixed order -- the leader at
 100 Hz, the page at 60 Hz, on a 300 Hz base -- so nothing depends on how fast
 this machine is. That a real STS3215 then renders the registers written here as
 a force that feels like the scene is the rig checklist's to show
-(``examples/09_teleop/README.md``, its rig checklist).
+(``reference-knowledge/09_teleop/README.md``, its rig checklist).
 """
 
 from __future__ import annotations

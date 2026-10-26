@@ -2,7 +2,7 @@
 # SPDX-License-Identifier: Apache-2.0
 """Write each example folder's README sections from its scripts' docstrings.
 
-Every ``examples/<NN_name>/README.md`` holds two kinds of text. Between the
+Every ``reference-knowledge/<NN_name>/README.md`` holds two kinds of text. Between the
 markers ``<!-- examples:start ... -->`` and ``<!-- examples:end -->`` is one
 section per numbered script, written here from the script's docstring: its
 title, its clip (``media/<script>.webp``, when there is one), what it shows, and
@@ -16,7 +16,7 @@ Usage, from the repository root::
     uv run python scripts/example_readmes.py --check   # exit 1 if a README is out of date
 
 ``--check`` also refuses a clip in a ``media/`` folder that no page under
-``examples/`` shows, a page that shows a clip that is not there, and a numbered
+``reference-knowledge/`` shows, a page that shows a clip that is not there, and a numbered
 folder with no README to write into.
 """
 
@@ -29,7 +29,7 @@ import sys
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parents[1]
-EXAMPLES = REPO / "examples"
+EXAMPLES = REPO / "reference-knowledge"
 
 START = "<!-- examples:start: written by scripts/example_readmes.py from each script's docstring -->"
 END = "<!-- examples:end -->"
@@ -90,7 +90,9 @@ def section(folder: Path, script: Path, flat: set[str]) -> str:
     for match in REQUIRES.finditer(" ".join(docstring.split())):
         if match.group("extra") not in extras:
             extras.append(match.group("extra"))
-    run = " ".join(["uv run", *(f"--extra {extra}" for extra in extras), f"examples/{folder.name}/{script.name}"])
+    run = " ".join(
+        ["uv run", *(f"--extra {extra}" for extra in extras), f"reference-knowledge/{folder.name}/{script.name}"]
+    )
 
     parts = [f"## {title}", ""]
     clip = folder / "media" / f"{script.stem}.webp"
@@ -129,7 +131,7 @@ def written(folder: Path, flat: set[str]) -> tuple[str, str]:
 
 
 def unshown_media() -> list[str]:
-    """Clips under ``examples/*/media/`` that no page under ``examples/`` shows."""
+    """Clips under ``reference-knowledge/*/media/`` that no page under ``reference-knowledge/`` shows."""
     shown = {
         (page.parent / ref).resolve()
         for page in EXAMPLES.rglob("*.md")
@@ -140,7 +142,7 @@ def unshown_media() -> list[str]:
 
 
 def dangling_media() -> list[str]:
-    """Clips a page under ``examples/`` shows that are not on disk: ``page -> clip``.
+    """Clips a page under ``reference-knowledge/`` shows that are not on disk: ``page -> clip``.
 
     The other half of :func:`unshown_media`. A clip renamed or moved -- an
     extra clip a recorder take now writes under a new name, a demo moved to
@@ -172,7 +174,7 @@ def main(argv: list[str] | None = None) -> int:
         for path in stale:
             print(f"{path} is out of date: run scripts/example_readmes.py", file=sys.stderr)
         for path in unshown:
-            print(f"{path} is shown by no page under examples/", file=sys.stderr)
+            print(f"{path} is shown by no page under reference-knowledge/", file=sys.stderr)
         for shown in dangling:
             print(f"{shown} shows a clip that is not there", file=sys.stderr)
         return 1 if stale or unshown or dangling else 0

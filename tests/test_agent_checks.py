@@ -6,7 +6,7 @@ as drawn, a clip's timeline is cut and merged, a recorded take is held against
 its anchors. No GPU and no page: the render here is an array with a
 segmentation drawn beside it, which is all the arithmetic ever sees. What
 needs a scene -- the gate's rest and overlap checks, the recorder -- is
-exercised on the page by hand and documented in ``examples/live/REFERENCE.md``.
+exercised on the page by hand and documented in ``reference-knowledge/live/REFERENCE.md``.
 """
 
 from __future__ import annotations

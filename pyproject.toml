@@ -146,9 +146,9 @@ packages = [
 # of the wheel.
 [tool.hatch.build.targets.wheel.force-include]
 "assets" = "robosimstudio/assets"
-"examples/01_cloth/cloth.py" = "robosimstudio/_domain_packs/cloth.py"
-"examples/02_soft/soft.py" = "robosimstudio/_domain_packs/soft.py"
-"examples/03_rope/rod" = "robosimstudio/_domain_packs/rod"
+"reference-knowledge/01_cloth/cloth.py" = "robosimstudio/_domain_packs/cloth.py"
+"reference-knowledge/02_soft/soft.py" = "robosimstudio/_domain_packs/soft.py"
+"reference-knowledge/03_rope/rod" = "robosimstudio/_domain_packs/rod"
 
 [tool.hatch.build.targets.sdist]
 include = [
@@ -158,7 +158,7 @@ include = [
     "/robosimstudio_real2sim_agent",
     "/robosimstudio_studio",
     "/assets",
-    "/examples",
+    "/reference-knowledge",
     "/tests",
     "/scripts",
     "/README.md",
@@ -247,7 +247,7 @@ ignore = [
 
 [tool.ruff.lint.per-file-ignores]
 # Examples set env vars and pick GL platforms before importing, as Newton's do.
-"examples/**/*" = ["E402", "TID253"]
+"reference-knowledge/**/*" = ["E402", "TID253"]
 
 [tool.ruff.lint.flake8-tidy-imports]
 # Everything optional is imported inside the function that needs it, so a base

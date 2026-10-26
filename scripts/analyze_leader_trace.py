@@ -1,7 +1,7 @@
 # SPDX-License-Identifier: Apache-2.0
 """Read a force-feedback trace and say what stalled.
 
-A trace is what ``examples/09_teleop/01_force_feedback.py --trace PATH`` (or
+A trace is what ``reference-knowledge/09_teleop/01_force_feedback.py --trace PATH`` (or
 :class:`~robosimstudio.robots.teleop.force_feedback.Teleoperation` with
 ``trace=``) writes on the way out: per-tick timing for each leader thread, the
 page's publish cadence, and the suspend and re-arm events between them.

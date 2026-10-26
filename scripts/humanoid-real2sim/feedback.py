@@ -9,7 +9,7 @@ from datetime import date
 from pathlib import Path
 
 REPOSITORY = Path(__file__).resolve().parents[2]
-EXAMPLES = REPOSITORY / "examples/humanoid-real2sim"
+EXAMPLES = REPOSITORY / "reference-knowledge/humanoid-real2sim"
 CASES = EXAMPLES / "feedback"
 KNOWLEDGE_CATEGORIES = (
     "grasp",
@@ -126,7 +126,9 @@ def main() -> None:
     search.add_argument("--stage", choices=STAGES)
     search.add_argument("--category", choices=CATEGORIES)
     search.add_argument("--knowledge-category", choices=KNOWLEDGE_CATEGORIES)
-    search.add_argument("--kind", choices=("all", "examples", "feedback"), default="all")
+    search.add_argument(
+        "--kind", choices=("all", "knowledge", "reference-knowledge", "examples", "feedback"), default="all"
+    )
     show = sub.add_parser("show", help="read an example narrative or a feedback record")
     show.add_argument("id")
     args = parser.parse_args()
@@ -217,7 +219,7 @@ def main() -> None:
     else:
         results = []
         example_category = {item["id"]: item.get("category") for item in load_examples()}
-        if args.kind in ("all", "examples"):
+        if args.kind in ("all", "knowledge", "reference-knowledge", "examples"):
             for item in load_examples():
                 if args.knowledge_category and item.get("category") != args.knowledge_category:
                     continue
@@ -242,7 +244,7 @@ def main() -> None:
                     results.append(
                         (
                             rank,
-                            f"example {item['id']} [{item.get('category', 'uncategorized')}/{item['status']}; "
+                            f"knowledge {item['id']} [{item.get('category', 'uncategorized')}/{item['status']}; "
                             f"{item['task']}] "
                             f"{item['title']} — {item['summary']} ({EXAMPLES / item['file']})",
                         )

@@ -1,0 +1,17 @@
+#!/bin/bash
+set -eu
+cd /home/galbot/workspace/robosimstudio
+run=$1
+version=${2:-v8}
+export RSS_SEQUENCE_SCENE_CONFIG="$run/scene/config.json"
+export WARP_CACHE_PATH=/tmp/warp_hat_cylinder
+read -r -a eye_offset <<< "${HAT_CAMERA_EYE:--1.2 -1.6 0.8}"
+read -r -a look_offset <<< "${HAT_CAMERA_LOOK:-0.25 0.0 -0.1}"
+exec .venv/bin/python scripts/humanoid-real2sim/kinematic_viewer.py \
+ --motion "$run/retarget/$version/motion.npz" \
+ --motion-order "$run/retarget/$version/motion_order.json" \
+ --human-motion "$run/retarget/$version/human_motion_world.npz" \
+ --source-sync "$run/retarget/$version/source_sync.npz" \
+ --tracks-manifest "$run/retarget/$version/scene_tracks/tracks.json" \
+ --source-offset-s 35 --scene-file scripts/humanoid-real2sim/tasks/sequence_1019/unified_scene.py \
+ --port 8100 --follow-root --camera-eye-offset "${eye_offset[@]}" --camera-look-offset "${look_offset[@]}"

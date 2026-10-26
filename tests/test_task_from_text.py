@@ -196,14 +196,16 @@ class TestTheTaskAndPolicyExamples(unittest.TestCase):
     """A batched run of sixteen worlds has no single scene to open."""
 
     def scripts(self) -> list[str]:
-        found = [f"{f}/{p.name}" for f in self.FOLDERS for p in sorted((ROOT / "examples" / f).glob("[0-9]*.py"))]
+        found = [
+            f"{f}/{p.name}" for f in self.FOLDERS for p in sorted((ROOT / "reference-knowledge" / f).glob("[0-9]*.py"))
+        ]
         self.assertGreaterEqual(len(found), 7)
         return found
 
     def test_each_is_short_and_runs_alone(self) -> None:
         for name in self.scripts():
             with self.subTest(example=name):
-                source = (ROOT / "examples" / name).read_text()
+                source = (ROOT / "reference-knowledge" / name).read_text()
                 self.assertLessEqual(len(source.splitlines()), 70)
                 self.assertNotIn("argparse", source)
                 tree = ast.parse(source)
@@ -216,7 +218,7 @@ class TestTheTaskAndPolicyExamples(unittest.TestCase):
     def test_each_docstring_is_the_page_it_becomes(self) -> None:
         for name in self.scripts():
             with self.subTest(example=name):
-                doc = ast.get_docstring(ast.parse((ROOT / "examples" / name).read_text())) or ""
+                doc = ast.get_docstring(ast.parse((ROOT / "reference-knowledge" / name).read_text())) or ""
                 blocks = [block.strip() for block in doc.split("\n\n")]
                 self.assertTrue(2 <= len(blocks[0].split()) <= 5 and not blocks[0].endswith("."), blocks[0])
                 self.assertNotIn("\n", blocks[1])
@@ -225,7 +227,7 @@ class TestTheTaskAndPolicyExamples(unittest.TestCase):
 
     def test_no_example_ships_a_task_document_file(self) -> None:
         for folder in self.FOLDERS:
-            found = [p for p in (ROOT / "examples" / folder).rglob("*") if p.suffix in (".task", ".suite")]
+            found = [p for p in (ROOT / "reference-knowledge" / folder).rglob("*") if p.suffix in (".task", ".suite")]
             self.assertEqual([], found, "a task is a string in its script; no task document ships")
 
 

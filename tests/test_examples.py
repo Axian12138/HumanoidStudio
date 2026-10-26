@@ -2,7 +2,7 @@
 """The examples run -- all of ``main()``, against a studio that is not there.
 
 An example that no longer runs is worse than no example: it is the first thing
-a reader tries, and nothing else in the suite touches ``examples/``.
+a reader tries, and nothing else in the suite touches ``reference-knowledge/``.
 
 Each scene script assembles something and hands it to
 :func:`robosimstudio.view`, so there is no loop of its own to drive and no
@@ -17,14 +17,14 @@ nothing on it, which is exactly the failure that a "did it render" test cannot
 see and the one that matters.
 
 **The layout is viser's**: numbered category folders holding numbered scripts
-(``examples/01_cloth/00_towel.py``), each of which runs alone. A numbered folder
+(``reference-knowledge/01_cloth/00_towel.py``), each of which runs alone. A numbered folder
 is not an importable package, so every example here is loaded by file path --
-which is also how a reader runs one (``uv run examples/01_cloth/00_towel.py``).
+which is also how a reader runs one (``uv run reference-knowledge/01_cloth/00_towel.py``).
 The tables of scripts and the loader are :mod:`tests.fixtures.examples`.
 
 **This module is the numbered examples**, the ones every tree ships, the rope's
-in ``examples/03_rope/`` among them. Four older flat rope scripts remain under
-``examples/scenes/`` in a tree that has them. Where a rule here is every scene
+in ``reference-knowledge/03_rope/`` among them. Four older flat rope scripts remain under
+``reference-knowledge/scenes/`` in a tree that has them. Where a rule here is every scene
 script's -- it runs, it ships two arms, the page can take hold of it, it parses
 no command line -- they are held to it by the same loop, and the loop covers the
 numbered scripts alone in a tree that does not have them. What only those older
@@ -57,9 +57,11 @@ class TestTheExamplesRun(unittest.TestCase):
         for name in SCRIPTS:
             with self.subTest(example=name):
                 sim, _ = _run(name)
-                self.assertTrue(hasattr(sim, "pipeline"), f"examples/{name} handed the studio something else")
+                self.assertTrue(
+                    hasattr(sim, "pipeline"), f"reference-knowledge/{name} handed the studio something else"
+                )
                 sim.run(20).sync()
-                self.assertTrue(sim.state_is_finite(), f"examples/{name} diverged in twenty steps")
+                self.assertTrue(sim.state_is_finite(), f"reference-knowledge/{name} diverged in twenty steps")
 
     def test_each_one_ships_a_robot_you_can_drive(self) -> None:
         """Two arms, so half of what there is to do with a rope or a towel is there.
@@ -171,7 +173,7 @@ class TestTheMultiEngineDemos(unittest.TestCase):
             ["superdex"], sorted({b.solver for _, b in sim.request.physics.backends if b.solver == "superdex"})
         )
         sim.run(20).sync()
-        self.assertTrue(sim.state_is_finite(), "examples/02_soft/00_sponge.py diverged in twenty steps")
+        self.assertTrue(sim.state_is_finite(), "reference-knowledge/02_soft/00_sponge.py diverged in twenty steps")
 
     def test_the_superdex_cable_is_a_centerline_on_the_foreign_engine(self) -> None:
         """The rope's acceptance scene on SuperDex: one spec, now a Cosserat
@@ -187,7 +189,7 @@ class TestTheMultiEngineDemos(unittest.TestCase):
         self.assertEqual(29, len(cable.particles), "28 elements are 29 nodes")
         self.assertEqual(0, len(cable.entity.owned_bodies()), "a centerline owns no capsule")
         sim.run(20).sync()
-        self.assertTrue(sim.state_is_finite(), "examples/03_rope/02_superdex.py diverged in twenty steps")
+        self.assertTrue(sim.state_is_finite(), "reference-knowledge/03_rope/02_superdex.py diverged in twenty steps")
 
     def test_each_demo_stages_its_engine_for_the_domain_it_is_about(self) -> None:
         """Static, so it holds whichever wheels are present: the arrangement is data."""
@@ -234,7 +236,7 @@ class TestThePageCanTakeHoldOfIt(unittest.TestCase):
                 try:
                     for _ in range(4):
                         session.tick()
-                    self.assertIsNotNone(session.objects, f"examples/{name} has nothing draggable")
+                    self.assertIsNotNone(session.objects, f"reference-knowledge/{name} has nothing draggable")
                     self.assertLessEqual(expected, set(session.objects.names))
                 finally:
                     session.teardown()
@@ -333,7 +335,7 @@ class TestTheShape(unittest.TestCase):
                 continue
             with self.subTest(example=name):
                 count = len((EXAMPLES / name).read_text().splitlines())
-                self.assertLessEqual(count, self.MAX_LINES, f"examples/{name} is {count} lines")
+                self.assertLessEqual(count, self.MAX_LINES, f"reference-knowledge/{name} is {count} lines")
 
     def test_each_docstring_is_the_page_it_becomes(self) -> None:
         """Title, blank line, one sentence, then at most one paragraph.

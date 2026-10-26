@@ -19,8 +19,8 @@ TIER = "fast"
 
 ROOT = Path(__file__).resolve().parents[1]
 TUTORIALS = (
-    ROOT / "examples" / "01_cloth" / "04_your_own_cloth.py",
-    ROOT / "examples" / "02_soft" / "02_your_own_soft.py",
+    ROOT / "reference-knowledge" / "01_cloth" / "04_your_own_cloth.py",
+    ROOT / "reference-knowledge" / "02_soft" / "02_your_own_soft.py",
 )
 
 

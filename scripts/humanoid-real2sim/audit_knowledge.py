@@ -1,4 +1,4 @@
-"""Check action-oriented humanoid examples and time-first output storage."""
+"""Check prose reference knowledge, optional provenance and time-first output storage."""
 
 from __future__ import annotations
 
@@ -9,11 +9,28 @@ import re
 from pathlib import Path
 
 REPOSITORY = Path(__file__).resolve().parents[2]
-EXAMPLES = REPOSITORY / "examples/humanoid-real2sim"
+EXAMPLES = REPOSITORY / "reference-knowledge/humanoid-real2sim"
 CASES = EXAMPLES
 OUTPUTS = REPOSITORY / "outputs/humanoid-real2sim"
 LINK = re.compile(r"(?<!!)\[[^]]+\]\(([^()]+)\)")
 DATE = re.compile(r"\d{4}-\d{2}-\d{2}")
+
+
+def audit_references(item: dict, repository: Path) -> list[str]:
+    """Prose can stand on useful references; artifacts and code are optional."""
+    errors = []
+    if not item.get("status"):
+        errors.append(f"knowledge missing status: {item['id']}")
+    if not item.get("references") and not item.get("evidence_ids"):
+        errors.append(f"knowledge missing references or legacy evidence: {item['id']}")
+    for ref in item.get("references", []):
+        if not all(ref.get(key) for key in ("title", "target", "why")):
+            errors.append(f"reference lacks title, target or reading purpose: {item['id']}")
+            continue
+        target = ref["target"]
+        if not target.startswith(("https://", "http://")) and not (repository / target).exists():
+            errors.append(f"missing reference: {item['id']} -> {target}")
+    return errors
 
 
 def audit(*, require_archive: bool) -> list[str]:
@@ -36,32 +53,22 @@ def audit(*, require_archive: bool) -> list[str]:
             errors.append(f"missing indexed case: {path}")
         if Path(item["file"]).parts[0] != item.get("category"):
             errors.append(f"category/file mismatch: {item['id']}")
-        if not item.get("status") or not item.get("evidence_ids"):
-            errors.append(f"example missing status or direct evidence: {item['id']}")
-        if not item.get("code_paths"):
-            errors.append(f"example missing implementation path: {item['id']}")
+        errors.extend(audit_references(item, REPOSITORY))
         for code_path in item.get("code_paths", []):
             if not (REPOSITORY / code_path).is_file():
                 errors.append(f"missing implementation path: {item['id']} -> {code_path}")
-        linked = set()
-        if path.is_file():
-            for target in LINK.findall(path.read_text()):
-                if not target.startswith(("http:", "https:", "#", "mailto:")):
-                    linked.add((path.parent / target.split("#", 1)[0]).resolve())
         for evidence_id in item.get("evidence_ids", []):
             artifact = artifacts.get(evidence_id)
             if artifact is None:
                 errors.append(f"unknown evidence id: {item['id']} -> {evidence_id}")
-            elif (EXAMPLES / artifact["file"]).resolve() not in linked:
-                errors.append(f"evidence not linked in narrative: {item['id']} -> {evidence_id}")
+
         for result_id in item.get("result_ids", []):
             result = results.get(result_id)
             if result is None:
                 errors.append(f"unknown result id: {item['id']} -> {result_id}")
             elif item["id"] not in result.get("case_ids", []):
                 errors.append(f"result/case mismatch: {item['id']} -> {result_id}")
-            elif (EXAMPLES / result["file"]).resolve() not in linked:
-                errors.append(f"result not linked in narrative: {item['id']} -> {result_id}")
+
     referenced = {eid for item in index for eid in item.get("evidence_ids", [])}
     for artifact in evidence["artifacts"]:
         path = EXAMPLES / artifact["file"]
@@ -153,7 +160,7 @@ def main() -> None:
             print("FAIL", error)
         raise SystemExit(1)
     print(
-        "PASS action categories, task coverage, result/evidence hashes, links, output layout"
+        "PASS reference knowledge, task coverage, optional result/evidence hashes, links, output layout"
         + (", local archive" if args.require_archive else "")
     )
 

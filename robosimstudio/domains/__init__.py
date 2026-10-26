@@ -10,8 +10,8 @@ that says which ones exist.
 The directory beside this file holds the kinds the library itself is made of
 (``rigid``, ``static``, ``articulated``) and what more than one kind shares
 (``capabilities``, ``selection``). ``cloth``, ``soft`` and the rope are not
-here: each lives in its own example folder -- ``examples/01_cloth/cloth.py``,
-``examples/02_soft/soft.py``, a package in ``examples/03_rope`` -- written to be
+here: each lives in its own example folder -- ``reference-knowledge/01_cloth/cloth.py``,
+``reference-knowledge/02_soft/soft.py``, a package in ``reference-knowledge/03_rope`` -- written to be
 read beside the numbered scripts that run it, and reached as
 ``robosimstudio.domains.cloth`` all the same -- see ``__path__`` below.
 
@@ -38,8 +38,8 @@ __path__ = _roots.extend_path(__path__, _roots.domain_roots(), kind="domain")
 """This package's directories: the library's own, then every domain root.
 
 **A kind of thing may live outside this package**, and reach the same import
-name. A checkout's own roots come first -- ``examples/01_cloth``,
-``examples/02_soft`` and ``examples/03_rope``, each only if the directory is there
+name. A checkout's own roots come first -- ``reference-knowledge/01_cloth``,
+``reference-knowledge/02_soft`` and ``reference-knowledge/03_rope``, each only if the directory is there
 (:data:`~robosimstudio.roots.DEFAULT_DOMAIN_ROOT_NAMES`); an installed wheel
 carries the same packs in ``robosimstudio/_domain_packs`` instead. After them
 ``ROBOSIMSTUDIO_DOMAIN_ROOTS`` is the list for anybody else's, and

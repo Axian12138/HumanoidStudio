@@ -6,7 +6,7 @@ builds it with ``scene.build(control_mode="joint_position")`` -- or takes the
 ``sim`` the file bound, if it bound one -- and a ``BUILD = {...}`` dict is
 passed to ``build`` as keyword arguments. ``rss.view``, ``rss.draw`` and
 ``rss.viewer`` are no-ops that return None while the file runs, so a script
-pasted from ``examples/`` that calls ``rss.view`` or ``rss.draw`` works
+pasted from ``reference-knowledge/`` that calls ``rss.view`` or ``rss.draw`` works
 unchanged (one that drives the viewer ``rss.viewer`` returns does not:
 ``viewer.scene`` is an attribute of None): the page is this process's, and a file
 that opened a second one would block on viser's tunnel. The file runs as

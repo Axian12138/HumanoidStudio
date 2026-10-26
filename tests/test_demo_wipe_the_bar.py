@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: Apache-2.0
-"""``examples/08_demos/wipe_the_bar``: the whole job, from the robot's home pose, through the page's Run button.
+"""``reference-knowledge/08_demos/wipe_the_bar``: the whole job, from the robot's home pose, through the page's Run button.
 
 The demo is loaded by file path, the way a reader runs it, with its folder on
 ``sys.path`` so that ``import bar`` and ``import routine`` find the files beside
@@ -30,7 +30,7 @@ import numpy as np
 TIER = "slow"
 """Builds the two-engine scene on a GPU and plays a minute of simulated time through the page."""
 
-FOLDER = Path(__file__).resolve().parents[1] / "examples" / "08_demos" / "wipe_the_bar"
+FOLDER = Path(__file__).resolve().parents[1] / "reference-knowledge" / "08_demos" / "wipe_the_bar"
 SCRIPT = FOLDER / "wipe_the_bar.py"
 PORT = 9341
 CLEANED = 0.9

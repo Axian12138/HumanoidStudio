@@ -18,7 +18,7 @@ where that joint sat when this started:
     a joint you push AWAY from its zero should read a delta whose sign
     matches the direction the simulated arm moves on the page
 
-Run it beside ``examples/09_teleop/00_leader_arm.py``, which drives the scene
+Run it beside ``reference-knowledge/09_teleop/00_leader_arm.py``, which drives the scene
 from the same leader without energizing anything, and compare. A joint whose
 number climbs while the page's arm goes the other way has the wrong ``sign`` in
 the calibration; flip that joint's ``sign`` and nothing else. The two cannot

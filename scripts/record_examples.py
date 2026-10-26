@@ -270,7 +270,9 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("-j", "--jobs", type=int, default=0, help="takes at once (default: one per card)")
     parser.add_argument("--final", action="store_true", help="only the takes that are not pending")
     parser.add_argument("--software", action="store_true", help="record even when the page is not drawn on the GPU")
-    parser.add_argument("--no-install", dest="install", action="store_false", help="never write into examples/")
+    parser.add_argument(
+        "--no-install", dest="install", action="store_false", help="never write into reference-knowledge/"
+    )
     parser.add_argument("--kmax", type=int, default=9, help="most frames between WebP key frames")
     parser.add_argument("--frames", action="store_true", help="also keep every frame as a PNG under the take's frames/")
     parser.add_argument("--child", default="", help=argparse.SUPPRESS)

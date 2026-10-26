@@ -25,6 +25,7 @@ def build_sim(
     basket_mass_kg: float = 0.8,
     basket_com_z_m: float | None = None,
     basket_track_path: Path = OBJECT_TRACK,
+    table_collision_paths: tuple[Path, ...] = (),
 ):
     if len(HULLS) != 65:
         raise ValueError(f"expected 65 round-basket collision hulls, found {len(HULLS)}")
@@ -51,9 +52,9 @@ def build_sim(
     scene.add(
         rss.StaticSpec(
             name="morbylanga_table_context",
-            asset=rss.AssetSpec(path=str(TABLE)),
+            asset=rss.AssetSpec(path=str(TABLE), collision_paths=tuple(map(str, table_collision_paths))),
             world_xform=True,
-            collide=False,
+            collide=bool(table_collision_paths),
         )
     )
     scene.add(

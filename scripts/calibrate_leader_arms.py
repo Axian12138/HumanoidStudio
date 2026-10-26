@@ -50,7 +50,7 @@ where the file landed at the end.
 The simulated arm is a bare scene -- ``yam_bimanual`` in an empty ``bench_075``
 cell unless ``--embodiment`` and ``--cell`` say otherwise. No task is involved;
 the calibration is between a leader and a robot, and the robot is the same one
-``examples/09_teleop/`` drives.
+``reference-knowledge/09_teleop/`` drives.
 
 Usage::
 

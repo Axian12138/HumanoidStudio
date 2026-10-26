@@ -7,7 +7,7 @@ You need an NVIDIA GPU and [uv](https://docs.astral.sh/uv/).
 ```bash
 git clone https://github.com/robosimstudio/robosimstudio.git
 cd robosimstudio
-uv run examples/00_getting_started/00_hello_world.py   # builds the environment on first run
+uv run reference-knowledge/00_getting_started/00_hello_world.py   # builds the environment on first run
 uvx pre-commit install                                  # ruff on every commit
 ```
 
@@ -26,7 +26,7 @@ changing simulation code.
 
 ## Where things go
 
-- **A new example** is one script under `examples/<NN_category>/`. Line 1 of its
+- **A new example** is one script under `reference-knowledge/<NN_category>/`. Line 1 of its
   docstring is the title, the next sentence says what it shows, and it defines
   `main()`. A looping clip of it goes in that folder's `media/` as
   `<script>.webp`; then `uv run python scripts/example_readmes.py` writes its
@@ -35,8 +35,8 @@ changing simulation code.
   what the cursor does and what the physics must have done; then
   `scripts/record_examples.py <name>` films it (see [`scripts/README.md`](scripts/README.md#media)).
 - **New robots, kinds of thing, tasks and policies** live outside the library: a
-  robot or kind registers itself (`examples/04_extending/`), a task is a document
-  (`examples/06_tasks/`), and a policy is a graph folder (`examples/07_policies/`).
+  robot or kind registers itself (`reference-knowledge/04_extending/`), a task is a document
+  (`reference-knowledge/06_tasks/`), and a policy is a graph folder (`reference-knowledge/07_policies/`).
 - **Imports go one way.** The library imports neither the studio nor the agent,
   and a lower layer never imports a higher one.
 - **A number in a docstring was measured.** A new one should be too.

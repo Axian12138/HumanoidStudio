@@ -3,7 +3,7 @@
 
 The ``rod`` kind -- cables, ropes, cords: the capsule chain, the Cosserat
 centerline, their latch, their measures -- is one package on a domain root,
-``examples/03_rope/rod/``, reached as ``robosimstudio.domains.rod``. A tree may
+``reference-knowledge/03_rope/rod/``, reached as ``robosimstudio.domains.rod``. A tree may
 leave that directory out. This file is the three claims that make leaving it out
 a *deletion* rather than a port:
 
@@ -46,7 +46,7 @@ TIER = "fast"
 
 REPO = Path(__file__).resolve().parents[1]
 LIBRARY = REPO / "robosimstudio"
-PACK_ROOT = REPO / "examples" / "03_rope"
+PACK_ROOT = REPO / "reference-knowledge" / "03_rope"
 PACK = PACK_ROOT / "rod"
 HAS_PACK = (PACK / "__init__.py").is_file()
 """Whether this checkout carries the pack. A release without it runs claims 1 and 2 only."""
@@ -144,7 +144,7 @@ class TestTheLibraryHoldsNoRodCode(unittest.TestCase):
         self.assertEqual(
             [],
             offenders,
-            "the library names something that is the rod pack's. It belongs in examples/03_rope/rod/ and arrives by "
+            "the library names something that is the rod pack's. It belongs in reference-knowledge/03_rope/rod/ and arrives by "
             "registering -- see the module docstring for the seams.",
         )
 

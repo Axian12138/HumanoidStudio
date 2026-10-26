@@ -195,7 +195,7 @@ class GraphPolicyCloseTest(unittest.TestCase):
     def test_on_demand_render_flag_restored(self) -> None:
         root = Path(__file__).resolve().parents[1]
         env = self._env()
-        policy = self._policy(env, str(root / "examples/07_policies/pick_place_camera"))
+        policy = self._policy(env, str(root / "reference-knowledge/07_policies/pick_place_camera"))
         self.assertTrue(policy._on_demand_observations)
         self.assertFalse(env.obs_render_enabled)
         policy.close()

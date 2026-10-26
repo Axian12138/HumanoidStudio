@@ -11,7 +11,7 @@ robot manipulation tasks in simulation, by hand or with a coding agent.
 
 ## Quick start
 
-We provide comprehensive examples in [`examples/`](https://github.com/robosimstudio/robosimstudio/tree/main/examples) to help you get started quickly. Alternatively, you can use a coding agent such as Codex or Claude Code to create a simulation environment by simply providing the following prompt:
+We provide comprehensive examples in [`reference-knowledge/`](https://github.com/robosimstudio/robosimstudio/tree/main/examples) to help you get started quickly. Alternatively, you can use a coding agent such as Codex or Claude Code to create a simulation environment by simply providing the following prompt:
 
 ```
 Set up environment for https://github.com/robosimstudio/robosimstudio
@@ -21,7 +21,7 @@ based on the video at [Your Video Path].
 
 ### Humanoid real2sim harness
 
-The [humanoid-real2sim tool library](robosimstudio/humanoid_real2sim/README.md) contains retarget motion handling, RSS tracker execution, and the reusable Viser review player. [Task scripts and launchers](scripts/humanoid-real2sim/README.md) call those tools. A skill run's complete intermediate and final results, including good and bad candidates, go under the ignored `outputs/humanoid-real2sim/<date>/<task>/runs/<run-id>/`. [Examples and curated feedback](examples/humanoid-real2sim/README.md) retain selected task evidence and language-rich cases that identify successful examples, failed counterexamples, and pending work; binary example files use Git LFS. The [RSS × ScaleTrack skill](codex_skills/rss-scaletrack-real2sim/SKILL.md) routes the stages to these tools and examples.
+The [humanoid-real2sim tool library](robosimstudio/humanoid_real2sim/README.md) contains retarget motion handling, RSS tracker execution, and the reusable Viser review player. [Task scripts and launchers](scripts/humanoid-real2sim/README.md) call those tools. A skill run's complete intermediate and final results, including good and bad candidates, go under the ignored `outputs/humanoid-real2sim/<date>/<task>/runs/<run-id>/`. [Examples and curated feedback](reference-knowledge/humanoid-real2sim/README.md) retain selected task evidence and language-rich cases that identify successful examples, failed counterexamples, and pending work; binary example files use Git LFS. The [RSS × ScaleTrack skill](codex_skills/rss-scaletrack-real2sim/SKILL.md) routes the stages to these tools and examples.
 
 The harness has two instruction layers: [AGENTS.md](AGENTS.md) applies throughout this repository and points the agent to the humanoid pipeline; the task [SKILL.md](codex_skills/rss-scaletrack-real2sim/SKILL.md) chooses stages and acceptance checks. The [feedback routing reference](codex_skills/rss-scaletrack-real2sim/references/feedback-routing.md) decides whether a correction belongs in the skill, reusable code, an action example, or a take's stage ledger. Executable behavior lives in the package and scripts, while the examples preserve observed evidence and accepted results.
 

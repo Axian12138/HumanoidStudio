@@ -14,7 +14,7 @@
 Commands other than ``up`` send one JSON line over ``<run-dir>/ctl.sock`` and
 print the reply (raw with ``--json``). ``run-dir`` is ``./run`` under the
 current directory, where ``up`` also starts the server, so the two agree;
-``--run-dir`` or ``--sock`` overrides it, and the ``examples/live/ctl`` shim
+``--run-dir`` or ``--sock`` overrides it, and the ``reference-knowledge/live/ctl`` shim
 pins it beside the scene file.
 
 ``up`` starts ``python -m robosimstudio_real2sim_agent.serve`` detached, in a

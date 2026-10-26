@@ -1,3 +1,3 @@
 interface:
   display_name: "RSS × ScaleTrack Real2Sim"
-  short_description: "五阶段场景、运动学 retarget、交互修复和物理验收"
+  short_description: "n0 理解任务，n1 场景与 n2 动作循环调试，动力学可选"

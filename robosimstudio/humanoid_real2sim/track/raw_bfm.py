@@ -24,7 +24,7 @@ class RawScaleTrackBFM:
             or len(metadata["action_scale"]) != 29
         ):
             raise ValueError("raw ScaleTrack BFM requires 29 ordered body joints, defaults, and action scales")
-        scaletrack = Path(checkpoint).resolve().parents[4]
+        scaletrack = Path(metadata.get("scaletrack_root", Path(checkpoint).resolve().parents[4]))
         sys.path.insert(0, str(scaletrack / "source/my_rsl_rl"))
         sys.path.insert(0, str(scalebridge.resolve()))
         from my_rsl_rl.networks import HumanoidTransformer, TaskEmbedder

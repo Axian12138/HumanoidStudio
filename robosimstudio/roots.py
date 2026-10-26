@@ -103,13 +103,17 @@ are different things -- ``is_task_dir`` wants a ``.task`` document, which a
 domain package has no reason to carry, and scanning one list for both would mean
 every domain needed a task to be found."""
 
-DEFAULT_DOMAIN_ROOT_NAMES = ("examples/01_cloth", "examples/02_soft", "examples/03_rope")
+DEFAULT_DOMAIN_ROOT_NAMES = (
+    "reference-knowledge/01_cloth",
+    "reference-knowledge/02_soft",
+    "reference-knowledge/03_rope",
+)
 """Where this repository keeps the kinds that are content, in scan order.
 
 Three example folders, relative to the checkout, and each is a root only if it
 is there. Each holds one implementation beside the numbered scripts that run
-it: ``examples/01_cloth/cloth.py`` and ``examples/02_soft/soft.py`` are one
-module each, read top to bottom, and the rope in ``examples/03_rope`` is a
+it: ``reference-knowledge/01_cloth/cloth.py`` and ``reference-knowledge/02_soft/soft.py`` are one
+module each, read top to bottom, and the rope in ``reference-knowledge/03_rope`` is a
 package. A tree that leaves a folder out simply has one root fewer.
 
 **Only a name that is a Python identifier is a pack.** ``00_towel.py`` is a
@@ -395,7 +399,7 @@ def extend_path(existing, roots, *, kind: str) -> list[str]:
     still holding its ``__pycache__``) is not mistaken for a second copy.
 
     **A name that is not an identifier is not a pack.** A root may be an example
-    folder -- ``examples/01_cloth`` holds ``cloth.py`` beside ``00_towel.py`` --
+    folder -- ``reference-knowledge/01_cloth`` holds ``cloth.py`` beside ``00_towel.py`` --
     and a numbered script is something a reader runs, not a kind: no ``import``
     statement can spell ``robosimstudio.domains.00_towel``, and the registries'
     scan skips the name. So it is left out of the rule below, and two folders

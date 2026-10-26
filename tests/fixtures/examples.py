@@ -11,11 +11,11 @@ load is cached here, and a loader in each module would be two registrations in
 any process that runs both.
 
 **The layout is viser's**: numbered category folders holding numbered scripts
-(``examples/01_cloth/00_towel.py``), each of which runs alone. A numbered folder
+(``reference-knowledge/01_cloth/00_towel.py``), each of which runs alone. A numbered folder
 is not an importable package, so every example is loaded by file path -- which
-is also how a reader runs one (``uv run examples/01_cloth/00_towel.py``). The
-rope's numbered examples are in ``examples/03_rope/`` like every other kind's;
-:data:`ROPE` is the four older flat scripts under ``examples/scenes/``, in a
+is also how a reader runs one (``uv run reference-knowledge/01_cloth/00_towel.py``). The
+rope's numbered examples are in ``reference-knowledge/03_rope/`` like every other kind's;
+:data:`ROPE` is the four older flat scripts under ``reference-knowledge/scenes/``, in a
 tree that has them, and is empty in a tree that does not.
 
 Importing this module imports nothing of the library, so reading its tables
@@ -46,7 +46,7 @@ __all__ = [
 ]
 
 ROOT = Path(__file__).resolve().parents[2]
-EXAMPLES = ROOT / "examples"
+EXAMPLES = ROOT / "reference-knowledge"
 
 NUMBERED = (
     "01_cloth/00_towel.py",
@@ -80,7 +80,7 @@ the sponge stands under a single-armed Panda where the scene scripts ship a
 bimanual robot, and the SuperDex cable needs the ``[superdex]`` extra to build."""
 
 HAS_ROPE = bool(ROPE)
-NO_ROPE = "the older rope scripts (examples/scenes/) are not in this tree"
+NO_ROPE = "the older rope scripts (reference-knowledge/scenes/) are not in this tree"
 """What a test about a rope example says when it skips for want of :data:`HAS_ROPE`."""
 
 
@@ -106,7 +106,7 @@ def _stub_studio():
 def _load(rel: str):
     """One example as a module, loaded by file path, once.
 
-    ``examples/01_cloth`` is not a package and ``00_towel`` is not a module name,
+    ``reference-knowledge/01_cloth`` is not a package and ``00_towel`` is not a module name,
     so ``importlib.import_module`` cannot reach these and is not how a reader
     does either. Once, because an example that registers a kind does so at
     import, and a second import would be a second registration. Entered into
@@ -126,5 +126,5 @@ def _run(rel: str):
     with _stub_studio() as opened:
         _load(rel).main()
     if len(opened) != 1:
-        raise AssertionError(f"examples/{rel} opened {len(opened)} pages, not one")
+        raise AssertionError(f"reference-knowledge/{rel} opened {len(opened)} pages, not one")
     return opened[0]

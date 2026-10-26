@@ -5,7 +5,7 @@ from datetime import datetime
 from pathlib import Path
 
 REPOSITORY = Path(__file__).resolve().parents[2]
-EXAMPLES = REPOSITORY / "examples" / "humanoid-real2sim"
+EXAMPLES = REPOSITORY / "reference-knowledge" / "humanoid-real2sim"
 OUTPUTS = REPOSITORY / "outputs" / "humanoid-real2sim"
 SCRIPTS = REPOSITORY / "scripts" / "humanoid-real2sim"
 LEGACY_DATA_DATE = "2026-10-20"

@@ -1,18 +1,18 @@
 ---
 name: real-to-sim
-description: Rebuild a real bench, scene or reference clip in simulation on the live page. Use when asked to real-to-sim a photo or video, twin a real cell, match a reference picture, or build a scene interactively and watch it appear. The page rebuilds examples/live/scene.py on every save; ./ctl measures the scene against the photograph, gates it, and films what the robot does.
+description: Rebuild a real bench, scene or reference clip in simulation on the live page. Use when asked to real-to-sim a photo or video, twin a real cell, match a reference picture, or build a scene interactively and watch it appear. The page rebuilds reference-knowledge/live/scene.py on every save; ./ctl measures the scene against the photograph, gates it, and films what the robot does.
 ---
 
 # Real to sim on the live page
 
-`examples/live/scene.py` runs on every save, and the `rss.Scene` it binds is
+`reference-knowledge/live/scene.py` runs on every save, and the `rss.Scene` it binds is
 built and swapped into the open page without a reload. `./ctl` (run from
-`examples/live/`) is the command line onto that process. Do not run the scene
+`reference-knowledge/live/`) is the command line onto that process. Do not run the scene
 yourself: edit the file and read what the page and its readings show.
 
 Every command, flag, output file and reading is in
-[`examples/live/REFERENCE.md`](../../../examples/live/REFERENCE.md), with the
-frames and units. The API is in `examples/00_getting_started/README.md` and
+[`reference-knowledge/live/REFERENCE.md`](../../../reference-knowledge/live/REFERENCE.md), with the
+frames and units. The API is in `reference-knowledge/00_getting_started/README.md` and
 each example folder's README; the names are in `./ctl catalog`. Read those
 rather than guessing a constructor or a name.
 
@@ -97,7 +97,7 @@ texture or the room), before the next take.
 - Poses are in the cell's work-surface frame, as everywhere in the core API;
   `snapshot --eye/--look-at` are world metres.
 - `rss.view`, `rss.draw` and `rss.viewer` are no-ops while the file runs, so
-  a script from `examples/` pastes in unchanged.
+  a script from `reference-knowledge/` pastes in unchanged.
 - A snapshot is path traced and draws the scenery (a room, a mat, a texture);
   the page draws the bench and what you added.
 - A rebuild of the starter scene takes about 6 to 7 s, about 4.8 s of it

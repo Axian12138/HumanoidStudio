@@ -17,7 +17,9 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 def _tet_mesh_module():
-    spec = importlib.util.spec_from_file_location("tet_mesh_example", ROOT / "examples/02_soft/01_tet_mesh.py")
+    spec = importlib.util.spec_from_file_location(
+        "tet_mesh_example", ROOT / "reference-knowledge/02_soft/01_tet_mesh.py"
+    )
     module = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(module)
     return module

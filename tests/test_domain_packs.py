@@ -2,8 +2,8 @@
 """A domain pack may be one module, and the shipped ones are found wherever they lie.
 
 ``cloth`` and ``soft`` are one file each, in the example folder that runs it --
-``examples/01_cloth/cloth.py`` beside ``00_towel.py``, ``examples/02_soft/soft.py``
-beside ``00_sponge.py`` -- and the rope is a package, ``examples/03_rope/rod/``
+``reference-knowledge/01_cloth/cloth.py`` beside ``00_towel.py``, ``reference-knowledge/02_soft/soft.py``
+beside ``00_sponge.py`` -- and the rope is a package, ``reference-knowledge/03_rope/rod/``
 beside ``00_cable.py``. They are still ``robosimstudio.domains.cloth``, ``.soft``
 and ``.rod``. Four things have to hold for that to be true, and each fails
 silently when it does not:
@@ -15,8 +15,8 @@ silently when it does not:
 * **A root may hold example scripts beside its pack.** ``00_towel.py`` is on the
   package's ``__path__`` and is not a kind: the scan must not import it, and two
   folders each holding a ``00_...`` script of one name must not read as a clash.
-* **A checkout has three default roots**, ``examples/01_cloth``,
-  ``examples/02_soft`` and ``examples/03_rope``, each used only if it is there.
+* **A checkout has three default roots**, ``reference-knowledge/01_cloth``,
+  ``reference-knowledge/02_soft`` and ``reference-knowledge/03_rope``, each used only if it is there.
   A tree that ships without one must not notice.
 * **A wheel has none of them.** It carries the packs merged into
   ``robosimstudio/_domain_packs`` -- each mapped pack by pack, the two modules
@@ -248,22 +248,27 @@ class TestWhereTheShippedPacksLive(unittest.TestCase):
     """The checkout's default roots: the three example folders, each if present."""
 
     def test_the_default_roots_are_the_three_named_and_in_that_order(self) -> None:
-        self.assertEqual(("examples/01_cloth", "examples/02_soft", "examples/03_rope"), roots.DEFAULT_DOMAIN_ROOT_NAMES)
+        self.assertEqual(
+            ("reference-knowledge/01_cloth", "reference-knowledge/02_soft", "reference-knowledge/03_rope"),
+            roots.DEFAULT_DOMAIN_ROOT_NAMES,
+        )
         present = [REPO / name for name in roots.DEFAULT_DOMAIN_ROOT_NAMES if (REPO / name).is_dir()]
         for folder in ("01_cloth", "02_soft", "03_rope"):
-            self.assertIn(REPO / "examples" / folder, present, "a shipped kind is not where the roots look")
+            self.assertIn(REPO / "reference-knowledge" / folder, present, "a shipped kind is not where the roots look")
         self.assertEqual(present, roots.DOMAINS._checkouts())
 
     def test_a_default_root_that_is_not_there_is_skipped(self) -> None:
         """A tree that ships without one of the folders has one root fewer and no error."""
-        probe = roots._Roots("ROBOSIMSTUDIO_PROBE_ROOTS", ("examples/01_cloth", "no_such_directory_at_all"))
-        self.assertEqual([REPO / "examples" / "01_cloth"], probe._checkouts())
+        probe = roots._Roots("ROBOSIMSTUDIO_PROBE_ROOTS", ("reference-knowledge/01_cloth", "no_such_directory_at_all"))
+        self.assertEqual([REPO / "reference-knowledge" / "01_cloth"], probe._checkouts())
         self.assertEqual([], roots._Roots("ROBOSIMSTUDIO_PROBE_ROOTS", "no_such_directory_at_all")._checkouts())
 
     def test_no_folder_is_called_domains_under_examples(self) -> None:
-        """A kind's folder is named for the kind. ``examples/domains`` was the
+        """A kind's folder is named for the kind. ``reference-knowledge/domains`` was the
         catalogue's word for it, and a reader looking for cloth looks for cloth."""
-        self.assertEqual([], sorted((REPO / "examples" / "domains").glob("*.py")), "a pack is still filed there")
+        self.assertEqual(
+            [], sorted((REPO / "reference-knowledge" / "domains").glob("*.py")), "a pack is still filed there"
+        )
         for name in roots.DEFAULT_DOMAIN_ROOT_NAMES:
             self.assertEqual(1, len(_packs(REPO / name)), f"{name} holds one implementation")
 
@@ -297,8 +302,8 @@ class TestWhereTheShippedPacksLive(unittest.TestCase):
         proc = _run(script)
         self.assertEqual(0, proc.returncode, proc.stderr[-2000:])
         got = _last_json(proc)
-        self.assertEqual(REPO / "examples" / "01_cloth" / "cloth.py", Path(got["cloth"]))
-        self.assertEqual(REPO / "examples" / "02_soft" / "soft.py", Path(got["soft"]))
+        self.assertEqual(REPO / "reference-knowledge" / "01_cloth" / "cloth.py", Path(got["cloth"]))
+        self.assertEqual(REPO / "reference-knowledge" / "02_soft" / "soft.py", Path(got["soft"]))
         self.assertEqual("robosimstudio.domains.cloth", got["sheet"])
         self.assertEqual("robosimstudio.domains.soft", got["sponge"])
         self.assertEqual("robosimstudio.domains.cloth", got["spec"])
@@ -358,7 +363,7 @@ class TestEachKindStandsAlone(unittest.TestCase):
 
         for kind, folder, _, _, other in self.PAIRS:
             with self.subTest(kind=kind):
-                tree = ast.parse((REPO / "examples" / folder / f"{kind}.py").read_text())
+                tree = ast.parse((REPO / "reference-knowledge" / folder / f"{kind}.py").read_text())
                 named = [
                     ast.unparse(node)
                     for node in ast.walk(tree)
@@ -370,18 +375,18 @@ class TestEachKindStandsAlone(unittest.TestCase):
         for kind, folder, make, spec, other in self.PAIRS:
             with self.subTest(kind=kind, without=other):
                 script = ALONE.replace("__OTHER__", other).replace("__KIND__", kind).replace("__MAKE__", make)
-                proc = _run(script, REPO / "examples" / folder, only=True)
+                proc = _run(script, REPO / "reference-knowledge" / folder, only=True)
                 self.assertEqual(0, proc.returncode, proc.stderr[-2000:])
                 got = _last_json(proc)
                 self.assertIn(kind, got["domains"])
                 self.assertNotIn(other, got["domains"], "the other kind's folder was meant to be off the path")
-                self.assertEqual(REPO / "examples" / folder / f"{kind}.py", Path(got["file"]))
+                self.assertEqual(REPO / "reference-knowledge" / folder / f"{kind}.py", Path(got["file"]))
                 self.assertEqual(spec, got["spec"])
                 self.assertEqual(f"robosimstudio.domains.{kind}", got["entity"])
                 self.assertNotIn(f"robosimstudio.domains.{other}", got["loaded"])
                 self.assertIn("robosimstudio.domains.selection", got["loaded"], "what the two kinds share")
 
-    ROPE = REPO / "examples" / "03_rope" / "rod"
+    ROPE = REPO / "reference-knowledge" / "03_rope" / "rod"
 
     @unittest.skipUnless(ROPE.is_dir(), "this tree does not carry the rope's folder")
     def test_the_rope_borrows_from_neither(self) -> None:

@@ -12,13 +12,13 @@ RoboSimStudio is a Newton-native simulation toolkit. Packages:
 ## Read first
 
 1. [`README.md`](README.md): what is here and how to run it.
-2. [`examples/00_getting_started/README.md`](examples/00_getting_started/README.md)
+2. [`reference-knowledge/00_getting_started/README.md`](reference-knowledge/00_getting_started/README.md)
    (`Scene`, `Sim`, `Ref`, the constructors) and each example folder's README. Poses
    are in the cell's work-surface frame: `at=(0, 0, 0.2)` is 200 mm over the
    middle of the bench, whatever bench (frames and units:
-   [`examples/live/REFERENCE.md`](examples/live/REFERENCE.md#frames-and-units)).
-3. `examples/`: numbered scripts, shortest first. `examples/01_cloth/cloth.py`,
-   `examples/02_soft/soft.py` and `examples/03_rope/rod/` are the shipped cloth,
+   [`reference-knowledge/live/REFERENCE.md`](reference-knowledge/live/REFERENCE.md#frames-and-units)).
+3. `reference-knowledge/`: numbered scripts, shortest first. `reference-knowledge/01_cloth/cloth.py`,
+   `reference-knowledge/02_soft/soft.py` and `reference-knowledge/03_rope/rod/` are the shipped cloth,
    soft-body and rope implementations; read them to see how each works.
 
 ## Checks
@@ -27,7 +27,7 @@ RoboSimStudio is a Newton-native simulation toolkit. Packages:
 - `uv run --extra gap python scripts/testrun.py --tier medium`: needs the GPU;
   builds and steps scenes.
 - `uvx ruff@0.16.1 check . && uvx ruff@0.16.1 format . --check`.
-- `examples/live/run/` is not committed. A commit message is a lowercase
+- `reference-knowledge/live/run/` is not committed. A commit message is a lowercase
   `area:` prefix and one declarative sentence
   (`studio: the room, and lights that match the render`).
 
@@ -35,9 +35,9 @@ RoboSimStudio is a Newton-native simulation toolkit. Packages:
 
 When asked to rebuild a real scene from a photo or video, match a reference,
 twin a real cell, or build a scene interactively, use the live page in
-[`examples/live/`](examples/live/README.md) instead of writing a script and
+[`reference-knowledge/live/`](reference-knowledge/live/README.md) instead of writing a script and
 running it blind: edit `scene.py`, and the page rebuilds it on every save.
-From `examples/live/`:
+From `reference-knowledge/live/`:
 
 ```bash
 ./ctl status                          # a page is up (names, positions, last error), or it exits 2
@@ -60,48 +60,44 @@ The method and what counts as a finished twin are in
 [`.claude/skills/real-to-sim/SKILL.md`](.claude/skills/real-to-sim/SKILL.md)
 (the `real-to-sim` skill for Claude Code). The `scene.py` contract, every
 command and every reading are in
-[`examples/live/REFERENCE.md`](examples/live/REFERENCE.md).
+[`reference-knowledge/live/REFERENCE.md`](reference-knowledge/live/REFERENCE.md).
 
 ## Feedback memory and humanoid real to sim
 
 For every task in this repository, record user reported failures, omissions,
 and new requirements in
-[`examples/humanoid-real2sim/feedback/`](examples/humanoid-real2sim/feedback/README.md).
-Search by natural-language task, action, and symptom before solving; read the
-matching example's successful motion, failure mechanism, code, and evidence.
-Record feedback immediately and classify it as an error, new requirement, or
-new problem. Fix errors in the actual result; give new requirements observable
-acceptance criteria. For each case, decide with reasons whether the main skill,
-shared tools, and an action example need changes. Update the same case with
-the cause, implementation, and validation. Use `repository` as the stage for work outside
-the humanoid pipeline. For humanoid reconstruction, retarget, tracking,
-object interaction, or related visualization, use
+[`reference-knowledge/humanoid-real2sim/feedback/`](reference-knowledge/humanoid-real2sim/feedback/README.md).
+Search by natural-language task, action, and symptom before solving. Read the
+matching knowledge's conditions, observations, decision rationale, tradeoffs,
+validation boundaries, and useful references; load old implementation artifacts
+only when needed. Record feedback immediately as error, new requirement, or new
+problem. Fix actual errors; give new requirements observable acceptance criteria.
+For each case decide whether the main skill, shared tools, and reference knowledge
+need updates. Use `repository` for work outside the humanoid pipeline.
+For humanoid work, use
 [`codex_skills/rss-scaletrack-real2sim/SKILL.md`](codex_skills/rss-scaletrack-real2sim/SKILL.md)
-as the stage router. Keep take-specific frame/version approval in that
-take's stage ledger. Store task feedback in language-rich action examples with
-code, motion, and validation evidence; do not promote task-specific rules to
-the main skill. Change the main skill only for feedback about the harness itself.
+as the router. Keep take-specific approval in its stage ledger. Main skills hold
+harness rules; reusable interaction knowledge belongs in reference-knowledge.
 
 Reusable retarget, tracker, and visualization code belongs under
 [`robosimstudio/humanoid_real2sim/`](robosimstudio/humanoid_real2sim/README.md), independent of
 the skill. Put task programs and launchers under
 [`scripts/humanoid-real2sim/`](scripts/humanoid-real2sim/README.md).
-The harness keeps experiments and examples separate: put every intermediate and
-final result of one skill use, including good and bad candidates, logs, and
-checks, in `outputs/humanoid-real2sim/<date>/<task>/runs/<run-id>/` (date first,
-task second). After review, put distilled action descriptions and code/evidence
-links under `examples/humanoid-real2sim/`; keep task data in outputs. In
-[`examples/humanoid-real2sim/`](examples/humanoid-real2sim/README.md),
-explain in complete language which candidates succeeded, which failed, why,
-what evidence supports each conclusion, and what remains unverified. An output
-does not become an example merely by being the last or best file in a run.
-Organize knowledge by reusable interaction and failure mechanism; task-named
-data folders belong in outputs, not the knowledge taxonomy.
-Full task data in outputs is local and Git ignored; each indexed example also
-includes small, hashed review evidence in `artifacts/`. An accepted outcome
-for a stated scope goes in `results/` as motion NPZ with any needed object
-track or image; pending candidates stay in `artifacts/` (Git LFS for binaries).
-Python code and case text use ordinary Git. Search with
-`python scripts/humanoid-real2sim/feedback.py search --query '<task action symptom>'`.
-The humanoid pipeline has one canonical name and location. Do not recreate
-parallel legacy packages or directory aliases.
+Keep full runs in `outputs/humanoid-real2sim/<date>/<task>/runs/<run-id>/`.
+Organize [`reference-knowledge/humanoid-real2sim/`](reference-knowledge/humanoid-real2sim/README.md)
+by reusable interactions and failure mechanisms. Knowledge is primarily prose:
+conditions, evidence-based decision summaries, alternatives and tradeoffs,
+transfer limits, and helpful references. Do not turn internal reasoning traces,
+version logs, task-specific numeric recipes, or code listings into the main text.
+Text-only entries with meaningful references can be indexed without code,
+motion or artifacts. References explain why they are useful; distinguish local
+experience, hypotheses, scoped user approval and independent validation.
+
+Existing selected `artifacts/` and `results/` remain optional provenance and keep
+their hashes and acceptance scope. New entries need not copy binary data; full
+experiments remain in outputs. If selectively retained, pending/failed evidence
+goes in artifacts and scoped accepted outcomes in results, with Git LFS for
+binaries. The current contract is
+[`KNOWLEDGE.md`](reference-knowledge/humanoid-real2sim/KNOWLEDGE.md).
+Search with `python scripts/humanoid-real2sim/feedback.py search --query '<task action symptom>'`.
+The sole directory is `reference-knowledge/`; do not recreate an `examples/` alias.

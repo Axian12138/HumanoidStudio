@@ -1,12 +1,13 @@
-# 五阶段子任务索引
+# n0 / n1 / n2 子任务索引
 
-按当前工作选择一份任务说明，再从 [tool-map.md](tool-map.md) 找对应入口。原有命令、数据字段和编辑器操作详见 [local-interfaces.md](local-interfaces.md)。
+从 n0 理解输入与语义，再按问题在 n1 和 n2 间循环；只读取当前所需的引用。
 
-| 子任务 | 阶段 | 说明 | 可视化 |
-| --- | --- | --- | --- |
-| 场景与物体 | 1、2、5 | [scene-objects.md](scene-objects.md) | RSS live page、同相机对照、物理回放 |
-| 人体到机器人 | 3.1、3.2 | [retarget.md](retarget.md) | [visualization.md](visualization.md) 的运动学页 |
-| 物理跟踪与修复 | 4 | [track.md](track.md) | RSS tracker 修复页 |
-| 最终归档 | 5 完成后 | [scene-objects.md](scene-objects.md) 的归档节和 [local-interfaces.md](local-interfaces.md) 的字段契约 | 归档验证结果 |
+| 子任务 | 说明 | 查看方式 |
+| --- | --- | --- |
+| n0 数据、坐标和语义 | [scene-objects.md](scene-objects.md) | 输入与源帧映射 |
+| n1 场景初建及修正 | [scene-objects.md](scene-objects.md) | RSS live、同相机对照 |
+| n2 运动学重建 | [retarget.md](retarget.md) | [运动学审阅](visualization.md) |
+| n2 可选动力学重建/修复 | [track.md](track.md) | RSS 物理修复页 |
+| 按需归档 | [scene-objects.md](scene-objects.md#按需归档到-scaletrack-数据包) | 按运动学/动力学范围校验 |
 
-跨阶段失败与用户反馈在 [反馈库](../../../examples/humanoid-real2sim/feedback/README.md) 记录和检索。单个 take 的版本、证据与批准状态仍放在其任务目录的 stage ledger，不由反馈库代替。
+工具见 [tool-map.md](tool-map.md)，命令和数据契约见 [local-interfaces.md](local-interfaces.md)。用户反馈进入[反馈库](../../../reference-knowledge/humanoid-real2sim/feedback/README.md)；历史 take 的版本和批准记录保留在其 `stage_ledger.json`。

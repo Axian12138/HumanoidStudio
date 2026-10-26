@@ -29,7 +29,7 @@ TIER = "medium"
 """Builds and steps real scenes on a GPU, and renders two stills."""
 
 ROOT = Path(__file__).resolve().parents[1]
-EXAMPLES = ROOT / "examples"
+EXAMPLES = ROOT / "reference-knowledge"
 
 SCENES = (
     "00_getting_started/00_hello_world.py",
@@ -51,7 +51,7 @@ def _load(rel: str):
 
     The name is a function of the path, so a second load of the same file is a
     second module under the *same* name -- which is what a reader's ``python
-    examples/...`` does too, and what the two registering examples promise to
+    reference-knowledge/...`` does too, and what the two registering examples promise to
     survive. It is the name :func:`tests.fixtures.examples._load` gives the file
     as well: a process that runs both (the grasp tests load the own-cloth example
     there) then sees one class shipped twice, which the registry accepts, rather
@@ -92,16 +92,16 @@ def _run(case: unittest.TestCase, rel: str):
             module.main()
     except ImportError as exc:
         if "extra" in str(exc):
-            case.skipTest(f"examples/{rel} needs something this checkout does not carry: {exc}")
+            case.skipTest(f"reference-knowledge/{rel} needs something this checkout does not carry: {exc}")
         raise
     return module, opened, text.getvalue()
 
 
 def _one_scene(case: unittest.TestCase, rel: str):
     module, opened, text = _run(case, rel)
-    case.assertEqual(1, len(opened), f"examples/{rel} opened {len(opened)} pages, not one")
+    case.assertEqual(1, len(opened), f"reference-knowledge/{rel} opened {len(opened)} pages, not one")
     sim, kwargs = opened[0]
-    case.assertTrue(hasattr(sim, "pipeline"), f"examples/{rel} handed the studio something else")
+    case.assertTrue(hasattr(sim, "pipeline"), f"reference-knowledge/{rel} handed the studio something else")
     return module, sim, kwargs, text
 
 
@@ -111,8 +111,8 @@ class TestTheNewExamplesRun(unittest.TestCase):
             with self.subTest(example=rel):
                 _, sim, _, _ = _one_scene(self, rel)
                 sim.run(20).sync()
-                self.assertGreaterEqual(sim.step_count, 20, f"examples/{rel} did not step")
-                self.assertTrue(sim.state_is_finite(), f"examples/{rel} diverged")
+                self.assertGreaterEqual(sim.step_count, 20, f"reference-knowledge/{rel} did not step")
+                self.assertTrue(sim.state_is_finite(), f"reference-knowledge/{rel} diverged")
                 sim.close()
 
     def test_the_first_three_print_what_they_build(self) -> None:

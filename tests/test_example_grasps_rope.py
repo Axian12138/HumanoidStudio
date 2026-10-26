@@ -1,7 +1,7 @@
 # SPDX-License-Identifier: Apache-2.0
 """The rope example's grasp, made the way its page makes it: down, Close, up, and the cable comes too.
 
-``examples/03_rope/00_cable.py`` says a person can drag the right hand down onto
+``reference-knowledge/03_rope/00_cable.py`` says a person can drag the right hand down onto
 the cable, press **Close** and lift it. This runs the example's own ``main()``,
 drives its arm panel as the gizmo and the Grip button do
 (:mod:`tests.fixtures.grasp`), and holds the lift to numbers. The cable has no

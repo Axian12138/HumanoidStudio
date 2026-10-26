@@ -63,7 +63,7 @@ class Take:
     """One clip: which script, what happens on its page, and what must be true afterwards."""
 
     example: str
-    """The script, from the repository root: ``examples/00_getting_started/00_hello_world.py``."""
+    """The script, from the repository root: ``reference-knowledge/00_getting_started/00_hello_world.py``."""
     beats: tuple[Beat, ...] = ()
     name: str = ""
     """The clip's name; the script's stem by default, anything else an extra clip."""
@@ -107,8 +107,8 @@ class Take:
 
     @property
     def key(self) -> str:
-        """``<folder>/<clip>``, ``examples/`` left off: how the command line and :data:`KEPT` name a clip."""
-        return f"{self.home.removeprefix('examples/')}/{self.stem}"
+        """``<folder>/<clip>``, ``reference-knowledge/`` left off: how the command line and :data:`KEPT` name a clip."""
+        return f"{self.home.removeprefix('reference-knowledge/')}/{self.stem}"
 
     @property
     def media(self) -> Path:
@@ -230,9 +230,9 @@ def policy(example: str, **kw) -> Take:
 
 FINAL = (
     Take(
-        "examples/00_getting_started/01_core_concepts.py",
+        "reference-knowledge/00_getting_started/01_core_concepts.py",
         name="drag_cube",
-        folder="examples/05_studio",
+        folder="reference-knowledge/05_studio",
         camera=Orbit(At("ball", dz=0.08), distance=0.6, azimuth=-5.0, elevation=26.0, fov=50.0),
         warmup=1.0,
         layout=Layout(collapse=("Simulation", "Arm: right")),
@@ -249,9 +249,9 @@ FINAL = (
         expect=(Rose("ball", 0.08, at="carried"),),
     ),
     Take(
-        "examples/00_getting_started/00_hello_world.py",
+        "reference-knowledge/00_getting_started/00_hello_world.py",
         name="drive_arm",
-        folder="examples/05_studio",
+        folder="reference-knowledge/05_studio",
         camera=PANDA_VIEW,
         warmup=1.0,
         beats=(
@@ -271,7 +271,7 @@ FINAL = (
         expect=(Rose("cube", 0.08, at="carried"), Held("cube", since="closed", at="carried")),
     ),
     Take(
-        "examples/01_cloth/01_fabrics.py",
+        "reference-knowledge/01_cloth/01_fabrics.py",
         # The tape in the middle, the jersey to its left, the fleece to its right.
         camera=Orbit(At("tape", dz=-0.04), distance=0.75, azimuth=-20.0, elevation=30.0, fov=50.0),
         warmup=3.0,  # the four sheets settle over their posts before anyone looks
@@ -293,7 +293,7 @@ FINAL = (
         expect=(Check(_stiffened, needs=("tape",)),),
     ),
     Take(
-        "examples/03_rope/01_between_posts.py",
+        "reference-knowledge/03_rope/01_between_posts.py",
         # Three-quarters on to the span: square on, the x arrow points into the lens and cannot be grabbed.
         camera=Orbit(At("cable", dz=0.03), distance=0.65, azimuth=-30.0, elevation=22.0, fov=50.0),
         warmup=1.0,
@@ -312,11 +312,11 @@ FINAL = (
         ),
         expect=(Rose(Segment("cable", 0.5), 0.025, at="lifted"),),
     ),
-    lift("examples/00_getting_started/00_hello_world.py"),
-    lift("examples/00_getting_started/01_core_concepts.py"),
-    lift("examples/04_extending/00_add_a_robot.py"),
+    lift("reference-knowledge/00_getting_started/00_hello_world.py"),
+    lift("reference-knowledge/00_getting_started/01_core_concepts.py"),
+    lift("reference-knowledge/04_extending/00_add_a_robot.py"),
     lift(
-        "examples/05_studio/00_your_own_panel.py",
+        "reference-knowledge/05_studio/00_your_own_panel.py",
         camera=Camera(eye=(1.05, -0.20, 1.00), look_at=(0.55, -0.05, 0.85)),
         before=(
             Wait(seconds=0.5, label="a panel of the page's own: Cube"),
@@ -326,7 +326,7 @@ FINAL = (
         ),
     ),
     Take(
-        "examples/09_teleop/00_leader_arm.py",
+        "reference-knowledge/09_teleop/00_leader_arm.py",
         argv=("--simulate",),
         cursor=False,  # a scripted leader arm drives the hands; no one is at the mouse, and the gizmos are hidden
         # Both hands: they work at about z 1.15, y -0.5 to +0.5, well over the cube.
@@ -336,7 +336,7 @@ FINAL = (
         beats=(Wait(seconds=9.0, label="a simulated leader arm drives the follower"),),
     ),
     Take(
-        "examples/06_tasks/00_your_first_task.py",
+        "reference-knowledge/06_tasks/00_your_first_task.py",
         camera=TASK_VIEW,
         warmup=1.0,
         budget=1_200_000,  # nine drags: the longest gesture of the examples
@@ -355,9 +355,9 @@ FINAL = (
         ),
         expect=(Check(_succeeded),),
     ),
-    policy("examples/07_policies/00_pick_and_place.py"),
-    policy("examples/07_policies/01_check_and_retry.py"),
-    policy("examples/07_policies/02_without_privilege.py"),
+    policy("reference-knowledge/07_policies/00_pick_and_place.py"),
+    policy("reference-knowledge/07_policies/01_check_and_retry.py"),
+    policy("reference-knowledge/07_policies/02_without_privilege.py"),
 )
 
 
@@ -436,7 +436,7 @@ def routine(example: str, *, speed: float, success: str, done: Any = None, budge
     )
 
 
-TOWEL = "examples/01_cloth/00_towel.py"
+TOWEL = "reference-knowledge/01_cloth/00_towel.py"
 TOWEL_VIEW = Orbit(At("towel"), distance=0.8, azimuth=-50.0, elevation=35.0)
 """The towel from its corner: both its x and its y arrows have length on screen."""
 TELEOP_VIEW = Camera(eye=(1.55, -0.35, 1.30), look_at=(0.55, 0.0, 0.98))
@@ -502,13 +502,13 @@ DRAFTS = (
         ),
     ),
     handle(
-        "examples/01_cloth/02_engines.py",
+        "reference-knowledge/01_cloth/02_engines.py",
         "towel",
         Corner("towel", 1, -1, 0.03),
         camera=Orbit(At("towel"), distance=0.75, azimuth=-30.0, elevation=35.0),
     ),
     Take(
-        "examples/01_cloth/04_your_own_cloth.py",
+        "reference-knowledge/01_cloth/04_your_own_cloth.py",
         camera=Camera(eye=(1.05, -0.38, 0.95), look_at=(0.60, -0.08, 0.83)),
         warmup=3.0,  # the page puts the sheet back flat over the ball, and it drapes for 1 to 3 s
         beats=(
@@ -527,7 +527,7 @@ DRAFTS = (
         expect=(Rose(Patch("sheet", near=(0.600, -0.095, 0.800)), 0.06, at="lifted"),),
     ),
     Take(
-        "examples/02_soft/00_sponge.py",
+        "reference-knowledge/02_soft/00_sponge.py",
         # The sponge under the Panda's tool-down hand, from the bench's open side.
         camera=Camera(eye=(0.80, -0.50, 1.02), look_at=(0.457, -0.115, 0.80)),
         warmup=1.0,  # the foam settles on the bench before the first frame
@@ -547,7 +547,7 @@ DRAFTS = (
         expect=(Rose("sponge", 0.07, at="lifted"), Held("sponge", since="closed", at="lifted", tolerance=0.01)),
     ),
     Take(
-        "examples/02_soft/00_sponge.py",
+        "reference-knowledge/02_soft/00_sponge.py",
         name="press_sponge",
         camera=Camera(eye=(0.80, -0.50, 1.02), look_at=(0.457, -0.115, 0.80)),
         warmup=1.0,
@@ -568,7 +568,7 @@ DRAFTS = (
         expect=(Sank(Patch("sponge", near=Top("sponge"), radius=0.025, skin=0.004, lowest=True), 0.002),),
     ),
     handle(
-        "examples/02_soft/01_tet_mesh.py",
+        "reference-knowledge/02_soft/01_tet_mesh.py",
         "gasket",
         Highest("gasket"),
         camera=Orbit(At("gasket"), distance=0.5, azimuth=-20.0, elevation=35.0),
@@ -581,13 +581,13 @@ DRAFTS = (
         "a question for the soft body, not the take",
     ),
     handle(
-        "examples/02_soft/02_your_own_soft.py",
+        "reference-knowledge/02_soft/02_your_own_soft.py",
         "block",
         Top("block"),
         camera=Orbit(At("block", dz=0.05), distance=0.6, azimuth=-20.0, elevation=30.0),
     ),
     handle(
-        "examples/04_extending/01_new_kind.py",
+        "reference-knowledge/04_extending/01_new_kind.py",
         "chain",
         Highest("chain"),
         camera=Orbit(At("chain"), distance=0.7, azimuth=-15.0, elevation=30.0),
@@ -596,17 +596,17 @@ DRAFTS = (
         radius=0.012,  # the one link the handle took: the links are loose, and the rest stay in the heap
     ),
     Take(
-        "examples/09_teleop/01_force_feedback.py",
+        "reference-knowledge/09_teleop/01_force_feedback.py",
         argv=("--simulate",),
         cursor=False,  # a scripted leader arm drives the hands; no one is at the mouse
         camera=TELEOP_VIEW,
         warmup=1.0,
         beats=(Wait(seconds=9.0, label="a simulated leader meets the panel and the crate"),),
     ),
-    grasp("examples/06_tasks/01_goals_and_rewards.py", "cube", camera=TASK_VIEW),
-    grasp("examples/06_tasks/02_episodes.py", "cube", camera=TASK_VIEW),
+    grasp("reference-knowledge/06_tasks/01_goals_and_rewards.py", "cube", camera=TASK_VIEW),
+    grasp("reference-knowledge/06_tasks/02_episodes.py", "cube", camera=TASK_VIEW),
     Take(
-        "examples/03_rope/00_cable.py",
+        "reference-knowledge/03_rope/00_cable.py",
         camera=Camera(eye=(0.95, 0.20, 1.02), look_at=(0.55, 0.00, 0.80)),
         warmup=1.0,
         layout=Layout(collapse=("Simulation", "Arm: left")),
@@ -626,7 +626,7 @@ DRAFTS = (
         expect=(Rose(Patch("cable", near=(0.550, -0.011, 0.771)), 0.06, at="lifted"),),
     ),
     handle(
-        "examples/03_rope/02_superdex.py",
+        "reference-knowledge/03_rope/02_superdex.py",
         "cable",
         Segment("cable", 0.5),
         camera=Orbit(At("cable", dz=0.03), distance=0.75, azimuth=-25.0, elevation=25.0),
@@ -636,17 +636,23 @@ DRAFTS = (
     ),
     # 60 s of scene: four strokes at 3x read as a wipe and fit 2 MB; at 2x the clip was 2.6 MB at quality 46.
     routine(
-        "examples/08_demos/wipe_the_bar/wipe_the_bar.py",
+        "reference-knowledge/08_demos/wipe_the_bar/wipe_the_bar.py",
         speed=3.0,
         success="the bar is wiped:",
         done=_wiped,
         budget=2_000_000,
     ),
     routine(
-        "examples/08_demos/route_the_cable/route_the_cable.py", speed=2.0, success="the cable is routed:", done=_routed
+        "reference-knowledge/08_demos/route_the_cable/route_the_cable.py",
+        speed=2.0,
+        success="the cable is routed:",
+        done=_routed,
     ),
     routine(
-        "examples/08_demos/fold_the_towel/fold_the_towel.py", speed=2.0, success="the towel is folded:", done=_folded
+        "reference-knowledge/08_demos/fold_the_towel/fold_the_towel.py",
+        speed=2.0,
+        success="the towel is folded:",
+        done=_folded,
     ),
 )
 

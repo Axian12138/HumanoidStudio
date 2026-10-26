@@ -29,16 +29,18 @@ NUMBERED = re.compile(r"^\d\d_\w+$")
 
 
 def scripts() -> list[Path]:
-    """The scripts a clip is owed to: ``examples/NN_x/NN_y.py``, and ``examples/08_demos/<name>/<name>.py``."""
-    found = [p for p in (REPO / "examples").glob("[0-9][0-9]_*/[0-9][0-9]_*.py") if NUMBERED.match(p.parent.name)]
-    found += [p for p in (REPO / "examples" / "08_demos").glob("*/*.py") if p.stem == p.parent.name]
+    """The scripts a clip is owed to: ``reference-knowledge/NN_x/NN_y.py``, and ``reference-knowledge/08_demos/<name>/<name>.py``."""
+    found = [
+        p for p in (REPO / "reference-knowledge").glob("[0-9][0-9]_*/[0-9][0-9]_*.py") if NUMBERED.match(p.parent.name)
+    ]
+    found += [p for p in (REPO / "reference-knowledge" / "08_demos").glob("*/*.py") if p.stem == p.parent.name]
     return sorted(found)
 
 
 def key(path: Path) -> str:
     """How the table names a script's clip or a file in a ``media/`` folder: ``01_cloth/00_towel``."""
     folder = path.parent.parent if path.parent.name == "media" else path.parent
-    return f"{folder.relative_to(REPO).as_posix().removeprefix('examples/')}/{path.stem}"
+    return f"{folder.relative_to(REPO).as_posix().removeprefix('reference-knowledge/')}/{path.stem}"
 
 
 class TestTheTakeTable(unittest.TestCase):
@@ -57,11 +59,11 @@ class TestTheTakeTable(unittest.TestCase):
                 parts = take.media.relative_to(REPO).parts
                 self.assertEqual("media", parts[-2])
                 self.assertEqual(".webp", take.media.suffix)
-                inside_examples = parts[0] == "examples" and len(parts) == 4 and NUMBERED.match(parts[1])
-                inside_demo = parts[:2] == ("examples", "08_demos") and len(parts) == 5
+                inside_examples = parts[0] == "reference-knowledge" and len(parts) == 4 and NUMBERED.match(parts[1])
+                inside_demo = parts[:2] == ("reference-knowledge", "08_demos") and len(parts) == 5
                 self.assertTrue(
                     inside_examples or inside_demo,
-                    f"{take.media} is not in examples/NN_*/media or examples/08_demos/*/media",
+                    f"{take.media} is not in reference-knowledge/NN_*/media or reference-knowledge/08_demos/*/media",
                 )
 
     def test_no_two_takes_write_one_clip(self) -> None:
@@ -84,7 +86,12 @@ class TestTheTakeTable(unittest.TestCase):
 
     def test_every_clip_on_disk_is_filmed_or_kept(self) -> None:
         owed = {take.key for take in TAKES} | set(KEPT)
-        clips = sorted([*REPO.glob("examples/*/media/*.webp"), *REPO.glob("examples/08_demos/*/media/*.webp")])
+        clips = sorted(
+            [
+                *REPO.glob("reference-knowledge/*/media/*.webp"),
+                *REPO.glob("reference-knowledge/08_demos/*/media/*.webp"),
+            ]
+        )
         self.assertTrue(clips)
         for clip in clips:
             with self.subTest(clip=str(clip.relative_to(REPO))):

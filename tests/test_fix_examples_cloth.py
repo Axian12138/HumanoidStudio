@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: Apache-2.0
-"""``examples/01_cloth/cloth.py``: a membrane mesh is simplified, and a sheet zeroes only its own creases.
+"""``reference-knowledge/01_cloth/cloth.py``: a membrane mesh is simplified, and a sheet zeroes only its own creases.
 
 No GPU: a recording builder and a model made of CPU warp arrays.
 """

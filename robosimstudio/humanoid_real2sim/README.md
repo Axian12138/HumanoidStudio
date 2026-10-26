@@ -1,6 +1,6 @@
 # Humanoid real2sim 工具库
 
-这里是人形 real2sim 唯一的共享实现，包含 retarget 数据处理、RSS tracker 与可视化代码。依赖方向是 **skill 路由 → 本工具库 → `scripts/humanoid-real2sim/` 任务入口 → 运行结果 → 精选 examples**。一次使用的所有中间/最终结果、好坏候选、日志和审查写到被 Git 忽略的 `outputs/humanoid-real2sim/<date>/<task>/`；任务全量数据留在 outputs，[知识库](../../examples/humanoid-real2sim/KNOWLEDGE.md)按通用动作分类，每例携带最小直接证据并标明正反例及验证范围。不维护同一功能的第二套包或兼容别名。
+这里是人形 real2sim 唯一的共享实现，包含 retarget 数据处理、RSS tracker 与可视化代码。依赖方向是 **skill 路由 → 本工具库 → `scripts/humanoid-real2sim/` 任务入口 → 运行结果 → 参考知识**。一次使用的所有中间/最终结果、好坏候选、日志和审查写到被 Git 忽略的 `outputs/humanoid-real2sim/<date>/<task>/`；任务全量数据留在 outputs，[知识库](../../reference-knowledge/humanoid-real2sim/KNOWLEDGE.md)按通用动作分类，正文解释判断依据和迁移边界，代码与artifact作为可选追溯，参考资料标明阅读目的和支持范围。不维护同一功能的第二套包或兼容别名。
 
 | 子任务 | 真正执行的代码 | 任务层入口与边界 |
 | --- | --- | --- |

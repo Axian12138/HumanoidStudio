@@ -197,6 +197,11 @@ def main() -> None:
     parser.add_argument("--metadata", type=Path, default=DEFAULT_METADATA)
     parser.add_argument("--checkpoint", type=Path, default=DEFAULT_CHECKPOINT)
     parser.add_argument("--robot", type=Path, default=DEFAULT_ROBOT)
+    parser.add_argument("--package", type=Path, help="ScaleTrack package with motions.yaml; load its current USD scene")
+    parser.add_argument("--scaletrack-root", type=Path, default=SCALETRACK)
+    parser.add_argument(
+        "--check-scene", action="store_true", help="build and audit the package scene, then exit without a viewer"
+    )
     parser.add_argument("--fk-model", type=Path, default=DEFAULT_FK_MODEL)
     parser.add_argument(
         "--scalebridge-python",
@@ -253,6 +258,18 @@ def main() -> None:
         "--review-only", action="store_true", help="show cached physics and source motion without repair controls"
     )
     args = parser.parse_args()
+    if args.package is not None:
+        if args.scene_file is not None or args.soft:
+            parser.error("--package cannot be combined with --scene-file or --soft")
+        from robosimstudio.humanoid_real2sim.track.package_scene import read_package
+
+        package_data = read_package(args.package)
+        args.motion = args.scaletrack_root / package_data["entry"]["path"]
+        package_order = args.package / "metadata/motion_order.json"
+        if package_order.is_file():
+            args.motion_order = package_order
+    elif args.check_scene:
+        parser.error("--check-scene requires --package")
     if args.reference_video is not None and not args.reference_video.is_file():
         parser.error(f"reference video does not exist: {args.reference_video}")
     if (args.reference_object_track is None) != (args.reference_object_mesh is None):
@@ -279,11 +296,25 @@ def main() -> None:
     temporary, asset = _position_asset(args.robot, metadata, hand_kp=args.hand_kp, hand_kv=args.hand_kv)
     tracker = None
     try:
-        sim = (
-            _load_scene_file(args.scene_file, asset, motion)
-            if args.scene_file is not None
-            else _build_scene(asset, motion, soft=args.soft, soft_solver=args.soft_solver)
-        )
+        if args.package is not None:
+            from robosimstudio.humanoid_real2sim.track.package_scene import build_package_sim
+
+            sim = build_package_sim(
+                asset, motion, package=args.package, scaletrack=args.scaletrack_root, out=args.out / "scene"
+            )
+            _align_start_pose(sim, motion)
+        else:
+            sim = (
+                _load_scene_file(args.scene_file, asset, motion)
+                if args.scene_file is not None
+                else _build_scene(asset, motion, soft=args.soft, soft_solver=args.soft_solver)
+            )
+        if args.check_scene:
+            from robosimstudio.humanoid_real2sim.track.package_scene import check_steps
+
+            check_steps(sim, args.out / "scene")
+            print(f"Scene audit passed: {args.out / 'scene/physics_audit.json'}")
+            return
         tracker = BFMTracker(
             python=worker_python,
             scalebridge=SCALEBRIDGE,

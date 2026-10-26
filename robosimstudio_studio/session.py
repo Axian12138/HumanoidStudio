@@ -181,7 +181,7 @@ PANEL_SETS: dict[str, tuple[str, ...]] = {
 sliders behind whichever one you clicked. What it leaves out is the half of the
 studio that is about producing something -- cameras, video, takes, material
 presets, regions, the event log, a leader arm -- which is exactly the half an
-example has no use for and the reason ``examples/`` was reported as showing too
+example has no use for and the reason ``reference-knowledge/`` was reported as showing too
 much. The scene list goes with them: clicking a thing is the way in, and a
 dropdown over every subject in the scene is a second one nobody asked for. The
 overlay stays with the inspector: it has no folder of its own, and it is what

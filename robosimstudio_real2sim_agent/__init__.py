@@ -18,8 +18,8 @@ Beside the library and above the page: it names ``robosimstudio_studio`` and
 (:mod:`.ctl`, :mod:`.wire`) imports neither, so ``python -m
 robosimstudio_real2sim_agent status`` answers in milliseconds; the server side
 (:mod:`.server`, :mod:`.page`, :mod:`.serve`) is reached lazily from here for
-the same reason. ``examples/live/REFERENCE.md`` is the contract and
-the procedure; ``examples/live/`` is the working directory it was set up for.
+the same reason. ``reference-knowledge/live/REFERENCE.md`` is the contract and
+the procedure; ``reference-knowledge/live/`` is the working directory it was set up for.
 """
 
 from __future__ import annotations

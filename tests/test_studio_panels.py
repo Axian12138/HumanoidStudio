@@ -146,9 +146,9 @@ class TestATaskPageKeepsItsDocument(unittest.TestCase):
     """``rss.view`` on a task: ``drive``, and still the goal, its square and Run.
 
     ``drive`` was written for hand-assembled scenes and filtered a task's page
-    down to the same four keys, so ``examples/06_tasks`` opened with no goal
+    down to the same four keys, so ``reference-knowledge/06_tasks`` opened with no goal
     beside the scene and no square to drag the cube into, and the policy pages
-    in ``examples/07_policies`` had no Run. Opened through :func:`robosimstudio.view`
+    in ``reference-knowledge/07_policies`` had no Run. Opened through :func:`robosimstudio.view`
     itself, with only the blocking loop replaced, so the door's own default is
     what is under test.
     """

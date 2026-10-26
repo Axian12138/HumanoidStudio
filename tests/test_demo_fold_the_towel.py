@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: Apache-2.0
-"""``examples/08_demos/fold_the_towel``: from the home pose to a towel folded in half, held by friction alone.
+"""``reference-knowledge/08_demos/fold_the_towel``: from the home pose to a towel folded in half, held by friction alone.
 
 The demo's routine is played the way its page plays it: through the Run button, with
 the arm panels taking each step (:mod:`tests.fixtures.grasp`), so the gizmos move, the
@@ -28,7 +28,7 @@ from tests.fixtures.grasp import open_session, tick
 TIER = "medium"
 """Builds the towel scene and plays the 22 s fold through a page with no browser on it: about 75 s."""
 
-DEMO = ROOT / "examples" / "08_demos" / "fold_the_towel" / "fold_the_towel.py"
+DEMO = ROOT / "reference-knowledge" / "08_demos" / "fold_the_towel" / "fold_the_towel.py"
 
 
 def _load():

@@ -55,7 +55,7 @@ one of these that the tree has."""
 API_PAGES = tuple(page for page in (CORE_API, REPO / "docs/source/getting_started.md") if page.is_file())
 """The pages that list methods rather than only demonstrating them."""
 
-REFERENCE = REPO / "examples/live/REFERENCE.md"
+REFERENCE = REPO / "reference-knowledge/live/REFERENCE.md"
 """The live page's reference; its frames section prints where a cube lands, though its first block is no scene."""
 
 PRINTS = PAGES + tuple(page for page in (REFERENCE,) if page.is_file())
